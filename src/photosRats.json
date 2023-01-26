@@ -1,0 +1,328 @@
+[
+    {
+
+        "rat": "shibby",
+        "photos":[
+          {
+            "filename": "amme_pederson.png",
+            "text": "A shared perspective brings Amme and Pederson together",
+            "numRats": 2,
+            "Rat1": "shibby",
+            "Rat2": "pederson"
+          },
+          {
+            "filename": "shibby.png",
+            "text": "Amme goes pro!",
+            "numRats": 1,
+            "Rat1": "shibby"
+          }
+        ]
+    },
+    {
+
+        "rat": "pederson",
+        "photos":[
+          {
+            "filename": "amme_pederson.png",
+            "text": "A shared perspective brings Amme and Pederson together",
+            "numRats": 2,
+            "Rat1": "shibby",
+            "Rat2": "pederson"
+          },    
+          {"filename": "pederson_sminny.png",
+          "text": "Pederson and Sminny have a beautiful Spring wedding",
+          "numRats": 2,
+          "Rat1": "pederson",
+          "Rat2": "sminny"
+        }
+          ,    
+          {"filename": "pederson.png",
+          "text": "Pederson has a beautiful Spring day",
+          "numRats": 1,
+          "Rat1": "pederson"
+        }
+        ]
+
+    },
+    {
+
+        "rat": "celery",
+        "photos":[  
+          {
+          "filename": "celery.png",
+          "text": "Celery invents a new recipe: spinach truffle cake!",
+          "numRats": 1,
+          "Rat1": "celery",
+          "Rat2": ""
+        }]
+
+    },
+    {
+
+        "rat": "esche",
+        "photos":[{
+          "filename": "esche.png",
+          "text": "Esche finds new friends in old places",
+          "numRats": 1,
+          "Rat1": "esche",
+          "Rat2": ""
+        }]
+
+    },
+    {
+
+        "rat": "fizzywig",
+        "photos":[ {
+          "filename": "fizzywig_podolico.png",
+          "text": "Podolico's support helps Fizzywig face their fear of crabs",
+          "numRats": 2,
+          "Rat1": "fizzwig",
+          "Rat2": "podolico"
+        },{
+          "filename": "fizzywig.png",
+          "text": "Fizzywigs does all they can to get as far away from crabs as possible",
+          "numRats": 1,
+          "Rat1": "fizzwig"
+        }]
+
+    },
+    {
+
+        "rat": "podolico",
+        "photos":[
+          {
+            "filename": "fizzywig_podolico.png",
+            "text": "Podolico's support helps Fizzywig face their fear of crabs",
+            "numRats": 2,
+            "Rat1": "fizzwig",
+            "Rat2": "podolico"
+          },  {
+            "filename": "podolico.png",
+            "text": "Podolico graduates with another PhD",
+            "numRats": 1,
+            "Rat1": "podolico",
+            "Rat2": ""
+          },  {
+            "filename": "podolico_ultrarat.png",
+            "text": "Podolico & UltraRat muse about the sands of time",
+            "numRats": 1,
+            "Rat1": "podolico",
+            "Rat2": "ultrarat"
+          }
+            ]
+    },
+    {
+
+        "rat": "empire",
+        "photos":[  {
+          "filename": "klause_empire.png",
+          "text": "Klaus surprises Empire with a birthday museum trip",
+          "numRats": 2,
+          "Rat1": "klaus",
+          "Rat2": "empire"
+        },
+        {
+          "filename": "empire.png",
+          "text": "Empire suprises themself with a bubble bath",
+          "numRats": 1,
+          "Rat1": "empire"
+        }]
+
+    },
+    {
+
+        "rat": "klaus",
+        "photos":[ {
+          "filename": "klause_empire.png",
+          "text": "Klaus surprises Empire with a birthday museum trip",
+          "numRats": 2,
+          "Rat1": "klaus",
+          "Rat2": "empire"
+        },{
+        "filename": "klause_sminny.png",
+        "text": "Sminny went to buy shoes, and found love instead",
+        "numRats": 2,
+        "Rat1": "sminny",
+        "Rat2": "klaus",
+        "Rat3": ""
+      }]
+
+    },
+    {
+
+        "rat": "sminny",
+        "photos":[
+          {"filename": "klause_sminny.png",
+          "text": "Sminny went to buy shoes, and found love instead",
+          "numRats": 2,
+          "Rat1": "sminny",
+          "Rat2": "klaus"
+        },
+        {
+          "filename": "pederson_sminny.png",
+          "text": "Pederson and Sminny have a beautiful Spring wedding",
+          "numRats": 2,
+          "Rat1": "pederson",
+          "Rat2": "sminny"
+        },   
+        { "filename": "sminny.png",
+        "text": "Sminny wins the prestigious #1 Business Award",
+        "numRats": 1,
+        "Rat1": "sminny",
+        "Rat2": "",
+        "Rat3": ""
+      },
+      {
+        "filename": "sminny_ultrarat.png",
+        "text": "A long distance romance thrives across space and time",
+        "numRats": 2,
+        "Rat1": "sminny",
+        "Rat2": "ultrarat",
+        "Rat3": ""
+      }
+      ]
+
+    },
+    {
+
+        "rat": "moom",
+        "photos":[  {
+          "filename": "moom.png",
+          "text": "Moom finds peace in their favorite place",
+          "numRats": 1,
+          "Rat1": "moom",
+          "Rat2": ""
+        },  {
+          "filename": "moom_seansean.png",
+          "text": "A walk through the garden turns into a tender moment",
+          "numRats": 2,
+          "Rat1": "moom",
+          "Rat2": "seansean"
+        }]
+
+    },
+    {
+
+        "rat": "seansean",
+        "photos":[{
+          "filename": "moom_seansean.png",
+          "text": "A walk through the garden turns into a tender moment",
+          "numRats": 2,
+          "Rat1": "moom",
+          "Rat2": "seansean"
+        },  {
+          "filename": "seansean.png",
+          "text": "The mushrooms and Sean Sean spend a meaningful day together",
+          "numRats": 1,
+          "Rat1": "seansean",
+          "Rat2": ""
+        },
+        {
+          "filename": "sharpie_seansean.png",
+          "text": "A fashionable duo finds a joyful romance",
+          "numRats": 2,
+          "Rat1": "sharpie",
+          "Rat2": "seansean"
+        },
+        {
+          "filename": "simmsammo_seansean.png",
+          "text": "SimmSammo and Sean Sean lift each other to new heights",
+          "numRats": 2,
+          "Rat1": "simmsammo",
+          "Rat2": "seansean"
+        }
+      
+      ]
+
+    },
+    {
+
+        "rat": "sharpie",
+        "photos":[  {
+          "filename": "sharpie_seansean.png",
+          "text": "A fashionable duo finds a joyful romance",
+          "numRats": 2,
+          "Rat1": "sharpie",
+          "Rat2": "seansean"
+        }]
+    },
+    {
+
+        "rat": "simmsammo",
+        "photos":[ {
+          "filename": "simmsammo_seansean.png",
+          "text": "SimmSammo and Sean Sean lift each other to new heights",
+          "numRats": 2,
+          "Rat1": "simmsammo",
+          "Rat2": "seansean"
+        },{
+          "filename": "simmsammo.png",
+          "text": "Simmsammo wins the national staring contest",
+          "numRats": 1,
+          "Rat1": "simmsammo"
+        }
+      ]
+    },
+    {
+
+        "rat": "ultrarat",
+        "photos":[   
+          {
+          "filename": "sminny_ultrarat.png",
+          "text": "A long distance romance thrives across space and time",
+          "numRats": 2,
+          "Rat1": "sminny",
+          "Rat2": "ultrarat"
+        },  {
+          "filename": "podolico_ultrarat.png",
+          "text": "Podolico & UltraRat muse about the sands of time",
+          "numRats": 1,
+          "Rat1": "podolico",
+          "Rat2": "ultrarat"
+        }
+      ]
+    },
+    {
+
+      "rat": "boyboymysterio",
+      "photos":[   
+        {
+        "filename": "barronhotlands_boyboymysterio.png",
+        "text": "Boy Boy Mysterio and Barron Hotlands \"scheming\" together",
+        "numRats": 2,
+        "Rat1": "barronhotlands",
+        "Rat2": "boyboymysterio"
+      }]
+  },    {
+
+    "rat": "barronhotlands",
+    "photos":[   
+      {
+      "filename": "barronhotlands_boyboymysterio.png",
+      "text": "Boy Boy Mysterio and Barron Hotlands \"scheming\" together",
+      "numRats": 2,
+      "Rat1": "barronhotlands",
+      "Rat2": "boyboymysterio"
+    }]
+},    {
+
+  "rat": "eggs",
+  "photos":[   
+    {
+    "filename": "egg.png",
+    "text": "Eggs meets the parent of their namesake",
+    "numRats": 1,
+    "Rat1": "eggs"
+  }]
+},    {
+
+  "rat": "martine",
+  "photos":[   
+    {
+    "filename": "martine.png",
+    "text": "Martine and their new house to haunt",
+    "numRats": 1,
+    "Rat1": "martine"
+  }]
+}
+]
