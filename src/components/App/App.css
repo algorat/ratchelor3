@@ -1,0 +1,14 @@
+.screen,
+.game {
+  position: relative;
+  width: 900px;
+  height: 675px;
+}
+
+.frame {
+  position: absolute;
+  z-index: 1000;
+  margin-left: -110px;
+  margin-top: -113px;
+  pointer-events: none;
+}

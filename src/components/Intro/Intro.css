@@ -1,0 +1,17 @@
+.intro-screen {
+  width: var(--game-width);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  background-image: url(../../assets/images/intro.gif);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.intro-screen button {
+  margin-top: 500px;
+}

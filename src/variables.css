@@ -1,0 +1,14 @@
+:root {
+  --game-width: 900px;
+  --short-transition-duration: 300ms;
+
+  --background-color: #fff;
+  --secondary-background-color: rgb(255, 222, 222);
+  --text-color: #000;
+  --button-color: rgb(255, 214, 214);
+  --button-color-hover: rgb(255, 186, 186);
+  --button-outline-color: rgb(226, 113, 113);
+
+  --fancy-font-stack: "Sofia", cursive;
+  --body-font-stack: "Yusei Magic", sans-serif;
+}

@@ -1,0 +1,20 @@
+.photos {
+  position: relative;
+  display: grid;
+  padding: 130px 100px 0 100px;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr;
+  z-index: 10;
+}
+
+.photos img {
+  width: 100%;
+}
+
+.epilogue-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}

@@ -1,0 +1,17 @@
+.proposal-screen {
+  position: relative;
+}
+
+.proposal-background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 0;
+}
+
+.final-rat,
+.proposing-rat {
+  position: relative;
+  z-index: 1;
+}

@@ -1,0 +1,79 @@
+.rose-ceremony-screen {
+  position: relative;
+}
+
+.rose-ceremony-rats {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: -4px;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 10;
+  padding: 10%;
+  height: 80%;
+  padding-top: 160px;
+}
+
+.rose-ceremony-background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 0;
+}
+
+.rose-ceremony-rat {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.rose-ceremony-rat:hover {
+  transition: transform 200ms;
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.rose-ceremony-rat img {
+  display: none;
+}
+
+.rose-ceremony-rat img.show {
+  display: block;
+}
+
+.rose-ceremony-screen .bouquet {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 800px;
+  z-index: 11;
+  pointer-events: none;
+}
+
+/** Rose ceremony sizes. */
+.rose-ceremony-screen .xlarge img {
+  height: 300px;
+}
+
+.rose-ceremony-screen .large img {
+  height: 240px;
+}
+
+.rose-ceremony-screen .med-large img {
+  height: 210px;
+}
+
+.rose-ceremony-screen .medium img {
+  height: 180px;
+}
+
+.rose-ceremony-screen .med-small img {
+  height: 165px;
+}
+
+.rose-ceremony-screen .small img {
+  height: 120px;
+}
