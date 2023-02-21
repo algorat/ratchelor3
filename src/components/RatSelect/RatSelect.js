@@ -61,11 +61,11 @@ export function RatSelect(props) {
     }
     // Exit early if we're at our selection limit.
     if (activeRats.length === props.maxRats) {
-      // TODO: play bad sound here.
+      props.updateSfx("bad_action.wav");
       return;
     }
 
-    // TODO: play success sound
+    props.updateSfx("tap.mp3");
     setActiveRats([...activeRats, selectedRatId]);
   };
 

@@ -28,6 +28,9 @@ export const ENDINGS_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/ending
 /** TODO */
 export const EPILOGUE_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/epilogue`;
 
+/** TODO */
+export const SOUND_BASE_PATH = `${process.env.PUBLIC_URL}/sounds`;
+
 /**
  * Takes a string rat name and returns the
  * Json object with additional details.

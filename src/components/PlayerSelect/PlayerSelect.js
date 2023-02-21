@@ -57,7 +57,7 @@ export function PlayerSelect(props) {
             selected={idx === props.playerAvatarIndex}
             onClick={() => {
               props.setPlayerAvatarIndex(idx);
-              // TODO: props.playTap();
+              props.updateSfx("tap.mp3");
             }}
             key={`char${idx}`}
             src={`${PLAYER_IMAGES_BASE_PATH}/${idx}_intro.png`}

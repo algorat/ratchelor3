@@ -8,6 +8,7 @@ import { RatSelect } from "../RatSelect/RatSelect";
 import { TalkingToRats } from "../TalkingToRats/TalkingToRats";
 import { RoseCeremony } from "../RoseCeremony/RoseCeremony";
 import { Proposal } from "../Proposal/Proposal";
+import { SoundManager } from "../SoundManager/SoundManager";
 
 import frameImage from "../../assets/images/frame.png";
 
@@ -45,7 +46,8 @@ function RatchelorApp() {
   const [activeRats, setActiveRats] = useState([]);
 
   // The overall music & SFX volume of the game.
-  const [volume, setVolume] = useState(10);
+  const [sfx, setSfx] = useState(null);
+  const [sfxTimestamp, setSfxTimestamp] = useState(0);
 
   // The player avatar that was selected.
   const [playerAvatarIndex, setPlayerAvatarIndex] = useState(null);
@@ -53,6 +55,7 @@ function RatchelorApp() {
   // Advances the game to the next stage.
   const advanceToNextStage = () => {
     setGameStage(gameStage + 1);
+    updateSfx("curtain.mp3");
   };
 
   // TODO
@@ -86,6 +89,11 @@ function RatchelorApp() {
     setOriginalRats([]);
   };
 
+  const updateSfx = (sfx) => {
+    setSfx(sfx);
+    setSfxTimestamp(Date.now());
+  };
+
   const randomizedActiveRats = activeRats.sort(() => 0.5 - Math.random());
   let gameScreenContents = "";
   switch (gameStage) {
@@ -98,6 +106,7 @@ function RatchelorApp() {
           advanceToNextStage={advanceToNextStage}
           setPlayerAvatarIndex={setPlayerAvatarIndex}
           playerAvatarIndex={playerAvatarIndex}
+          updateSfx={updateSfx}
         />
       );
       break;
@@ -109,6 +118,7 @@ function RatchelorApp() {
           setActiveRats={setActiveRats}
           setOriginalRats={setOriginalRats}
           activeRats={activeRats}
+          updateSfx={updateSfx}
         />
       );
       break;
@@ -166,6 +176,7 @@ function RatchelorApp() {
     <div className="game">
       <img className="frame" src={frameImage} alt=""></img>
       {gameScreenContents}
+      <SoundManager soundFile={sfx} timestamp={sfxTimestamp} />
     </div>
   );
 }
