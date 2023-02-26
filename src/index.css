@@ -73,7 +73,7 @@ header {
   width: auto;
   right: 108px;
   color: var(--text-color);
-  font-family: "Yusei Magic", sans-serif;
+  font-family: 'Yusei Magic', sans-serif;
   background-color: var(--background-color);
   padding: 10px 10px;
   font-size: 16px;
@@ -137,4 +137,15 @@ header {
 .credits:hover .sound-credit {
   display: block;
   z-index: 1000;
+}
+
+/* hidden from regular users but visible to screenreaders. */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }

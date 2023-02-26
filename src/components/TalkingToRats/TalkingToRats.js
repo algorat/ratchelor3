@@ -1,4 +1,5 @@
 import "./TalkingToRats.css";
+import { useInterval } from "../../utils/reactUseInterval";
 
 import {
   getRatById,
@@ -10,14 +11,16 @@ import {
 import React, { useState } from "react";
 
 const MAX_PREALOAD_TIME = 3000; // In ms.
+const DIALOGUE_INTERVAL = 30; // In ms;
 
 // TODOs:
-// words come in one by one
 // reactions
 export function TalkingToRats(props) {
   const [ratIndex, setRatIndex] = useState(0);
   const [ratDateImages, setRatDateImages] = useState([]);
   const [ratImagesLoaded, setRatImagesLoaded] = useState(false);
+  const [ratDialogueProgress, setRatDialogueProgress] = useState(0);
+  const [ratResponses, setRatResponses] = useState([]);
 
   function preloadRatImages() {
     const tempRatDateImages = [];
@@ -55,6 +58,7 @@ export function TalkingToRats(props) {
       }),
     ]).then(() => {
       setRatImagesLoaded(true);
+      setupNextRat();
     });
 
     // Finally, set the rat date images.
@@ -67,16 +71,30 @@ export function TalkingToRats(props) {
       return;
     }
     setRatIndex(ratIndex + 1);
+    setupNextRat();
+  }
+
+  function setupNextRat() {
+    setRatDialogueProgress(0);
+    setRatResponses(getResponsesByRound(currentRatId, props.round, 3));
   }
 
   // Preload if we haven't already.
   !ratDateImages.length && preloadRatImages();
 
   const currentRatId = props.activeRats[ratIndex];
-  const responses = getResponsesByRound(currentRatId, props.round, 3);
   const ratData = getRatById(currentRatId);
   const ratName = ratData.name;
   const ratDialogue = ratData.dialogue[props.round];
+  const currentRatDialogue = ratDialogue.slice(0, ratDialogueProgress);
+
+  useInterval(
+    () => {
+      console.log(ratDialogueProgress);
+      setRatDialogueProgress(ratDialogueProgress + 1);
+    },
+    ratDialogueProgress < ratDialogue.length ? DIALOGUE_INTERVAL : null
+  );
 
   return (
     <>
@@ -102,9 +120,12 @@ export function TalkingToRats(props) {
         <div className="dialogue-container">
           <div className="rat-name">{ratName}</div>
           <div className="text-dialogue-container">
-            <div className="rat-dialogue">{ratDialogue}</div>
+            <div className="rat-dialogue" aria-hidden="true">
+              {currentRatDialogue}
+            </div>
+            <div className="visually-hidden">{ratDialogue}</div>
             <div className="responses">
-              {responses.map((response, ridx) => (
+              {ratResponses.map((response, ridx) => (
                 <button
                   key={`ratresponse${ridx}`}
                   className="response"
