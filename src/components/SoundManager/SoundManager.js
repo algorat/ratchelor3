@@ -54,7 +54,6 @@ export function SoundManager(props) {
             value={volume}
             onChange={(evt) => {
               setVolume(parseFloat(evt.target.value));
-              console.log("change");
             }}
           />
           <div
