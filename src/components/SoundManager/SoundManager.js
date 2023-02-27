@@ -8,6 +8,7 @@ import { SOUND_BASE_PATH } from "../../utils/ratDataHelper";
 export function SoundManager(props) {
   const [volume, setVolume] = useState(0.2);
   const [lastTimestamp, setLastTimestamp] = useState(null);
+  const [lastMusicTimestamp, setLastMusicTimestamp] = useState(null);
 
   return (
     <>
@@ -42,12 +43,25 @@ export function SoundManager(props) {
       </div>
       {props.soundFile && (
         <ReactAudioPlayer
-          id={String(props.timestamp)}
+          id={String(props.soundTimestamp)}
           src={`${SOUND_BASE_PATH}/${props.soundFile}`}
           volume={volume}
           ref={(element) => {
-            if (!element || lastTimestamp === props.timestamp) return;
-            setLastTimestamp(props.timestamp);
+            if (!element || lastTimestamp === props.soundTimestamp) return;
+            setLastTimestamp(props.soundTimestamp);
+            element.audioEl.current.currentTime = 0;
+            element.audioEl.current.play();
+          }}
+        />
+      )}
+      {props.musicFile && (
+        <ReactAudioPlayer
+          src={`${SOUND_BASE_PATH}/${props.musicFile}`}
+          volume={volume / 3}
+          loop={true}
+          ref={(element) => {
+            if (!element || lastMusicTimestamp === props.musicTimestamp) return;
+            setLastMusicTimestamp(props.musicTimestamp);
             element.audioEl.current.currentTime = 0;
             element.audioEl.current.play();
           }}

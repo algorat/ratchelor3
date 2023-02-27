@@ -9,8 +9,9 @@ import {
   PLAYER_IMAGES_BASE_PATH,
   REACTIONS_IMAGES_BASE_PATH,
   getResponsesByRound,
-  getMatchingSound,
 } from "../../utils/ratDataHelper";
+
+import { getMatchingSound, getTalkingMusic } from "../../utils/soundDataHelper";
 
 import React, { useState } from "react";
 
@@ -93,6 +94,7 @@ export function TalkingToRats(props) {
     setDialogueProgress(0);
     const nextRatId = props.activeRats[nextRatIndex];
     setRatResponses(getResponsesByRound(nextRatId, props.round, 3));
+    props.updateMusic(getTalkingMusic(nextRatIndex));
   }
 
   // Preload if we haven't already.

@@ -3,7 +3,6 @@
 import ratsJson from "../data/rats.json";
 import responsesJson from "../data/responses.json";
 import epilogueJson from "../data/epilogue.json";
-import soundMapping from "../data/soundsToActions.json";
 
 /** TODO */
 export const PLAYER_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/player`;
@@ -34,14 +33,6 @@ export const EPILOGUE_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/epilo
 
 /** TODO */
 export const SOUND_BASE_PATH = `${process.env.PUBLIC_URL}/sounds`;
-
-/** TODO */
-const reactionsToSounds = {};
-for (const [sound, reactions] of Object.entries(soundMapping)) {
-  for (const reaction of reactions) {
-    reactionsToSounds[reaction] = sound;
-  }
-}
 
 /**
  * Takes a string rat name and returns the
@@ -88,12 +79,4 @@ export function getRandomEpiloguePhoto(ratId) {
   });
   const randomIdx = Math.floor(Math.random() * matches.length);
   return matches[randomIdx];
-}
-
-/**
- * TODO comment
- * Also maybe return fallback sound if failed to find sound?
- */
-export function getMatchingSound(reaction) {
-  return reactionsToSounds[reaction];
 }

@@ -48,9 +48,13 @@ function RatchelorApp() {
   // Randomized active rats.
   const [randomizedActiveRats, setRandomizedActiveRats] = useState([]);
 
-  // The overall music & SFX volume of the game.
+  // TOdo
   const [sfx, setSfx] = useState(null);
   const [sfxTimestamp, setSfxTimestamp] = useState(0);
+
+  // Todo
+  const [music, setMusic] = useState(null);
+  const [musicTimestamp, setMusicTimestamp] = useState(0);
 
   // The player avatar that was selected.
   const [playerAvatarIndex, setPlayerAvatarIndex] = useState(null);
@@ -105,6 +109,11 @@ function RatchelorApp() {
     setSfxTimestamp(Date.now());
   };
 
+  const updateMusic = (music) => {
+    setMusic(music);
+    setMusicTimestamp(Date.now());
+  };
+
   let gameScreenContents = "";
   switch (gameStage) {
     case GameStages.INTRO:
@@ -140,6 +149,7 @@ function RatchelorApp() {
           round={round}
           goToRoseCeremony={goToRoseCeremony}
           updateSfx={updateSfx}
+          updateMusic={updateMusic}
         />
       );
       break;
@@ -187,7 +197,12 @@ function RatchelorApp() {
     <div className="game">
       <img className="frame" src={frameImage} alt=""></img>
       {gameScreenContents}
-      <SoundManager soundFile={sfx} timestamp={sfxTimestamp} />
+      <SoundManager
+        soundFile={sfx}
+        soundTimestamp={sfxTimestamp}
+        musicFile={music}
+        musicTimestamp={musicTimestamp}
+      />
     </div>
   );
 }
