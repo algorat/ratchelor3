@@ -1,10 +1,10 @@
 import soundMapping from "../data/soundsToActions.json";
 
 const allTalkingMusic = [
-  "Talking_To_Rat_1.mp3",
-  "Talking_To_Rat_2.mp3",
-  "Talking_To_Rat_3.mp3",
-  "Talking_To_Rat_4.mp3",
+  "talking_to_rat_1.mp3",
+  "talking_to_rat_2.mp3",
+  "talking_to_rat_3.mp3",
+  "talking_to_rat_4.mp3",
 ];
 
 // import Cheerful from "../sounds/Cheerful.mp3";

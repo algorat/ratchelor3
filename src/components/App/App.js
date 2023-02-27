@@ -12,6 +12,8 @@ import { SoundManager } from "../SoundManager/SoundManager";
 
 import frameImage from "../../assets/images/frame.png";
 
+import { getRatById } from "../../utils/ratDataHelper";
+
 const GameStages = {
   INTRO: 0,
   PLAYER_SELECT: 1,
@@ -66,6 +68,12 @@ function RatchelorApp() {
   };
 
   // TODO
+  const goToPlayerSelect = () => {
+    advanceToNextStage();
+    updateMusic("intro.mp3");
+  };
+
+  // TODO
   const goToTalkingToRats = () => {
     setRandomizedActiveRats(activeRats.sort(() => 0.5 - Math.random()));
     advanceToNextStage();
@@ -73,6 +81,7 @@ function RatchelorApp() {
 
   // TODO
   const goToRoseCeremony = () => {
+    updateMusic("rose_ceremony.mp3");
     setGameStage(GameStages.ROSE_CEREMONY);
   };
 
@@ -83,6 +92,7 @@ function RatchelorApp() {
     setRandomizedActiveRats(chosenRats.sort(() => 0.5 - Math.random()));
 
     if (round === NUM_ROUNDS - 1) {
+      updateMusic("romantic_sad.mp3");
       setGameStage(GameStages.PROPOSAL);
       return;
     }
@@ -92,6 +102,8 @@ function RatchelorApp() {
 
   // TODO
   const goToAnimeEnding = () => {
+    const chosenRat = activeRats[0];
+    updateMusic(getRatById(chosenRat)?.ending);
     setGameStage(GameStages.ANIME_ENDING);
   };
 
@@ -102,6 +114,7 @@ function RatchelorApp() {
     setActiveRats([]);
     setRandomizedActiveRats([]);
     setOriginalRats([]);
+    updateMusic("intro.mp3");
   };
 
   const updateSfx = (sfx) => {
@@ -117,7 +130,7 @@ function RatchelorApp() {
   let gameScreenContents = "";
   switch (gameStage) {
     case GameStages.INTRO:
-      gameScreenContents = <Intro advanceToNextStage={advanceToNextStage} />;
+      gameScreenContents = <Intro advanceToNextStage={goToPlayerSelect} />;
       break;
     case GameStages.PLAYER_SELECT:
       gameScreenContents = (

@@ -3,22 +3,48 @@ import "./SoundManager.css";
 import ReactAudioPlayer from "react-audio-player";
 
 import React, { useState } from "react";
-import { SOUND_BASE_PATH } from "../../utils/ratDataHelper";
+import {
+  SOUND_BASE_PATH,
+  SOUND_ICONS_IMAGES_BASE_PATH,
+} from "../../utils/ratDataHelper";
+
+const VOL_MAX = 3.9;
+const VOLUME_ICON_PREFIX = "volume_";
+const VOLUME_ICON_POSTFIX = ".png";
+const VOLUME_MUTE = "volume_mute.png";
+
+const DEFAULT_VOLUME = 0.2;
+
+function volumeToIndex(vol) {
+  return Math.floor(vol * VOL_MAX);
+}
 
 export function SoundManager(props) {
-  const [volume, setVolume] = useState(0.2);
+  const [volume, setVolume] = useState(DEFAULT_VOLUME);
   const [lastTimestamp, setLastTimestamp] = useState(null);
   const [lastMusicTimestamp, setLastMusicTimestamp] = useState(null);
+
+  let volumeIconFullPath = `${SOUND_ICONS_IMAGES_BASE_PATH}/${VOLUME_MUTE}`;
+
+  if (volume > 0) {
+    const vIdx = volumeToIndex(volume);
+    const volumeIconSrc = `${VOLUME_ICON_PREFIX}${vIdx}${VOLUME_ICON_POSTFIX}`;
+    volumeIconFullPath = `${SOUND_ICONS_IMAGES_BASE_PATH}/${volumeIconSrc}`;
+  }
+
+  function toggleSound() {
+    setVolume(volume === 0 ? DEFAULT_VOLUME : 0);
+  }
 
   return (
     <>
       <div className="game-options">
-        {/* <img
-          src={soundurl}
+        <img
+          src={volumeIconFullPath}
           alt="Sound icon"
           className="sound-icon"
           onClick={toggleSound}
-        /> */}
+        />
         <div className="sound-slider">
           <input
             min="0"
@@ -62,7 +88,6 @@ export function SoundManager(props) {
           ref={(element) => {
             if (!element || lastMusicTimestamp === props.musicTimestamp) return;
             setLastMusicTimestamp(props.musicTimestamp);
-            element.audioEl.current.currentTime = 0;
             element.audioEl.current.play();
           }}
         />
