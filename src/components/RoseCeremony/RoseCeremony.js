@@ -83,17 +83,18 @@ export function RoseCeremony(props) {
     console.log("selected");
     // Is it already selected?
     if (selectedRats.includes(selectedRatId)) {
+      props.updateSfx("wobble.mp3");
       setPreviousRats([...previousRats, selectedRatId]);
       setSelectedRats(selectedRats.filter((ratId) => ratId !== selectedRatId));
       return;
     }
     // Exit early if we're at our selection limit.
     if (selectedRats.length === props.maxRats) {
-      // TODO: play bad sound here.
+      props.updateSfx("bad_action.wav");
       return;
     }
 
-    // TODO: play success sound
+    props.updateSfx("rose3.wav");
     setSelectedRats([...selectedRats, selectedRatId]);
   };
 

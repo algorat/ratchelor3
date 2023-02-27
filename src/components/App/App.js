@@ -173,6 +173,7 @@ function RatchelorApp() {
           round={round}
           maxRats={ROSES_PER_ROUND[round]}
           goToNextRound={goToNextRound}
+          updateSfx={updateSfx}
         />
       );
       break;
