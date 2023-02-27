@@ -88,7 +88,7 @@ export function TalkingToRats(props) {
   function setupNextRat(nextRatIndex) {
     setRatIndex(nextRatIndex);
     setDialogueProgress(0);
-    const nextRatId = props.activeRats[nextRatIndex + 1];
+    const nextRatId = props.activeRats[nextRatIndex];
     setRatResponses(getResponsesByRound(nextRatId, props.round, 3));
   }
 

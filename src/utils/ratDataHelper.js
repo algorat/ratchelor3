@@ -65,8 +65,6 @@ export function getResponsesByRound(ratId, roundNumber, numResponses = null) {
   const allResponses = ratResponsesData[roundNumber];
   if (!numResponses) return allResponses;
 
-  console.log(ratId, ratResponsesData, allResponses, roundNumber);
-
   const shuffled = allResponses.sort(() => 0.5 - Math.random());
   return shuffled.slice(0, numResponses);
 }
