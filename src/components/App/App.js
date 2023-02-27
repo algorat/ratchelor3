@@ -12,7 +12,10 @@ import { SoundManager } from "../SoundManager/SoundManager";
 
 import frameImage from "../../assets/images/frame.png";
 
-import { getRatById } from "../../utils/ratDataHelper";
+import {
+  getRatById,
+  BACKGROUNDS_IMAGES_BASE_PATH,
+} from "../../utils/ratDataHelper";
 
 const GameStages = {
   INTRO: 0,
@@ -61,50 +64,84 @@ function RatchelorApp() {
   // The player avatar that was selected.
   const [playerAvatarIndex, setPlayerAvatarIndex] = useState(null);
 
-  // Advances the game to the next stage.
-  const advanceToNextStage = () => {
-    setGameStage(gameStage + 1);
+  const [playingInterlude, setPlayingInterlude] = useState(false);
+  const [playingInterludeText, setPlayingInterludeText] = useState("");
+
+  function playInterlude(interludeText, callback) {
     updateSfx("curtain.mp3");
-  };
+    setPlayingInterlude(true);
+    setPlayingInterludeText(interludeText);
+
+    setTimeout(() => {
+      setPlayingInterlude(false);
+      callback();
+    }, 2000);
+  }
 
   // TODO
-  const goToPlayerSelect = () => {
-    advanceToNextStage();
+  function goToPlayerSelect() {
     updateMusic("intro.mp3");
-  };
+    playInterlude("Meet yourself!", () => {
+      setGameStage(GameStages.PLAYER_SELECT);
+    });
+  }
 
   // TODO
-  const goToTalkingToRats = () => {
+  function goToRatSelect() {
+    playInterlude("Meet the rats!", () => {
+      setGameStage(GameStages.RAT_SELECT);
+    });
+  }
+
+  // TODO
+  function goToTalkingToRats() {
     setRandomizedActiveRats(activeRats.sort(() => 0.5 - Math.random()));
-    advanceToNextStage();
-  };
+    playInterlude("Time 2 date!", () => {
+      setGameStage(GameStages.TALKING_TO_RATS);
+    });
+  }
 
   // TODO
   const goToRoseCeremony = () => {
     updateMusic("rose_ceremony.mp3");
-    setGameStage(GameStages.ROSE_CEREMONY);
+    playInterlude("Choose some rats", () => {
+      setGameStage(GameStages.ROSE_CEREMONY);
+    });
   };
 
   // TODO
   const goToNextRound = (chosenRats) => {
-    setRound(round + 1);
-    setActiveRats(chosenRats);
-    setRandomizedActiveRats(chosenRats.sort(() => 0.5 - Math.random()));
-
     if (round === NUM_ROUNDS - 1) {
       updateMusic("romantic_sad.mp3");
-      setGameStage(GameStages.PROPOSAL);
+      playInterlude("Proposal!", () => {
+        setGameStage(GameStages.PROPOSAL);
+        setActiveRats(chosenRats);
+      });
       return;
     }
 
-    setGameStage(GameStages.TALKING_TO_RATS);
+    playInterlude("Time 2 date!", () => {
+      setRound(round + 1);
+      setGameStage(GameStages.TALKING_TO_RATS);
+      setActiveRats(chosenRats);
+      setRandomizedActiveRats(chosenRats.sort(() => 0.5 - Math.random()));
+    });
+  };
+
+  // TODO
+  const goToEpilogue = () => {
+    playInterlude("What happened to the others?", () => {
+      setGameStage(GameStages.EPILOGUE);
+    });
   };
 
   // TODO
   const goToAnimeEnding = () => {
     const chosenRat = activeRats[0];
     updateMusic(getRatById(chosenRat)?.ending);
-    setGameStage(GameStages.ANIME_ENDING);
+    playInterlude("Ending!", () => {
+      setGameStage(GameStages.ANIME_ENDING);
+    });
   };
 
   const resetGame = () => {
@@ -135,7 +172,7 @@ function RatchelorApp() {
     case GameStages.PLAYER_SELECT:
       gameScreenContents = (
         <PlayerSelect
-          advanceToNextStage={advanceToNextStage}
+          advanceToNextStage={goToRatSelect}
           setPlayerAvatarIndex={setPlayerAvatarIndex}
           playerAvatarIndex={playerAvatarIndex}
           updateSfx={updateSfx}
@@ -188,10 +225,7 @@ function RatchelorApp() {
       break;
     case GameStages.ANIME_ENDING:
       gameScreenContents = (
-        <Ending
-          finalRat={activeRats[0]}
-          advanceToNextStage={advanceToNextStage}
-        />
+        <Ending finalRat={activeRats[0]} advanceToNextStage={goToEpilogue} />
       );
       break;
     case GameStages.EPILOGUE:
@@ -210,6 +244,12 @@ function RatchelorApp() {
   return (
     <div className="game">
       <img className="frame" src={frameImage} alt=""></img>
+      <div className="screen interlude-container">
+        <div className={`${playingInterlude ? "playing" : ""} interlude`}>
+          <img alt="" src={`${BACKGROUNDS_IMAGES_BASE_PATH}/curtains.png`} />
+          <p>{playingInterludeText}</p>
+        </div>
+      </div>
       {gameScreenContents}
       <SoundManager
         soundFile={sfx}
