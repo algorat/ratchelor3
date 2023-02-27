@@ -9,6 +9,7 @@ import {
   PLAYER_IMAGES_BASE_PATH,
   REACTIONS_IMAGES_BASE_PATH,
   getResponsesByRound,
+  getMatchingSound,
 } from "../../utils/ratDataHelper";
 
 import React, { useState } from "react";
@@ -74,6 +75,8 @@ export function TalkingToRats(props) {
 
   function showReaction(reaction) {
     setCurrentReaction(reaction);
+    props.updateSfx(`${getMatchingSound(reaction)}.mp3`);
+
     setTimeout(() => {
       if (ratIndex === props.activeRats.length - 1) {
         props.goToRoseCeremony();

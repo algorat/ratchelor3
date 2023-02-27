@@ -45,6 +45,9 @@ function RatchelorApp() {
   // All rats currently still in the game.
   const [activeRats, setActiveRats] = useState([]);
 
+  // Randomized active rats.
+  const [randomizedActiveRats, setRandomizedActiveRats] = useState([]);
+
   // The overall music & SFX volume of the game.
   const [sfx, setSfx] = useState(null);
   const [sfxTimestamp, setSfxTimestamp] = useState(0);
@@ -59,6 +62,12 @@ function RatchelorApp() {
   };
 
   // TODO
+  const goToTalkingToRats = () => {
+    setRandomizedActiveRats(activeRats.sort(() => 0.5 - Math.random()));
+    advanceToNextStage();
+  };
+
+  // TODO
   const goToRoseCeremony = () => {
     setGameStage(GameStages.ROSE_CEREMONY);
   };
@@ -67,6 +76,7 @@ function RatchelorApp() {
   const goToNextRound = (chosenRats) => {
     setRound(round + 1);
     setActiveRats(chosenRats);
+    setRandomizedActiveRats(chosenRats.sort(() => 0.5 - Math.random()));
 
     if (round === NUM_ROUNDS - 1) {
       setGameStage(GameStages.PROPOSAL);
@@ -86,6 +96,7 @@ function RatchelorApp() {
     setRound(0);
     setPlayerAvatarIndex(null);
     setActiveRats([]);
+    setRandomizedActiveRats([]);
     setOriginalRats([]);
   };
 
@@ -94,7 +105,6 @@ function RatchelorApp() {
     setSfxTimestamp(Date.now());
   };
 
-  const randomizedActiveRats = activeRats.sort(() => 0.5 - Math.random());
   let gameScreenContents = "";
   switch (gameStage) {
     case GameStages.INTRO:
@@ -114,7 +124,7 @@ function RatchelorApp() {
       gameScreenContents = (
         <RatSelect
           maxRats={RATS_IN_GAME}
-          advanceToNextStage={advanceToNextStage}
+          advanceToNextStage={goToTalkingToRats}
           setActiveRats={setActiveRats}
           setOriginalRats={setOriginalRats}
           activeRats={activeRats}
@@ -129,6 +139,7 @@ function RatchelorApp() {
           playerAvatarIndex={playerAvatarIndex}
           round={round}
           goToRoseCeremony={goToRoseCeremony}
+          updateSfx={updateSfx}
         />
       );
       break;
