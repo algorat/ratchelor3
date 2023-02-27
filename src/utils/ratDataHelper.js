@@ -14,6 +14,9 @@ export const FRAMES_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/frames`
 export const DATES_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/dates`;
 
 /** TODO */
+export const REACTIONS_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/reactions`;
+
+/** TODO */
 export const CHARACTERS_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/characters`;
 
 /** TODO */
@@ -61,6 +64,8 @@ export function getResponsesByRound(ratId, roundNumber, numResponses = null) {
   const ratResponsesData = responsesJson[ratId];
   const allResponses = ratResponsesData[roundNumber];
   if (!numResponses) return allResponses;
+
+  console.log(ratId, ratResponsesData, allResponses, roundNumber);
 
   const shuffled = allResponses.sort(() => 0.5 - Math.random());
   return shuffled.slice(0, numResponses);

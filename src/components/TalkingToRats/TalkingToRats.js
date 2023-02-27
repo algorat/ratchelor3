@@ -1,10 +1,13 @@
 import "./TalkingToRats.css";
 import { useInterval } from "../../utils/reactUseInterval";
 
+import { Reaction } from "../Reaction/Reaction";
+
 import {
   getRatById,
   DATES_IMAGES_BASE_PATH,
   PLAYER_IMAGES_BASE_PATH,
+  REACTIONS_IMAGES_BASE_PATH,
   getResponsesByRound,
 } from "../../utils/ratDataHelper";
 
@@ -12,15 +15,15 @@ import React, { useState } from "react";
 
 const MAX_PREALOAD_TIME = 3000; // In ms.
 const DIALOGUE_INTERVAL = 30; // In ms;
+const REACTION_TIMEOUT = 1800; // In ms.
 
-// TODOs:
-// reactions
 export function TalkingToRats(props) {
   const [ratIndex, setRatIndex] = useState(0);
   const [ratDateImages, setRatDateImages] = useState([]);
   const [ratImagesLoaded, setRatImagesLoaded] = useState(false);
-  const [ratDialogueProgress, setRatDialogueProgress] = useState(0);
+  const [dialogueProgress, setDialogueProgress] = useState(0);
   const [ratResponses, setRatResponses] = useState([]);
+  const [currentReaction, setCurrentReaction] = useState(null);
 
   function preloadRatImages() {
     const tempRatDateImages = [];
@@ -58,25 +61,35 @@ export function TalkingToRats(props) {
       }),
     ]).then(() => {
       setRatImagesLoaded(true);
-      setupNextRat();
+      setupNextRat(ratIndex);
     });
 
     // Finally, set the rat date images.
     setRatDateImages(tempRatDateImages);
   }
 
-  function onResponseSelect() {
-    if (ratIndex === props.activeRats.length - 1) {
-      props.goToRoseCeremony();
-      return;
-    }
-    setRatIndex(ratIndex + 1);
-    setupNextRat();
+  function onResponseSelect(response) {
+    showReaction(response.reaction);
   }
 
-  function setupNextRat() {
-    setRatDialogueProgress(0);
-    setRatResponses(getResponsesByRound(currentRatId, props.round, 3));
+  function showReaction(reaction) {
+    setCurrentReaction(reaction);
+    setTimeout(() => {
+      if (ratIndex === props.activeRats.length - 1) {
+        props.goToRoseCeremony();
+        return;
+      }
+
+      setCurrentReaction(null);
+      setupNextRat(ratIndex + 1);
+    }, REACTION_TIMEOUT);
+  }
+
+  function setupNextRat(nextRatIndex) {
+    setRatIndex(nextRatIndex);
+    setDialogueProgress(0);
+    const nextRatId = props.activeRats[nextRatIndex + 1];
+    setRatResponses(getResponsesByRound(nextRatId, props.round, 3));
   }
 
   // Preload if we haven't already.
@@ -85,15 +98,35 @@ export function TalkingToRats(props) {
   const currentRatId = props.activeRats[ratIndex];
   const ratData = getRatById(currentRatId);
   const ratName = ratData.name;
+  const ratReactionPos = ratData.reaction_pos;
   const ratDialogue = ratData.dialogue[props.round];
-  const currentRatDialogue = ratDialogue.slice(0, ratDialogueProgress);
+  const currentRatDialogue = ratDialogue.slice(0, dialogueProgress);
 
   useInterval(
     () => {
-      console.log(ratDialogueProgress);
-      setRatDialogueProgress(ratDialogueProgress + 1);
+      setDialogueProgress(dialogueProgress + 1);
     },
-    ratDialogueProgress < ratDialogue.length ? DIALOGUE_INTERVAL : null
+    dialogueProgress < ratDialogue.length ? DIALOGUE_INTERVAL : null
+  );
+
+  const ratDialogueHtml = (
+    <>
+      <div className="rat-dialogue" aria-hidden="true">
+        {currentRatDialogue}
+      </div>
+      <div className="visually-hidden">{ratDialogue}</div>
+      <div className="responses">
+        {ratResponses.map((response, ridx) => (
+          <button
+            key={`ratresponse${ridx}`}
+            className="response"
+            onClick={() => onResponseSelect(response)}
+          >
+            {response.response}
+          </button>
+        ))}
+      </div>
+    </>
   );
 
   return (
@@ -117,24 +150,26 @@ export function TalkingToRats(props) {
             {ratDateImage}
           </div>
         ))}
+        {currentReaction && (
+          <Reaction
+            src={`${currentReaction}.png`}
+            left={ratReactionPos[0] * 100}
+            top={ratReactionPos[1] * 100}
+          />
+        )}
         <div className="dialogue-container">
           <div className="rat-name">{ratName}</div>
           <div className="text-dialogue-container">
-            <div className="rat-dialogue" aria-hidden="true">
-              {currentRatDialogue}
-            </div>
-            <div className="visually-hidden">{ratDialogue}</div>
-            <div className="responses">
-              {ratResponses.map((response, ridx) => (
-                <button
-                  key={`ratresponse${ridx}`}
-                  className="response"
-                  onClick={onResponseSelect}
-                >
-                  {response.response}
-                </button>
-              ))}
-            </div>
+            {currentReaction ? (
+              <div className="rat-dialogue reacting">
+                <img
+                  src={`${REACTIONS_IMAGES_BASE_PATH}/${currentReaction}.png`}
+                  alt={`${ratName} is reacting with ${currentReaction}`}
+                />
+              </div>
+            ) : (
+              ratDialogueHtml
+            )}
           </div>
         </div>
       </div>
