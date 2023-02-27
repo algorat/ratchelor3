@@ -15,3 +15,40 @@
   position: relative;
   z-index: 1;
 }
+
+.proposing-rat-container {
+  display: flex;
+  column-gap: 20px;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.proposal-xlarge {
+  max-height: 600px;
+  max-width: 600px;
+}
+
+.proposal-large {
+  max-height: 450px;
+  max-width: 450px;
+}
+
+.proposal-med-large {
+  max-height: 370px;
+  max-width: 370px;
+}
+
+.proposal-medium {
+  max-height: 300px;
+}
+
+.proposal-med-small {
+  max-height: 250px;
+}
+
+.proposal-small {
+  max-width: 175px;
+  max-height: 175px;
+}

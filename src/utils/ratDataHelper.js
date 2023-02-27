@@ -77,7 +77,7 @@ export function getRandomEpiloguePhoto(ratId) {
   const matches = [];
   Object.entries(epilogueJson).filter(([key, value]) => {
     if (value.rats.includes(ratId)) {
-      matches.push(key);
+      matches.push({ src: key, rats: value.rats, description: value.text });
     }
   });
   const randomIdx = Math.floor(Math.random() * matches.length);

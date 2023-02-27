@@ -17,13 +17,15 @@ import React, { useState } from "react";
 
 const MAX_PREALOAD_TIME = 3000; // In ms.
 const DIALOGUE_INTERVAL = 30; // In ms;
-const REACTION_TIMEOUT = 1800; // In ms.
+const REACTION_TIMEOUT = 2000; // In ms.
+const DIALOGUE_ANIMATION = 500; // In ms.
 
 export function TalkingToRats(props) {
   const [ratIndex, setRatIndex] = useState(0);
   const [ratDateImages, setRatDateImages] = useState([]);
   const [ratImagesLoaded, setRatImagesLoaded] = useState(false);
   const [dialogueProgress, setDialogueProgress] = useState(0);
+  const [animatingDialogue, setAnimatingDialogue] = useState(true);
   const [ratResponses, setRatResponses] = useState([]);
   const [currentReaction, setCurrentReaction] = useState(null);
 
@@ -63,7 +65,7 @@ export function TalkingToRats(props) {
       }),
     ]).then(() => {
       setRatImagesLoaded(true);
-      setupNextRat(ratIndex);
+      setupNextRat(ratIndex, true);
     });
 
     // Finally, set the rat date images.
@@ -83,18 +85,24 @@ export function TalkingToRats(props) {
         props.goToRoseCeremony();
         return;
       }
-
-      setCurrentReaction(null);
       setupNextRat(ratIndex + 1);
     }, REACTION_TIMEOUT);
   }
 
-  function setupNextRat(nextRatIndex) {
-    setRatIndex(nextRatIndex);
-    setDialogueProgress(0);
-    const nextRatId = props.activeRats[nextRatIndex];
-    setRatResponses(getResponsesByRound(nextRatId, props.round, 3));
-    props.updateMusic(getTalkingMusic(nextRatIndex));
+  function setupNextRat(nextRatIndex, skipWait = false) {
+    setAnimatingDialogue(true);
+    setTimeout(
+      () => {
+        setCurrentReaction(null);
+        setAnimatingDialogue(false);
+        setRatIndex(nextRatIndex);
+        setDialogueProgress(0);
+        const nextRatId = props.activeRats[nextRatIndex];
+        setRatResponses(getResponsesByRound(nextRatId, props.round, 3));
+        props.updateMusic(getTalkingMusic(nextRatIndex));
+      },
+      skipWait ? 0 : DIALOGUE_ANIMATION
+    );
   }
 
   // Preload if we haven't already.
@@ -147,7 +155,7 @@ export function TalkingToRats(props) {
           <div
             key={`rat-date-${idx}`}
             className={
-              ratImagesLoaded && idx === ratIndex
+              ratImagesLoaded && idx === ratIndex && !animatingDialogue
                 ? "current-rat contestant"
                 : "contestant"
             }
@@ -162,7 +170,11 @@ export function TalkingToRats(props) {
             top={ratReactionPos[1] * 100}
           />
         )}
-        <div className="dialogue-container">
+        <div
+          className={`dialogue-container ${
+            animatingDialogue ? "dialogue-out" : ""
+          }`}
+        >
           <div className="rat-name">{ratName}</div>
           <div className="text-dialogue-container">
             {currentReaction ? (

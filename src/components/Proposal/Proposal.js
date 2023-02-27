@@ -19,16 +19,18 @@ export function Proposal(props) {
         src={`${BACKGROUNDS_IMAGES_BASE_PATH}/beach.png`}
         alt=""
       />
-      <img
-        alt="the rat that you're proposing to"
-        className={`final-rat propose-${finalRat.size}`}
-        src={`${CHARACTERS_IMAGES_BASE_PATH}/${props.finalRat}.png`}
-      />
-      <img
-        className="proposing-rat"
-        alt="you are on one knee proposing"
-        src={`${PLAYER_IMAGES_BASE_PATH}/${playerFile}`}
-      />
+      <div className="proposing-rat-container">
+        <img
+          alt="the rat that you're proposing to"
+          className={`final-rat proposal-${finalRat.size}`}
+          src={`${CHARACTERS_IMAGES_BASE_PATH}/${props.finalRat}.png`}
+        />
+        <img
+          className="proposing-rat"
+          alt="you are on one knee proposing"
+          src={`${PLAYER_IMAGES_BASE_PATH}/${playerFile}`}
+        />
+      </div>
       <header>
         <button onClick={props.goToAnimeEnding}>Continue</button>
       </header>

@@ -1,4 +1,4 @@
-.photos {
+.epilogue-screen .photos {
   position: relative;
   display: grid;
   padding: 130px 100px 0 100px;
@@ -7,11 +7,32 @@
   z-index: 10;
 }
 
-.photos img {
+.epilogue-screen .photos img {
   width: 100%;
 }
 
-.epilogue-background {
+.epilogue-screen .photos img:hover {
+  transition: transform 300ms;
+  z-index: 100;
+  transform: scale(1.3) rotateZ(10deg);
+}
+
+.epilogue-screen .epilogue-photo-container {
+  position: relative;
+}
+
+.epilogue-screen .epilogue-photo-description {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  width: 120%;
+  z-index: 2000;
+  background-color: var(--secondary-background-color);
+  padding: 12px;
+}
+
+.epilogue-screen .epilogue-background {
   position: absolute;
   top: 0;
   left: 0;
