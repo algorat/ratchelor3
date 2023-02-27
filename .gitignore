@@ -28,4 +28,5 @@ yarn-error.log*
 # autosave art files
 *-autosave.kra
 
-.firebase*
+.firebase/*
+*.cache
