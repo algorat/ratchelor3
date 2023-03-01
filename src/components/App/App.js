@@ -61,6 +61,9 @@ function RatchelorApp() {
   const [music, setMusic] = useState(null);
   const [musicTimestamp, setMusicTimestamp] = useState(0);
 
+  // Todo
+  const [ratFeelings, setRatFeelings] = useState({});
+
   // The player avatar that was selected.
   const [playerAvatarIndex, setPlayerAvatarIndex] = useState(null);
 
@@ -102,15 +105,15 @@ function RatchelorApp() {
   }
 
   // TODO
-  const goToRoseCeremony = () => {
+  function goToRoseCeremony() {
     updateMusic("rose_ceremony.mp3");
     playInterlude("Choose some rats", () => {
       setGameStage(GameStages.ROSE_CEREMONY);
     });
-  };
+  }
 
   // TODO
-  const goToNextRound = (chosenRats) => {
+  function goToNextRound(chosenRats) {
     if (round === NUM_ROUNDS - 1) {
       updateMusic("romantic_sad.mp3");
       playInterlude("Proposal!", () => {
@@ -126,43 +129,52 @@ function RatchelorApp() {
       setActiveRats(chosenRats);
       setRandomizedActiveRats(chosenRats.sort(() => 0.5 - Math.random()));
     });
-  };
+  }
 
   // TODO
-  const goToEpilogue = () => {
+  function goToEpilogue() {
     playInterlude("What happened to the others?", () => {
       setGameStage(GameStages.EPILOGUE);
     });
-  };
+  }
 
   // TODO
-  const goToAnimeEnding = () => {
+  function goToAnimeEnding() {
     const chosenRat = activeRats[0];
     updateMusic(getRatById(chosenRat)?.ending);
     playInterlude("Ending!", () => {
       setGameStage(GameStages.ANIME_ENDING);
     });
-  };
+  }
 
-  const resetGame = () => {
+  // TODO
+  function updateRatFeelings(ratId, feelingScore) {
+    const updatedRatScore = ratFeelings[ratId] ?? 0;
+    const newFeelings = { ...ratFeelings };
+    newFeelings[ratId] = updatedRatScore + feelingScore;
+    setRatFeelings(newFeelings);
+  }
+
+  function resetGame() {
     setGameStage(GameStages.INTRO);
     setRound(0);
     setPlayerAvatarIndex(null);
     setActiveRats([]);
     setRandomizedActiveRats([]);
     setOriginalRats([]);
+    setRatFeelings({});
     updateMusic("intro.mp3");
-  };
+  }
 
-  const updateSfx = (sfx) => {
+  function updateSfx(sfx) {
     setSfx(sfx);
     setSfxTimestamp(Date.now());
-  };
+  }
 
-  const updateMusic = (music) => {
+  function updateMusic(music) {
     setMusic(music);
     setMusicTimestamp(Date.now());
-  };
+  }
 
   let gameScreenContents = "";
   switch (gameStage) {
@@ -200,6 +212,7 @@ function RatchelorApp() {
           goToRoseCeremony={goToRoseCeremony}
           updateSfx={updateSfx}
           updateMusic={updateMusic}
+          updateRatFeelings={updateRatFeelings}
         />
       );
       break;
@@ -211,6 +224,7 @@ function RatchelorApp() {
           maxRats={ROSES_PER_ROUND[round]}
           goToNextRound={goToNextRound}
           updateSfx={updateSfx}
+          ratFeelings={ratFeelings}
         />
       );
       break;

@@ -73,6 +73,7 @@ export function TalkingToRats(props) {
   }
 
   function onResponseSelect(response) {
+    props.updateRatFeelings(props.activeRats[ratIndex], response.score);
     showReaction(response.reaction);
   }
 

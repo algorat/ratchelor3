@@ -47,20 +47,28 @@ function SelectableRat(props) {
   return (
     <div
       onClick={props.onClick}
-      className={`rose-ceremony-rat ${ratData.size}`}
+      className={`rose-ceremony-rat ${ratData.size} ${
+        props.leaving ? "leaving" : ""
+      }`}
     >
       <img
-        className={ratState === ratStates.NEVER_CHOSEN ? "show" : ""}
+        className={
+          ratState === ratStates.NEVER_CHOSEN && !props.leaving ? "show" : ""
+        }
         src={file}
         alt={`${ratData.name} waiting for you to make a decision`}
       />
       <img
-        className={ratState === ratStates.CHOSEN ? "show" : ""}
+        className={
+          ratState === ratStates.CHOSEN && !props.leaving ? "show" : ""
+        }
         src={roseFile}
         alt={`${ratData.name} holding a rose`}
       />
       <img
-        className={ratState === ratStates.UNCHOSEN ? "show" : ""}
+        className={
+          ratState === ratStates.UNCHOSEN || props.leaving ? "show" : ""
+        }
         src={sadFile}
         alt={`a sad ${ratData.name}`}
       />
@@ -74,13 +82,35 @@ function sizeCompare(rat1, rat2) {
   return sizeOrderings[rat2Size] - sizeOrderings[rat1Size];
 }
 
+function getLeavingRat(ratFeelings, activeRats) {
+  let lowestRat = null;
+  let min = 0;
+  for (const [key, value] of Object.entries(ratFeelings)) {
+    if (!activeRats.includes(key)) continue;
+    if (value < min) {
+      min = value;
+      lowestRat = key;
+    }
+  }
+  return lowestRat;
+}
+
 export function RoseCeremony(props) {
+  console.log(props.ratFeelings);
+
   const ratsOrderedBySize = props.activeRats.sort(sizeCompare);
   const [selectedRats, setSelectedRats] = useState([]);
   const [previousRats, setPreviousRats] = useState([]);
 
+  const leavingRat = getLeavingRat(props.ratFeelings, props.activeRats);
+
   const selectRat = (selectedRatId) => {
-    console.log("selected");
+    // Is it a rat who is leaving already?
+    if (selectedRatId === leavingRat) {
+      props.updateSfx("bad_action.wav");
+      return;
+    }
+
     // Is it already selected?
     if (selectedRats.includes(selectedRatId)) {
       props.updateSfx("wobble.mp3");
@@ -101,6 +131,16 @@ export function RoseCeremony(props) {
   const bouquetNum = props.maxRats - selectedRats.length;
 
   let instructions = `Choose ${bouquetNum} rats to continue.`;
+  if (props.maxRats === 1) {
+    instructions = "Choose a rat to propose to.";
+  }
+
+  if (leavingRat) {
+    const leavingRatData = getRatById(leavingRat);
+    instructions = `${leavingRatData.name} was devestated by your behavior and
+      has decided to leave the show. ${instructions}`;
+  }
+
   if (bouquetNum === 0) {
     instructions = (
       <button onClick={() => props.goToNextRound(selectedRats)}>
@@ -124,6 +164,7 @@ export function RoseCeremony(props) {
               key={`roseceremonyrat${idx}`}
               rat={rat}
               ratState={ratState}
+              leaving={leavingRat === rat}
               onClick={() => {
                 selectRat(rat);
               }}

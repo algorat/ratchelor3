@@ -30,10 +30,15 @@
   justify-content: flex-end;
 }
 
-.rose-ceremony-rat:hover {
+.rose-ceremony-rat:hover:not(.leaving) {
   transition: transform 200ms;
   transform: scale(1.3);
   cursor: pointer;
+}
+
+.rose-ceremony-rat.leaving {
+  animation: fadeOut 5s 5s forwards;
+  filter: grayscale(1);
 }
 
 .rose-ceremony-rat img {
@@ -76,4 +81,14 @@
 
 .rose-ceremony-screen .small img {
   height: 120px;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
 }
