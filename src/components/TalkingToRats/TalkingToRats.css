@@ -1,0 +1,91 @@
+.talking-to-rats-screen {
+  position: relative;
+  overflow: hidden;
+  background-image: url('../../assets/images/couch.gif');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 900px;
+  height: 100%;
+  position: relative;
+}
+
+.talking-to-rats-screen img {
+  width: 100%;
+  height: 100%;
+}
+
+.player-rat,
+.contestant {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  transition: right 800ms ease-in-out;
+}
+
+.contestant:not(.current-rat) {
+  right: 100%;
+}
+
+.talking-to-rats-screen .rat-name {
+  font-family: var(--body-font-stack);
+  font-size: 24px;
+  background-color: var(--secondary-background-color);
+  color: var(--text-color);
+
+  width: fit-content;
+  padding: 5px 20px;
+  margin-left: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.talking-to-rats-screen .dialogue-img {
+  animation: fadeIn ease 2s;
+  width: 120px;
+}
+
+.talking-to-rats-screen .rat-dialogue {
+  font-family: var(--body-font-stack);
+  font-size: 21px;
+  padding: 15px 35px 90px 35px;
+  background-color: var(--background-color);
+  width: 100%;
+  border-top: 13px solid var(--secondary-background-color);
+}
+
+.talking-to-rats-screen .rat-dialogue.reacting {
+  padding: 35px;
+}
+
+.talking-to-rats-screen .rat-dialogue img {
+  height: 80px;
+  width: auto;
+}
+
+.talking-to-rats-screen .dialogue-container {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  transition: bottom 800ms ease-in-out;
+}
+
+.talking-to-rats-screen .dialogue-container.dialogue-out {
+  bottom: -400px;
+}
+
+.talking-to-rats-screen button {
+  font-family: var(--body-font-stack);
+  font-size: 17px;
+  padding: 5px 10px;
+  margin-right: 4px;
+  border: 2px;
+}
+
+.talking-to-rats-screen .responses {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 25px;
+}

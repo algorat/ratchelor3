@@ -1,20 +1,15 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import "./index.css";
-import "./mobile.css";
-import App from "./App";
+import "./variables.css";
+import RatchelorApp from "./components/App/App";
 
-const resizeHandler = () => {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty("--vh", `${vh}px`);
-};
-window.addEventListener("resize", resizeHandler);
-
-resizeHandler();
-
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
+    <RatchelorApp />
+  </React.StrictMode>
 );
+
+// TODO(connie): Revisit web vitals at a later time. https://bit.ly/CRA-vitals
+// reportWebVitals();

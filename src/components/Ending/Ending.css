@@ -1,0 +1,39 @@
+.ending-screen {
+  position: relative;
+  overflow: hidden;
+}
+
+.ending-art {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 0;
+}
+
+.ending-dialogue {
+  font-family: 'Yusei Magic';
+  font-size: 20px;
+  position: absolute;
+  padding: 20px 40px;
+  animation: slideUp ease 7s;
+  background-color: var(--background-color);
+  color: #1c214a;
+  bottom: 0px;
+  width: 100%;
+}
+
+.epilogue-button {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+}
+
+@keyframes slideUp {
+  0% {
+    bottom: -500px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}

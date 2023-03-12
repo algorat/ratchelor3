@@ -1,0 +1,5848 @@
+{
+  "zippy": {
+    "0": [
+      {
+        "response": "Thank You",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "pink",
+        "score": 0
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "pink",
+        "score": 0
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "bemused",
+        "score": 0
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "bemused",
+        "score": 0
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "bemused",
+        "score": 0
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "pink",
+        "score": 0
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "pink",
+        "score": 0
+      }
+    ],
+    "1": [
+      {
+        "response": "I know what you mean",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "pink",
+        "score": 0
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "pink",
+        "score": 0
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "bemused",
+        "score": 0
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "pink",
+        "score": 0
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "pink",
+        "score": 0
+      }
+    ],
+    "2": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Thank You",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "pink",
+        "score": 0
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "bemused",
+        "score": 0
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "bemused",
+        "score": 0
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "pink",
+        "score": 0
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "pink",
+        "score": 0
+      }
+    ],
+    "3": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "broken_heart"
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "broken_heart",
+        "score": 0
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "broken_heart",
+        "score": 0
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "broken_heart",
+        "score": 0
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "broken_heart",
+        "score": 0
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "heart",
+        "score": 2
+      }
+    ],
+    "4": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "pink",
+        "score": 0
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "pink",
+        "score": 0
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "pink",
+        "score": 0
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "pink",
+        "score": 0
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "pink",
+        "score": 0
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "pink",
+        "score": 0
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "bemused",
+        "score": 0
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "bemused",
+        "score": 0
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "pink",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "pink",
+        "score": 0
+      }
+    ]
+  },
+  "lepix": {
+    "0": [
+      {
+        "response": "Don't worry.",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "SQUEAK",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "angry",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "no",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "Yes",
+        "reaction": "heyes",
+        "score": 2
+      }
+    ],
+    "1": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "I know what you mean",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "Thank You",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "SQUEAK",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "angry",
+        "score": 0
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "angry",
+        "score": 0
+      }, 
+      {
+        "response": "That makes me think...",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "Yes",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "angry",
+        "score": 0
+      }
+    ],
+    "2": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "I know what you mean",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "SQUEAK",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "angry",
+        "score": 0
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "no",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "Yes",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "angry",
+        "score": 0
+      }
+    ],
+    "3": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "angry",
+        "score": 0
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "SQUEAK",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "angry",
+        "score": 0
+      }, 
+      {
+        "response": "Yes",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "angry",
+        "score": 0
+      }
+    ],
+    "4": [
+      {
+        "response": "Why?",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "SQUEAK",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "angry",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "good",
+        "score": 0
+      }
+    ]
+  },
+  "fizzywig": {
+    "0": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "tear",
+        "score": -2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "I can't imagine what that's like",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "no",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "Yes",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "good",
+        "score": 0
+      }
+    ],
+    "1": [
+      {
+        "response": "Let's talk about something else",
+        "reaction": "tear",
+        "score": -2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "I can't imagine what that's like",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "no",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "Yes",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "good",
+        "score": 0
+      }
+    ],
+    "2": [
+      {
+        "response": "Let's talk about something else",
+        "reaction": "tear",
+        "score": -2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "I can't imagine what that's like",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "no",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "Yes",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "good",
+        "score": 0
+      }
+    ],
+    "3": [
+      {
+        "response": "Let's talk about something else",
+        "reaction": "tear",
+        "score": -2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "I can't imagine what that's like",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "good",
+        "score": 0
+      }
+    ],
+    "4": [
+      {
+        "response": "Let's talk about something else",
+        "reaction": "tear",
+        "score": -2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "I can't imagine what that's like",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "good",
+        "score": 0
+      }
+    ]
+  },
+  "moom": {
+    "0": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Don't worry.",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "broken_heart",
+        "score": 0
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I understand",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "cry",
+        "score": -1
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "neutral",
+        "score": 0
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "heart",
+        "score": 2
+      }
+    ],
+    "1": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "broken_heart",
+        "score": 0
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "cry",
+        "score": -1
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "broken_heart",
+        "score": 0
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "no",
+        "reaction": "broken_heart",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "cry",
+        "score": -1
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "cry",
+        "score": -1
+      }
+    ],
+    "2": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "broken_heart",
+        "score": 0
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I can't imagine what that's like",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "cry",
+        "score": -1
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "heart",
+        "score": 2
+      }
+    ],
+    "3": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "broken_heart",
+        "score": 0
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "cry",
+        "score": -1
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "no",
+        "reaction": "broken_heart",
+        "score": 0
+      }, 
+      {
+        "response": "Yes",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "heart",
+        "score": 2
+      }
+    ],
+    "4": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I know what you mean",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Thank You",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "cry",
+        "score": -1
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "heyes",
+        "score": 2
+      }
+    ]
+  },
+  "eggs": {
+    "0": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "side_eye",
+        "score": 0
+      }, 
+      {
+        "response": "Don't worry.",
+        "reaction": "bemused",
+        "score": 0
+      }, 
+      {
+        "response": "I know what you mean",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "Thank You",
+        "reaction": "bemused",
+        "score": 0
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "bemused",
+        "score": 0
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "bemused",
+        "score": 0
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "bemused",
+        "score": 0
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "bemused",
+        "score": 0
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "bemused",
+        "score": 0
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "bemused",
+        "score": 0
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "love",
+        "score": 0
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "love",
+        "score": 0
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "I can't imagine what that's like",
+        "reaction": "bemused",
+        "score": 0
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "bemused",
+        "score": 0
+      }, 
+      {
+        "response": "I understand",
+        "reaction": "love",
+        "score": 0
+      }, 
+      {
+        "response": "Ja",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "bemused",
+        "score": 0
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "bemused",
+        "score": 0
+      }, 
+      {
+        "response": "That makes me think...",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "bemused",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "bemused",
+        "score": 0
+      }
+    ],
+    "1": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "big_smile",
+        "score": 2
+      }
+    ],
+    "2": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I know what you mean",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "frown",
+        "score": -1
+      }, 
+      {
+        "response": "wow! you are so smart",
+        "reaction": "heyes",
+        "score": 2
+      }
+    ],
+    "3": [
+      {
+        "response": "I'm so happy for you",
+        "reaction": "three_smile",
+        "score": 0
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "love",
+        "score": 0
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "three_heyes",
+        "score": 0
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "three_frown",
+        "score": 0
+      }, 
+      {
+        "response": "I understand",
+        "reaction": "three_smile",
+        "score": 0
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "three_frown",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "three_smile",
+        "score": 0
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "three_frown",
+        "score": 0
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "smile",
+        "score": 1
+      }
+    ],
+    "4": [
+      {
+        "response": "Thank You",
+        "reaction": "three_heyes",
+        "score": 0
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "three_heyes",
+        "score": 0
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "three_heyes",
+        "score": 0
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "three_heyes",
+        "score": 0
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "three_frown",
+        "score": 0
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "three_cry",
+        "score": 0
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "three_frown",
+        "score": 0
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "three_cry",
+        "score": 0
+      }
+    ]
+  },
+  "boyboymysterio": {
+    "0": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I know what you mean",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Thank You",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I understand",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "That makes me think...",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "wink",
+        "score": 1
+      }
+    ],
+    "1": [
+      {
+        "response": "I know what you mean",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Thank You",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I understand",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "That makes me think...",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "no",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Yes",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "wink",
+        "score": 1
+      }
+    ],
+    "2": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I can't imagine what that's like",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I understand",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "That makes me think...",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "wink",
+        "score": 1
+      }
+    ],
+    "3": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Don't worry.",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I know what you mean",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Thank You",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I can't imagine what that's like",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I understand",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "That makes me think...",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "wink",
+        "score": 1
+      }
+    ],
+    "4": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Don't worry.",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I know what you mean",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Thank You",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I can't imagine what that's like",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I understand",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "That makes me think...",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "wink",
+        "score": 1
+      }
+    ]
+  },
+  "barronhotlands": {
+    "0": [
+      {
+        "response": "Thank You",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I understand",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "side_eye",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "side_eye",
+        "score": 0
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "side_eye",
+        "score": 0
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "smile",
+        "score": 1
+      }
+    ],
+    "1": [
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "juice",
+        "score": 0
+      }
+    ],
+    "2": [
+      {
+        "response": "I know what you mean",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "bemused",
+        "score": 0
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "side_eye",
+        "score": 0
+      }
+    ],
+    "3": [
+      {
+        "response": "Let's talk about something else",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I can't imagine what that's like",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "I understand",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "frown",
+        "score": -1
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "blush",
+        "score": 0
+      }
+    ],
+    "4": [
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "blush",
+        "score": 0
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "big_smile",
+        "score": 2
+      }
+    ]
+  },
+  "moderna": {
+    "0": [
+      {
+        "response": "I know what you mean",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "Thank You",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "sad",
+        "score": -1
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "I can't imagine what that's like",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "I understand",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "side_eye",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "side_eye",
+        "score": 0
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "smile",
+        "score": 1
+      }
+    ],
+    "1": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "I know what you mean",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "sad",
+        "score": -1
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "sad",
+        "score": -1
+      }, 
+      {
+        "response": "I understand",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "sad",
+        "score": -1
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "sad",
+        "score": -1
+      }
+    ],
+    "2": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "I know what you mean",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "sad",
+        "score": -1
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "I can't imagine what that's like",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "I understand",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "sad",
+        "score": -1
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "sad",
+        "score": -1
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "heyes",
+        "score": 2
+      }
+    ],
+    "3": [
+      {
+        "response": "Don't worry.",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I know what you mean",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "tear",
+        "score": -2
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "I can't imagine what that's like",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "I understand",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "angry",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "tear",
+        "score": -2
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "tear",
+        "score": -2
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "no",
+        "reaction": "mad",
+        "score": 0
+      }, 
+      {
+        "response": "Yes",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "mad",
+        "score": 0
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "mad",
+        "score": 0
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "mad",
+        "score": 0
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "heyes",
+        "score": 2
+      }
+    ],
+    "4": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I know what you mean",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "Thank You",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "sad",
+        "score": -1
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "blush",
+        "score": 0
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "I can't imagine what that's like",
+        "reaction": "side_eye",
+        "score": 0
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "I understand",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "angry",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "sad",
+        "score": -1
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "tear",
+        "score": -2
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "angry",
+        "score": 0
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "heyes",
+        "score": 2
+      }
+    ]
+  },
+  "sharpie": {
+    "0": [
+      {
+        "response": "Don't worry.",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "angry",
+        "score": 0
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "angry",
+        "score": 0
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "angry",
+        "score": 0
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "angry",
+        "score": 0
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "wow! you are so smart",
+        "reaction": "big_smile",
+        "score": 2
+      }
+    ],
+    "1": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "broken_heart",
+        "score": 0
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I understand",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "broken_heart",
+        "score": 0
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "neutral",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "broken_heart",
+        "score": 0
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "broken_heart",
+        "score": 0
+      }
+    ],
+    "2": [
+      {
+        "response": "*Nod*",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "no",
+        "reaction": "cry",
+        "score": -1
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "broken_heart",
+        "score": 0
+      }, 
+      {
+        "response": "Should I tip you?",
+        "reaction": "money",
+        "score": 0
+      }
+    ],
+    "3": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Don't worry.",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "angry",
+        "score": 0
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "angry",
+        "score": 0
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "angry",
+        "score": 0
+      }
+    ],
+    "4": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "angry",
+        "score": 0
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "angry",
+        "score": 0
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "no",
+        "reaction": "angry",
+        "score": 0
+      }
+    ]
+  },
+  "martine": {
+    "0": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I know what you mean",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I understand",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "cry",
+        "score": -1
+      }
+    ],
+    "1": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Don't worry.",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I know what you mean",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "heyes",
+        "score": 2
+      }
+    ],
+    "2": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I know what you mean",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I can't imagine what that's like",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "I understand",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "smile",
+        "score": 1
+      }
+    ],
+    "3": [
+      {
+        "response": "I value you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "no",
+        "reaction": "cry",
+        "score": -1
+      }, 
+      {
+        "response": "Yes",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "sad",
+        "score": -1
+      }
+    ],
+    "4": [
+      {
+        "response": "Don't worry.",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I can't imagine what that's like",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I understand",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "cry",
+        "score": -1
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "sad",
+        "score": -1
+      }
+    ]
+  },
+  "klaus": {
+    "0": [
+      {
+        "response": "Thank You",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "Ja",
+        "reaction": "pretzel",
+        "score": 0
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "wow",
+        "score": 0
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "heyes",
+        "score": 2
+      }
+    ],
+    "1": [
+      {
+        "response": "Thank You",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "Ja",
+        "reaction": "pretzel",
+        "score": 0
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "tear",
+        "score": -2
+      }
+    ],
+    "2": [
+      {
+        "response": "Let's talk about something else",
+        "reaction": "tear",
+        "score": -2
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Ja",
+        "reaction": "pretzel",
+        "score": 0
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "tear",
+        "score": -2
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "big_smile",
+        "score": 2
+      }
+    ],
+    "3": [
+      {
+        "response": "Thank You",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "tear",
+        "score": -2
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Ja",
+        "reaction": "pretzel",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "big_frown",
+        "score": -1
+      }
+    ],
+    "4": [
+      {
+        "response": "Thank You",
+        "reaction": "pretzel",
+        "score": 0
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "pretzel",
+        "score": 0
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "pretzel",
+        "score": 0
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "pretzel",
+        "score": 0
+      }, 
+      {
+        "response": "Ja",
+        "reaction": "pretzel",
+        "score": 0
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "pretzel",
+        "score": 0
+      }, 
+      {
+        "response": "Should I tip you?",
+        "reaction": "pretzel",
+        "score": 0
+      }
+    ]
+  },
+  "empire": {
+    "0": [
+      {
+        "response": "Let's talk about something else",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "wow! you are so smart",
+        "reaction": "highfive",
+        "score": 1
+      }
+    ],
+    "1": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "I know what you mean",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I can't imagine what that's like",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "I understand",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "wow! you are so smart",
+        "reaction": "highfive",
+        "score": 1
+      }
+    ],
+    "2": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "Don't worry.",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "I know what you mean",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "I can't imagine what that's like",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "wow! you are so smart",
+        "reaction": "highfive",
+        "score": 1
+      }
+    ],
+    "3": [
+      {
+        "response": "I know what you mean",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "Thank You",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "I understand",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "That makes me think...",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "no",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "wink",
+        "score": 1
+      }
+    ],
+    "4": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Thank You",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "no",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "Yes",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "heart",
+        "score": 2
+      }
+    ]
+  },
+  "esche": {
+    "0": [
+      {
+        "response": "Let's talk about something else",
+        "reaction": "sad",
+        "score": -1
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "sad",
+        "score": -1
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "big_smile",
+        "score": 2
+      }
+    ],
+    "1": [
+      {
+        "response": "*Nod*",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "no",
+        "reaction": "sad",
+        "score": -1
+      }, 
+      {
+        "response": "Yes",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "sad",
+        "score": -1
+      }
+    ],
+    "2": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "I know what you mean",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "sad",
+        "score": -1
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I can't imagine what that's like",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "tear",
+        "score": -2
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "smile",
+        "score": 1
+      }
+    ],
+    "3": [
+      {
+        "response": "Thank You",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "sad",
+        "score": -1
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I can't imagine what that's like",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "sad",
+        "score": -1
+      }
+    ],
+    "4": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Thank You",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "cry",
+        "score": -1
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "big_smile",
+        "score": 2
+      }
+    ]
+  },
+  "podolico": {
+    "0": [
+      {
+        "response": "Let's talk about something else",
+        "reaction": "frown",
+        "score": -1
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I can't imagine what that's like",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "wow",
+        "score": -1
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "bemused",
+        "score": 0
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "bemused",
+        "score": 0
+      }
+    ],
+    "1": [
+      {
+        "response": "I know what you mean",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "frown",
+        "score": -1
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "wow",
+        "score": -1
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "juice",
+        "score": 0
+      }
+    ],
+    "2": [
+      {
+        "response": "I'm so happy for you",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "side_eye",
+        "score": 0
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "wow",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "smile",
+        "score": 1
+      }
+    ],
+    "3": [
+      {
+        "response": "I know what you mean",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "wow",
+        "score": 0
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "neutral",
+        "score": 0
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "mild_frown",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "mild_frown",
+        "score": 0
+      }
+    ],
+    "4": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I know what you mean",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I understand",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "wow",
+        "score": 0
+      }
+    ]
+  },
+  "celery": {
+    "0": [
+      {
+        "response": "I know what you mean",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "wow",
+        "score": 0
+      }, 
+      {
+        "response": "wow! you are so smart",
+        "reaction": "big_smile",
+        "score": 2
+      }
+    ],
+    "1": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "cry",
+        "score": -1
+      }
+    ],
+    "2": [
+      {
+        "response": "I know what you mean",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "cry",
+        "score": -1
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "cry",
+        "score": -1
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "wow! you are so smart",
+        "reaction": "big_smile",
+        "score": 2
+      }
+    ],
+    "3": [
+      {
+        "response": "Thank You",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "cry",
+        "score": -1
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "Should I tip you?",
+        "reaction": "wow",
+        "score": 0
+      }, 
+      {
+        "response": "wow! you are so smart",
+        "reaction": "wink",
+        "score": 1
+      }
+    ],
+    "4": [
+      {
+        "response": "Thank You",
+        "reaction": "wink",
+        "score": 1
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "cry",
+        "score": -1
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "cry",
+        "score": -1
+      }, 
+      {
+        "response": "wow! you are so smart",
+        "reaction": "big_smile",
+        "score": 2
+      }
+    ]
+  },
+  "shibby": {
+    "0": [
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "side_eye",
+        "score": 0
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "mad",
+        "score": 0
+      }
+    ],
+    "1": [
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "side_eye",
+        "score": 0
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "mad",
+        "score": 0
+      }
+    ],
+    "2": [
+      {
+        "response": "You're a keeper",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "side_eye",
+        "score": 0
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "mad",
+        "score": 0
+      }
+    ],
+    "3": [
+      {
+        "response": "Don't worry.",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I know what you mean",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "side_eye",
+        "score": 0
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "side_eye",
+        "score": 0
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "mad",
+        "score": 0
+      }
+    ],
+    "4": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "side_eye",
+        "score": 0
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "mad",
+        "score": 0
+      }
+    ]
+  },
+  "simmsammo": {
+    "0": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "blush",
+        "score": 0
+      }, 
+      {
+        "response": "I know what you mean",
+        "reaction": "blush",
+        "score": 0
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "tear",
+        "score": -2
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "blush",
+        "score": 0
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "blush",
+        "score": 0
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "tear",
+        "score": -2
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "tear",
+        "score": -2
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "blush",
+        "score": 0
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "tear",
+        "score": -2
+      }
+    ],
+    "1": [
+      {
+        "response": "Proud of you",
+        "reaction": "blush",
+        "score": 0
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "blush",
+        "score": 0
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "blush",
+        "score": 0
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "blush",
+        "score": 0
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "tear",
+        "score": -2
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "tear",
+        "score": -2
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "blush",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "tear",
+        "score": -2
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "tear",
+        "score": -2
+      }
+    ],
+    "2": [
+      {
+        "response": "Proud of you",
+        "reaction": "blush",
+        "score": 0
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "blush",
+        "score": 0
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "blush",
+        "score": 0
+      }, 
+      {
+        "response": "I can't imagine what that's like",
+        "reaction": "blush",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "blush",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "tear",
+        "score": -2
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "tear",
+        "score": -2
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "tear",
+        "score": -2
+      }
+    ],
+    "3": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "blush",
+        "score": 0
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "blush",
+        "score": 0
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "frown",
+        "score": -1
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "blush",
+        "score": 0
+      }, 
+      {
+        "response": "I can't imagine what that's like",
+        "reaction": "blush",
+        "score": 0
+      }
+    ],
+    "4": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "blush",
+        "score": 0
+      }, 
+      {
+        "response": "Thank You",
+        "reaction": "blush",
+        "score": 0
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "blush",
+        "score": 0
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "blush",
+        "score": 0
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "blush",
+        "score": 0
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "cry",
+        "score": -1
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "cry",
+        "score": -1
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "cry",
+        "score": -1
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "cry",
+        "score": -1
+      }
+    ]
+  },
+  "seansean": {
+    "0": [
+      {
+        "response": "Thank You",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "highfive",
+        "score": 1
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "neutral",
+        "score": 0
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "bemused",
+        "score": 0
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "blush",
+        "score": 0
+      }
+    ],
+    "1": [
+      {
+        "response": "I know what you mean",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "bemused",
+        "score": 0
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "frown",
+        "score": -1
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "neutral",
+        "score": 0
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "frown",
+        "score": -1
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "blush",
+        "score": 0
+      }
+    ],
+    "2": [
+      {
+        "response": "I know what you mean",
+        "reaction": "frown",
+        "score": -1
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "frown",
+        "score": -1
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "frown",
+        "score": -1
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "frown",
+        "score": -1
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "blush",
+        "score": 0
+      }
+    ],
+    "3": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Thank You",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "blush",
+        "score": 0
+      }
+    ],
+    "4": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "big_frown",
+        "score": -1
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "blush",
+        "score": 0
+      }
+    ]
+  },
+  "ultrarat": {
+    "0": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "frown",
+        "score": -1
+      }
+    ],
+    "1": [
+      {
+        "response": "Don't worry.",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "neutral",
+        "score": 0
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "bemused",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "good",
+        "score": 0
+      }
+    ],
+    "2": [
+      {
+        "response": "Don't worry.",
+        "reaction": "good",
+        "score": 0
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "side_eye",
+        "score": 0
+      }, 
+      {
+        "response": "SQUEAK",
+        "reaction": "great",
+        "score": 0
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "side_eye",
+        "score": 0
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "chill",
+        "score": 0
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "wow",
+        "score": 0
+      }, 
+      {
+        "response": "Should I tip you?",
+        "reaction": "money",
+        "score": 0
+      }
+    ],
+    "3": [
+      {
+        "response": "You're a keeper",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "neutral",
+        "score": 0
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "smile",
+        "score": 1
+      }
+    ],
+    "4": [
+      {
+        "response": "You're a keeper",
+        "reaction": "love",
+        "score": 0
+      }, 
+      {
+        "response": "High five!",
+        "reaction": "neutral",
+        "score": 0
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "love",
+        "score": 0
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "cry",
+        "score": -1
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "heyes",
+        "score": 2
+      }
+    ]
+  },
+  "pederson": {
+    "0": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Don't worry.",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I understand",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "That sounds like a personal problem",
+        "reaction": "tear",
+        "score": -2
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "tear",
+        "score": -2
+      }
+    ],
+    "1": [
+      {
+        "response": "I know what you mean",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "confused",
+        "score": 0
+      }
+    ],
+    "2": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "That is a lot to consider",
+        "reaction": "neutral",
+        "score": 0
+      }
+    ],
+    "3": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "tear",
+        "score": -2
+      }, 
+      {
+        "response": "That makes me think...",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "tear",
+        "score": -2
+      }
+    ],
+    "4": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I know what you mean",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "tear",
+        "score": -2
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "confused",
+        "score": 0
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "tear",
+        "score": -2
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "tear",
+        "score": -2
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "heart",
+        "score": 2
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "heart",
+        "score": 2
+      }
+    ]
+  },
+  "sminny": {
+    "0": [
+      {
+        "response": "I know what you mean",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Thank You",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "neutral",
+        "score": 0
+      }, 
+      {
+        "response": "That sounds like fun",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "That makes me think...",
+        "reaction": "juice",
+        "score": 0
+      }
+    ],
+    "1": [
+      {
+        "response": "Thank you for opening up to me",
+        "reaction": "money",
+        "score": 0
+      }, 
+      {
+        "response": "I know what you mean",
+        "reaction": "money",
+        "score": 0
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "money",
+        "score": 0
+      }, 
+      {
+        "response": "Let's talk about something else",
+        "reaction": "sad",
+        "score": -1
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "money",
+        "score": 0
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "money",
+        "score": 0
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "money",
+        "score": 0
+      }, 
+      {
+        "response": "You have a way with words",
+        "reaction": "money",
+        "score": 0
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "big_money",
+        "score": 0
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "broken_money",
+        "score": 0
+      }, 
+      {
+        "response": "SQUEAK",
+        "reaction": "cry",
+        "score": -1
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "cry",
+        "score": -1
+      }, 
+      {
+        "response": "I don't understand",
+        "reaction": "neutral",
+        "score": 0
+      }, 
+      {
+        "response": "Love that for you",
+        "reaction": "money",
+        "score": 0
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "broken_money",
+        "score": 0
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "neutral",
+        "score": 0
+      }
+    ],
+    "2": [
+      {
+        "response": "I know what you mean",
+        "reaction": "heyes",
+        "score": 2
+      }, 
+      {
+        "response": "You're a keeper",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "money",
+        "score": 0
+      }, 
+      {
+        "response": "Proud of you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I don't appreciate that",
+        "reaction": "neutral",
+        "score": 0
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "juice",
+        "score": 0
+      }
+    ],
+    "3": [
+      {
+        "response": "I know what you mean",
+        "reaction": "smile",
+        "score": 1
+      }, 
+      {
+        "response": "*Nod*",
+        "reaction": "neutral",
+        "score": 0
+      }, 
+      {
+        "response": "I'm so happy for you",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I would love to hear more",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "I value you",
+        "reaction": "blush",
+        "score": 0
+      }, 
+      {
+        "response": "Why?",
+        "reaction": "sad",
+        "score": -1
+      }, 
+      {
+        "response": "I dunno if thats something you should share...",
+        "reaction": "cry",
+        "score": -1
+      }
+    ],
+    "4": [
+      {
+        "response": "I don't appreciate that",
+        "reaction": "cry",
+        "score": -1
+      }, 
+      {
+        "response": "Thanks for being here",
+        "reaction": "big_smile",
+        "score": 2
+      }, 
+      {
+        "response": "Care for some juice?",
+        "reaction": "juice",
+        "score": 0
+      }, 
+      {
+        "response": "I'm not sure about that...",
+        "reaction": "sad",
+        "score": -1
+      }, 
+      {
+        "response": "You're making me blush",
+        "reaction": "blush",
+        "score": 0
+      }
+    ]
+  }
+}
