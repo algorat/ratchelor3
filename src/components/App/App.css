@@ -9,7 +9,7 @@
   position: absolute;
   z-index: 1000;
   margin-left: -110px;
-  margin-top: -113px;
+  margin-top: -203px;
   pointer-events: none;
 }
 
@@ -49,4 +49,25 @@
 .interlude p {
   color: white;
   z-index: 10;
+}
+
+@media only screen and (max-width: 1000px) {
+  .frame {
+    display: none;
+  }
+
+  .screen,
+  .game {
+    height: 100vh;
+    width: auto;
+  }
+
+  .screen {
+    width: auto;
+    aspect-ratio: 900 / 675;
+  }
+
+  .game {
+    display: flex;
+  }
 }
