@@ -3,6 +3,7 @@
   position: relative;
   width: 900px;
   height: 675px;
+  flex-shrink: 0;
 }
 
 .frame {
@@ -51,7 +52,7 @@
   z-index: 10;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (hover: none) {
   .frame {
     display: none;
   }
@@ -65,6 +66,7 @@
   .screen {
     width: auto;
     aspect-ratio: 900 / 675;
+    border: 3px solid var(--button-outline-color);
   }
 
   .game {

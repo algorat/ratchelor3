@@ -1,5 +1,6 @@
 import "./TalkingToRats.css";
 import { useInterval } from "../../utils/reactUseInterval";
+import { MobileControl } from "../MobileControl/MobileControl";
 
 import { Reaction } from "../Reaction/Reaction";
 
@@ -123,23 +124,25 @@ export function TalkingToRats(props) {
     dialogueProgress < ratDialogue.length ? DIALOGUE_INTERVAL : null
   );
 
+  const responses = ratResponses.map((response, ridx) => (
+    <button
+      key={`ratresponse${ridx}`}
+      className="response"
+      onClick={() => onResponseSelect(response)}
+    >
+      {response.response}
+    </button>
+  ));
+
   const ratDialogueHtml = (
     <>
       <div className="rat-dialogue" aria-hidden="true">
         {currentRatDialogue}
       </div>
       <div className="visually-hidden">{ratDialogue}</div>
-      <div className="responses">
-        {ratResponses.map((response, ridx) => (
-          <button
-            key={`ratresponse${ridx}`}
-            className="response"
-            onClick={() => onResponseSelect(response)}
-          >
-            {response.response}
-          </button>
-        ))}
-      </div>
+      <MobileControl show={false}>
+        <div className="responses">{responses}</div>
+      </MobileControl>
     </>
   );
 
@@ -191,6 +194,9 @@ export function TalkingToRats(props) {
           </div>
         </div>
       </div>
+      <MobileControl show={true} header="Select a response!">
+        <div className="mobile-responses">{responses}</div>
+      </MobileControl>
     </>
   );
 }

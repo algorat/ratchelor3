@@ -40,18 +40,18 @@
 }
 
 .player-select-title {
-  font-size: 42px;
+  font-size: var(--heading-font-size);
   color: var(--text-color);
 }
 
 .player-select-description {
   width: 55%;
   color: var(--text-color);
-  font-size: 22px;
+  font-size: var(--body-font-size);
 }
 
 .player-select-question {
-  font-size: 28px;
+  font-size: var(--body-font-size);
   line-height: 200%;
   color: var(--text-color);
 }
@@ -109,5 +109,13 @@
   }
   100% {
     transform: translate3d(0, 0, 0) rotateZ(0deg);
+  }
+}
+
+@media only screen and (hover: none) {
+  .player-select-hearts-header {
+    width: 100%;
+    left: 0;
+    top: 0;
   }
 }

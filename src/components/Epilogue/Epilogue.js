@@ -5,6 +5,7 @@ import {
   BACKGROUNDS_IMAGES_BASE_PATH,
 } from "../../utils/ratDataHelper";
 import React, { useEffect, useState } from "react";
+import { MobileControl } from "../MobileControl/MobileControl";
 
 function noDupes(photoData, finalRat) {
   const seenRats = new Set();
@@ -26,49 +27,70 @@ function noDupes(photoData, finalRat) {
 export function Epilogue(props) {
   const [hoveredPhoto, setHoveredPhoto] = useState(null);
   const [randomPhotos, setRandomPhotos] = useState([]);
+  const [selectedPhotoDescription, setSelectedPhotoDescription] =
+    useState(null);
+
+  let mobileContent =
+    selectedPhotoDescription || "Select a rat photo to see more info!";
 
   useEffect(() => {
     const randomPhotoData = props.originalRats.map((rat) =>
       getRandomEpiloguePhoto(rat)
     );
-
     const photosWithoutDupes = noDupes(randomPhotoData, props.finalRat);
-
-    console.log(randomPhotoData, photosWithoutDupes);
-
     setRandomPhotos(photosWithoutDupes.slice(0, 6));
   }, []);
 
   return (
-    <div className="epilogue-screen screen">
-      <header>
-        <button onClick={props.reset}>Play again</button>
-      </header>
-      <img
-        className="epilogue-background"
-        src={`${BACKGROUNDS_IMAGES_BASE_PATH}/desk.png`}
-      />
-      <div className="photos">
-        {randomPhotos.map((photo) => (
-          <div className="epilogue-photo-container" key={photo.src}>
-            <img
-              onMouseEnter={() => {
-                setHoveredPhoto(photo.src);
-              }}
-              onMouseLeave={() => {
-                setHoveredPhoto(null);
-              }}
-              src={`${EPILOGUE_IMAGES_BASE_PATH}/${photo.src}`}
-              alt=""
-            />
-            {photo.src === hoveredPhoto && (
-              <div className="epilogue-photo-description">
-                {photo.description}
-              </div>
-            )}
-          </div>
-        ))}
+    <>
+      <div className="epilogue-screen screen">
+        <MobileControl show={false}>
+          <header>
+            <button onClick={props.reset}>Play again</button>
+          </header>
+        </MobileControl>
+        <img
+          className="epilogue-background"
+          src={`${BACKGROUNDS_IMAGES_BASE_PATH}/desk.png`}
+        />
+        <div className="photos">
+          {randomPhotos.map((photo) => (
+            <div className="epilogue-photo-container" key={photo.src}>
+              <img
+                onMouseEnter={() => {
+                  setHoveredPhoto(photo.src);
+                }}
+                onMouseLeave={() => {
+                  setHoveredPhoto(null);
+                }}
+                onClick={() => {
+                  setSelectedPhotoDescription(photo.description);
+                }}
+                src={`${EPILOGUE_IMAGES_BASE_PATH}/${photo.src}`}
+                alt=""
+              />
+              {photo.src === hoveredPhoto && (
+                <div className="epilogue-photo-description">
+                  {photo.description}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+      <MobileControl
+        show={true}
+        header="What happened to the rats after?"
+        ctaButton={
+          <>
+            <button>Follow us for updates</button>
+            <button>Donate if you enjoyed</button>
+            <button onClick={props.reset}>Replay?</button>
+          </>
+        }
+      >
+        {mobileContent}
+      </MobileControl>
+    </>
   );
 }

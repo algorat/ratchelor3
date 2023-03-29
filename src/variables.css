@@ -9,6 +9,21 @@
   --button-color-hover: rgb(255, 186, 186);
   --button-outline-color: rgb(226, 113, 113);
 
-  --fancy-font-stack: "Sofia", cursive;
-  --body-font-stack: "Yusei Magic", sans-serif;
+  --fancy-font-stack: 'Sofia', cursive;
+  --body-font-stack: 'Yusei Magic', sans-serif;
+
+  --heading-font-size: 36px;
+  --button-font-size: 28px;
+  --body-font-size: 22px;
+}
+
+@media only screen and (hover: none) {
+  :root {
+    --game-width: auto;
+    --short-transition-duration: 300ms;
+
+    --heading-font-size: 20px;
+    --button-font-size: 16px;
+    --body-font-size: 15px;
+  }
 }

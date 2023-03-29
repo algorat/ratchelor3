@@ -97,3 +97,9 @@ input[type='range']::-ms-thumb {
   border-radius: 4px;
   border: 2px solid #977c40;
 }
+
+@media only screen and (hover: none) {
+  .game-options {
+    display: none;
+  }
+}

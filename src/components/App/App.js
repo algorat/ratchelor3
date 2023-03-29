@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Intro } from "../Intro/Intro";
 import { Ending } from "../Ending/Ending";
 import { Epilogue } from "../Epilogue/Epilogue";
@@ -69,6 +69,18 @@ function RatchelorApp() {
 
   const [playingInterlude, setPlayingInterlude] = useState(false);
   const [playingInterludeText, setPlayingInterludeText] = useState("");
+
+  const [mobileMode, setMobileMode] = useState(false);
+  const [mobileLandscapeMode, setMobileLandscapeMode] = useState(false);
+
+  useEffect(() => {
+    const watchMobile = window.matchMedia("only screen and (hover: none)");
+    const watchLandscapeMobile = window.matchMedia(
+      "(hover: none) and (orientation: portrait)"
+    );
+    setMobileMode(watchMobile.matches);
+    setMobileLandscapeMode(watchLandscapeMobile.matches);
+  }, []);
 
   function playInterlude(interludeText, callback) {
     updateSfx("curtain.mp3");
@@ -200,6 +212,7 @@ function RatchelorApp() {
           setOriginalRats={setOriginalRats}
           activeRats={activeRats}
           updateSfx={updateSfx}
+          mobileMode={mobileMode}
         />
       );
       break;
@@ -255,6 +268,12 @@ function RatchelorApp() {
       gameScreenContents = "something went wrong... restart?";
       break;
   }
+
+  // TODO
+  if (mobileLandscapeMode) {
+    return <div>Mobile mode.</div>;
+  }
+
   return (
     <div className="game">
       <img className="frame" src={frameImage} alt=""></img>
