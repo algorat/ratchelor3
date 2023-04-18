@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
 html {
   margin: 0px;
   min-width: 100%;
@@ -11,8 +18,7 @@ html {
   background-size: 442px 250px;
 }
 
-body {
-  margin: 0;
+#root {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -42,7 +48,7 @@ img {
 button {
   font-family: var(--fancy-font-stack);
   padding: 12px 20px;
-  font-size: 32px;
+  font-size: var(--button-font-size, 32px);
   border-radius: 40px;
   background: var(--button-color);
   color: var(--text-color);
@@ -148,4 +154,10 @@ header {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+@media only screen and (hover: none) {
+  #root {
+    display: block;
+  }
 }

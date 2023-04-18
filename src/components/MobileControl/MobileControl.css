@@ -1,0 +1,36 @@
+.mobile-container {
+  display: block;
+  flex-grow: 1;
+  padding: 8px;
+}
+
+.mobile-control {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  overflow: hidden;
+  flex-grow: 1;
+  margin-bottom: 12px;
+
+  border: 3px solid var(--button-outline-color);
+  background-color: var(--background-color);
+}
+
+.mobile-container .mobile-control-header {
+  background-color: var(--secondary-background-color);
+  padding: 12px;
+  border-bottom: 3px solid var(--button-outline-color);
+  text-align: center;
+}
+
+.mobile-container .mobile-control-content {
+  padding: 12px;
+}
+
+.mobile-container .mobile-cta-container button {
+  width: 100%;
+}
+
+.mobile-container .mobile-cta-container button:not(:last-child) {
+  margin-bottom: 8px;
+}

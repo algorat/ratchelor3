@@ -1,4 +1,5 @@
 import "./RoseCeremony.css";
+import { MobileControl } from "../MobileControl/MobileControl";
 
 import {
   getRatById,
@@ -150,40 +151,47 @@ export function RoseCeremony(props) {
   }
 
   return (
-    <div className="rose-ceremony-screen screen">
-      <div className="rose-ceremony-rats">
-        {ratsOrderedBySize.map((rat, idx) => {
-          let ratState = ratStates.NEVER_CHOSEN;
-          if (selectedRats.includes(rat)) {
-            ratState = ratStates.CHOSEN;
-          } else if (previousRats.includes(rat)) {
-            ratState = ratStates.UNCHOSEN;
-          }
-          return (
-            <SelectableRat
-              key={`roseceremonyrat${idx}`}
-              rat={rat}
-              ratState={ratState}
-              leaving={leavingRat === rat}
-              onClick={() => {
-                selectRat(rat);
-              }}
-              round={props.round}
-            />
-          );
-        })}
+    <>
+      <div className="rose-ceremony-screen screen">
+        <div className="rose-ceremony-rats">
+          {ratsOrderedBySize.map((rat, idx) => {
+            let ratState = ratStates.NEVER_CHOSEN;
+            if (selectedRats.includes(rat)) {
+              ratState = ratStates.CHOSEN;
+            } else if (previousRats.includes(rat)) {
+              ratState = ratStates.UNCHOSEN;
+            }
+            return (
+              <SelectableRat
+                key={`roseceremonyrat${idx}`}
+                rat={rat}
+                ratState={ratState}
+                leaving={leavingRat === rat}
+                onClick={() => {
+                  selectRat(rat);
+                }}
+                round={props.round}
+              />
+            );
+          })}
+        </div>
+        <img
+          className="bouquet"
+          alt="a rose bouquet"
+          src={`${BOUQUET_IMAGES_BASE_PATH}/bouquet${bouquetNum}.png`}
+        ></img>
+        <img
+          className="rose-ceremony-background"
+          src={`${BACKGROUNDS_IMAGES_BASE_PATH}/rose_ceremony.png`}
+          alt=""
+        />
+        <MobileControl show={false}>
+          <header>{instructions}</header>
+        </MobileControl>
       </div>
-      <img
-        className="bouquet"
-        alt="a rose bouquet"
-        src={`${BOUQUET_IMAGES_BASE_PATH}/bouquet${bouquetNum}.png`}
-      ></img>
-      <img
-        className="rose-ceremony-background"
-        src={`${BACKGROUNDS_IMAGES_BASE_PATH}/rose_ceremony.png`}
-        alt=""
-      />
-      <header>{instructions}</header>
-    </div>
+      <MobileControl show={true} header="Who will you choose?">
+        {instructions}
+      </MobileControl>
+    </>
   );
 }

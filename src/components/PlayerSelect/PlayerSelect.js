@@ -1,4 +1,5 @@
 import "./PlayerSelect.css";
+import { MobileControl } from "../MobileControl/MobileControl";
 
 import React from "react";
 import {
@@ -38,33 +39,44 @@ export function PlayerSelect(props) {
   }
 
   return (
-    <div className="player-select-screen screen">
-      <div className="player-select-intro">
-        <img
-          alt=""
-          className="player-select-hearts-header"
-          src={`${PLAYER_IMAGES_BASE_PATH}/playerselecthearts.png`}
-        ></img>
-        <div className="player-select-title">You are The Ratchelor,</div>
-        <div className="player-select-description">
-          A single rat looking for love. You will meet many rats and choose who
-          to keep, round after round, until you find true love.
+    <>
+      <div className="player-select-screen screen">
+        <div className="player-select-intro">
+          <img
+            alt=""
+            className="player-select-hearts-header"
+            src={`${PLAYER_IMAGES_BASE_PATH}/playerselecthearts.png`}
+          ></img>
+          <div className="player-select-title">You are The Ratchelor,</div>
+          <div className="player-select-description">
+            A single rat looking for love. You will meet many rats and choose
+            who to keep, round after round, until you find true love.
+          </div>
         </div>
+        <div className="player-select-row">
+          {[1, 2, 3, 4].map((idx) => (
+            <SelectableCharacter
+              selected={idx === props.playerAvatarIndex}
+              onClick={() => {
+                props.setPlayerAvatarIndex(idx);
+                props.updateSfx("tap.mp3");
+              }}
+              key={`char${idx}`}
+              src={`${PLAYER_IMAGES_BASE_PATH}/${idx}_intro.png`}
+            />
+          ))}
+        </div>
+        <MobileControl show={false}>{ctaArea}</MobileControl>
       </div>
-      <div className="player-select-row">
-        {[1, 2, 3, 4].map((idx) => (
-          <SelectableCharacter
-            selected={idx === props.playerAvatarIndex}
-            onClick={() => {
-              props.setPlayerAvatarIndex(idx);
-              props.updateSfx("tap.mp3");
-            }}
-            key={`char${idx}`}
-            src={`${PLAYER_IMAGES_BASE_PATH}/${idx}_intro.png`}
-          />
-        ))}
-      </div>
-      {ctaArea}
-    </div>
+      <MobileControl
+        show={true}
+        header="Choose your avatar"
+        ctaButton={props.playerAvatarIndex && ctaArea}
+      >
+        {props.playerAvatarIndex
+          ? "Wonderful! Let's continue!"
+          : "Select a rat from the left panel to get started."}
+      </MobileControl>
+    </>
   );
 }

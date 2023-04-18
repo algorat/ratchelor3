@@ -1,6 +1,4 @@
 .intro-screen {
-  width: var(--game-width);
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,4 +12,10 @@
 
 .intro-screen button {
   margin-top: 500px;
+}
+
+@media only screen and (hover: none) {
+  .intro-screen button {
+    display: none;
+  }
 }

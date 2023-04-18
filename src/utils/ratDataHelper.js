@@ -35,6 +35,9 @@ export const EPILOGUE_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/epilo
 export const SOUND_ICONS_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/sound_icons`;
 
 /** TODO */
+export const MOBILE_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/mobile`;
+
+/** TODO */
 export const SOUND_BASE_PATH = `${process.env.PUBLIC_URL}/sounds`;
 
 /**

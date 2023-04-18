@@ -39,3 +39,17 @@
   width: 100%;
   z-index: 0;
 }
+
+@media only screen and (hover: none) {
+  .epilogue-screen .photos {
+    padding: 40px;
+  }
+
+  .epilogue-screen .mobile-control-content {
+    min-height: 30vh;
+  }
+
+  .epilogue-screen .epilogue-photo-description {
+    display: none;
+  }
+}

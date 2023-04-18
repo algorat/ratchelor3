@@ -14,6 +14,8 @@
 .proposing-rat {
   position: relative;
   z-index: 1;
+  max-height: min(300px, 50vh);
+  max-width: min(300px, 50vh);
 }
 
 .proposing-rat-container {
@@ -26,29 +28,31 @@
 }
 
 .proposal-xlarge {
-  max-height: 600px;
-  max-width: 600px;
+  max-height: min(600px, 80vh);
+  max-width: min(600px, 80vh);
 }
 
 .proposal-large {
-  max-height: 450px;
-  max-width: 450px;
+  max-height: min(450px, 70vh);
+  max-width: min(450px, 70vh);
 }
 
 .proposal-med-large {
-  max-height: 370px;
-  max-width: 370px;
+  max-height: min(370px, 60vh);
+  max-width: min(370px, 60vh);
 }
 
 .proposal-medium {
-  max-height: 300px;
+  max-height: min(300px, 50vh);
+  max-width: min(300px, 50vh);
 }
 
 .proposal-med-small {
-  max-height: 250px;
+  max-height: min(250px, 40vh);
+  max-width: min(250px, 40vh);
 }
 
 .proposal-small {
-  max-width: 175px;
-  max-height: 175px;
+  max-width: min(175px, 30vh);
+  max-height: min(175px, 30vh);
 }
