@@ -5,9 +5,10 @@
 .rat-select-screen .rat-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+
   row-gap: 8px;
-  padding: 64px 16px 16px 16px;
+  padding: 80px 12px 12px 12px;
 }
 
 .rat-select-screen .rat-grid .rat-container {
@@ -60,6 +61,7 @@
 
 .rat-select-screen .rat-name-container {
   text-align: center;
+  font-size: 14px;
 }
 
 .rat-select-screen .rat-tagline {
@@ -69,11 +71,14 @@
 .rat-select-screen .rat-container:hover .rat-tagline {
   position: absolute;
   display: block;
-  top: 100%;
+  top: 90%;
   left: 0px;
   width: 100%;
   z-index: 10;
   background-color: var(--secondary-background-color);
+  padding: 8px;
+  border-radius: 4px;
+  border: 2px solid var(--text-color);
 }
 
 @keyframes pulse {
@@ -94,5 +99,9 @@
 
   .rat-name-container {
     display: none;
+  }
+
+  .rat-select-mobile-panel > * {
+    margin-bottom: 12px;
   }
 }

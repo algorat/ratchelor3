@@ -96,14 +96,14 @@ function RatchelorApp() {
   // TODO
   function goToPlayerSelect() {
     updateMusic("intro.mp3");
-    playInterlude("Meet yourself!", () => {
+    playInterlude("Meet yourself", () => {
       setGameStage(GameStages.PLAYER_SELECT);
     });
   }
 
   // TODO
   function goToRatSelect() {
-    playInterlude("Meet the rats!", () => {
+    playInterlude("Meet your suitors", () => {
       setGameStage(GameStages.RAT_SELECT);
     });
   }
@@ -280,7 +280,7 @@ function RatchelorApp() {
       <div className="screen interlude-container">
         <div className={`${playingInterlude ? "playing" : ""} interlude`}>
           <img alt="" src={`${BACKGROUNDS_IMAGES_BASE_PATH}/curtains.png`} />
-          <p>{playingInterludeText}</p>
+          <h2>{playingInterludeText}</h2>
         </div>
       </div>
       {gameScreenContents}

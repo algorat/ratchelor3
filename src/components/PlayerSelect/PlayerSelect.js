@@ -34,7 +34,9 @@ export function PlayerSelect(props) {
     ctaArea = <button onClick={props.advanceToNextStage}>Onwards!</button>;
   } else {
     ctaArea = (
-      <div className="player-select-question">Which rat do you want to be?</div>
+      <div className="player-select-question heading-medium">
+        Which rat do you want to be?
+      </div>
     );
   }
 
@@ -47,11 +49,11 @@ export function PlayerSelect(props) {
             className="player-select-hearts-header"
             src={`${PLAYER_IMAGES_BASE_PATH}/playerselecthearts.png`}
           ></img>
-          <div className="player-select-title">You are The Ratchelor,</div>
-          <div className="player-select-description">
+          <h2>You are The Ratchelor,</h2>
+          <p className="heading-medium player-select-description">
             A single rat looking for love. You will meet many rats and choose
             who to keep, round after round, until you find true love.
-          </div>
+          </p>
         </div>
         <div className="player-select-row">
           {[1, 2, 3, 4].map((idx) => (

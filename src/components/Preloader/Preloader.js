@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import assetsToPreload from "../../data/assetsToPreload.json";
+import "./Preloader.css";
 
 const MAX_PRELOAD_TIME = 10000; // 10 seconds.
 const copyOfAssetsToPreload = assetsToPreload.slice();
@@ -51,7 +52,7 @@ export function Preloader(props) {
     return <>{props.children}</>;
   } else {
     return (
-      <div>
+      <div className="heading-medium preloader">
         Loading...
         {Math.floor(
           ((assetsToPreload.length - remainingAssets.length) /

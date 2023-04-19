@@ -32,28 +32,15 @@
 
 .player-select-hearts-header {
   position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 80%;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 0;
   pointer-events: none;
 }
 
-.player-select-title {
-  font-size: var(--heading-font-size);
-  color: var(--text-color);
-}
-
 .player-select-description {
   width: 55%;
-  color: var(--text-color);
-  font-size: var(--body-font-size);
-}
-
-.player-select-question {
-  font-size: var(--body-font-size);
-  line-height: 200%;
-  color: var(--text-color);
 }
 
 .player-img {
