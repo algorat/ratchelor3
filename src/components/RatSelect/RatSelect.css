@@ -71,7 +71,7 @@
 .rat-select-screen .rat-container:hover .rat-tagline {
   position: absolute;
   display: block;
-  top: 90%;
+  top: 85%;
   left: 0px;
   width: 100%;
   z-index: 10;
