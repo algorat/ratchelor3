@@ -12,13 +12,10 @@
 }
 
 .ending-dialogue {
-  font-family: 'Yusei Magic';
-  font-size: 20px;
   position: absolute;
   padding: 20px 40px;
   animation: slideUp ease 7s;
   background-color: var(--background-color);
-  color: #1c214a;
   bottom: 0px;
   width: 100%;
 }
