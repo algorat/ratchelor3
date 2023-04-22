@@ -9,6 +9,7 @@ import {
   DATES_IMAGES_BASE_PATH,
   PLAYER_IMAGES_BASE_PATH,
   REACTIONS_IMAGES_BASE_PATH,
+  BACKGROUNDS_IMAGES_BASE_PATH,
   getResponsesByRound,
 } from "../../utils/ratDataHelper";
 
@@ -149,6 +150,7 @@ export function TalkingToRats(props) {
   return (
     <>
       <div className="talking-to-rats-screen screen">
+        <img src={`${BACKGROUNDS_IMAGES_BASE_PATH}/couch.gif`} alt="" />
         <div className="player-rat">
           <img
             src={`${PLAYER_IMAGES_BASE_PATH}/${props.playerAvatarIndex}.png`}
@@ -179,7 +181,7 @@ export function TalkingToRats(props) {
             animatingDialogue ? "dialogue-out" : ""
           }`}
         >
-          <div className="rat-name">{ratName}</div>
+          <div className="rat-name heading-medium">{ratName}</div>
           <div className="text-dialogue-container">
             {currentReaction ? (
               <div className="rat-dialogue reacting">

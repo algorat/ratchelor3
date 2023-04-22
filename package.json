@@ -12,9 +12,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "stage": "PUBLIC_URL=/ react-scripts build && rm -rf staging && mv build staging && firebase deploy",
-    "files": "node ./filesgen.js",
+    "build": "node scripts/listPreloadAssets.js && react-scripts build",
+    "stage": "node scripts/listPreloadAssets.js && PUBLIC_URL=/ react-scripts build && rm -rf staging && mv build staging && firebase deploy",
+    "files": "node scripts/listPreloadAssets.js",
     "eject": "react-scripts eject",
     "prettylint": "prettier --write ./src && npx eslint \"src/**/*.js\""
   },
@@ -28,7 +28,8 @@
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
-    "prettier": "^2.8.3"
+    "prettier": "^2.8.3",
+    "walk": "^2.3.15"
   },
   "browserslist": {
     "production": [

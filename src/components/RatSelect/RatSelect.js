@@ -14,7 +14,7 @@ function IntermediateMobileRat(props) {
   const ratData = getRatById(props.ratId);
   return (
     <>
-      <p>{ratData.name}</p>
+      <p className="heading-medium">{ratData.name}</p>
       <p>{ratData.tagline}</p>
     </>
   );
@@ -37,6 +37,7 @@ function SelectableRat(props) {
     <div
       aria-label={`A selectable framed image of ${ratName}.`}
       className={`rat-container ${isSelected ? "selected-rat" : ""}`}
+      role="button"
     >
       <div
         className={`rat-list-item rat${index} rat-list-item-${ratId}`}
@@ -131,16 +132,17 @@ export function RatSelect(props) {
       ? "Deselect"
       : "Select";
     mobileContent = (
-      <>
+      <div className="rat-select-mobile-panel">
         <IntermediateMobileRat ratId={intermediateMobileRat} />{" "}
         <button
+          className="small"
           onClick={() => {
             selectRat(intermediateMobileRat);
           }}
         >
           {buttonText}
         </button>
-      </>
+      </div>
     );
   } else {
     mobileContent = "Select a rat!";
@@ -157,7 +159,7 @@ export function RatSelect(props) {
         <MobileControl show={false}>
           <header>
             {numRatsLeft > 0 ? (
-              <p>Choose {numRatsLeft} contestants</p>
+              <p className="heading-medium">Choose {numRatsLeft} contestants</p>
             ) : (
               ctaButton
             )}

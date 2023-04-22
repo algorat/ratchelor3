@@ -1,0 +1,6 @@
+.preloader {
+  display: inline-block;
+  padding: 20px;
+  background-color: var(--background-color);
+  border-radius: 8px;
+}

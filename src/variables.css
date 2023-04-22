@@ -2,18 +2,22 @@
   --game-width: 900px;
   --short-transition-duration: 300ms;
 
-  --background-color: #fff;
-  --secondary-background-color: rgb(255, 222, 222);
-  --text-color: #000;
-  --button-color: rgb(255, 214, 214);
-  --button-color-hover: rgb(255, 186, 186);
-  --button-outline-color: rgb(226, 113, 113);
+  --background-color: #282da8;
+  --secondary-background-color: #774db4;
+  --text-color: #fbd8e6;
+  --button-color: #ffeaa0;
+  --button-text-color: #1f1179;
+  --button-color-hover: #fff9db;
+  --button-outline-color: #1f1179;
+  --button-shadow-color: #ab62bc;
 
-  --fancy-font-stack: 'Sofia', cursive;
-  --body-font-stack: 'Yusei Magic', sans-serif;
+  --fancy-font-stack: 'Fraunces', sans-serif;
+  --body-font-stack: 'DM Sans', sans-serif;
 
   --heading-font-size: 36px;
-  --button-font-size: 28px;
+  --medium-font-size: 24px;
+  --button-font-size: 36px;
+  --small-button-font-size: 20px;
   --body-font-size: 22px;
 }
 
@@ -23,7 +27,9 @@
     --short-transition-duration: 300ms;
 
     --heading-font-size: 20px;
+    --medium-font-size: 18px;
     --button-font-size: 16px;
-    --body-font-size: 15px;
+    --small-button-font-size: 16px;
+    --body-font-size: 12px;
   }
 }

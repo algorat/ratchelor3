@@ -1,10 +1,15 @@
 .talking-to-rats-screen {
   position: relative;
   overflow: hidden;
-  background-image: url('../../assets/images/couch.gif');
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
+}
+
+.talking-to-rats-screen img.couch {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .talking-to-rats-screen img {
@@ -27,11 +32,7 @@
 }
 
 .talking-to-rats-screen .rat-name {
-  font-family: var(--body-font-stack);
-  font-size: var(--heading-font-size);
   background-color: var(--secondary-background-color);
-  color: var(--text-color);
-
   width: fit-content;
   padding: 5px 20px;
   margin-left: 20px;
@@ -77,7 +78,6 @@
   font-size: 17px;
   padding: 5px 10px;
   margin-right: 4px;
-  border: 2px;
 }
 
 .talking-to-rats-screen .responses {
@@ -86,6 +86,7 @@
   width: 100%;
   position: absolute;
   bottom: 25px;
+  column-gap: 4px;
 }
 
 .mobile-responses {

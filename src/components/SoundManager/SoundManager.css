@@ -1,7 +1,7 @@
 .game-options {
   position: absolute;
   top: 316px;
-  left: -223px;
+  left: -218px;
   display: flex;
   align-items: center;
   transform: rotateZ(-90deg);
