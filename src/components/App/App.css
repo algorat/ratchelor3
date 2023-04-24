@@ -66,6 +66,9 @@
   .screen {
     width: auto;
     aspect-ratio: 900 / 675;
+  }
+
+  .interlude-container {
     border: 3px solid var(--button-outline-color);
   }
 

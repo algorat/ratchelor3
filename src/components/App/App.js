@@ -8,6 +8,7 @@ import { RatSelect } from "../RatSelect/RatSelect";
 import { TalkingToRats } from "../TalkingToRats/TalkingToRats";
 import { RoseCeremony } from "../RoseCeremony/RoseCeremony";
 import { Proposal } from "../Proposal/Proposal";
+import { Credits } from "../Credits/Credits";
 import { SoundManager } from "../SoundManager/SoundManager";
 
 import frameImage from "../../assets/images/frame.png";
@@ -26,16 +27,17 @@ const GameStages = {
   PROPOSAL: 5,
   ANIME_ENDING: 6,
   EPILOGUE: 7,
+  CREDITS: 8,
 };
 
 // Num rats the person should select at the very beginning.
-const RATS_IN_GAME = 7;
+const RATS_IN_GAME = 2;
 
 // How many rounds there are.
-const NUM_ROUNDS = 5;
+const NUM_ROUNDS = 1;
 
 // How many roses get given out each round.
-const ROSES_PER_ROUND = [5, 4, 3, 2, 1];
+const ROSES_PER_ROUND = [1];
 
 function RatchelorApp() {
   // What phase of the game we're in, like rose ceremony, propsal, etc.
@@ -119,7 +121,7 @@ function RatchelorApp() {
   // TODO
   function goToRoseCeremony() {
     updateMusic("rose_ceremony.mp3");
-    playInterlude("Choose some rats", () => {
+    playInterlude("Who gets a rose?", () => {
       setGameStage(GameStages.ROSE_CEREMONY);
     });
   }
@@ -151,6 +153,14 @@ function RatchelorApp() {
   }
 
   // TODO
+  function goToCredits() {
+    updateMusic("intro.mp3");
+    playInterlude("Special thanks", () => {
+      setGameStage(GameStages.CREDITS);
+    });
+  }
+
+  // TODO
   function goToAnimeEnding() {
     const chosenRat = activeRats[0];
     updateMusic(getRatById(chosenRat)?.ending);
@@ -168,14 +178,16 @@ function RatchelorApp() {
   }
 
   function resetGame() {
-    setGameStage(GameStages.INTRO);
-    setRound(0);
-    setPlayerAvatarIndex(null);
-    setActiveRats([]);
-    setRandomizedActiveRats([]);
-    setOriginalRats([]);
-    setRatFeelings({});
-    updateMusic("intro.mp3");
+    playInterlude("Resetting game...", () => {
+      setGameStage(GameStages.INTRO);
+      setRound(0);
+      setPlayerAvatarIndex(null);
+      setActiveRats([]);
+      setRandomizedActiveRats([]);
+      setOriginalRats([]);
+      setRatFeelings({});
+      updateMusic("intro.mp3");
+    });
   }
 
   function updateSfx(sfx) {
@@ -260,8 +272,13 @@ function RatchelorApp() {
         <Epilogue
           finalRat={activeRats[0]}
           originalRats={originalRats}
-          reset={resetGame}
+          advanceToNextStage={goToCredits}
         />
+      );
+      break;
+    case GameStages.CREDITS:
+      gameScreenContents = (
+        <Credits finalRat={activeRats[0]} reset={resetGame} />
       );
       break;
     default:

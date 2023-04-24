@@ -82,7 +82,7 @@ export function SoundManager(props) {
       {props.musicFile && (
         <ReactAudioPlayer
           src={`${SOUND_BASE_PATH}/${props.musicFile}`}
-          volume={volume / 3}
+          volume={volume * 0.5}
           loop={true}
           ref={(element) => {
             if (!element || lastMusicTimestamp === props.musicTimestamp) return;
