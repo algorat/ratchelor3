@@ -36,18 +36,36 @@
   z-index: 1;
 }
 
-.player-customization-screen ul {
+ul.player-custom-options {
   display: flex;
-  row-gap: 8px;
+  flex-direction: column;
+  row-gap: 16px;
   column-gap: 8px;
   padding: 0;
 }
 
-.player-customization-screen li {
+ul.player-custom-options li {
   list-style: none;
 }
 
-.player-customization-screen button.small.selected {
+ul.player-custom-options button.small.selected {
   background-color: var(--button-outline-color);
   color: var(--button-color);
+  border: 2px solid var(--button-color);
+}
+
+@media only screen and (hover: none) {
+  .player-customization-screen {
+    padding-top: 90px;
+  }
+
+  .custom-game {
+    height: calc(100vh - 90px);
+    justify-content: center;
+  }
+
+  ul.player-custom-options {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }

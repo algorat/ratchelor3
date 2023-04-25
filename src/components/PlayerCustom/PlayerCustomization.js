@@ -3,6 +3,7 @@ import React from "react";
 import customData from "../../data/playerCustomization.json";
 
 import "./PlayerCustomization.css";
+import { MobileControl } from "../MobileControl/MobileControl";
 
 export function PlayerCustomization(props) {
   const playerImg = `${PLAYER_IMAGES_BASE_PATH}/${props.playerAvatarIndex}_fullbody.png`;
@@ -21,14 +22,35 @@ export function PlayerCustomization(props) {
     }
   }
 
+  const options = (
+    <ul className="player-custom-options">
+      {images.map((image) => (
+        <li key={image}>
+          <button
+            className={`small ${
+              props.playerAvatarDecorations.includes(image) ? "selected" : ""
+            }`}
+            onClick={() => {
+              toggleDecoration(image);
+            }}
+          >
+            {image}
+          </button>
+        </li>
+      ))}
+    </ul>
+  );
+
   return (
     <>
       <div className="player-customization-screen screen">
         <header>
           <h2>Dress up your character? </h2>
-          <button className="small" onClick={props.advanceToNextStage}>
-            Continue onwards
-          </button>
+          <MobileControl show={false}>
+            <button className="small" onClick={props.advanceToNextStage}>
+              Continue onwards
+            </button>
+          </MobileControl>
         </header>
         <div className="custom-game">
           <div className="custom-character">
@@ -42,26 +64,20 @@ export function PlayerCustomization(props) {
               />
             ))}
           </div>
-          <ul className="options">
-            {images.map((image) => (
-              <li key={image}>
-                <button
-                  className={`small ${
-                    props.playerAvatarDecorations.includes(image)
-                      ? "selected"
-                      : ""
-                  }`}
-                  onClick={() => {
-                    toggleDecoration(image);
-                  }}
-                >
-                  {image}
-                </button>
-              </li>
-            ))}
-          </ul>
+          <MobileControl show={false}>{options}</MobileControl>
         </div>
       </div>
+      <MobileControl
+        show={true}
+        header="Choose accessories"
+        ctaButton={
+          <button className="small" onClick={props.advanceToNextStage}>
+            Continue onwards
+          </button>
+        }
+      >
+        {options}
+      </MobileControl>
     </>
   );
 }
