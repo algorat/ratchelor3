@@ -204,6 +204,7 @@ function RatchelorApp() {
       setGameStage(GameStages.INTRO);
       setRound(0);
       setPlayerAvatarIndex(null);
+      setPlayerAvatarDecorations([]);
       setActiveRats([]);
       setRandomizedActiveRats([]);
       setOriginalRats([]);
