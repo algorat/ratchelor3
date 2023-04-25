@@ -18,16 +18,19 @@ import {
   BACKGROUNDS_IMAGES_BASE_PATH,
 } from "../../utils/ratDataHelper";
 
+import { PlayerCustomization } from "../PlayerCustom/PlayerCustomization";
+
 const GameStages = {
   INTRO: 0,
   PLAYER_SELECT: 1,
-  RAT_SELECT: 2,
-  TALKING_TO_RATS: 3,
-  ROSE_CEREMONY: 4,
-  PROPOSAL: 5,
-  ANIME_ENDING: 6,
-  EPILOGUE: 7,
-  CREDITS: 8,
+  PLAYER_CUSTOMIZATION: 2,
+  RAT_SELECT: 3,
+  TALKING_TO_RATS: 4,
+  ROSE_CEREMONY: 5,
+  PROPOSAL: 6,
+  ANIME_ENDING: 7,
+  EPILOGUE: 8,
+  CREDITS: 9,
 };
 
 // // Num rats the person should select at the very beginning.
@@ -78,6 +81,9 @@ function RatchelorApp() {
   // The player avatar that was selected.
   const [playerAvatarIndex, setPlayerAvatarIndex] = useState(null);
 
+  // The player avatar decorations that were selected.
+  const [playerAvatarDecorations, setPlayerAvatarDecorations] = useState([]);
+
   const [playingInterlude, setPlayingInterlude] = useState(false);
   const [playingInterludeText, setPlayingInterludeText] = useState("");
 
@@ -109,6 +115,13 @@ function RatchelorApp() {
     updateMusic("intro.mp3");
     playInterlude("Meet yourself", () => {
       setGameStage(GameStages.PLAYER_SELECT);
+    });
+  }
+
+  // TODO
+  function goToPlayerCustomization() {
+    playInterlude("Dress up for the show!", () => {
+      setGameStage(GameStages.PLAYER_CUSTOMIZATION);
     });
   }
 
@@ -217,9 +230,20 @@ function RatchelorApp() {
     case GameStages.PLAYER_SELECT:
       gameScreenContents = (
         <PlayerSelect
-          advanceToNextStage={goToRatSelect}
+          advanceToNextStage={goToPlayerCustomization}
           setPlayerAvatarIndex={setPlayerAvatarIndex}
           playerAvatarIndex={playerAvatarIndex}
+          updateSfx={updateSfx}
+        />
+      );
+      break;
+    case GameStages.PLAYER_CUSTOMIZATION:
+      gameScreenContents = (
+        <PlayerCustomization
+          advanceToNextStage={goToRatSelect}
+          playerAvatarIndex={playerAvatarIndex}
+          playerAvatarDecorations={playerAvatarDecorations}
+          setPlayerAvatarDecorations={setPlayerAvatarDecorations}
           updateSfx={updateSfx}
         />
       );

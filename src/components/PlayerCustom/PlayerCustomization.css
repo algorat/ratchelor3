@@ -1,0 +1,53 @@
+.player-customization-screen {
+  background-color: var(--background-color);
+  padding-top: 120px;
+}
+
+.custom-game {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  align-items: center;
+  column-gap: 20px;
+  padding: 40px;
+}
+
+.player-customization-screen header {
+  display: flex;
+  column-gap: 20px;
+  background-color: var(--secondary-background-color);
+  border-bottom: 3px solid var(--text-color);
+}
+
+.custom-character {
+  position: relative;
+  height: 100%;
+}
+
+.custom-character img {
+  height: 100%;
+}
+
+.custom-character .decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+}
+
+.player-customization-screen ul {
+  display: flex;
+  row-gap: 8px;
+  column-gap: 8px;
+  padding: 0;
+}
+
+.player-customization-screen li {
+  list-style: none;
+}
+
+.player-customization-screen button.small.selected {
+  background-color: var(--button-outline-color);
+  color: var(--button-color);
+}
