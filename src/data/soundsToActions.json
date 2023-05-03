@@ -12,6 +12,7 @@
     "heyes_smile",
     "love",
     "heyes",
+    "heyes2",
     "heart_eyes_three",
     "stars_hearts",
     "stars_heart",
@@ -50,5 +51,5 @@
   ],
   "tada": ["juice", "pretzel", "highfive", "wow"],
   "ding": [],
-  "wobble": ["stars_confuse", "confused", "broken_money"]
+  "wobble": ["stars_confuse", "confused", "confused2", "broken_money"]
 }

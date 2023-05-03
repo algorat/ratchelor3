@@ -95,9 +95,32 @@ function RatchelorApp() {
     const watchLandscapeMobile = window.matchMedia(
       "(hover: none) and (orientation: portrait)"
     );
+
+    watchLandscapeMobile.addEventListener("change", () => {
+      setMobileLandscapeMode(watchLandscapeMobile.matches);
+    });
+
     setMobileMode(watchMobile.matches);
     setMobileLandscapeMode(watchLandscapeMobile.matches);
-  }, []);
+
+    const screenHeight = document.body.clientHeight;
+    const screenWidth = document.body.clientWidth;
+
+    const targetMobileWidth = (screenHeight * 900) / 675;
+
+    document.documentElement.style.setProperty(
+      "--game-width",
+      `${targetMobileWidth}px`
+    );
+    document.documentElement.style.setProperty(
+      "--mobile-height",
+      `${screenHeight}px`
+    );
+    document.documentElement.style.setProperty(
+      "--mobile-width",
+      `${screenWidth}px`
+    );
+  }, [mobileLandscapeMode]);
 
   function playInterlude(interludeText, callback) {
     updateSfx("curtain.mp3");
@@ -322,7 +345,13 @@ function RatchelorApp() {
 
   // TODO
   if (mobileLandscapeMode) {
-    return <div>Mobile mode.</div>;
+    return (
+      <div className="landscape-mode-warning">
+        <h2>Ratchelor 3</h2>
+        It looks like you are in portrait mode on your phone! Please rotate your
+        phone to continue.
+      </div>
+    );
   }
 
   return (

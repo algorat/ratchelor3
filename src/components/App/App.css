@@ -52,20 +52,27 @@
   z-index: 10;
 }
 
+.landscape-mode-warning {
+  margin: 10%;
+  width: 80%;
+  padding: 12px;
+  background-color: var(--background-color);
+  border-radius: 8px;
+}
+
 @media only screen and (hover: none) {
   .frame {
     display: none;
   }
 
-  .screen,
   .game {
-    height: 100vh;
-    width: auto;
+    height: var(--mobile-height);
+    width: var(--mobile-width);
   }
 
   .screen {
-    width: auto;
-    aspect-ratio: 900 / 675;
+    height: var(--mobile-height);
+    width: var(--game-width);
   }
 
   .interlude-container {

@@ -23,9 +23,7 @@ export function Preloader(props) {
       }
       if (extension.indexOf("mp3") >= 0 || extension.indexOf("wav") >= 0) {
         const audio = new Audio(filename);
-        console.log("loading audio", filename, audio);
         audio.addEventListener("canplaythrough", () => {
-          console.log("audio loaded", fullFilename, remainingAssetsRef.current);
           setRemainingAssetsRef(
             remainingAssetsRef.current.filter((f) => f !== fullFilename)
           );

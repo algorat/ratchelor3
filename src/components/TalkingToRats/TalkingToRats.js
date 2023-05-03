@@ -101,7 +101,7 @@ export function TalkingToRats(props) {
         setRatIndex(nextRatIndex);
         setDialogueProgress(0);
         const nextRatId = props.activeRats[nextRatIndex];
-        setRatResponses(getResponsesByRound(nextRatId, props.round, 3));
+        setRatResponses(getResponsesByRound(nextRatId, props.round));
         props.updateMusic(getTalkingMusic(nextRatIndex));
       },
       skipWait ? 0 : DIALOGUE_ANIMATION

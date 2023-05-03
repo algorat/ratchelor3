@@ -28,3 +28,9 @@
 .credits-screen ul {
   margin: 0;
 }
+
+@media only screen and (hover: none) {
+  .credits-screen .content {
+    padding: 20px;
+  }
+}

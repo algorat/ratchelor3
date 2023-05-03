@@ -10,8 +10,6 @@ export function MobileControl(props) {
     setMobileMode(watchMobile.matches);
   }, []);
 
-  console.log(mobileMode, props);
-
   if (!mobileMode && !props.show) {
     return <>{props.children}</>;
   } else if (mobileMode && props.show) {

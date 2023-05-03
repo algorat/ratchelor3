@@ -65,14 +65,27 @@ export function getAllRatData() {
   return ratsJson;
 }
 
+function randArrayItem(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
 /** TODO */
-export function getResponsesByRound(ratId, roundNumber, numResponses = null) {
+export function getResponsesByRound(ratId, roundNumber) {
   const ratResponsesData = responsesJson[ratId];
   const allResponses = ratResponsesData[roundNumber];
-  if (!numResponses) return allResponses;
 
-  const shuffled = allResponses.sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, numResponses);
+  const positives = allResponses.filter((response) => response.score > 0);
+  const neutrals = allResponses.filter((response) => response.score === 0);
+  const negatives = allResponses.filter((response) => response.score < 0);
+
+  const threeResponses = [
+    randArrayItem(positives),
+    randArrayItem(neutrals),
+    randArrayItem(negatives),
+  ];
+
+  const shuffled = threeResponses.sort(() => 0.5 - Math.random());
+  return shuffled;
 }
 
 /** TODO */

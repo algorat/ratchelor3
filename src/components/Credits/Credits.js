@@ -10,7 +10,7 @@ export function Credits(props) {
   };
 
   const cta = (
-    <>
+    <div className="credits-cta">
       <a
         href="https://www.instagram.com/alg0rat/"
         target="_blank"
@@ -22,7 +22,7 @@ export function Credits(props) {
         <button>Donate if you enjoyed</button>
       </a>
       <button onClick={props.reset}>Play again?</button>
-    </>
+    </div>
   );
 
   return (
