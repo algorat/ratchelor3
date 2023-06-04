@@ -53,6 +53,11 @@
   border-top: 13px solid var(--secondary-background-color);
 }
 
+.talking-to-rats-screen .rat-dialogue.angry {
+  transition-duration: 200ms;
+  background-color: rgb(114, 46, 46);
+}
+
 .talking-to-rats-screen .rat-dialogue.reacting {
   padding: 35px;
 }

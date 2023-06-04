@@ -72,8 +72,8 @@
   position: absolute;
   display: block;
   top: 85%;
-  left: 0px;
-  width: 100%;
+  left: -20px;
+  width: calc(100% + 40px);
   z-index: 10;
   background-color: var(--secondary-background-color);
   padding: 8px;

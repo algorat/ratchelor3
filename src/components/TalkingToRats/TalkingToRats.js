@@ -20,6 +20,7 @@ import React, { useState } from "react";
 const MAX_PREALOAD_TIME = 3000; // In ms.
 const DIALOGUE_INTERVAL = 30; // In ms;
 const REACTION_TIMEOUT = 2000; // In ms.
+const ANGRY_DIALOGUE_TIMEOUT = 5000; // In ms.
 const DIALOGUE_ANIMATION = 500; // In ms.
 
 export function TalkingToRats(props) {
@@ -30,6 +31,7 @@ export function TalkingToRats(props) {
   const [animatingDialogue, setAnimatingDialogue] = useState(true);
   const [ratResponses, setRatResponses] = useState([]);
   const [currentReaction, setCurrentReaction] = useState(null);
+  const [isAngry, setIsAngry] = useState(false);
 
   function preloadRatImages() {
     const tempRatDateImages = [];
@@ -75,21 +77,27 @@ export function TalkingToRats(props) {
   }
 
   function onResponseSelect(response) {
-    props.updateRatFeelings(props.activeRats[ratIndex], response.score);
-    showReaction(response.reaction);
+    const leaving = props.updateRatFeelings(
+      props.activeRats[ratIndex],
+      response.score
+    );
+    setIsAngry(leaving);
+    console.log(leaving);
+    showReaction(response.reaction, leaving);
   }
 
-  function showReaction(reaction) {
+  function showReaction(reaction, leaving) {
     setCurrentReaction(reaction);
     props.updateSfx(`${getMatchingSound(reaction)}.mp3`);
 
+    const timeout = leaving ? ANGRY_DIALOGUE_TIMEOUT : REACTION_TIMEOUT;
     setTimeout(() => {
       if (ratIndex === props.activeRats.length - 1) {
         props.goToRoseCeremony();
         return;
       }
       setupNextRat(ratIndex + 1);
-    }, REACTION_TIMEOUT);
+    }, timeout);
   }
 
   function setupNextRat(nextRatIndex, skipWait = false) {
@@ -97,6 +105,7 @@ export function TalkingToRats(props) {
     setTimeout(
       () => {
         setCurrentReaction(null);
+        setIsAngry(false);
         setAnimatingDialogue(false);
         setRatIndex(nextRatIndex);
         setDialogueProgress(0);
@@ -135,7 +144,7 @@ export function TalkingToRats(props) {
     </button>
   ));
 
-  const ratDialogueHtml = (
+  let ratDialogueHtml = (
     <>
       <div className="rat-dialogue" aria-hidden="true">
         {currentRatDialogue}
@@ -146,6 +155,23 @@ export function TalkingToRats(props) {
       </MobileControl>
     </>
   );
+
+  if (isAngry) {
+    ratDialogueHtml = (
+      <>
+        <div className="rat-dialogue angry">{ratData.angry}</div>
+      </>
+    );
+  } else if (currentReaction) {
+    ratDialogueHtml = (
+      <div className="rat-dialogue reacting">
+        <img
+          src={`${REACTIONS_IMAGES_BASE_PATH}/${currentReaction}.png`}
+          alt={`${ratName} is reacting with ${currentReaction}`}
+        />
+      </div>
+    );
+  }
 
   return (
     <>
@@ -182,18 +208,7 @@ export function TalkingToRats(props) {
           }`}
         >
           <div className="rat-name heading-medium">{ratName}</div>
-          <div className="text-dialogue-container">
-            {currentReaction ? (
-              <div className="rat-dialogue reacting">
-                <img
-                  src={`${REACTIONS_IMAGES_BASE_PATH}/${currentReaction}.png`}
-                  alt={`${ratName} is reacting with ${currentReaction}`}
-                />
-              </div>
-            ) : (
-              ratDialogueHtml
-            )}
-          </div>
+          <div className="text-dialogue-container">{ratDialogueHtml}</div>
         </div>
       </div>
       <MobileControl show={true} header="Select a response!">

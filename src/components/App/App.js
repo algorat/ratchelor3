@@ -78,6 +78,9 @@ function RatchelorApp() {
   // Todo
   const [ratFeelings, setRatFeelings] = useState({});
 
+  // Todo
+  const [currentlyLeavingRat, setCurrentlyLeavingRat] = useState(null);
+
   // The player avatar that was selected.
   const [playerAvatarIndex, setPlayerAvatarIndex] = useState(null);
 
@@ -158,6 +161,7 @@ function RatchelorApp() {
   // TODO
   function goToTalkingToRats() {
     setRandomizedActiveRats(activeRats.sort(() => 0.5 - Math.random()));
+    setCurrentlyLeavingRat(null);
     playInterlude("Time 2 date!", () => {
       setGameStage(GameStages.TALKING_TO_RATS);
     });
@@ -184,6 +188,7 @@ function RatchelorApp() {
 
     playInterlude("Time 2 date!", () => {
       setRound(round + 1);
+      setCurrentlyLeavingRat(null);
       setGameStage(GameStages.TALKING_TO_RATS);
       setActiveRats(chosenRats);
       setRandomizedActiveRats(chosenRats.sort(() => 0.5 - Math.random()));
@@ -220,6 +225,11 @@ function RatchelorApp() {
     const newFeelings = { ...ratFeelings };
     newFeelings[ratId] = updatedRatScore + feelingScore;
     setRatFeelings(newFeelings);
+    if (!currentlyLeavingRat && updatedRatScore + feelingScore < 0) {
+      setCurrentlyLeavingRat(ratId);
+      return true;
+    }
+    return false;
   }
 
   function resetGame() {
@@ -233,6 +243,7 @@ function RatchelorApp() {
       setOriginalRats([]);
       setRatFeelings({});
       updateMusic("intro.mp3");
+      setCurrentlyLeavingRat(null);
     });
   }
 
@@ -306,7 +317,7 @@ function RatchelorApp() {
           maxRats={ROSES_PER_ROUND[round]}
           goToNextRound={goToNextRound}
           updateSfx={updateSfx}
-          ratFeelings={ratFeelings}
+          currentlyLeavingRat={currentlyLeavingRat}
         />
       );
       break;

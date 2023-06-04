@@ -16,6 +16,7 @@ function IntermediateMobileRat(props) {
     <>
       <p className="heading-medium">{ratData.name}</p>
       <p>{ratData.tagline}</p>
+      <p>{ratData.zodiac}</p>
     </>
   );
 }
@@ -26,6 +27,7 @@ function SelectableRat(props) {
     index,
     ratId,
     ratName,
+    ratZodiac,
     ratTagline,
     isSelected,
     onClick,
@@ -62,7 +64,10 @@ function SelectableRat(props) {
         </div>
         <div className="rat-name-container">
           <div className="rat-name">{ratName}</div>
-          <div className="rat-tagline">{`"${ratTagline}"`}</div>
+          <div className="rat-tagline">
+            <i>*{ratZodiac}*</i>
+            <p>{`"${ratTagline}"`}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -172,6 +177,7 @@ export function RatSelect(props) {
               index={index}
               ratId={ratData.filename}
               ratName={ratData.name}
+              ratZodiac={ratData.zodiac}
               ratTagline={ratData.tagline}
               isSelected={activeRats.includes(ratData.filename)}
               isMobileSelected={intermediateMobileRat === ratData.filename}
