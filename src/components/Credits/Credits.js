@@ -2,13 +2,8 @@ import "./Credits.css";
 
 import React from "react";
 import { MobileControl } from "../MobileControl/MobileControl";
-import { Preloader } from "../Preloader/Preloader";
 
 export function Credits(props) {
-  const onClick = () => {
-    props.advanceToNextStage();
-  };
-
   const cta = (
     <div className="credits-cta">
       <a
@@ -79,11 +74,11 @@ export function Credits(props) {
               </a>
               ), Connie (
               <a
-                href="https://www.instagram.com/crabbage_/"
+                href="https://www.instagram.com/99ranchcowgirl/"
                 target="_blank"
                 rel="noreferrer"
               >
-                @crabbage_
+                @99ranchcowgirl
               </a>
               ), Caroline (
               <a
@@ -110,7 +105,7 @@ export function Credits(props) {
               </a>
             </li>
             <li>
-              Pamplemouse -{" "}
+              Pamplemouse and Thundercroft -{" "}
               <a
                 href="https://www.instagram.com/lassylaa/"
                 target="_blank"

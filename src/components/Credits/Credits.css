@@ -8,7 +8,7 @@
   background-color: var(--background-color);
 }
 
-.credits-screen header > *:not(:last-child) {
+.credits-screen .credits-cta > *:not(:last-child) {
   margin-right: 8px;
 }
 

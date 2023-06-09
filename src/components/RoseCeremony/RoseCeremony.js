@@ -167,7 +167,9 @@ export function RoseCeremony(props) {
         ></img>
         <img
           className="rose-ceremony-background"
-          src={`${BACKGROUNDS_IMAGES_BASE_PATH}/rose_ceremony.png`}
+          src={`${BACKGROUNDS_IMAGES_BASE_PATH}/${
+            props.maxRats === 1 ? "garden.png" : "rose_ceremony.png"
+          }`}
           alt=""
         />
         <MobileControl show={false}>

@@ -77,12 +77,16 @@ export function TalkingToRats(props) {
   }
 
   function onResponseSelect(response) {
+    if (currentReaction) {
+      // They clicked more than once, so we exit.
+      console.log("exiting early");
+      return;
+    }
     const leaving = props.updateRatFeelings(
       props.activeRats[ratIndex],
       response.score
     );
     setIsAngry(leaving);
-    console.log(leaving);
     showReaction(response.reaction, leaving);
   }
 
@@ -126,6 +130,8 @@ export function TalkingToRats(props) {
   const ratReactionPos = ratData.reaction_pos;
   const ratDialogue = ratData.dialogue[props.round];
   const currentRatDialogue = ratDialogue.slice(0, dialogueProgress);
+
+  console.log(ratData, ratResponses);
 
   useInterval(
     () => {

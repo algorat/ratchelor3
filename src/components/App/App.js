@@ -67,15 +67,15 @@ function RatchelorApp() {
   // Randomized active rats.
   const [randomizedActiveRats, setRandomizedActiveRats] = useState([]);
 
-  // TOdo
+  // State variables for setting the global sound effects.
   const [sfx, setSfx] = useState(null);
   const [sfxTimestamp, setSfxTimestamp] = useState(0);
 
-  // Todo
+  // State variables for setting the global music.
   const [music, setMusic] = useState(null);
   const [musicTimestamp, setMusicTimestamp] = useState(0);
 
-  // Todo
+  // Keep track of rat feelings so rats can leave if disrespected.
   const [ratFeelings, setRatFeelings] = useState({});
 
   // Todo

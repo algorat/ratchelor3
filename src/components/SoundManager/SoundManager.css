@@ -100,6 +100,14 @@ input[type='range']::-ms-thumb {
 
 @media only screen and (hover: none) {
   .game-options {
+    position: fixed;
+    top: auto;
+    left: auto;
+    bottom: 8px;
+    right: 8px;
+  }
+
+  .sound-slider {
     display: none;
   }
 }
