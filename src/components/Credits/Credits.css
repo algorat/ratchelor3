@@ -1,0 +1,36 @@
+.credits-screen {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  background-color: var(--background-color);
+}
+
+.credits-screen .credits-cta > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+.content {
+  padding: 100px 24px 24px;
+}
+
+.credits-screen a {
+  color: var(--text-color);
+}
+
+.credits-screen h3 {
+  color: var(--button-color);
+  margin-bottom: 12px;
+}
+
+.credits-screen ul {
+  margin: 0;
+}
+
+@media only screen and (hover: none) {
+  .credits-screen .content {
+    padding: 20px;
+  }
+}

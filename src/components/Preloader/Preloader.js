@@ -23,13 +23,11 @@ export function Preloader(props) {
       }
       if (extension.indexOf("mp3") >= 0 || extension.indexOf("wav") >= 0) {
         const audio = new Audio(filename);
-        console.log("loading audio", filename, audio);
-        audio.addEventListener("canplaythrough", () => {
-          console.log("audio loaded", fullFilename, remainingAssetsRef.current);
-          setRemainingAssetsRef(
-            remainingAssetsRef.current.filter((f) => f !== fullFilename)
-          );
-        });
+        // We don't wait for these to finish loading since they don't
+        // perform the callback reliably and it blocks the loading bar.
+        setRemainingAssetsRef(
+          remainingAssetsRef.current.filter((f) => f !== fullFilename)
+        );
         audio.load();
       } else {
         const img = new Image();

@@ -58,6 +58,11 @@
   pointer-events: none;
 }
 
+.rose-ceremony-screen header {
+  padding: 12px;
+  text-align: center;
+}
+
 /** Rose ceremony sizes. */
 .rose-ceremony-screen .xlarge img {
   height: min(300px, 50vh);
@@ -75,7 +80,7 @@
   height: min(180px, 30vh);
 }
 
-.rose-ceremony-screen .med-small img {
+.rose-ceremony-screen .medium-small img {
   height: min(165px, 23vh);
 }
 

@@ -8,6 +8,7 @@ import { RatSelect } from "../RatSelect/RatSelect";
 import { TalkingToRats } from "../TalkingToRats/TalkingToRats";
 import { RoseCeremony } from "../RoseCeremony/RoseCeremony";
 import { Proposal } from "../Proposal/Proposal";
+import { Credits } from "../Credits/Credits";
 import { SoundManager } from "../SoundManager/SoundManager";
 
 import frameImage from "../../assets/images/frame.png";
@@ -17,16 +18,29 @@ import {
   BACKGROUNDS_IMAGES_BASE_PATH,
 } from "../../utils/ratDataHelper";
 
+import { PlayerCustomization } from "../PlayerCustom/PlayerCustomization";
+
 const GameStages = {
   INTRO: 0,
   PLAYER_SELECT: 1,
-  RAT_SELECT: 2,
-  TALKING_TO_RATS: 3,
-  ROSE_CEREMONY: 4,
-  PROPOSAL: 5,
-  ANIME_ENDING: 6,
-  EPILOGUE: 7,
+  PLAYER_CUSTOMIZATION: 2,
+  RAT_SELECT: 3,
+  TALKING_TO_RATS: 4,
+  ROSE_CEREMONY: 5,
+  PROPOSAL: 6,
+  ANIME_ENDING: 7,
+  EPILOGUE: 8,
+  CREDITS: 9,
 };
+
+// // Num rats the person should select at the very beginning.
+// const RATS_IN_GAME = 2;
+
+// // How many rounds there are.
+// const NUM_ROUNDS = 1;
+
+// // How many roses get given out each round.
+// const ROSES_PER_ROUND = [1];
 
 // Num rats the person should select at the very beginning.
 const RATS_IN_GAME = 7;
@@ -53,19 +67,25 @@ function RatchelorApp() {
   // Randomized active rats.
   const [randomizedActiveRats, setRandomizedActiveRats] = useState([]);
 
-  // TOdo
+  // State variables for setting the global sound effects.
   const [sfx, setSfx] = useState(null);
   const [sfxTimestamp, setSfxTimestamp] = useState(0);
 
-  // Todo
+  // State variables for setting the global music.
   const [music, setMusic] = useState(null);
   const [musicTimestamp, setMusicTimestamp] = useState(0);
 
-  // Todo
+  // Keep track of rat feelings so rats can leave if disrespected.
   const [ratFeelings, setRatFeelings] = useState({});
+
+  // Todo
+  const [currentlyLeavingRat, setCurrentlyLeavingRat] = useState(null);
 
   // The player avatar that was selected.
   const [playerAvatarIndex, setPlayerAvatarIndex] = useState(null);
+
+  // The player avatar decorations that were selected.
+  const [playerAvatarDecorations, setPlayerAvatarDecorations] = useState([]);
 
   const [playingInterlude, setPlayingInterlude] = useState(false);
   const [playingInterludeText, setPlayingInterludeText] = useState("");
@@ -78,9 +98,32 @@ function RatchelorApp() {
     const watchLandscapeMobile = window.matchMedia(
       "(hover: none) and (orientation: portrait)"
     );
+
+    watchLandscapeMobile.addEventListener("change", () => {
+      setMobileLandscapeMode(watchLandscapeMobile.matches);
+    });
+
     setMobileMode(watchMobile.matches);
     setMobileLandscapeMode(watchLandscapeMobile.matches);
-  }, []);
+
+    const screenHeight = document.body.clientHeight;
+    const screenWidth = document.body.clientWidth;
+
+    const targetMobileWidth = (screenHeight * 900) / 675;
+
+    document.documentElement.style.setProperty(
+      "--game-width",
+      `${targetMobileWidth}px`
+    );
+    document.documentElement.style.setProperty(
+      "--mobile-height",
+      `${screenHeight}px`
+    );
+    document.documentElement.style.setProperty(
+      "--mobile-width",
+      `${screenWidth}px`
+    );
+  }, [mobileLandscapeMode]);
 
   function playInterlude(interludeText, callback) {
     updateSfx("curtain.mp3");
@@ -102,6 +145,13 @@ function RatchelorApp() {
   }
 
   // TODO
+  function goToPlayerCustomization() {
+    playInterlude("Dress up for the show!", () => {
+      setGameStage(GameStages.PLAYER_CUSTOMIZATION);
+    });
+  }
+
+  // TODO
   function goToRatSelect() {
     playInterlude("Meet your suitors", () => {
       setGameStage(GameStages.RAT_SELECT);
@@ -111,6 +161,7 @@ function RatchelorApp() {
   // TODO
   function goToTalkingToRats() {
     setRandomizedActiveRats(activeRats.sort(() => 0.5 - Math.random()));
+    setCurrentlyLeavingRat(null);
     playInterlude("Time 2 date!", () => {
       setGameStage(GameStages.TALKING_TO_RATS);
     });
@@ -119,7 +170,7 @@ function RatchelorApp() {
   // TODO
   function goToRoseCeremony() {
     updateMusic("rose_ceremony.mp3");
-    playInterlude("Choose some rats", () => {
+    playInterlude("Who gets a rose?", () => {
       setGameStage(GameStages.ROSE_CEREMONY);
     });
   }
@@ -137,6 +188,7 @@ function RatchelorApp() {
 
     playInterlude("Time 2 date!", () => {
       setRound(round + 1);
+      setCurrentlyLeavingRat(null);
       setGameStage(GameStages.TALKING_TO_RATS);
       setActiveRats(chosenRats);
       setRandomizedActiveRats(chosenRats.sort(() => 0.5 - Math.random()));
@@ -147,6 +199,14 @@ function RatchelorApp() {
   function goToEpilogue() {
     playInterlude("What happened to the others?", () => {
       setGameStage(GameStages.EPILOGUE);
+    });
+  }
+
+  // TODO
+  function goToCredits() {
+    updateMusic("intro.mp3");
+    playInterlude("Special thanks", () => {
+      setGameStage(GameStages.CREDITS);
     });
   }
 
@@ -165,17 +225,26 @@ function RatchelorApp() {
     const newFeelings = { ...ratFeelings };
     newFeelings[ratId] = updatedRatScore + feelingScore;
     setRatFeelings(newFeelings);
+    if (!currentlyLeavingRat && updatedRatScore + feelingScore < 0) {
+      setCurrentlyLeavingRat(ratId);
+      return true;
+    }
+    return false;
   }
 
   function resetGame() {
-    setGameStage(GameStages.INTRO);
-    setRound(0);
-    setPlayerAvatarIndex(null);
-    setActiveRats([]);
-    setRandomizedActiveRats([]);
-    setOriginalRats([]);
-    setRatFeelings({});
-    updateMusic("intro.mp3");
+    playInterlude("Resetting game...", () => {
+      setGameStage(GameStages.INTRO);
+      setRound(0);
+      setPlayerAvatarIndex(null);
+      setPlayerAvatarDecorations([]);
+      setActiveRats([]);
+      setRandomizedActiveRats([]);
+      setOriginalRats([]);
+      setRatFeelings({});
+      updateMusic("intro.mp3");
+      setCurrentlyLeavingRat(null);
+    });
   }
 
   function updateSfx(sfx) {
@@ -196,9 +265,20 @@ function RatchelorApp() {
     case GameStages.PLAYER_SELECT:
       gameScreenContents = (
         <PlayerSelect
-          advanceToNextStage={goToRatSelect}
+          advanceToNextStage={goToPlayerCustomization}
           setPlayerAvatarIndex={setPlayerAvatarIndex}
           playerAvatarIndex={playerAvatarIndex}
+          updateSfx={updateSfx}
+        />
+      );
+      break;
+    case GameStages.PLAYER_CUSTOMIZATION:
+      gameScreenContents = (
+        <PlayerCustomization
+          advanceToNextStage={goToRatSelect}
+          playerAvatarIndex={playerAvatarIndex}
+          playerAvatarDecorations={playerAvatarDecorations}
+          setPlayerAvatarDecorations={setPlayerAvatarDecorations}
           updateSfx={updateSfx}
         />
       );
@@ -237,7 +317,7 @@ function RatchelorApp() {
           maxRats={ROSES_PER_ROUND[round]}
           goToNextRound={goToNextRound}
           updateSfx={updateSfx}
-          ratFeelings={ratFeelings}
+          currentlyLeavingRat={currentlyLeavingRat}
         />
       );
       break;
@@ -260,8 +340,13 @@ function RatchelorApp() {
         <Epilogue
           finalRat={activeRats[0]}
           originalRats={originalRats}
-          reset={resetGame}
+          advanceToNextStage={goToCredits}
         />
+      );
+      break;
+    case GameStages.CREDITS:
+      gameScreenContents = (
+        <Credits finalRat={activeRats[0]} reset={resetGame} />
       );
       break;
     default:
@@ -271,7 +356,13 @@ function RatchelorApp() {
 
   // TODO
   if (mobileLandscapeMode) {
-    return <div>Mobile mode.</div>;
+    return (
+      <div className="landscape-mode-warning">
+        <h2>Ratchelor 3</h2>
+        It looks like you are in portrait mode on your phone! Please rotate your
+        phone to continue.
+      </div>
+    );
   }
 
   return (

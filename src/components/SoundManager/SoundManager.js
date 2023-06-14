@@ -8,7 +8,6 @@ import {
   SOUND_ICONS_IMAGES_BASE_PATH,
 } from "../../utils/ratDataHelper";
 
-const VOL_MAX = 3.9;
 const VOLUME_ICON_PREFIX = "volume_";
 const VOLUME_ICON_POSTFIX = ".png";
 const VOLUME_MUTE = "volume_mute.png";
@@ -16,7 +15,15 @@ const VOLUME_MUTE = "volume_mute.png";
 const DEFAULT_VOLUME = 0.2;
 
 function volumeToIndex(vol) {
-  return Math.floor(vol * VOL_MAX);
+  if (vol < 0.15) {
+    return 0;
+  } else if (vol < 0.25) {
+    return 1;
+  } else if (vol < 0.5) {
+    return 2;
+  } else {
+    return 3;
+  }
 }
 
 export function SoundManager(props) {
@@ -82,7 +89,7 @@ export function SoundManager(props) {
       {props.musicFile && (
         <ReactAudioPlayer
           src={`${SOUND_BASE_PATH}/${props.musicFile}`}
-          volume={volume / 3}
+          volume={volume * 0.5}
           loop={true}
           ref={(element) => {
             if (!element || lastMusicTimestamp === props.musicTimestamp) return;

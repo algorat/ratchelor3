@@ -29,8 +29,5 @@
 
 .mobile-container .mobile-cta-container button {
   width: 100%;
-}
-
-.mobile-container .mobile-cta-container button:not(:last-child) {
   margin-bottom: 8px;
 }

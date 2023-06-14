@@ -41,13 +41,27 @@ export function Epilogue(props) {
     setRandomPhotos(photosWithoutDupes.slice(0, 6));
   }, []);
 
+  const cta = (
+    <>
+      <a
+        href="https://www.instagram.com/alg0rat/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <button>Follow our Instagram for updates</button>
+      </a>
+      <a href="https://ko-fi.com/alg0rat" target="_blank" rel="noreferrer">
+        <button>Donate if you enjoyed</button>
+      </a>
+      <button onClick={props.advanceToNextStage}>Continue</button>
+    </>
+  );
+
   return (
     <>
       <div className="epilogue-screen screen">
         <MobileControl show={false}>
-          <header>
-            <button onClick={props.reset}>Play again</button>
-          </header>
+          <header>{cta}</header>
         </MobileControl>
         <img
           className="epilogue-background"
@@ -81,13 +95,7 @@ export function Epilogue(props) {
       <MobileControl
         show={true}
         header="What happened to the rats after?"
-        ctaButton={
-          <>
-            <button>Follow us for updates</button>
-            <button>Donate if you enjoyed</button>
-            <button onClick={props.reset}>Replay?</button>
-          </>
-        }
+        ctaButton={cta}
       >
         {mobileContent}
       </MobileControl>

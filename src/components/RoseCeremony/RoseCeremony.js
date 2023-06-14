@@ -83,27 +83,12 @@ function sizeCompare(rat1, rat2) {
   return sizeOrderings[rat2Size] - sizeOrderings[rat1Size];
 }
 
-function getLeavingRat(ratFeelings, activeRats) {
-  let lowestRat = null;
-  let min = 0;
-  for (const [key, value] of Object.entries(ratFeelings)) {
-    if (!activeRats.includes(key)) continue;
-    if (value < min) {
-      min = value;
-      lowestRat = key;
-    }
-  }
-  return lowestRat;
-}
-
 export function RoseCeremony(props) {
-  console.log(props.ratFeelings);
-
   const ratsOrderedBySize = props.activeRats.sort(sizeCompare);
   const [selectedRats, setSelectedRats] = useState([]);
   const [previousRats, setPreviousRats] = useState([]);
 
-  const leavingRat = getLeavingRat(props.ratFeelings, props.activeRats);
+  const leavingRat = props.currentlyLeavingRat;
 
   const selectRat = (selectedRatId) => {
     // Is it a rat who is leaving already?
@@ -182,7 +167,9 @@ export function RoseCeremony(props) {
         ></img>
         <img
           className="rose-ceremony-background"
-          src={`${BACKGROUNDS_IMAGES_BASE_PATH}/rose_ceremony.png`}
+          src={`${BACKGROUNDS_IMAGES_BASE_PATH}/${
+            props.maxRats === 1 ? "garden.png" : "rose_ceremony.png"
+          }`}
           alt=""
         />
         <MobileControl show={false}>

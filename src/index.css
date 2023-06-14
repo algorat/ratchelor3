@@ -118,8 +118,7 @@ h2 {
 }
 
 .stickers:hover {
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: var(--secondary-background-color);
 }
 
 .credit-title {
@@ -140,39 +139,33 @@ h2 {
   border-radius: 12px;
   line-height: 105%;
   background-color: var(--background-color);
-  font-family: Yusei Magic;
   text-align: center;
   color: var(--text-color);
   font-size: 18px;
-  cursor: pointer;
   text-decoration: none;
+  font-family: var(--body-font-stack);
+  z-index: 1001;
+}
+
+.algorats-credit {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
 }
 
 .credits a {
-  color: rgb(108, 18, 187);
-}
-
-.algorats-credit-small {
-  font-size: 14px;
-}
-
-.sound-credit {
-  font-size: 11px;
-  font-style: italic;
+  color: var(--text-color);
 }
 
 .credits:hover .credit-title,
-.credits .algorats-credit,
-.credits .algorats-credit-small,
-.credits .sound-credit {
+.credits .algorats-credit {
   display: none;
 }
 
-.credits:hover .algorats-credit,
-.credits:hover .algorats-credit-small,
-.credits:hover .sound-credit {
-  display: block;
-  z-index: 1000;
+.credits:hover .algorats-credit {
+  display: flex;
+  z-index: 1001;
 }
 
 /* hidden from regular users but visible to screenreaders. */
@@ -189,5 +182,16 @@ h2 {
 @media only screen and (hover: none) {
   #root {
     display: block;
+  }
+
+  /** The only iframe on the page should be the kofi widget. */
+  iframe,
+  .floatingchat-container,
+  .not-on-mobile {
+    display: none;
+  }
+
+  button {
+    padding: 12px 16px;
   }
 }

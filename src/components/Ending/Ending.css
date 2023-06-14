@@ -21,9 +21,24 @@
 }
 
 .epilogue-button {
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
   right: 32px;
   top: 32px;
+  animation: fadeIn 500ms 7s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 @keyframes slideUp {
