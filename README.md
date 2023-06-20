@@ -1,3 +1,6 @@
+install firebase devlopment tools
+npm run stage
+commit to repo
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
