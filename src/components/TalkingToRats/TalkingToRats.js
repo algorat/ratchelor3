@@ -213,7 +213,7 @@ export function TalkingToRats(props) {
             animatingDialogue ? "dialogue-out" : ""
           }`}
         >
-          <div className="rat-name heading-medium">{ratName}</div>
+          <h3 className="rat-name">{ratName}</h3>
           <div className="text-dialogue-container">{ratDialogueHtml}</div>
         </div>
       </div>

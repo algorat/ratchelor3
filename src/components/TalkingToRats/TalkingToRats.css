@@ -34,7 +34,7 @@
 .talking-to-rats-screen .rat-name {
   background-color: var(--secondary-background-color);
   width: fit-content;
-  padding: 5px 20px;
+  padding: 13px 20px 5px 20px;
   margin-left: 20px;
   border-radius: 10px 10px 0 0;
 }

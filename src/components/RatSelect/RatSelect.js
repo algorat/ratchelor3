@@ -164,7 +164,7 @@ export function RatSelect(props) {
         <MobileControl show={false}>
           <header>
             {numRatsLeft > 0 ? (
-              <p className="heading-medium">Choose {numRatsLeft} contestants</p>
+              <h2>Choose {numRatsLeft} contestants</h2>
             ) : (
               ctaButton
             )}
