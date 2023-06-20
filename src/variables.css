@@ -11,14 +11,14 @@
   --button-outline-color: #1f1179;
   --button-shadow-color: #ab62bc;
 
-  --fancy-font-stack: AppleButter, sans-serif;
-  --body-font-stack: 'DM Sans', sans-serif;
+  --fancy-font-stack: Beta54, sans-serif;
+  --body-font-stack: NunitoVariable, sans-serif;
 
   --heading-font-size: 36px;
-  --medium-font-size: 24px;
+  --medium-font-size: 22px;
   --button-font-size: 36px;
-  --small-button-font-size: 20px;
-  --body-font-size: 22px;
+  --small-button-font-size: 22px;
+  --body-font-size: 18px;
 }
 
 @media only screen and (hover: none) {
@@ -29,7 +29,7 @@
     --heading-font-size: 20px;
     --medium-font-size: 18px;
     --button-font-size: 16px;
-    --small-button-font-size: 16px;
+    --small-button-font-size: 18px;
     --body-font-size: 12px;
   }
 }

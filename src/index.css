@@ -3,8 +3,13 @@
 }
 
 @font-face {
-  font-family: AppleButter;
-  src: url('fonts/AppleButter.ttf');
+  font-family: Beta54;
+  src: url('fonts/Beta54.ttf');
+}
+
+@font-face {
+  font-family: NunitoVariable;
+  src: url('fonts/Nunito-VariableFont_wght.ttf');
 }
 
 html,
@@ -69,7 +74,6 @@ button.small {
   padding: 10px 12px;
   font-size: var(--small-button-font-size, 20px);
   border-radius: 40px;
-  font-style: italic;
 }
 
 button:hover {
@@ -91,7 +95,8 @@ header {
 }
 
 p,
-h2 {
+h2,
+h3 {
   margin: 0;
 }
 
@@ -101,9 +106,15 @@ h2 {
   font-weight: 700;
 }
 
-.heading-medium {
+h3 {
   font-size: var(--medium-font-size);
   font-family: var(--fancy-font-stack);
+  font-weight: 700;
+}
+
+.heading-medium {
+  font-size: var(--medium-font-size);
+  font-family: var(--body-font-stack);
   font-weight: 600;
 }
 
