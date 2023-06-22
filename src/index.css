@@ -67,6 +67,7 @@ button {
   color: var(--button-text-color);
   border: 3px solid var(--button-outline-color);
   transition: background-color var(--short-transition-duration);
+  letter-spacing: 0.05em;
 }
 
 header button,
@@ -104,12 +105,14 @@ h2 {
   font-size: var(--heading-font-size);
   font-family: var(--fancy-font-stack);
   font-weight: 700;
+  letter-spacing: 0.05em;
 }
 
 h3 {
   font-size: var(--medium-font-size);
   font-family: var(--fancy-font-stack);
   font-weight: 700;
+  letter-spacing: 0.07em;
 }
 
 .heading-medium {

@@ -4,6 +4,8 @@ import { MobileControl } from "../MobileControl/MobileControl";
 
 import { Reaction } from "../Reaction/Reaction";
 
+import leavingMessages from "../../data/leavingResponses.json";
+
 import {
   getRatById,
   DATES_IMAGES_BASE_PATH,
@@ -20,7 +22,6 @@ import React, { useState } from "react";
 const MAX_PREALOAD_TIME = 3000; // In ms.
 const DIALOGUE_INTERVAL = 30; // In ms;
 const REACTION_TIMEOUT = 2000; // In ms.
-const ANGRY_DIALOGUE_TIMEOUT = 5000; // In ms.
 const DIALOGUE_ANIMATION = 500; // In ms.
 
 export function TalkingToRats(props) {
@@ -51,7 +52,6 @@ export function TalkingToRats(props) {
                 src={fullFilepath}
                 alt={ratData.name}
                 onLoad={() => {
-                  console.log("resolved");
                   resolve();
                 }}
               />
@@ -94,14 +94,18 @@ export function TalkingToRats(props) {
     setCurrentReaction(reaction);
     props.updateSfx(`${getMatchingSound(reaction)}.mp3`);
 
-    const timeout = leaving ? ANGRY_DIALOGUE_TIMEOUT : REACTION_TIMEOUT;
-    setTimeout(() => {
-      if (ratIndex === props.activeRats.length - 1) {
-        props.goToRoseCeremony();
-        return;
-      }
-      setupNextRat(ratIndex + 1);
-    }, timeout);
+    if (!leaving) {
+      setTimeout(moveIntoNextRat, REACTION_TIMEOUT);
+    }
+  }
+
+  function moveIntoNextRat() {
+    // TODO(connie): fix edge case where user hits twice
+    if (ratIndex === props.activeRats.length - 1) {
+      props.goToRoseCeremony();
+      return;
+    }
+    setupNextRat(ratIndex + 1);
   }
 
   function setupNextRat(nextRatIndex, skipWait = false) {
@@ -131,8 +135,6 @@ export function TalkingToRats(props) {
   const ratDialogue = ratData.dialogue[props.round];
   const currentRatDialogue = ratDialogue.slice(0, dialogueProgress);
 
-  console.log(ratData, ratResponses);
-
   useInterval(
     () => {
       setDialogueProgress(dialogueProgress + 1);
@@ -140,7 +142,7 @@ export function TalkingToRats(props) {
     dialogueProgress < ratDialogue.length ? DIALOGUE_INTERVAL : null
   );
 
-  const responses = ratResponses.map((response, ridx) => (
+  let responses = ratResponses.map((response, ridx) => (
     <button
       key={`ratresponse${ridx}`}
       className="response"
@@ -154,21 +156,35 @@ export function TalkingToRats(props) {
     <>
       <div className="rat-dialogue" aria-hidden="true">
         {currentRatDialogue}
+        <MobileControl show={false}>
+          <div className="responses">{responses}</div>
+        </MobileControl>
       </div>
       <div className="visually-hidden">{ratDialogue}</div>
-      <MobileControl show={false}>
-        <div className="responses">{responses}</div>
-      </MobileControl>
     </>
   );
 
   if (isAngry) {
+    const responseIdx = Math.floor(
+      props.randomLeavingResponse * leavingMessages.responses.length
+    );
+    responses = (
+      <button className="response" onClick={moveIntoNextRat}>
+        {leavingMessages.responses[responseIdx]}
+      </button>
+    );
     ratDialogueHtml = (
       <>
-        <div className="rat-dialogue angry">{ratData.angry}</div>
+        <div className="rat-dialogue angry">
+          {ratData.angry}
+          <MobileControl show={false}>
+            <div className="responses">{responses}</div>
+          </MobileControl>
+        </div>
       </>
     );
   } else if (currentReaction) {
+    responses = "";
     ratDialogueHtml = (
       <div className="rat-dialogue reacting">
         <img

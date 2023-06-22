@@ -41,7 +41,6 @@ export function Preloader(props) {
     });
 
     setTimeout(() => {
-      console.log("10 second limit hit", remainingAssetsRef.current);
       setRemainingAssetsRef([]);
     }, MAX_PRELOAD_TIME);
   }, []);
