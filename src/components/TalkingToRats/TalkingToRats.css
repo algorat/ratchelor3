@@ -47,7 +47,7 @@
 .talking-to-rats-screen .rat-dialogue {
   font-family: var(--body-font-stack);
   font-size: var(--body-font-size);
-  padding: 15px 35px 90px 35px;
+  padding: 16px 32px 24px;
   background-color: var(--background-color);
   width: 100%;
   border-top: 13px solid var(--secondary-background-color);
@@ -89,9 +89,8 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  position: absolute;
-  bottom: 25px;
   column-gap: 4px;
+  margin-top: 16px;
 }
 
 .mobile-responses {

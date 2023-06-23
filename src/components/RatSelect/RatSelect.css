@@ -2,6 +2,10 @@
   background: var(--background-color);
 }
 
+.rat-select-screen header {
+  z-index: 0;
+}
+
 .rat-select-screen .rat-grid {
   width: 100%;
   display: grid;
@@ -9,6 +13,7 @@
 
   row-gap: 8px;
   padding: 80px 12px 12px 12px;
+  z-index: 100;
 }
 
 .rat-select-screen .rat-grid .rat-container {

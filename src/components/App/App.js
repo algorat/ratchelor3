@@ -66,6 +66,7 @@ function RatchelorApp() {
 
   // Randomized active rats.
   const [randomizedActiveRats, setRandomizedActiveRats] = useState([]);
+  const [randomLeavingResponse, setRandomLeavingResponse] = useState(0);
 
   // State variables for setting the global sound effects.
   const [sfx, setSfx] = useState(null);
@@ -161,6 +162,7 @@ function RatchelorApp() {
   // TODO
   function goToTalkingToRats() {
     setRandomizedActiveRats(activeRats.sort(() => 0.5 - Math.random()));
+    setRandomLeavingResponse(Math.random());
     setCurrentlyLeavingRat(null);
     playInterlude("Time 2 date!", () => {
       setGameStage(GameStages.TALKING_TO_RATS);
@@ -192,6 +194,7 @@ function RatchelorApp() {
       setGameStage(GameStages.TALKING_TO_RATS);
       setActiveRats(chosenRats);
       setRandomizedActiveRats(chosenRats.sort(() => 0.5 - Math.random()));
+      setRandomLeavingResponse(Math.random());
     });
   }
 
@@ -219,13 +222,21 @@ function RatchelorApp() {
     });
   }
 
-  // TODO
+  // Updates rat feelings based on user response scores.
   function updateRatFeelings(ratId, feelingScore) {
-    const updatedRatScore = ratFeelings[ratId] ?? 0;
+    // No effect if response elicits a neutral or positive feeling.
+    if (feelingScore >= 0) {
+      return false;
+    }
+    const updatedRatScore = (ratFeelings[ratId] ?? 0) + feelingScore;
     const newFeelings = { ...ratFeelings };
-    newFeelings[ratId] = updatedRatScore + feelingScore;
+    newFeelings[ratId] = updatedRatScore;
+    const randomNumber = Math.random();
     setRatFeelings(newFeelings);
-    if (!currentlyLeavingRat && updatedRatScore + feelingScore < 0) {
+    if (
+      !currentlyLeavingRat &&
+      randomNumber < Math.abs(updatedRatScore) / NUM_ROUNDS
+    ) {
       setCurrentlyLeavingRat(ratId);
       return true;
     }
@@ -300,6 +311,7 @@ function RatchelorApp() {
       gameScreenContents = (
         <TalkingToRats
           activeRats={randomizedActiveRats}
+          randomLeavingResponse={randomLeavingResponse}
           playerAvatarIndex={playerAvatarIndex}
           round={round}
           goToRoseCeremony={goToRoseCeremony}
