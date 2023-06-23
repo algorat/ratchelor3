@@ -29,7 +29,7 @@ export function Credits(props) {
         <div className="content">
           <h2>Credits</h2>
           <h3 className="heading-medium">Game design, art and programming</h3>
-          <p>This game was created by the al0rat art collective.</p>
+          <p>This game was created by the algorat art collective.</p>
           <ul>
             <li>
               <a href="https://algorat.club" target="_blank" rel="noreferrer">
@@ -82,14 +82,21 @@ export function Credits(props) {
               </a>
               ), Caroline (
               <a
-                href="https://www.instagram.com/carohermy/"
+                href="https://www.tiktok.com/@caromaker/"
                 target="_blank"
                 rel="noreferrer"
               >
                 @caromaker
               </a>
               ), Char (
-              <a href="https://www.instagram.com/charstiles/">@charstiles</a>)
+              <a
+                href="https://www.instagram.com/charstiles/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                @charstiles
+              </a>
+              )
             </li>
           </ul>
           <h3 className="heading-medium">Ending art guest artists</h3>

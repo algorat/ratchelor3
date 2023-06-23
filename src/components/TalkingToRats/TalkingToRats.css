@@ -93,6 +93,16 @@
   margin-top: 16px;
 }
 
+.talking-to-rats-screen .responses .response {
+  transition: opacity 1s;
+  opacity: 1;
+}
+
+.talking-to-rats-screen .responses .response.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .mobile-responses {
   display: flex;
   flex-direction: column;

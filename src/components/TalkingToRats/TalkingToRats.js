@@ -23,6 +23,7 @@ const MAX_PREALOAD_TIME = 3000; // In ms.
 const DIALOGUE_INTERVAL = 30; // In ms;
 const REACTION_TIMEOUT = 2000; // In ms.
 const DIALOGUE_ANIMATION = 500; // In ms.
+const ANGRY_RESPONSE_TIMEOUT = 2000; // In ms.
 
 export function TalkingToRats(props) {
   const [ratIndex, setRatIndex] = useState(0);
@@ -33,6 +34,7 @@ export function TalkingToRats(props) {
   const [ratResponses, setRatResponses] = useState([]);
   const [currentReaction, setCurrentReaction] = useState(null);
   const [isAngry, setIsAngry] = useState(false);
+  const [showAngryResponse, setShowAngryResponse] = useState(false);
 
   function preloadRatImages() {
     const tempRatDateImages = [];
@@ -88,6 +90,9 @@ export function TalkingToRats(props) {
     );
     setIsAngry(leaving);
     showReaction(response.reaction, leaving);
+    setTimeout(() => {
+      setShowAngryResponse(true);
+    }, ANGRY_RESPONSE_TIMEOUT);
   }
 
   function showReaction(reaction, leaving) {
@@ -114,6 +119,7 @@ export function TalkingToRats(props) {
       () => {
         setCurrentReaction(null);
         setIsAngry(false);
+        setShowAngryResponse(false);
         setAnimatingDialogue(false);
         setRatIndex(nextRatIndex);
         setDialogueProgress(0);
@@ -169,7 +175,10 @@ export function TalkingToRats(props) {
       props.randomLeavingResponse * leavingMessages.responses.length
     );
     responses = (
-      <button className="response" onClick={moveIntoNextRat}>
+      <button
+        className={`response ${showAngryResponse ? "" : "hidden"}`}
+        onClick={moveIntoNextRat}
+      >
         {leavingMessages.responses[responseIdx]}
       </button>
     );
