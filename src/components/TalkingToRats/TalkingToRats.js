@@ -35,6 +35,7 @@ export function TalkingToRats(props) {
   const [currentReaction, setCurrentReaction] = useState(null);
   const [isAngry, setIsAngry] = useState(false);
   const [showAngryResponse, setShowAngryResponse] = useState(false);
+  const [showingLeavingPopup, setShowLeavingPopup] = useState(false);
 
   function preloadRatImages() {
     const tempRatDateImages = [];
@@ -100,11 +101,11 @@ export function TalkingToRats(props) {
     props.updateSfx(`${getMatchingSound(reaction)}.mp3`);
 
     if (!leaving) {
-      setTimeout(moveIntoNextRat, REACTION_TIMEOUT);
+      setTimeout(moveOntoNextRat, REACTION_TIMEOUT);
     }
   }
 
-  function moveIntoNextRat() {
+  function moveOntoNextRat() {
     // TODO(connie): fix edge case where user hits twice
     if (ratIndex === props.activeRats.length - 1) {
       props.goToRoseCeremony();
@@ -177,7 +178,10 @@ export function TalkingToRats(props) {
     responses = (
       <button
         className={`response ${showAngryResponse ? "" : "hidden"}`}
-        onClick={moveIntoNextRat}
+        onClick={() => {
+          setShowAngryResponse(false);
+          setShowLeavingPopup(true);
+        }}
       >
         {leavingMessages.responses[responseIdx]}
       </button>
@@ -241,6 +245,19 @@ export function TalkingToRats(props) {
           <h3 className="rat-name">{ratName}</h3>
           <div className="text-dialogue-container">{ratDialogueHtml}</div>
         </div>
+        {showingLeavingPopup && (
+          <div className="leaving-modal">
+            <p>This rat is leaving the show!</p>
+            <button
+              onClick={() => {
+                setShowLeavingPopup(false);
+                moveOntoNextRat();
+              }}
+            >
+              Okay
+            </button>
+          </div>
+        )}
       </div>
       <MobileControl show={true} header="Select a response!">
         <div className="mobile-responses">{responses}</div>

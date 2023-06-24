@@ -110,6 +110,23 @@
   align-items: center;
 }
 
+.talking-to-rats-screen .leaving-modal {
+  position: absolute;
+  top: 150px;
+  border: 2px solid var(--text-color);
+  left: calc(50% - 120px);
+  padding: 32px;
+  width: 240px;
+  z-index: 1000;
+  background-color: var(--background-color);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  row-gap: 12px;
+}
+
 @media only screen and (hover: none) {
   .talking-to-rats-screen .rat-dialogue {
     padding: 15px 20px 15px 20px;
