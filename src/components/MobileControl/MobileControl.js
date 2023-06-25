@@ -8,7 +8,10 @@ export function MobileControl(props) {
   useEffect(() => {
     const watchMobile = window.matchMedia("only screen and (hover: none)");
     setMobileMode(watchMobile.matches);
-  }, []);
+    watchMobile.addEventListener("change", () => {
+      setMobileMode(watchMobile.matches);
+    });
+  }, [mobileMode]);
 
   if (!mobileMode && !props.show) {
     return <>{props.children}</>;

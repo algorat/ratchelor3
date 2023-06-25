@@ -54,6 +54,18 @@ ul.player-custom-options button.small.selected {
   border: 2px solid var(--button-color);
 }
 
+.player-customization-screen .onwards {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+}
+
+.player-customization-screen .back {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
+
 @media only screen and (hover: none) {
   .player-customization-screen {
     padding-top: 90px;

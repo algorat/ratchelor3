@@ -41,16 +41,21 @@ export function PlayerCustomization(props) {
     </ul>
   );
 
+  const onwardsButton = (
+    <button className="small onwards" onClick={props.advanceToNextStage}>
+      Continue onwards →
+    </button>
+  );
+  const previousButton = (
+    <button className="small back" onClick={props.goToPlayerSelect}>
+      ← Back to player selection
+    </button>
+  );
   return (
     <>
       <div className="player-customization-screen screen">
         <header>
           <h2>Dress up your character? </h2>
-          <MobileControl show={false}>
-            <button className="small" onClick={props.advanceToNextStage}>
-              Continue onwards
-            </button>
-          </MobileControl>
         </header>
         <div className="custom-game">
           <div className="custom-character">
@@ -64,6 +69,8 @@ export function PlayerCustomization(props) {
               />
             ))}
           </div>
+          <MobileControl show={false}>{previousButton}</MobileControl>
+          <MobileControl show={false}>{onwardsButton}</MobileControl>
           <MobileControl show={false}>{options}</MobileControl>
         </div>
       </div>
@@ -71,9 +78,10 @@ export function PlayerCustomization(props) {
         show={true}
         header="Choose accessories"
         ctaButton={
-          <button className="small" onClick={props.advanceToNextStage}>
-            Continue onwards
-          </button>
+          <>
+            {previousButton}
+            {onwardsButton}
+          </>
         }
       >
         {options}

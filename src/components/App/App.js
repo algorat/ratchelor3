@@ -94,16 +94,7 @@ function RatchelorApp() {
   const [mobileMode, setMobileMode] = useState(false);
   const [mobileLandscapeMode, setMobileLandscapeMode] = useState(false);
 
-  useEffect(() => {
-    const watchMobile = window.matchMedia("only screen and (hover: none)");
-    const watchLandscapeMobile = window.matchMedia(
-      "(hover: none) and (orientation: portrait)"
-    );
-
-    watchLandscapeMobile.addEventListener("change", () => {
-      setMobileLandscapeMode(watchLandscapeMobile.matches);
-    });
-
+  function onMobileChange(watchMobile, watchLandscapeMobile) {
     setMobileMode(watchMobile.matches);
     setMobileLandscapeMode(watchLandscapeMobile.matches);
 
@@ -124,6 +115,18 @@ function RatchelorApp() {
       "--mobile-width",
       `${screenWidth}px`
     );
+  }
+
+  useEffect(() => {
+    const watchMobile = window.matchMedia("only screen and (hover: none)");
+    const watchLandscapeMobile = window.matchMedia(
+      "(hover: none) and (orientation: portrait)"
+    );
+
+    watchLandscapeMobile.addEventListener("change", () =>
+      onMobileChange(watchMobile, watchLandscapeMobile)
+    );
+    onMobileChange(watchMobile, watchLandscapeMobile);
   }, [mobileLandscapeMode]);
 
   function playInterlude(interludeText, callback) {
@@ -287,6 +290,7 @@ function RatchelorApp() {
       gameScreenContents = (
         <PlayerCustomization
           advanceToNextStage={goToRatSelect}
+          goToPlayerSelect={goToPlayerSelect}
           playerAvatarIndex={playerAvatarIndex}
           playerAvatarDecorations={playerAvatarDecorations}
           setPlayerAvatarDecorations={setPlayerAvatarDecorations}

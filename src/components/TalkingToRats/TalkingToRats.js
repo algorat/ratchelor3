@@ -245,9 +245,27 @@ export function TalkingToRats(props) {
           <h3 className="rat-name">{ratName}</h3>
           <div className="text-dialogue-container">{ratDialogueHtml}</div>
         </div>
-        {showingLeavingPopup && (
-          <div className="leaving-modal">
-            <p>This rat is leaving the show!</p>
+        <MobileControl show={false}>
+          {showingLeavingPopup && (
+            <div className="leaving-modal">
+              <p>This rat is leaving the show!</p>
+              <button
+                onClick={() => {
+                  setShowLeavingPopup(false);
+                  moveOntoNextRat();
+                }}
+              >
+                Okay
+              </button>
+            </div>
+          )}
+        </MobileControl>
+      </div>
+      <MobileControl
+        show={true}
+        header="Select a response!"
+        ctaButton={
+          showingLeavingPopup && (
             <button
               onClick={() => {
                 setShowLeavingPopup(false);
@@ -256,11 +274,14 @@ export function TalkingToRats(props) {
             >
               Okay
             </button>
-          </div>
-        )}
-      </div>
-      <MobileControl show={true} header="Select a response!">
-        <div className="mobile-responses">{responses}</div>
+          )
+        }
+      >
+        {showingLeavingPopup
+          ? "This rat is leaving the show!"
+          : !animatingDialogue && (
+              <div className="mobile-responses">{responses}</div>
+            )}
       </MobileControl>
     </>
   );
