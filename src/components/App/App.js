@@ -103,18 +103,21 @@ function RatchelorApp() {
 
     const targetMobileWidth = (screenHeight * 900) / 675;
 
-    document.documentElement.style.setProperty(
-      "--game-width",
-      `${targetMobileWidth}px`
-    );
-    document.documentElement.style.setProperty(
-      "--mobile-height",
-      `${screenHeight}px`
-    );
-    document.documentElement.style.setProperty(
-      "--mobile-width",
-      `${screenWidth}px`
-    );
+    // A small timeout to avoid race condition.
+    setTimeout(() => {
+      document.documentElement.style.setProperty(
+        "--game-width",
+        `${targetMobileWidth}px`
+      );
+      document.documentElement.style.setProperty(
+        "--mobile-height",
+        `${screenHeight}px`
+      );
+      document.documentElement.style.setProperty(
+        "--mobile-width",
+        `${screenWidth}px`
+      );
+    }, 50);
   }
 
   useEffect(() => {

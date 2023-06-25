@@ -73,6 +73,7 @@ function SelectableRat(props) {
         src={sadFile}
         alt={`a sad ${ratData.name}`}
       />
+      <div className="hoverable-rat-name">{ratData.name}</div>
     </div>
   );
 }

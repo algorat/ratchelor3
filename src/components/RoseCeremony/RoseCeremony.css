@@ -49,6 +49,22 @@
   display: block;
 }
 
+.rose-ceremony-screen .rose-ceremony-rat .hoverable-rat-name {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: var(--secondary-background-color);
+  border: 2px solid var(--background-color);
+  border-radius: 12px;
+  padding: 8px;
+  display: none;
+}
+
+.rose-ceremony-screen .rose-ceremony-rat:hover .hoverable-rat-name {
+  display: block;
+}
+
 .rose-ceremony-screen .bouquet {
   position: absolute;
   bottom: 0px;
