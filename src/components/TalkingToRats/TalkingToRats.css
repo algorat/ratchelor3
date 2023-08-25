@@ -6,24 +6,70 @@
   position: relative;
 }
 
-.talking-to-rats-screen img.couch {
+.talking-to-rats-screen .all-images-container {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.talking-to-rats-screen img {
   width: 100%;
   height: 100%;
 }
+
+.talking-to-rats-screen .all-images-container img {
+  display: block;
+  position: absolute;
+}
+
+.talking-to-rats-screen .all-images-container.bus .background {
+  left: -50%;
+  top: -50%;
+  transform: translate(-27.9%, -53%);
+}
+
+.talking-to-rats-screen .all-images-container.cathy {
+  animation: cathy 5.5s forwards;
+}
+
+.talking-to-rats-screen .all-images-container.cathy .background {
+  bottom: 0px;
+}
+
+.talking-to-rats-screen .all-images-container.bus {
+  transform: translateY(33%) scale(0.3);
+  animation: bus 3s ease-in 2.5s forwards;
+}
+
+@keyframes cathy {
+  0% {
+    transform: translate(-150px, 1200px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes bus {
+  0% {
+    transform: translateY(33%) scale(0.3);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* .talking-to-rats-screen img {
+  width: 100%;
+  height: 100%;
+} */
 
 .player-rat,
 .contestant {
   position: absolute;
-  top: 0;
+  top: 0px;
   right: 0px;
   width: 100%;
-  height: 100%;
+  height: auto;
   transition: right 800ms ease-in-out;
 }
 

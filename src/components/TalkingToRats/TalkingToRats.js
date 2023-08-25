@@ -19,11 +19,19 @@ import { getMatchingSound, getTalkingMusic } from "../../utils/soundDataHelper";
 
 import React, { useState } from "react";
 
-const MAX_PREALOAD_TIME = 3000; // In ms.
+const PRE_ANIMATION_DURATION = 6000; // In ms.
 const DIALOGUE_INTERVAL = 30; // In ms;
 const REACTION_TIMEOUT = 2000; // In ms.
 const DIALOGUE_ANIMATION = 500; // In ms.
 const ANGRY_RESPONSE_TIMEOUT = 2000; // In ms.
+
+const backgrounds = [
+  { file: "cathy_date.png", animation: "cathy" },
+  { file: "bus_date.png", animation: "bus" },
+  { file: "bus_date.png", animation: "bus" },
+  { file: "bus_date.png", animation: "bus" },
+  { file: "bus_date.png", animation: "bus" },
+];
 
 export function TalkingToRats(props) {
   const [ratIndex, setRatIndex] = useState(0);
@@ -63,14 +71,12 @@ export function TalkingToRats(props) {
           })
       )
     );
-    // Enter the finished state once all the images are loaded, OR once the max
-    // preloading time has been reached, whichever is earlier.
-    Promise.race([
-      ratLoadingPromises,
-      new Promise((resolve) => {
-        setTimeout(resolve, MAX_PREALOAD_TIME);
-      }),
-    ]).then(() => {
+    props.updateMusic(getTalkingMusic(0));
+    // Wait for the animation duration before going onwards.
+    // In the meantime, the images can preload.
+    new Promise((resolve) => {
+      setTimeout(resolve, PRE_ANIMATION_DURATION);
+    }).then(() => {
       setRatImagesLoaded(true);
       setupNextRat(ratIndex, true);
     });
@@ -208,28 +214,36 @@ export function TalkingToRats(props) {
     );
   }
 
+  const backgroundData = backgrounds[props.round];
+
   return (
     <>
       <div className="talking-to-rats-screen screen">
-        <img src={`${BACKGROUNDS_IMAGES_BASE_PATH}/couch.gif`} alt="" />
-        <div className="player-rat">
+        <div className={`all-images-container ${backgroundData.animation}`}>
           <img
-            src={`${PLAYER_IMAGES_BASE_PATH}/${props.playerAvatarIndex}.png`}
-            alt="Your player rat on a date."
+            className="background"
+            src={`${BACKGROUNDS_IMAGES_BASE_PATH}/${backgroundData.file}`}
+            alt=""
           />
-        </div>
-        {ratDateImages.map((ratDateImage, idx) => (
-          <div
-            key={`rat-date-${idx}`}
-            className={
-              ratImagesLoaded && idx === ratIndex && !animatingDialogue
-                ? "current-rat contestant"
-                : "contestant"
-            }
-          >
-            {ratDateImage}
+          <div className="player-rat">
+            <img
+              src={`${PLAYER_IMAGES_BASE_PATH}/${props.playerAvatarIndex}.png`}
+              alt="Your player rat on a date."
+            />
           </div>
-        ))}
+          {ratDateImages.map((ratDateImage, idx) => (
+            <div
+              key={`rat-date-${idx}`}
+              className={
+                ratImagesLoaded && idx === ratIndex && !animatingDialogue
+                  ? "current-rat contestant"
+                  : "contestant"
+              }
+            >
+              {ratDateImage}
+            </div>
+          ))}
+        </div>
         {currentReaction && (
           <Reaction
             src={`${currentReaction}.png`}
