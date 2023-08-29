@@ -26,8 +26,8 @@ const DIALOGUE_ANIMATION = 500; // In ms.
 const ANGRY_RESPONSE_TIMEOUT = 2000; // In ms.
 
 const backgrounds = [
+  { file: "dobra.jpg", animation: "dobra" },
   { file: "cathy_date.png", animation: "cathy" },
-  { file: "bus_date.png", animation: "bus" },
   { file: "bus_date.png", animation: "bus" },
   { file: "bus_date.png", animation: "bus" },
   { file: "bus_date.png", animation: "bus" },
