@@ -74,11 +74,11 @@ export function Credits(props) {
               </a>
               ), Connie (
               <a
-                href="https://www.instagram.com/99ranchcowgirl/"
+                href="https://www.instagram.com/c0n5ants/"
                 target="_blank"
                 rel="noreferrer"
               >
-                @99ranchcowgirl
+                @c0n5ants
               </a>
               ), Caroline (
               <a
