@@ -230,6 +230,13 @@ export function TalkingToRats(props) {
               src={`${PLAYER_IMAGES_BASE_PATH}/${props.playerAvatarIndex}.png`}
               alt="Your player rat on a date."
             />
+            {props.playerAvatarDecorations.map((decoration) => (
+              <img
+                key={`decoration${decoration}`}
+                src={`${PLAYER_IMAGES_BASE_PATH}/${props.playerAvatarIndex}_couch_${decoration}.png`}
+                alt=""
+              />
+            ))}
           </div>
           {ratDateImages.map((ratDateImage, idx) => (
             <div

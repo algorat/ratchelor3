@@ -322,6 +322,7 @@ function RatchelorApp() {
           playerAvatarIndex={playerAvatarIndex}
           round={round}
           goToRoseCeremony={goToRoseCeremony}
+          playerAvatarDecorations={playerAvatarDecorations}
           updateSfx={updateSfx}
           updateMusic={updateMusic}
           updateRatFeelings={updateRatFeelings}
