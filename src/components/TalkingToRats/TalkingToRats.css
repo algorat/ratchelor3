@@ -32,7 +32,7 @@
 
 .talking-to-rats-screen .all-images-container.incline .contestant {
   opacity: 0;
-  animation: fadeIn 10ms 5s forwards;
+  animation: fadeIn 10ms 6s forwards;
 }
 
 .talking-to-rats-screen .all-images-container.dobra .background {
