@@ -29,7 +29,7 @@ const backgrounds = [
   { file: "bus_date.png", animation: "bus" },
   { file: "cathy_date.png", animation: "cathy" },
   { file: "dobra.png", animation: "dobra" },
-  { file: "bus_date.png", animation: "bus" },
+  { file: "incline.png", animation: "incline" },
   { file: "bus_date.png", animation: "bus" },
 ];
 
