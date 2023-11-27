@@ -206,6 +206,8 @@ h3 {
   /** The only iframe on the page should be the kofi widget. */
   iframe,
   .floatingchat-container,
+  .floatingchat-container-wrap,
+  .floatingchat-container-wrap-mobi,
   .not-on-mobile {
     display: none;
   }
