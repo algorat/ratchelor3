@@ -8,6 +8,9 @@ import epilogueJson from "../data/epilogue.json";
 export const PLAYER_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/player`;
 
 /** TODO */
+export const DRESSER_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/dresser`;
+
+/** TODO */
 export const FRAMES_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/frames`;
 
 /** TODO */

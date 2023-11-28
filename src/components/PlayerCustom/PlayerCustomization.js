@@ -1,4 +1,4 @@
-import { PLAYER_IMAGES_BASE_PATH } from "../../utils/ratDataHelper";
+import { DRESSER_IMAGES_BASE_PATH } from "../../utils/ratDataHelper";
 import React from "react";
 import customData from "../../data/playerCustomization.json";
 
@@ -6,7 +6,7 @@ import "./PlayerCustomization.css";
 import { MobileControl } from "../MobileControl/MobileControl";
 
 export function PlayerCustomization(props) {
-  const playerImg = `${PLAYER_IMAGES_BASE_PATH}/${props.playerAvatarIndex}_fullbody.png`;
+  const playerImg = `${DRESSER_IMAGES_BASE_PATH}/${props.playerAvatarIndex}.png`;
   const images = customData[props.playerAvatarIndex];
 
   function toggleDecoration(decoration) {
@@ -43,35 +43,57 @@ export function PlayerCustomization(props) {
 
   const onwardsButton = (
     <button className="small onwards" onClick={props.advanceToNextStage}>
-      Continue onwards →
+      Onwards →
     </button>
   );
+  const onPrevious = () => {
+    props.setPlayerAvatarDecorations([]);
+    props.goToPlayerSelect();
+  };
   const previousButton = (
-    <button className="small back" onClick={props.goToPlayerSelect}>
-      ← Back to player selection
+    <button className="small back" onClick={onPrevious}>
+      ← Back
     </button>
+  );
+  const unSelectedDecorations = images.filter(
+    (image) => !props.playerAvatarDecorations.includes(image)
   );
   return (
     <>
       <div className="player-customization-screen screen">
-        <header>
-          <h2>Dress up your character? </h2>
-        </header>
+        <MobileControl show={false}>
+          <header>
+            {previousButton}
+            <h2>Dress up your character? </h2>
+            {onwardsButton}
+          </header>
+        </MobileControl>
         <div className="custom-game">
           <div className="custom-character">
+            <img
+              className="background"
+              src={`${DRESSER_IMAGES_BASE_PATH}/dressing_room.png`}
+              alt="A dressing room with accessories in it"
+            />
             <img src={playerImg} />
             {props.playerAvatarDecorations.map((decorationImage) => (
               <img
                 className="decoration"
                 key={decorationImage}
-                src={`${PLAYER_IMAGES_BASE_PATH}/${props.playerAvatarIndex}_${decorationImage}.png`}
+                src={`${DRESSER_IMAGES_BASE_PATH}/${props.playerAvatarIndex}_${decorationImage}_on.png`}
+                alt=""
+              />
+            ))}
+            {unSelectedDecorations.map((decorationImage) => (
+              <img
+                className="decoration"
+                key={decorationImage}
+                src={`${DRESSER_IMAGES_BASE_PATH}/${props.playerAvatarIndex}_${decorationImage}.png`}
                 alt=""
               />
             ))}
           </div>
-          <MobileControl show={false}>{previousButton}</MobileControl>
-          <MobileControl show={false}>{onwardsButton}</MobileControl>
-          <MobileControl show={false}>{options}</MobileControl>
+          {options}
         </div>
       </div>
       <MobileControl
@@ -84,7 +106,7 @@ export function PlayerCustomization(props) {
           </>
         }
       >
-        {options}
+        Dress up your character?
       </MobileControl>
     </>
   );
