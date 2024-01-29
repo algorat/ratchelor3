@@ -18,7 +18,7 @@ export function Proposal(props) {
       <div className="proposal-screen screen">
         <img
           className="proposal-background"
-          src={`${BACKGROUNDS_IMAGES_BASE_PATH}/beach.png`}
+          src={`${BACKGROUNDS_IMAGES_BASE_PATH}/proposal.png`}
           alt=""
         />
         <div className="proposing-rat-container">
