@@ -30,7 +30,7 @@ const backgrounds = [
   { file: "cathy_date.png", animation: "cathy" },
   { file: "dobra.png", animation: "dobra" },
   { file: "incline.png", animation: "incline" },
-  { file: "bus_date.png", animation: "bus" },
+  { file: "conservatory.png", animation: "conservatory" },
 ];
 
 export function TalkingToRats(props) {
