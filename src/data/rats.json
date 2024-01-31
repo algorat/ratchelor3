@@ -6,8 +6,8 @@
         "size": "small",
         "ending": "romantic_happy.mp3",
         "reaction_pos": [
-            "0.2",
-            "0.2"
+            "0.33",
+            "0.13"
         ],
         "zodiac": "Leo",
         "dialogue": [
@@ -27,8 +27,8 @@
         "size": "medium",
         "ending": "intense.mp3",
         "reaction_pos": [
-            "0.2",
-            "0.2"
+            "0.22",
+            "0.21"
         ],
         "zodiac": "Pisces",
         "dialogue": [
@@ -48,8 +48,8 @@
         "size": "small",
         "ending": "intense.mp3",
         "reaction_pos": [
-            "0.2",
-            "0.2"
+            "0.3",
+            "0.4"
         ],
         "zodiac": "Taurus",
         "dialogue": [
@@ -69,8 +69,8 @@
         "size": "medium",
         "ending": "paris.mp3",
         "reaction_pos": [
-            "0.2",
-            "0.2"
+            "0.22",
+            "0.12"
         ],
         "zodiac": "Leo",
         "dialogue": [
@@ -90,8 +90,8 @@
         "size": "medium-small",
         "ending": "romantic_happy.mp3",
         "reaction_pos": [
-            "0.2",
-            "0.2"
+            "0.3",
+            "0.15"
         ],
         "zodiac": "Virgo",
         "dialogue": [
@@ -107,12 +107,19 @@
     {
         "name": "Philoxena",
         "filename": "philoxena",
+        "talking_to_rats_filename": [
+            "philoxena-1",
+            "philoxena",
+            "philoxena",
+            "philoxena",
+            "philoxena"
+        ],
         "tagline": "Your eyes remind me of the flower gardens at home, I can’t wait to be friends!",
         "size": "large",
         "ending": "romantic_sad.mp3",
         "reaction_pos": [
-            "0.2",
-            "0.2"
+            "0.3",
+            "0.1"
         ],
         "zodiac": "Cancer",
         "dialogue": [
@@ -132,8 +139,8 @@
         "size": "large",
         "ending": "romantic_happy.mp3",
         "reaction_pos": [
-            "0.2",
-            "0.2"
+            "0.22",
+            "0.9"
         ],
         "zodiac": "Sagittarius",
         "dialogue": [
@@ -149,6 +156,13 @@
     {
         "name": "Frozine",
         "filename": "frozine",
+        "talking_to_rats_filename": [
+            "frozine-1",
+            "frozine-2",
+            "frozine-3",
+            "frozine-4",
+            "frozine-5"
+        ],
         "tagline": "My craft is my world",
         "size": "small",
         "ending": "romantic_happy.mp3",
@@ -191,6 +205,13 @@
     {
         "name": "Emmory",
         "filename": "emmory",
+        "talking_to_rats_filename": [
+            "emmory-1",
+            "emmory",
+            "emmory",
+            "emmory",
+            "emmory"
+        ],
         "tagline": "Let me play you a tune!",
         "size": "medium",
         "ending": "romantic_happy.mp3",
@@ -280,7 +301,7 @@
         "ending": "romantic_happy.mp3",
         "reaction_pos": [
             "0.2",
-            "0.2"
+            "0.1"
         ],
         "zodiac": "Gemini",
         "dialogue": [
@@ -300,8 +321,8 @@
         "size": "medium",
         "ending": "romantic_happy.mp3",
         "reaction_pos": [
-            "0.2",
-            "0.2"
+            "0.45",
+            "0.13"
         ],
         "zodiac": "Pisces",
         "dialogue": [
@@ -317,12 +338,19 @@
     {
         "name": "Michael",
         "filename": "michael",
+        "talking_to_rats_filename": [
+            "michael",
+            "michael-2",
+            "michael",
+            "michael",
+            "michael"
+        ],
         "tagline": "Hello",
         "size": "large",
         "ending": "romantic_sad.mp3",
         "reaction_pos": [
-            "0.2",
-            "0.2"
+            "0.27",
+            "0.04"
         ],
         "zodiac": "Scorpio",
         "dialogue": [
@@ -338,12 +366,19 @@
     {
         "name": "Manddy",
         "filename": "manddy",
-        "tagline": "Antz?\n",
+        "tagline": "Antz?",
+        "talking_to_rats_filename": [
+            "manddy",
+            "manddy-3-1",
+            "manddy-3-2",
+            "manddy",
+            "manddy"
+        ],
         "size": "medium",
         "ending": "romantic_sad.mp3",
         "reaction_pos": [
-            "0.2",
-            "0.2"
+            "0.31",
+            "0.08"
         ],
         "zodiac": "Capricorn",
         "dialogue": [
@@ -359,12 +394,19 @@
     {
         "name": "Hammerton",
         "filename": "hammerton",
+        "talking_to_rats_filename": [
+            "hammerton-1",
+            "hammerton-2",
+            "hammerton-3",
+            "hammerton",
+            "hammerton-5"
+        ],
         "tagline": "Yawwwwwn",
         "size": "small",
         "ending": "romantic_happy.mp3",
         "reaction_pos": [
-            "0.2",
-            "0.2"
+            "0.35",
+            "0.08"
         ],
         "zodiac": "Scorpio",
         "dialogue": [
@@ -385,7 +427,7 @@
         "ending": "romantic_happy.mp3",
         "reaction_pos": [
             "0.2",
-            "0.2"
+            "0.08"
         ],
         "zodiac": "Aries",
         "dialogue": [
@@ -401,12 +443,19 @@
     {
         "name": "Badabing",
         "filename": "badabing",
+        "talking_to_rats_filename": [
+            "badabing",
+            "badabing-2",
+            "badabing",
+            "badabing",
+            "badabing"
+        ],
         "tagline": "WOWwwie!",
         "size": "medium",
         "ending": "romantic_happy.mp3",
         "reaction_pos": [
-            "0.2",
-            "0.2"
+            "0.24",
+            "0.17"
         ],
         "zodiac": "Gemini",
         "dialogue": [
@@ -426,8 +475,8 @@
         "size": "medium",
         "ending": "cheerful.mp3",
         "reaction_pos": [
-            "0.2",
-            "0.2"
+            "0.33",
+            "0.15"
         ],
         "zodiac": "Cancer",
         "dialogue": [

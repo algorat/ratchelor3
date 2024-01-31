@@ -82,16 +82,13 @@
 }
 
 .talking-to-rats-screen .all-images-container.conservatory {
+  transform: translate(320px, 156px) scale(0.36);
   animation: conservatory 5.5s forwards;
 }
 
 @keyframes conservatory {
-  0% {
-    transform: translate(320px, 0px) scale(0.36);
-  }
-
   80% {
-    transform: translate(240px, 0px) scale(0.36);
+    transform: translate(240px, 156px) scale(0.36);
   }
 
   100% {
