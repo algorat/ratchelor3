@@ -28,8 +28,12 @@ const ANGRY_RESPONSE_TIMEOUT = 2000; // In ms.
 const backgrounds = [
   { file: "bus_date.png", animation: "bus" },
   { file: "cathy_date.png", animation: "cathy" },
-  { file: "dobra.png", animation: "dobra" },
-  { file: "incline.png", animation: "incline" },
+  { file: "dobra_back.png", animation: "dobra", front: "dobra_front.png" },
+  {
+    file: "incline_back.png",
+    animation: "incline",
+    front: "incline_front.png",
+  },
   { file: "conservatory.png", animation: "conservatory" },
 ];
 
@@ -250,6 +254,13 @@ export function TalkingToRats(props) {
               {ratDateImage}
             </div>
           ))}
+          {backgroundData.front && (
+            <img
+              className="background"
+              src={`${BACKGROUNDS_IMAGES_BASE_PATH}/${backgroundData.front}`}
+              alt=""
+            />
+          )}
         </div>
         {currentReaction && (
           <Reaction
