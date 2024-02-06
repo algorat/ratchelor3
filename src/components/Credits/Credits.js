@@ -112,6 +112,16 @@ export function Credits(props) {
               </a>
             </li>
             <li>
+              Oedimb and Hammerton -{" "}
+              <a
+                href="https://kmchaudoin.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                kmchaudoin.com
+              </a>
+            </li>
+            <li>
               Pamplemouse and Thundercroft -{" "}
               <a
                 href="https://www.instagram.com/lassylaa/"
