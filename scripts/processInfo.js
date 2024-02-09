@@ -6,30 +6,30 @@ fs.createReadStream("scripts/rawInfo.csv")
   .pipe(csv())
   .on("data", (data) => {
     const { name, ratid, tagline, size, zodiac, positionx, positiony } = data;
-    const d1 = data["dialogue 1"];
-    const d2 = data["dialogue 2"];
-    const d3 = data["dialogue 3"];
-    const d4 = data["dialogue 4"];
-    const d5 = data["dialogue 5"];
+    const d1 = data["dialogue 1"].trim();
+    const d2 = data["dialogue 2"].trim();
+    const d3 = data["dialogue 3"].trim();
+    const d4 = data["dialogue 4"].trim();
+    const d5 = data["dialogue 5"].trim();
 
-    const d1_override = data["round 1 override"];
-    const d2_override = data["round 2 override"];
-    const d3_override = data["round 3 override"];
-    const d4_override = data["round 4 override"];
-    const d5_override = data["round 5 override"];
+    const d1_override = data["round 1 override"].trim();
+    const d2_override = data["round 2 override"].trim();
+    const d3_override = data["round 3 override"].trim();
+    const d4_override = data["round 4 override"].trim();
+    const d5_override = data["round 5 override"].trim();
 
-    const final = data["final dialogue"];
-    const angry = data["angry message"];
+    const final = data["final dialogue"].trim();
+    const angry = data["angry message"].trim();
     const ending = data["ending music"] + ".mp3";
 
     const rat = {
-      name,
-      filename: ratid,
-      tagline,
+      name: name.trim(),
+      filename: ratid.trim(),
+      tagline: tagline.trim(),
       size,
       ending,
       reaction_pos: [positionx, positiony],
-      zodiac,
+      zodiac: zodiac.trim(),
       dialogue: [d1, d2, d3, d4, d5, final],
       angry,
     };
