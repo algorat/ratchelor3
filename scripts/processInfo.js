@@ -55,14 +55,16 @@ fs.createReadStream("scripts/rawInfo.csv")
   })
   .on("end", () => {
     const sortedRats = rats.sort((rata, ratb) => {
-      rata.ratid > ratb.ratid;
+      if (rata.filename < ratb.filename) {
+        return -1;
+      } else if (rata.filename === ratb.filename) {
+        return 0;
+      } else {
+        return 1;
+      }
     });
     console.log(sortedRats);
-    fs.writeFile(
-      "src/data/rats.json",
-      JSON.stringify(sortedRats, null, 4),
-      (err) => {
-        console.log(err);
-      }
-    );
+    fs.writeFile("src/data/rats.json", JSON.stringify(rats, null, 4), (err) => {
+      console.log(err);
+    });
   });

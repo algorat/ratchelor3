@@ -1,185 +1,24 @@
 [
     {
-        "name": "The Honorable Pamplemouse",
-        "filename": "pamplemouse",
-        "tagline": "I like to be pampered :) ",
-        "size": "small",
-        "ending": "romantic_happy.mp3",
-        "reaction_pos": [
-            "0.33",
-            "0.13"
-        ],
-        "zodiac": "Leo",
-        "dialogue": [
-            "Hello… I am Pamplemouse. As nobility, and as an honorable individual, I do hold the title of “The Honorable”, meaning I’m actually called “The Honorable Pamplemouse”, but I think we are all honorable unless proven otherwise. Please just call me by my first name, or any term of endearment!",
-            "You never know when danger might strike, that is why I collect horses. If other nobles see that I have many horses, they won’t dare conspire against me because they will know that I am the most noble of all due to the fullness of my stables and the freshness of my hay. I am constantly keeping track of how many horses my cousins have, to make sure I have at least one more at all times.",
-            "My favorite book is an 1836 copy of “Le Grande Extraordinaire”, a book and treatise written by my much beloved and atoned great-great-grand-rat, ‘The Previously Dishonorable but now in Good Graces Von Toutenmouse”. I keep it in my inner coat pocket, along with volumes 1 - 33 of the Mirriam Webster Dictionary. Volume 33 has been especially helpful to stay in touch with my subjects, as it covers modern slang such as “Cheetos” and “Doritos.”",
-            "I am so small and honorable, but as a royal, there are threats I can’t ignore. Like the other day our court jester rode in on the most magnificent horse I had ever laid eyes on. I must know, who is their equine provider? Once I find out, I shall buy the finest pair of twin horses for you and I to ride together. I’m growing quite fond of you, afterall.",
-            "You are the most honorable rat that I have ever met, besides myself and my second cousin of course. With the two of us together, our reputation will be so impeccable, and we will be able to do such much good for our subjects together! Let’s get married and invite the whole town — I’ll order 10000 more horses so that each of our guests may have one as a party favor, and the unclaimed celebratory horses shall live their gentle lives out in my pastures!",
-            "Oh, I cannot wait to spend the rest of my life riding horses with you, my most honorable love!"
-        ],
-        "angry": "Alas! I thought you were better than this... my horses won't stand for this!!! I'm leaving this show and am never coming back."
-    },
-    {
-        "name": "Tambone",
-        "filename": "tambone",
-        "tagline": "You and me, could it be?",
+        "name": "Badabing",
+        "filename": "badabing",
+        "tagline": "WOWwwie!",
         "size": "medium",
-        "ending": "intense.mp3",
-        "reaction_pos": [
-            "0.22",
-            "0.21"
-        ],
-        "zodiac": "Pisces",
-        "dialogue": [
-            "So I took my car to the mechanic and they said I needed an oil change, which got me thinking maybe I need more change in my life than I realized",
-            "Last week I turned the lights off and I was stunned by the darkness, so I wrote a poem titled “Dimly is the Moonlit Eve” … it ends “though the dawn is drawing near, moonlight knows what happened here”",
-            "Why do I write poetry? Hah! I might as well ask, why does the wind blow? Why does the moon control the tides, and why does a microwave pop my popcorn? It’s simply nature",
-            "On my walk today a gentle butterfly landed on a delicate flower. Its wings fluttered so gently and as it landed, two new beings touched for the first time and became one. It got me thinking about how I just met you but I already feel so connected to you. How is that possible?",
-            "I only have one Rattoo, it’s of an inchworm. I feel similar to an inchworm in many ways, though I never knew what I was inching towards. Now I know I’ve been inching towards you my love.",
-            "Your soul and my soul are threads in the fabric of a treasured garment, a favorite t shirt from a memorable concert where a young love was formed. I’ve never met anyone like you before. You are home to me my dear, and I love you."
-        ],
-        "angry": "Betrayal cuts deep,\nThe pain is like a knife,\nI feel so alone.\nGoodbye, traitor.\nI am leaving this show."
-    },
-    {
-        "name": "Corge",
-        "filename": "corge",
-        "tagline": "Why hello there, care to get to know eachother better?",
-        "size": "small",
-        "ending": "intense.mp3",
-        "reaction_pos": [
-            "0.3",
-            "0.4"
-        ],
-        "zodiac": "Taurus",
-        "dialogue": [
-            "If there’s one thing u otta know about me its that im a sitter. I dont stand for anything, unless it compels me. I also keep my arms crossed, unless im thusly moved by something profound",
-            "I’ll always remember the time my Pa took me aside and he said “Corge, you’ve gotta have a little courage”, and Diggity-dogone if that isn’t more true than anything else. So now I have it, kinda helped me unlock my inner psyche, and it helps keep me young. That’s why the glow of youth and confidence are inherent in my energy",
-            "The hustle and bustle of city life is a bit new to me, but I think it’s nice, and I like spending time with you here. It provides lots of opportunity for adventure - why, just this morning I met some new rats at the Saloon who i think will serve to be lifelong friends. I never meet new rats when I’m at home, since I’m the only one who lives there",
-            "Actually the first time I met you, I said “wow! Now there’s a rat!” and I was right, you really are a rat! One of a kind. I’m glad we met; I know it hasn’t been that long but I feel we’re getting to know each other. Would you mind if I gave you my address so we can write to each other?",
-            "You are my dearest friend, my friendliest dear… and I think, that my affections are blossoming into.. love?",
-            "My dearest dearest dear. Our love will be of the happy steadfast unwavering sort. I’m incredibly charmed and delighted, excited! I am simply over the moon! Just like the cow in ‘Hey Diddle Diddle”! I am so happy to embark on this journey of love with you"
-        ],
-        "angry": "those are the words of a stander... you're not a sitter like me. I don't like you, and I am going to leave this show."
-    },
-    {
-        "name": "Swalorn",
-        "filename": "swalorn",
-        "tagline": "What’s cookin’ good lookin’ vroooom vroooom\n",
-        "size": "medium",
-        "ending": "paris.mp3",
-        "reaction_pos": [
-            "0.22",
-            "0.12"
-        ],
-        "zodiac": "Leo",
-        "dialogue": [
-            "Hey, ever ridden on a motorcycle before? I’d love to take ya for a spin, and if you’re not afraid I can show you how to do an Ollie. When I fuel up I always seek out the most expensive gas station in town because that means their gas is better.",
-            "My ride has a custom license plate that says “B TRUE”. It’s a reminder to always B TRUE to myself and others. I only deal in luxury tandem-cycles, and anything low-end is a waste of my time, but it’s nice to know there’s always room for a friend.. Or a partner …. In love?",
-            "It’s bite or be bit out there. I run an underground bowling league so I’m always prepared to run at any moment if the feds find out. My teeth are brushed and I’m always up to date on my vaccinations and I change my bike’s oil every week just in case. I also keep at least $100 on me at all times.",
-            "A new person joined my underground bowling league the other day and they said they were friends with Jagadoo but I just called Jagadoo and they didn’t know who I was talking about. I’m wondering are the feds onto us??? I really need to get to the store and switch out the bowling balls but honestly right now you’re my number one priority.",
-            "I went to my friend’s shop this morning and got you these keys for the Rambo 3000 MIX Dragon Fire all-wheel frontal axis gold plated Hammercycle © Motorcycle. They haven’t even gone on the public market but I wanted you to be able to take it for a test ride; I’ll take the back seat - how does a drive on the riverside sound?",
-            "Wow. You are so good at picking a rat to spend the rest of your life with. Let’s run away. Let’s elope. Let’s break the world record for most in love tandem motorcyclists. Whoops! We already did ;)"
-        ],
-        "angry": "ugh! cars wouldn't talk to me like this. I have more important things to do than stay on this show and date someone rude like you. See ya never!"
-    },
-    {
-        "name": "Poodles",
-        "filename": "poodles",
-        "tagline": "I love to help others!",
-        "size": "medium-small",
-        "ending": "romantic_happy.mp3",
-        "reaction_pos": [
-            "0.3",
-            "0.15"
-        ],
-        "zodiac": "Virgo",
-        "dialogue": [
-            "hEllo! wHat can I do for you today? i’M Poodles, and my favorite thing in the world is to grant wishes and to help others!",
-            "a Lot of rats don’t believe that I have rEAL wish-granting powers. wEll, they haven’t seen me after three diet pepsis and one glass of milk!",
-            "i’Ve been in a few relationships, and those were the best times of my life! i Just LOVE waking up and engaging in acts of service! wHen those relationships ended, boy, it broke my heart every time! tHey’d just say “Poodles, somehow my life changed for the better AND for the worse after meeting you! Just let ME solve my own problems for once!”",
-            "I was SO excited to meet you again that I spent all of last night cleaning my neighbors yard and then messing it up again and then cleaning it again but even better! tHen I took a quick break to do my sister’s taxes and then I bounced all the way here! Oh NO, did I do line 34A wRong on my sister’s taxes????!!?!?!?!?!",
-            "dO you like waking up to freshly pressed bedsheets every day, changed gently during your sleep? aNd your favourite breakfast foods on your lap on a platter? aNd your mail already sorted and your taxes filed? aNd maybe a warm towel to start the day? I’d lOve to be your rat, I’d do anything for you!",
-            "yoU chose me!!! Oh, I’m SO excited! Oh, I have 11 different possible dates planned and pre-booked — and here are some flowers — no pressure we don’t have to do all of them — and also 12 wedding binders with themes and options. I love you! I love you! So much!"
-        ],
-        "angry": "oh no... that was so mean! I think I need to leave..."
-    },
-    {
-        "name": "Philoxena",
-        "filename": "philoxena",
-        "talking_to_rats_filename": [
-            "philoxena-1",
-            "philoxena",
-            "philoxena",
-            "philoxena",
-            "philoxena"
-        ],
-        "tagline": "Your eyes remind me of the flower gardens at home, I can’t wait to be friends!",
-        "size": "large",
-        "ending": "romantic_sad.mp3",
-        "reaction_pos": [
-            "0.3",
-            "0.1"
-        ],
-        "zodiac": "Cancer",
-        "dialogue": [
-            "Hello, what a pleasure to meet you! I was taught that every new meeting must begin with flowers, so I brought you some pink and yellow tulips to express my feelings.",
-            "I’m s-sorry, I have trouble opening up to new people because I was raised in the tallest tower of a castle on a cliff on an island in the middle of the ocean. I read that the best way to connect to others is to share your greatest fear, so… here it goes. My greatest fear is “Halloween.”",
-            "Why am I afraid of Halloween? When I first left Chateau Rateau, my ancestral home, I thought October 31st was a regular beautiful day. But when I reached the local town, couldn’t believe how scary the outside world was! The cobwebs? Gravestones? Skeletons everywhere?! I’d never left the grounds before, and almost started to cry. Then a small bird flew to me and told me it was all fake.",
-            "I decided to leave Chateau Rateau because my cousin showed me a Hot Wheels that they had just gotten, and I realized that the world outside the moat must be full of mysterious trinkets! The Hot Wheels I saw was bright green and vibrant. It reminded me of my family’s lost emeralds. I asked the worms and they said they don’t know about the emeralds but Hot Wheels are easy to come by!",
-            "This is my first time in a city, and everything is so new! I didn’t even know that there were life sized versions of Hot Wheels, but there is just something so enchanting about their small scale, I like to let the city ants drive around in mine, they said thank you! They brought me back a lovely nectar lemonade, which is my favorite! Drinks without sugar are something that scares me. But, you are so sweet!",
-            "I can’t wait to live the rest of my life with you, I’m happier than a sunflower in sun and my spirits are rosier than a fresh pink carnation! I’m so glad that I left my castle, because it led me to you! I love you!"
-        ],
-        "angry": "Ah... the flower of our love is wilting... I think it would be best if I returned to my castle for a while."
-    },
-    {
-        "name": "Flyboi",
-        "filename": "flyboi",
-        "tagline": "My spirits are soaring!",
-        "size": "large",
-        "ending": "romantic_happy.mp3",
-        "reaction_pos": [
-            "0.22",
-            "0.9"
-        ],
-        "zodiac": "Sagittarius",
-        "dialogue": [
-            "Last night, I woke up and I was ready to start the day! But then I realized it was 4 am and I’d woken up early! By accident, but what an opportunity! I immediately ran outside and practiced flapping my arms - I’ve been growing out my hairs so they act more like wings, and I think it’s almost working!",
-            "When I woke up as a baby, I thought to myself, wow! I’d really like to push the boundaries of what it means to be a rat. Can I be a bird? Can I be a plane? A hang glider? Whatever happened to the Hindenburg? Let me learn to fly and then I will know",
-            "I got so excited to see you today that I accidentally woke up early! again! I woke up at the perfect time though, because the early bird was in my yard! I said hello and asked about how they learned to fly so well. I thought birds knew how to fly as soon as they hatched, but apparently they don’t, they just have an instinct and then they practice until they can do it. Just like me!",
-            "When I wake up and face my morning routine, one of the first things i do is stretttch!!!! Hands in the air! I stretch them up and down to lengthen them, which helps to not impede the flying process, and makes me more aerodynamic!",
-            "When I woke up today, I was so excited to see you. Though I was on the ground, my heart was soaring! And when I spoke to my heart, it said ‘hello!’, and it also said that it loves you.",
-            "I can’t wait to fly through life with you! We can honeymoon in the most aerodynamic of locations, and we can hang glide, and even tour the runways and the international airport! There is no one I would rather embark on this adventure with. Oh I’m so excited! Let’s start planning right now!!"
-        ],
-        "angry": "Your mean-spirited words have grounded me. I'm going to leave."
-    },
-    {
-        "name": "Frozine",
-        "filename": "frozine",
-        "talking_to_rats_filename": [
-            "frozine-1",
-            "frozine-2",
-            "frozine-3",
-            "frozine-4",
-            "frozine-5"
-        ],
-        "tagline": "My craft is my world",
-        "size": "small",
         "ending": "romantic_happy.mp3",
         "reaction_pos": [
             "0.2",
             "0.2"
         ],
-        "zodiac": "Virgo",
+        "zodiac": "Gemini",
         "dialogue": [
-            "I’m a critically acclaimed ice-cream toppings coordinator. I studied abroad on full scholarship in my ratdolesence. I studied amongst the finest in my field and truly got in touch with my personal, professional, and artistic motivations",
-            "When I was abroad, my ice cream artistry class had a large focus on a strong conceptual backing, rather than just focusing on creating a technically perfect cone. With this, the nuance of choice entered my mind, a focus on the why not the how.",
-            "I graduated, top of my class, with honors of the highest caliber. More important to me than my academic standing was my self fulfilment in certifiably having mastered my craft. However, my pursuit is lifelong and I know I will continue to learn and perfect past mastery.",
-            "One of my favorite moments was drizzling chocolate ganache on a pistachio-pastiche waffle cone, and presenting it to an undercover michelin star reviewer. As soon as they took the first bite, they thanked me and everyone started clapping. I was so overcome I started to openly weep.",
-            "As a savant in my field, and a former child prodigy, I have had the comfort of a deeply felt connection to my practice. My identity is enriched by it, and in return my craft is only deepened and nourished by my sense of self. I think that when we dedicate our time and our earnesty towards something that we care about, we are made better by and because of it. I am dedicated to you, and I love you so much",
-            "Let me bake us a wedding cake - I’m the only one I trust to make a cake to the required perfection. And you are the only one I trust to eat it. With your good taste and my mastercraftsmanship I think we can do anything we want, and I want to spend the rest of my long and promising life by your side."
+            "Wow! Tune in next time to find out what I have in store :)",
+            "Thanks for tuning in! WOW, you’re looking good! I was just down at the casino and I wasn’t doing too hot at the ole’ poker table, those gamblin’ rats were onto my tricks bigtime… but I’m used to losing games, I’ve always had bad luck, ever since the curse",
+            "Do you like my cape? My mom made it for me. I’ve always wanted to be a hero and my mom knows that better than anyone because she’s MY hero. Every time I put this cape on I try to do at least two good deeds for every bad one",
+            "I heard about this show from my cousin, Boy-Boy-Mysterio. They found love and I said well! If you find it, I’m gonna go find it! Not sure exactly what It looks like or where it is, but after my jazzercise class I called and asked my grandma. I took some notes (they are in my diary)",
+            "I’m so DE-lighted to get to know you, and I can’t wait for you to get to know my bugs. I keep them in my home but they all have very spacious enclosures and are well fed and I talk to them about my problems. My favorite is Bartholemew the house centipede, we always chat in the mornings while I polish my nose.",
+            "I love a loose sock, even If they make me trip. I love you, even though sometimes I trip because I’m distracted by your presence and these feelings... Of love… which I’d never felt before. But next to my love for you, I think I might not even like socks. My fortune teller told me that I’d have to find my true love to reverse my bad luck. Now I realize how lucky I am"
         ],
-        "angry": "No ice cream for mean rats! Ever! I'm LEAVING."
+        "angry": "I am SAD... I'm going to leave the show! There are better things to do with my time! BadaBYE!"
     },
     {
         "name": "Boogaloo",
@@ -203,15 +42,29 @@
         "angry": "That wasn't funny at all! This show is a circus, and not the good kind. I'm leaving!"
     },
     {
+        "name": "Corge",
+        "filename": "corge",
+        "tagline": "Why hello there, care to get to know eachother better?",
+        "size": "small",
+        "ending": "intense.mp3",
+        "reaction_pos": [
+            "0.2",
+            "0.2"
+        ],
+        "zodiac": "Taurus",
+        "dialogue": [
+            "If there’s one thing u otta know about me its that im a sitter. I dont stand for anything, unless it compels me. I also keep my arms crossed, unless im thusly moved by something profound",
+            "I’ll always remember the time my Pa took me aside and he said “Corge, you’ve gotta have a little courage”, and Diggity-dogone if that isn’t more true than anything else. So now I have it, kinda helped me unlock my inner psyche, and it helps keep me young. That’s why the glow of youth and confidence are inherent in my energy",
+            "The hustle and bustle of city life is a bit new to me, but I think it’s nice, and I like spending time with you here. It provides lots of opportunity for adventure - why, just this morning I met some new rats at the Saloon who i think will serve to be lifelong friends. I never meet new rats when I’m at home, since I’m the only one who lives there",
+            "Actually the first time I met you, I said “wow! Now there’s a rat!” and I was right, you really are a rat! One of a kind. I’m glad we met; I know it hasn’t been that long but I feel we’re getting to know each other. Would you mind if I gave you my address so we can write to each other?",
+            "You are my dearest friend, my friendliest dear… and I think, that my affections are blossoming into.. love?",
+            "My dearest dearest dear. Our love will be of the happy steadfast unwavering sort. I’m incredibly charmed and delighted, excited! I am simply over the moon! Just like the cow in ‘Hey Diddle Diddle”! I am so happy to embark on this journey of love with you"
+        ],
+        "angry": "those are the words of a stander... you're not a sitter like me. I don't like you, and I am going to leave this show."
+    },
+    {
         "name": "Emmory",
         "filename": "emmory",
-        "talking_to_rats_filename": [
-            "emmory-1",
-            "emmory",
-            "emmory",
-            "emmory",
-            "emmory"
-        ],
         "tagline": "Let me play you a tune!",
         "size": "medium",
         "ending": "romantic_happy.mp3",
@@ -229,6 +82,132 @@
             "Oh my love, you chose me, you really did! My heart is fluttering like the delicate melody of the piano keys in a glorious concerto. Let’s build each other up, and never stop dreaming! I can’t wait to live my life with you!"
         ],
         "angry": "Oh my, that's a bit mean. I don't think this is going to work out, so I'm going to take an early exit from the show! Hope that's okay!"
+    },
+    {
+        "name": "Flyboi",
+        "filename": "flyboi",
+        "tagline": "My spirits are soaring!",
+        "size": "large",
+        "ending": "romantic_happy.mp3",
+        "reaction_pos": [
+            "0.2",
+            "0.2"
+        ],
+        "zodiac": "Sagittarius",
+        "dialogue": [
+            "Last night, I woke up and I was ready to start the day! But then I realized it was 4 am and I’d woken up early! By accident, but what an opportunity! I immediately ran outside and practiced flapping my arms - I’ve been growing out my hairs so they act more like wings, and I think it’s almost working!",
+            "When I woke up as a baby, I thought to myself, wow! I’d really like to push the boundaries of what it means to be a rat. Can I be a bird? Can I be a plane? A hang glider? Whatever happened to the Hindenburg? Let me learn to fly and then I will know",
+            "I got so excited to see you today that I accidentally woke up early! again! I woke up at the perfect time though, because the early bird was in my yard! I said hello and asked about how they learned to fly so well. I thought birds knew how to fly as soon as they hatched, but apparently they don’t, they just have an instinct and then they practice until they can do it. Just like me!",
+            "When I wake up and face my morning routine, one of the first things i do is stretttch!!!! Hands in the air! I stretch them up and down to lengthen them, which helps to not impede the flying process, and makes me more aerodynamic!",
+            "When I woke up today, I was so excited to see you. Though I was on the ground, my heart was soaring! And when I spoke to my heart, it said ‘hello!’, and it also said that it loves you.",
+            "I can’t wait to fly through life with you! We can honeymoon in the most aerodynamic of locations, and we can hang glide, and even tour the runways and the international airport! There is no one I would rather embark on this adventure with. Oh I’m so excited! Let’s start planning right now!!"
+        ],
+        "angry": "Your mean-spirited words have grounded me. I'm going to leave."
+    },
+    {
+        "name": "Frozine",
+        "filename": "frozine",
+        "tagline": "My craft is my world",
+        "size": "small",
+        "ending": "romantic_happy.mp3",
+        "reaction_pos": [
+            "0.2",
+            "0.2"
+        ],
+        "zodiac": "Virgo",
+        "dialogue": [
+            "I’m a critically acclaimed ice-cream toppings coordinator. I studied abroad on full scholarship in my ratdolesence. I studied amongst the finest in my field and truly got in touch with my personal, professional, and artistic motivations",
+            "When I was abroad, my ice cream artistry class had a large focus on a strong conceptual backing, rather than just focusing on creating a technically perfect cone. With this, the nuance of choice entered my mind, a focus on the why not the how.",
+            "I graduated, top of my class, with honors of the highest caliber. More important to me than my academic standing was my self fulfilment in certifiably having mastered my craft. However, my pursuit is lifelong and I know I will continue to learn and perfect past mastery.",
+            "One of my favorite moments was drizzling chocolate ganache on a pistachio-pastiche waffle cone, and presenting it to an undercover michelin star reviewer. As soon as they took the first bite, they thanked me and everyone started clapping. I was so overcome I started to openly weep.",
+            "As a savant in my field, and a former child prodigy, I have had the comfort of a deeply felt connection to my practice. My identity is enriched by it, and in return my craft is only deepened and nourished by my sense of self. I think that when we dedicate our time and our earnesty towards something that we care about, we are made better by and because of it. I am dedicated to you, and I love you so much",
+            "Let me bake us a wedding cake - I’m the only one I trust to make a cake to the required perfection. And you are the only one I trust to eat it. With your good taste and my mastercraftsmanship I think we can do anything we want, and I want to spend the rest of my long and promising life by your side."
+        ],
+        "angry": "No ice cream for mean rats! Ever! I'm LEAVING."
+    },
+    {
+        "name": "Hammerton",
+        "filename": "hammerton",
+        "tagline": "Yawwwwwn",
+        "size": "small",
+        "ending": "romantic_happy.mp3",
+        "reaction_pos": [
+            "0.2",
+            "0.2"
+        ],
+        "zodiac": "Scorpio",
+        "dialogue": [
+            "Yawn… was there something interesting you wanted to say?",
+            "Why is it so loud in here? Do they have to play music? I’m trying to take a nap… They have no considerations for the wants and needs of a modern day Machiavelli. I’m smart and sophisticated, but at the end of the day I need sleep like everyone else",
+            "I had a dream about you during my nap, and it made me realize that I should at least try to get to know you… Do you like cheese? I brought some, but it’s my favorite most expensive cheese and honestly well I just don’t know you that well… I’m willing to consider buying a small cheddar from the closest shoppe… Maybe.",
+            "Just being honest, the rat of my dreams was in my dreams last night. They said something but I couldn’t understand what they were talking about. Talking talking talking. Exhausting. I’m glad our time together is mostly quiet.",
+            "I’m sorry I’m always frowning, it’s just my general malaise. Even though you’re a bit boring sometimes, you’re surprisingly tolerable. In fact I think I… actually really enjoy spending time with you. What do you think?",
+            "Let’s get out of this dump - I know a much nicer beach over by a nice and silent waterfall, after all you know I love the quiet. It also doesn’t have any of that sand stuff, so we won’t have to worry about brushing that out of our fur. But I can brush your fur anyways if you want - I brought my boar-bristle hairbrush, imported from Italy."
+        ],
+        "angry": "Ew.... yawn.... people like you bore me. I'm going home."
+    },
+    {
+        "name": "Manddy",
+        "filename": "manddy",
+        "tagline": "Antz?\n",
+        "size": "medium",
+        "ending": "romantic_sad.mp3",
+        "reaction_pos": [
+            "0.2",
+            "0.2"
+        ],
+        "zodiac": "Capricorn",
+        "dialogue": [
+            "…. Manddy",
+            "…. This is Muffy… my ant… they’re the biggest ant in the world…",
+            "…. \n…. … I want Muffy to grow up believing in love… even if it’s hard for me… \n…I know they need a role model, or they won’t know love when they find it for themselves…",
+            "Muffy is 100x the size of a regular ant because I… only feed them miracle grow. Sometimes diet soda… after they get a bit bigger, I think.. Muffy will start developing a frontal lobe. I’ve got a philosophy textbook you could read to them…",
+            "My neighbor and I have been... working on digging a rat-sized ant-hill. … It started in our backyards then we connected and kept digging east… … maybe west? \nMuffy loves you (mainly your nostrils)… Let’s go smell some dirt together… there are notes of pine and mulch in the grass patch near my home that you’ll love",
+            "…….. I’m in love"
+        ],
+        "angry": ".... you make me sad. bye forever.."
+    },
+    {
+        "name": "Marsh",
+        "filename": "marsh",
+        "tagline": "Hey Marshins! ",
+        "size": "medium",
+        "ending": "romantic_happy.mp3",
+        "reaction_pos": [
+            "0.2",
+            "0.2"
+        ],
+        "zodiac": "Aries",
+        "dialogue": [
+            "Uwu :3 ! I’m Marsh, It’s so nice to meet you!! I want you to know I am really thrilled to be here : to meet you and for this opportunity! I actually have a scheduled live vlog I need to jump in on that’s happening in a second *Ringing noise*\nHewwo Marshins! I’m coming in live from The Ratchelor! Don’t forget to like and subscribe, but first, room tour! :3 Eeeeeeee!",
+            "I’m taking a short break from streaming today to focus on you, but let’s take a pic to commemorate! The back camera 0.5 view fisheye effect is SO in right now, can I move closer to you for the selfie? Okay, here we go!! Oh, it’s LOVELY! I’ll treasure it forever! Eeeee!",
+            "Time to film my daily livestream!! hey marshins :3 thanks for tuning in!!! I’m on a DATE!!! With a SUPER CUTE RAT omg SQUEee– *static* Oh, what? Oh no. The wifi cut out. Ahhh okay problem solving time. I really gotttta fix this, sorry! I do like this location you picked! Tho! But I’m glad I can spend some time chatting with you while I try to fix it.",
+            "The wifi is still out… sorry I’m just so sOOO stressed. Not feeling uwu at all. Usually I’m all :3 but now Im 3: *^*. It’s just that the Marshins depend on my content. When I don’t post they get really sad. The Marshins mean so much to me, I love them so much and I really want to make them happy. I also don’t want them to worry since they don’t know where I went",
+            "Oh, amazing, thank you!!! You are the best!! Thanks for fixing the wifi! 3, 2, 1… hey marshins!!! sorry about the delay! I have big news, I’m in LOVE… SQUEE!!! and look, this is the RAT OF MY LITERAL DREAMS??? anyway let me know where we should get married in the comments!!!",
+            "omg AHHHhh I can’t believe you proposed this is gonna be the best vlog ever!!! Our wedding is gonna be ICONIC and I can’t wait to show you to all the marshins and they are gonna just love you as much as I do !!!!!!"
+        ],
+        "angry": ":'( .... X-( ..... : ((... bye forever."
+    },
+    {
+        "name": "Michael",
+        "filename": "michael",
+        "tagline": "Hello",
+        "size": "large",
+        "ending": "romantic_sad.mp3",
+        "reaction_pos": [
+            "0.2",
+            "0.2"
+        ],
+        "zodiac": "Scorpio",
+        "dialogue": [
+            "Wow! I just have so many thoughts running through my head! Your eyes are so beautiful... Oh, you want to know about the two rats on my shoulder? Don’t mind them, their names are Mich Mich and Ael… Wow, your nose is so fortuitous. What? Oh yeah I came up with that compliment myself, my shoulder rats definitely didn’t suggest it… haha.",
+            "There’s nothing more satisfying than sitting in a medium-light room while occasionally eating some bread, without butter, of course. But lately Mich Mich and Ael have been nagging me to get out more and to be more evil or more good. The thing is, I don’t really like to think about what’s good or bad. I didn’t even audition for this show or anything, but one day the producers called me up and told me to come here.",
+            "About a year ago, I was riding the bus, eating my all time favorite recipe of instant ramen in lukewarm water and without the seasoning packets. Then Mich Mich and Ael jumped out of nowhere. They said they’ve been “waiting for someone like me”, that they were “waiting for a real challenge”. Enough about that, tell me more about you. What are your thoughts on blended cheesecake and risk-taking?",
+            "I only have two friends, I guess you’ve already met them and I’ve definitely talked about them (Mich Mich and Ael, the shoulder crew) - I’d like to think of them as my besties but I can’t tell… I think those two sometimes go get soup and don’t send me an e-vite… Do you think they’re hanging out without me? Maybe they don’t invite me cause they know I don’t like salt in my foods...",
+            "I hope we can continue to talk like this and get to know each other better. You make my heart flutter in ways that I’ve never felt before — not even while reading the Terms of Services on websites — and it’s making me want to act in ways I never have before!",
+            "Oh, I can’t wait to spend the rest of my life with you! Mich Mich and Ael are so happy for us, they said they are fulfilled and can retire now! Let’s life a comfortable and joyous life together, my love!"
+        ],
+        "angry": "Oh my... what is this feeling... is this sadness? Mich Mich is telling me I should lash out. I think instead of lashing out I'm just going to leave the show."
     },
     {
         "name": "Mystique",
@@ -273,6 +252,132 @@
         "angry": "That was not aligned with the spirit of celebration : ( This place is not a good party, and I'm going back to my insurance company, where they know how to party right."
     },
     {
+        "name": "The Honorable Pamplemouse",
+        "filename": "pamplemouse",
+        "tagline": "I like to be pampered :) ",
+        "size": "small",
+        "ending": "romantic_happy.mp3",
+        "reaction_pos": [
+            "0.2",
+            "0.2"
+        ],
+        "zodiac": "Leo",
+        "dialogue": [
+            "Hello… I am Pamplemouse. As nobility, and as an honorable individual, I do hold the title of “The Honorable”, meaning I’m actually called “The Honorable Pamplemouse”, but I think we are all honorable unless proven otherwise. Please just call me by my first name, or any term of endearment!",
+            "You never know when danger might strike, that is why I collect horses. If other nobles see that I have many horses, they won’t dare conspire against me because they will know that I am the most noble of all due to the fullness of my stables and the freshness of my hay. I am constantly keeping track of how many horses my cousins have, to make sure I have at least one more at all times.",
+            "My favorite book is an 1836 copy of “Le Grande Extraordinaire”, a book and treatise written by my much beloved and atoned great-great-grand-rat, ‘The Previously Dishonorable but now in Good Graces Von Toutenmouse”. I keep it in my inner coat pocket, along with volumes 1 - 33 of the Mirriam Webster Dictionary. Volume 33 has been especially helpful to stay in touch with my subjects, as it covers modern slang such as “Cheetos” and “Doritos.”",
+            "I am so small and honorable, but as a royal, there are threats I can’t ignore. Like the other day our court jester rode in on the most magnificent horse I had ever laid eyes on. I must know, who is their equine provider? Once I find out, I shall buy the finest pair of twin horses for you and I to ride together. I’m growing quite fond of you, afterall.",
+            "You are the most honorable rat that I have ever met, besides myself and my second cousin of course. With the two of us together, our reputation will be so impeccable, and we will be able to do such much good for our subjects together! Let’s get married and invite the whole town — I’ll order 10000 more horses so that each of our guests may have one as a party favor, and the unclaimed celebratory horses shall live their gentle lives out in my pastures!",
+            "Oh, I cannot wait to spend the rest of my life riding horses with you, my most honorable love!"
+        ],
+        "angry": "Alas! I thought you were better than this... my horses won't stand for this!!! I'm leaving this show and am never coming back."
+    },
+    {
+        "name": "Philoxena",
+        "filename": "philoxena",
+        "tagline": "Your eyes remind me of the flower gardens at home, I can’t wait to be friends!",
+        "size": "large",
+        "ending": "romantic_sad.mp3",
+        "reaction_pos": [
+            "0.2",
+            "0.2"
+        ],
+        "zodiac": "Cancer",
+        "dialogue": [
+            "Hello, what a pleasure to meet you! I was taught that every new meeting must begin with flowers, so I brought you some pink and yellow tulips to express my feelings.",
+            "I’m s-sorry, I have trouble opening up to new people because I was raised in the tallest tower of a castle on a cliff on an island in the middle of the ocean. I read that the best way to connect to others is to share your greatest fear, so… here it goes. My greatest fear is “Halloween.”",
+            "Why am I afraid of Halloween? When I first left Chateau Rateau, my ancestral home, I thought October 31st was a regular beautiful day. But when I reached the local town, couldn’t believe how scary the outside world was! The cobwebs? Gravestones? Skeletons everywhere?! I’d never left the grounds before, and almost started to cry. Then a small bird flew to me and told me it was all fake.",
+            "I decided to leave Chateau Rateau because my cousin showed me a Hot Wheels that they had just gotten, and I realized that the world outside the moat must be full of mysterious trinkets! The Hot Wheels I saw was bright green and vibrant. It reminded me of my family’s lost emeralds. I asked the worms and they said they don’t know about the emeralds but Hot Wheels are easy to come by!",
+            "This is my first time in a city, and everything is so new! I didn’t even know that there were life sized versions of Hot Wheels, but there is just something so enchanting about their small scale, I like to let the city ants drive around in mine, they said thank you! They brought me back a lovely nectar lemonade, which is my favorite! Drinks without sugar are something that scares me. But, you are so sweet!",
+            "I can’t wait to live the rest of my life with you, I’m happier than a sunflower in sun and my spirits are rosier than a fresh pink carnation! I’m so glad that I left my castle, because it led me to you! I love you!"
+        ],
+        "angry": "Ah... the flower of our love is wilting... I think it would be best if I returned to my castle for a while."
+    },
+    {
+        "name": "Poodles",
+        "filename": "poodles",
+        "tagline": "I love to help others!",
+        "size": "medium-small",
+        "ending": "romantic_happy.mp3",
+        "reaction_pos": [
+            "0.2",
+            "0.2"
+        ],
+        "zodiac": "Virgo",
+        "dialogue": [
+            "hEllo! wHat can I do for you today? i’M Poodles, and my favorite thing in the world is to grant wishes and to help others!",
+            "a Lot of rats don’t believe that I have rEAL wish-granting powers. wEll, they haven’t seen me after three diet pepsis and one glass of milk!",
+            "i’Ve been in a few relationships, and those were the best times of my life! i Just LOVE waking up and engaging in acts of service! wHen those relationships ended, boy, it broke my heart every time! tHey’d just say “Poodles, somehow my life changed for the better AND for the worse after meeting you! Just let ME solve my own problems for once!”",
+            "I was SO excited to meet you again that I spent all of last night cleaning my neighbors yard and then messing it up again and then cleaning it again but even better! tHen I took a quick break to do my sister’s taxes and then I bounced all the way here! Oh NO, did I do line 34A wRong on my sister’s taxes????!!?!?!?!?!",
+            "dO you like waking up to freshly pressed bedsheets every day, changed gently during your sleep? aNd your favourite breakfast foods on your lap on a platter? aNd your mail already sorted and your taxes filed? aNd maybe a warm towel to start the day? I’d lOve to be your rat, I’d do anything for you!",
+            "yoU chose me!!! Oh, I’m SO excited! Oh, I have 11 different possible dates planned and pre-booked — and here are some flowers — no pressure we don’t have to do all of them — and also 12 wedding binders with themes and options. I love you! I love you! So much!"
+        ],
+        "angry": "oh no... that was so mean! I think I need to leave..."
+    },
+    {
+        "name": "Swalorn",
+        "filename": "swalorn",
+        "tagline": "What’s cookin’ good lookin’ vroooom vroooom\n",
+        "size": "medium",
+        "ending": "paris.mp3",
+        "reaction_pos": [
+            "0.2",
+            "0.2"
+        ],
+        "zodiac": "Leo",
+        "dialogue": [
+            "Hey, ever ridden on a motorcycle before? I’d love to take ya for a spin, and if you’re not afraid I can show you how to do an Ollie. When I fuel up I always seek out the most expensive gas station in town because that means their gas is better.",
+            "My ride has a custom license plate that says “B TRUE”. It’s a reminder to always B TRUE to myself and others. I only deal in luxury tandem-cycles, and anything low-end is a waste of my time, but it’s nice to know there’s always room for a friend.. Or a partner …. In love?",
+            "It’s bite or be bit out there. I run an underground bowling league so I’m always prepared to run at any moment if the feds find out. My teeth are brushed and I’m always up to date on my vaccinations and I change my bike’s oil every week just in case. I also keep at least $100 on me at all times.",
+            "A new person joined my underground bowling league the other day and they said they were friends with Jagadoo but I just called Jagadoo and they didn’t know who I was talking about. I’m wondering are the feds onto us??? I really need to get to the store and switch out the bowling balls but honestly right now you’re my number one priority.",
+            "I went to my friend’s shop this morning and got you these keys for the Rambo 3000 MIX Dragon Fire all-wheel frontal axis gold plated Hammercycle © Motorcycle. They haven’t even gone on the public market but I wanted you to be able to take it for a test ride; I’ll take the back seat - how does a drive on the riverside sound?",
+            "Wow. You are so good at picking a rat to spend the rest of your life with. Let’s run away. Let’s elope. Let’s break the world record for most in love tandem motorcyclists. Whoops! We already did ;)"
+        ],
+        "angry": "ugh! cars wouldn't talk to me like this. I have more important things to do than stay on this show and date someone rude like you. See ya never!"
+    },
+    {
+        "name": "Tambone",
+        "filename": "tambone",
+        "tagline": "You and me, could it be?",
+        "size": "medium",
+        "ending": "intense.mp3",
+        "reaction_pos": [
+            "0.2",
+            "0.2"
+        ],
+        "zodiac": "Pisces",
+        "dialogue": [
+            "So I took my car to the mechanic and they said I needed an oil change, which got me thinking maybe I need more change in my life than I realized",
+            "Last week I turned the lights off and I was stunned by the darkness, so I wrote a poem titled “Dimly is the Moonlit Eve” … it ends “though the dawn is drawing near, moonlight knows what happened here”",
+            "Why do I write poetry? Hah! I might as well ask, why does the wind blow? Why does the moon control the tides, and why does a microwave pop my popcorn? It’s simply nature",
+            "On my walk today a gentle butterfly landed on a delicate flower. Its wings fluttered so gently and as it landed, two new beings touched for the first time and became one. It got me thinking about how I just met you but I already feel so connected to you. How is that possible?",
+            "I only have one Rattoo, it’s of an inchworm. I feel similar to an inchworm in many ways, though I never knew what I was inching towards. Now I know I’ve been inching towards you my love.",
+            "Your soul and my soul are threads in the fabric of a treasured garment, a favorite t shirt from a memorable concert where a young love was formed. I’ve never met anyone like you before. You are home to me my dear, and I love you."
+        ],
+        "angry": "Betrayal cuts deep,\nThe pain is like a knife,\nI feel so alone.\nGoodbye, traitor.\nI am leaving this show."
+    },
+    {
+        "name": "Thundercroft",
+        "filename": "thundercroft",
+        "tagline": "Oh! I’m blushing",
+        "size": "medium",
+        "ending": "cheerful.mp3",
+        "reaction_pos": [
+            "0.2",
+            "0.2"
+        ],
+        "zodiac": "Cancer",
+        "dialogue": [
+            "Oh! Hello, I didn’t see you there. I was distracted by the weather! Those are cumulus clouds, some of my favorites! How about you?",
+            "I’m so glad we got to have a second date! I have to take a quick trip out to Ratvaria this evening. They’re having… some weather related problems I need to solve… we can talk about that later - how are doing today? Not too sunny I hope? And no above average windchill? Just let me know",
+            "I’m glad we get along so well. People usually take a while to warm up to me. I have snake relatives on my mother’s mother’s aunt side, so I’m sometimes cold-blooded, but only literally! Not emotionally. But I can be shy, and I think sometimes people get the wrong impression, or they think my name is too scary.",
+            "When I was a kid I used to make the sky storm by accident. It would happen when I saw things that made me mad, like when I saw school-yard Bob stealing lollipops from the other kids, or when I saw the effects of employers underpaying their workers. I want to leave the world a better place every day through small actions and sometimes I think about manipulating traffic lights a little bit just to optimize the flow but a small voice inside me says that would be wrong so I don’t",
+            "One time I bought some cotton candy, but I dropped it on the floor and started crying. When I started crying, it started raining and that made my cotton candy disappear and I started crying even more, and then the rain came down even harder, so then I was all wet and It made me even more sad. Which.. Well, lets just say that was the biggest flood my parents ever saw in Ratvada. It was good though ‘cause we were in the middle of a drought. That was the first time I started to really understand the power that individuals have to make the world a better place",
+            "Yesterday when I woke up for the sunrise - the perfect amount of mist was in the air so when the sun finally peaked over the hills, you could see all the colors and rays of light and… and I felt so warm and comfortable and inspired and I realized that’s also how I feel when I’m around you. I love you."
+        ],
+        "angry": "Calm skies... sunny skies.... that's what I have to tell myself when I'm about to cry. I don't think it is healthy for me to stay with someone so mean, so I'm going to leave the show. Thanks for the good times."
+    },
+    {
         "name": "Yodine",
         "filename": "yodine",
         "tagline": "Oh hello there! I’m Yodine",
@@ -294,35 +399,14 @@
         "angry": "I'm very upset by your words but at least i have my ring.. Honestly, I think this ring is all I ever needed. I'm going to leave this show."
     },
     {
-        "name": "Zoin",
-        "filename": "zoin",
-        "tagline": "I’m awake, let’s do something fun!",
-        "size": "medium-small",
-        "ending": "romantic_happy.mp3",
-        "reaction_pos": [
-            "0.2",
-            "0.1"
-        ],
-        "zodiac": "Gemini",
-        "dialogue": [
-            "Hey, pleased to make your acquaintance! Gosh, I’m so pumped up, being on this show, meeting new people, YEAHHH – I just wanna do a backflip! But I won’t, because my gymnastics instructor says I’m not ready, even though I’ve been training for almost a week",
-            "Wow, I feel GREAT today. It’s like every time I wake up, I’m feeling better and better! Ask me about my UberRatte sleep schedule sometime and I’ll tell you my secret haha! Anyway, I went skiing last week for the first time and the instructor said they’d never seen someone use two pairs of skis at once before!",
-            "I’m a huuuge fan of cows. The way they just relax and eat grass and go about their lives... Man! I could dream about them alllll day! That’s why when I take naps, I try to find a nearby cow to sleep a few feet away from so they can enter my dreams. You know the movie Inception? It’s kinda like that, but reversed",
-            "Okay, I’ll tell you about the secret to my passion for life: the UberRatte sleep schedule! I sleep in 3.5 hour increments and wake up and do my tasks in 30 minute increments and then I go back to sleep! That means I’m only awake for 3 hours a day but WOW am I ever well-rested and thrilled to be here",
-            "If I ever fell asleep near you and you entered my dreams, there would be two of you in there. What I’m trying to say is that you’re ALREADY the rat of my dreams. What I’m trying to say is I love you!!!",
-            "I love you so much!!! You’re the coolest, and I know you’ll help me achieve my goals. I can’t wait to help you achieve your goals too. My 30 minute timer just went off so I’ll have to go to sleep in a minute, but as soon as I’m awake again let’s go swimming!!!"
-        ],
-        "angry": "booooooo! I'm leaving! bye!"
-    },
-    {
         "name": "Zindello",
         "filename": "zindello",
         "tagline": "What is your sign?",
         "size": "medium",
         "ending": "romantic_happy.mp3",
         "reaction_pos": [
-            "0.45",
-            "0.13"
+            "0.2",
+            "0.2"
         ],
         "zodiac": "Pisces",
         "dialogue": [
@@ -336,157 +420,24 @@
         "angry": "This is a sign we were not meant to be. I hate to close doors, but I think this one must close. Goodbye, friend. Hope to see you around."
     },
     {
-        "name": "Michael",
-        "filename": "michael",
-        "talking_to_rats_filename": [
-            "michael",
-            "michael-2",
-            "michael",
-            "michael",
-            "michael"
-        ],
-        "tagline": "Hello",
-        "size": "large",
-        "ending": "romantic_sad.mp3",
-        "reaction_pos": [
-            "0.27",
-            "0.04"
-        ],
-        "zodiac": "Scorpio",
-        "dialogue": [
-            "Wow! I just have so many thoughts running through my head! Your eyes are so beautiful... Oh, you want to know about the two rats on my shoulder? Don’t mind them, their names are Mich Mich and Ael… Wow, your nose is so fortuitous. What? Oh yeah I came up with that compliment myself, my shoulder rats definitely didn’t suggest it… haha.",
-            "There’s nothing more satisfying than sitting in a medium-light room while occasionally eating some bread, without butter, of course. But lately Mich Mich and Ael have been nagging me to get out more and to be more evil or more good. The thing is, I don’t really like to think about what’s good or bad. I didn’t even audition for this show or anything, but one day the producers called me up and told me to come here.",
-            "About a year ago, I was riding the bus, eating my all time favorite recipe of instant ramen in lukewarm water and without the seasoning packets. Then Mich Mich and Ael jumped out of nowhere. They said they’ve been “waiting for someone like me”, that they were “waiting for a real challenge”. Enough about that, tell me more about you. What are your thoughts on blended cheesecake and risk-taking?",
-            "I only have two friends, I guess you’ve already met them and I’ve definitely talked about them (Mich Mich and Ael, the shoulder crew) - I’d like to think of them as my besties but I can’t tell… I think those two sometimes go get soup and don’t send me an e-vite… Do you think they’re hanging out without me? Maybe they don’t invite me cause they know I don’t like salt in my foods...",
-            "I hope we can continue to talk like this and get to know each other better. You make my heart flutter in ways that I’ve never felt before — not even while reading the Terms of Services on websites — and it’s making me want to act in ways I never have before!",
-            "Oh, I can’t wait to spend the rest of my life with you! Mich Mich and Ael are so happy for us, they said they are fulfilled and can retire now! Let’s life a comfortable and joyous life together, my love!"
-        ],
-        "angry": "Oh my... what is this feeling... is this sadness? Mich Mich is telling me I should lash out. I think instead of lashing out I'm just going to leave the show."
-    },
-    {
-        "name": "Manddy",
-        "filename": "manddy",
-        "tagline": "Antz?",
-        "talking_to_rats_filename": [
-            "manddy",
-            "manddy-3-1",
-            "manddy-3-2",
-            "manddy",
-            "manddy"
-        ],
-        "size": "medium",
-        "ending": "romantic_sad.mp3",
-        "reaction_pos": [
-            "0.31",
-            "0.08"
-        ],
-        "zodiac": "Capricorn",
-        "dialogue": [
-            "…. Manddy",
-            "…. This is Muffy… my ant… they’re the biggest ant in the world…",
-            "…. \n…. … I want Muffy to grow up believing in love… even if it’s hard for me… \n…I know they need a role model, or they won’t know love when they find it for themselves…",
-            "Muffy is 100x the size of a regular ant because I… only feed them miracle grow. Sometimes diet soda… after they get a bit bigger, I think.. Muffy will start developing a frontal lobe. I’ve got a philosophy textbook you could read to them…",
-            "My neighbor and I have been... working on digging a rat-sized ant-hill. … It started in our backyards then we connected and kept digging east… … maybe west? \nMuffy loves you (mainly your nostrils)… Let’s go smell some dirt together… there are notes of pine and mulch in the grass patch near my home that you’ll love",
-            "…….. I’m in love"
-        ],
-        "angry": ".... you make me sad. bye forever.."
-    },
-    {
-        "name": "Hammerton",
-        "filename": "hammerton",
-        "talking_to_rats_filename": [
-            "hammerton-1",
-            "hammerton-2",
-            "hammerton-3",
-            "hammerton",
-            "hammerton-5"
-        ],
-        "tagline": "Yawwwwwn",
-        "size": "small",
-        "ending": "romantic_happy.mp3",
-        "reaction_pos": [
-            "0.35",
-            "0.08"
-        ],
-        "zodiac": "Scorpio",
-        "dialogue": [
-            "Yawn… was there something interesting you wanted to say?",
-            "Why is it so loud in here? Do they have to play music? I’m trying to take a nap… They have no considerations for the wants and needs of a modern day Machiavelli. I’m smart and sophisticated, but at the end of the day I need sleep like everyone else",
-            "I had a dream about you during my nap, and it made me realize that I should at least try to get to know you… Do you like cheese? I brought some, but it’s my favorite most expensive cheese and honestly well I just don’t know you that well… I’m willing to consider buying a small cheddar from the closest shoppe… Maybe.",
-            "Just being honest, the rat of my dreams was in my dreams last night. They said something but I couldn’t understand what they were talking about. Talking talking talking. Exhausting. I’m glad our time together is mostly quiet.",
-            "I’m sorry I’m always frowning, it’s just my general malaise. Even though you’re a bit boring sometimes, you’re surprisingly tolerable. In fact I think I… actually really enjoy spending time with you. What do you think?",
-            "Let’s get out of this dump - I know a much nicer beach over by a nice and silent waterfall, after all you know I love the quiet. It also doesn’t have any of that sand stuff, so we won’t have to worry about brushing that out of our fur. But I can brush your fur anyways if you want - I brought my boar-bristle hairbrush, imported from Italy."
-        ],
-        "angry": "Ew.... yawn.... people like you bore me. I'm going home."
-    },
-    {
-        "name": "Marsh",
-        "filename": "marsh",
-        "tagline": "Hey Marshins! ",
-        "size": "medium",
+        "name": "Zoin",
+        "filename": "zoin",
+        "tagline": "I’m awake, let’s do something fun!",
+        "size": "medium-small",
         "ending": "romantic_happy.mp3",
         "reaction_pos": [
             "0.2",
-            "0.08"
-        ],
-        "zodiac": "Aries",
-        "dialogue": [
-            "Uwu :3 ! I’m Marsh, It’s so nice to meet you!! I want you to know I am really thrilled to be here : to meet you and for this opportunity! I actually have a scheduled live vlog I need to jump in on that’s happening in a second *Ringing noise*\nHewwo Marshins! I’m coming in live from The Ratchelor! Don’t forget to like and subscribe, but first, room tour! :3 Eeeeeeee!",
-            "I’m taking a short break from streaming today to focus on you, but let’s take a pic to commemorate! The back camera 0.5 view fisheye effect is SO in right now, can I move closer to you for the selfie? Okay, here we go!! Oh, it’s LOVELY! I’ll treasure it forever! Eeeee!",
-            "Time to film my daily livestream!! hey marshins :3 thanks for tuning in!!! I’m on a DATE!!! With a SUPER CUTE RAT omg SQUEee– *static* Oh, what? Oh no. The wifi cut out. Ahhh okay problem solving time. I really gotttta fix this, sorry! I do like this location you picked! Tho! But I’m glad I can spend some time chatting with you while I try to fix it.",
-            "The wifi is still out… sorry I’m just so sOOO stressed. Not feeling uwu at all. Usually I’m all :3 but now Im 3: *^*. It’s just that the Marshins depend on my content. When I don’t post they get really sad. The Marshins mean so much to me, I love them so much and I really want to make them happy. I also don’t want them to worry since they don’t know where I went",
-            "Oh, amazing, thank you!!! You are the best!! Thanks for fixing the wifi! 3, 2, 1… hey marshins!!! sorry about the delay! I have big news, I’m in LOVE… SQUEE!!! and look, this is the RAT OF MY LITERAL DREAMS??? anyway let me know where we should get married in the comments!!!",
-            "omg AHHHhh I can’t believe you proposed this is gonna be the best vlog ever!!! Our wedding is gonna be ICONIC and I can’t wait to show you to all the marshins and they are gonna just love you as much as I do !!!!!!"
-        ],
-        "angry": ":'( .... X-( ..... : ((... bye forever."
-    },
-    {
-        "name": "Badabing",
-        "filename": "badabing",
-        "talking_to_rats_filename": [
-            "badabing",
-            "badabing-2",
-            "badabing",
-            "badabing",
-            "badabing"
-        ],
-        "tagline": "WOWwwie!",
-        "size": "medium",
-        "ending": "romantic_happy.mp3",
-        "reaction_pos": [
-            "0.24",
-            "0.17"
+            "0.2"
         ],
         "zodiac": "Gemini",
         "dialogue": [
-            "Wow! Tune in next time to find out what I have in store :)",
-            "Thanks for tuning in! WOW, you’re looking good! I was just down at the casino and I wasn’t doing too hot at the ole’ poker table, those gamblin’ rats were onto my tricks bigtime… but I’m used to losing games, I’ve always had bad luck, ever since the curse",
-            "Do you like my cape? My mom made it for me. I’ve always wanted to be a hero and my mom knows that better than anyone because she’s MY hero. Every time I put this cape on I try to do at least two good deeds for every bad one",
-            "I heard about this show from my cousin, Boy-Boy-Mysterio. They found love and I said well! If you find it, I’m gonna go find it! Not sure exactly what It looks like or where it is, but after my jazzercise class I called and asked my grandma. I took some notes (they are in my diary)",
-            "I’m so DE-lighted to get to know you, and I can’t wait for you to get to know my bugs. I keep them in my home but they all have very spacious enclosures and are well fed and I talk to them about my problems. My favorite is Bartholemew the house centipede, we always chat in the mornings while I polish my nose.",
-            "I love a loose sock, even If they make me trip. I love you, even though sometimes I trip because I’m distracted by your presence and these feelings... Of love… which I’d never felt before. But next to my love for you, I think I might not even like socks. My fortune teller told me that I’d have to find my true love to reverse my bad luck. Now I realize how lucky I am"
+            "Hey, pleased to make your acquaintance! Gosh, I’m so pumped up, being on this show, meeting new people, YEAHHH – I just wanna do a backflip! But I won’t, because my gymnastics instructor says I’m not ready, even though I’ve been training for almost a week",
+            "Wow, I feel GREAT today. It’s like every time I wake up, I’m feeling better and better! Ask me about my UberRatte sleep schedule sometime and I’ll tell you my secret haha! Anyway, I went skiing last week for the first time and the instructor said they’d never seen someone use two pairs of skis at once before!",
+            "I’m a huuuge fan of cows. The way they just relax and eat grass and go about their lives... Man! I could dream about them alllll day! That’s why when I take naps, I try to find a nearby cow to sleep a few feet away from so they can enter my dreams. You know the movie Inception? It’s kinda like that, but reversed",
+            "Okay, I’ll tell you about the secret to my passion for life: the UberRatte sleep schedule! I sleep in 3.5 hour increments and wake up and do my tasks in 30 minute increments and then I go back to sleep! That means I’m only awake for 3 hours a day but WOW am I ever well-rested and thrilled to be here",
+            "If I ever fell asleep near you and you entered my dreams, there would be two of you in there. What I’m trying to say is that you’re ALREADY the rat of my dreams. What I’m trying to say is I love you!!!",
+            "I love you so much!!! You’re the coolest, and I know you’ll help me achieve my goals. I can’t wait to help you achieve your goals too. My 30 minute timer just went off so I’ll have to go to sleep in a minute, but as soon as I’m awake again let’s go swimming!!!"
         ],
-        "angry": "I am SAD... I'm going to leave the show! There are better things to do with my time! BadaBYE!"
-    },
-    {
-        "name": "Thundercroft",
-        "filename": "thundercroft",
-        "tagline": "Oh! I’m blushing",
-        "size": "medium",
-        "ending": "cheerful.mp3",
-        "reaction_pos": [
-            "0.33",
-            "0.15"
-        ],
-        "zodiac": "Cancer",
-        "dialogue": [
-            "Oh! Hello, I didn’t see you there. I was distracted by the weather! Those are cumulus clouds, some of my favorites! How about you?",
-            "I’m so glad we got to have a second date! I have to take a quick trip out to Ratvaria this evening. They’re having… some weather related problems I need to solve… we can talk about that later - how are doing today? Not too sunny I hope? And no above average windchill? Just let me know",
-            "I’m glad we get along so well. People usually take a while to warm up to me. I have snake relatives on my mother’s mother’s aunt side, so I’m sometimes cold-blooded, but only literally! Not emotionally. But I can be shy, and I think sometimes people get the wrong impression, or they think my name is too scary.",
-            "When I was a kid I used to make the sky storm by accident. It would happen when I saw things that made me mad, like when I saw school-yard Bob stealing lollipops from the other kids, or when I saw the effects of employers underpaying their workers. I want to leave the world a better place every day through small actions and sometimes I think about manipulating traffic lights a little bit just to optimize the flow but a small voice inside me says that would be wrong so I don’t",
-            "One time I bought some cotton candy, but I dropped it on the floor and started crying. When I started crying, it started raining and that made my cotton candy disappear and I started crying even more, and then the rain came down even harder, so then I was all wet and It made me even more sad. Which.. Well, lets just say that was the biggest flood my parents ever saw in Ratvada. It was good though ‘cause we were in the middle of a drought. That was the first time I started to really understand the power that individuals have to make the world a better place",
-            "Yesterday when I woke up for the sunrise - the perfect amount of mist was in the air so when the sun finally peaked over the hills, you could see all the colors and rays of light and… and I felt so warm and comfortable and inspired and I realized that’s also how I feel when I’m around you. I love you."
-        ],
-        "angry": "Calm skies... sunny skies.... that's what I have to tell myself when I'm about to cry. I don't think it is healthy for me to stay with someone so mean, so I'm going to leave the show. Thanks for the good times."
+        "angry": "booooooo! I'm leaving! bye!"
     }
 ]
