@@ -20,14 +20,17 @@
 }
 
 .talking-to-rats-screen .all-images-container.bus .background {
-  left: -50%;
-  top: -50%;
-  transform: translate(-27.9%, -53%);
+  transform: translate(-35%, -57%);
 }
 
 .talking-to-rats-screen .all-images-container.bus .contestant {
   opacity: 0;
   animation: fadeIn 10ms 5s forwards;
+}
+
+.talking-to-rats-screen .all-images-container.conservatory .contestant {
+  opacity: 0;
+  animation: fadeIn 10ms 7s forwards;
 }
 
 .talking-to-rats-screen .all-images-container.incline .contestant {
@@ -53,12 +56,8 @@
   transform: translate(-45%, -44%);
 }
 
-.talking-to-rats-screen .all-images-container.bus .contestant {
-  opacity: 0;
-  animation: fadeIn 10ms 5s forwards;
-}
-
 .talking-to-rats-screen .all-images-container.cathy {
+  transform: translate(-150px, 1200px);
   animation: cathy 5.5s forwards;
 }
 
@@ -67,7 +66,7 @@
 }
 
 .talking-to-rats-screen .all-images-container.bus {
-  transform: translateY(33%) scale(0.3);
+  transform: translateY(22%) scale(0.3);
   animation: bus 3s ease-in 2.5s forwards;
 }
 
@@ -83,11 +82,11 @@
 
 .talking-to-rats-screen .all-images-container.conservatory {
   transform: translate(320px, 156px) scale(0.36);
-  animation: conservatory 5.5s forwards;
+  animation: conservatory 5s linear 1s forwards;
 }
 
 @keyframes conservatory {
-  80% {
+  60% {
     transform: translate(240px, 156px) scale(0.36);
   }
 
@@ -97,40 +96,24 @@
 }
 
 @keyframes dobra {
-  0% {
-    transform: translate(0, 84px) scale(0.61);
-  }
-
   100% {
     transform: scale(1);
   }
 }
 
 @keyframes cathy {
-  0% {
-    transform: translate(-150px, 1200px);
-  }
-
   100% {
     transform: translate(0px, 0px);
   }
 }
 
 @keyframes bus {
-  0% {
-    transform: translateY(33%) scale(0.3);
-  }
-
   100% {
     transform: scale(1);
   }
 }
 
 @keyframes incline {
-  0% {
-    transform: translate(0, 59px) scale(0.31);
-  }
-
   100% {
     transform: scale(1);
   }

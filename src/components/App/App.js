@@ -11,6 +11,8 @@ import { Proposal } from "../Proposal/Proposal";
 import { Credits } from "../Credits/Credits";
 import { SoundManager } from "../SoundManager/SoundManager";
 
+import { getTalkingMusic } from "../../utils/soundDataHelper";
+
 import frameImage from "../../assets/images/frame.png";
 
 import {
@@ -79,7 +81,7 @@ function RatchelorApp() {
   // Keep track of rat feelings so rats can leave if disrespected.
   const [ratFeelings, setRatFeelings] = useState({});
 
-  // Todo
+  // Tracks which rat is currently leaving, if any.
   const [currentlyLeavingRat, setCurrentlyLeavingRat] = useState(null);
 
   // The player avatar that was selected.
@@ -143,7 +145,6 @@ function RatchelorApp() {
     }, 2000);
   }
 
-  // TODO
   function goToPlayerSelect() {
     updateMusic("intro.mp3");
     playInterlude("Meet yourself", () => {
@@ -151,39 +152,36 @@ function RatchelorApp() {
     });
   }
 
-  // TODO
   function goToPlayerCustomization() {
     playInterlude("Dress up for the show!", () => {
       setGameStage(GameStages.PLAYER_CUSTOMIZATION);
     });
   }
 
-  // TODO
   function goToRatSelect() {
     playInterlude("Meet your suitors", () => {
       setGameStage(GameStages.RAT_SELECT);
     });
   }
 
-  // TODO
   function goToTalkingToRats() {
     setRandomizedActiveRats(activeRats.sort(() => 0.5 - Math.random()));
     setRandomLeavingResponse(Math.random());
     setCurrentlyLeavingRat(null);
     playInterlude("Time 2 date!", () => {
       setGameStage(GameStages.TALKING_TO_RATS);
+      updateMusic(getTalkingMusic(0));
     });
   }
 
-  // TODO
   function goToRoseCeremony() {
     updateMusic("rose_ceremony.mp3");
+    console.log(ratFeelings);
     playInterlude("Who gets a rose?", () => {
       setGameStage(GameStages.ROSE_CEREMONY);
     });
   }
 
-  // TODO
   function goToNextRound(chosenRats) {
     if (round === NUM_ROUNDS - 1) {
       updateMusic("romantic_sad.mp3");
@@ -204,14 +202,12 @@ function RatchelorApp() {
     });
   }
 
-  // TODO
   function goToEpilogue() {
     playInterlude("What happened to the others?", () => {
       setGameStage(GameStages.EPILOGUE);
     });
   }
 
-  // TODO
   function goToCredits() {
     updateMusic("intro.mp3");
     playInterlude("Special thanks", () => {
@@ -219,7 +215,6 @@ function RatchelorApp() {
     });
   }
 
-  // TODO
   function goToAnimeEnding() {
     const chosenRat = activeRats[0];
     updateMusic(getRatById(chosenRat)?.ending);
@@ -239,10 +234,9 @@ function RatchelorApp() {
     newFeelings[ratId] = updatedRatScore;
     const randomNumber = Math.random();
     setRatFeelings(newFeelings);
-    if (
-      !currentlyLeavingRat &&
-      randomNumber < Math.abs(updatedRatScore) / NUM_ROUNDS
-    ) {
+    const threshold = ((Math.abs(updatedRatScore) * round) / NUM_ROUNDS) * 0.2;
+    console.log(threshold);
+    if (!currentlyLeavingRat && randomNumber < threshold) {
       setCurrentlyLeavingRat(ratId);
       return true;
     }

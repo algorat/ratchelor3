@@ -37,6 +37,7 @@ export function Epilogue(props) {
     const randomPhotoData = props.originalRats.map((rat) =>
       getRandomEpiloguePhoto(rat)
     );
+    console.log(randomPhotoData);
     const photosWithoutDupes = noDupes(randomPhotoData, props.finalRat);
     setRandomPhotos(photosWithoutDupes.slice(0, 6));
   }, []);

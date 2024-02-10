@@ -59,12 +59,14 @@ export function TalkingToRats(props) {
         (ratId) =>
           new Promise((resolve) => {
             const ratData = getRatById(ratId);
-            const filename =
-              ratData.talking_to_rats_filename?.[props.round] ?? ratId;
-            const fullFilepath = `${DATES_IMAGES_BASE_PATH}/${filename}.png`;
+            let filename = `${DATES_IMAGES_BASE_PATH}/${ratId}.png`;
+            const override = ratData.talking_to_rats_filename?.[props.round];
+            if (override) {
+              filename = `${DATES_IMAGES_BASE_PATH}/${override}`;
+            }
             const ratDateImage = (
               <img
-                src={fullFilepath}
+                src={filename}
                 alt={ratData.name}
                 onLoad={() => {
                   resolve();
@@ -75,7 +77,6 @@ export function TalkingToRats(props) {
           })
       )
     );
-    props.updateMusic(getTalkingMusic(0));
     // Wait for the animation duration before going onwards.
     // In the meantime, the images can preload.
     new Promise((resolve) => {
@@ -229,6 +230,7 @@ export function TalkingToRats(props) {
             src={`${BACKGROUNDS_IMAGES_BASE_PATH}/${backgroundData.file}`}
             alt=""
           />
+          <img src={`${BACKGROUNDS_IMAGES_BASE_PATH}/couch.png`} alt="" />
           <div className="player-rat">
             <img
               src={`${PLAYER_IMAGES_BASE_PATH}/${props.playerAvatarIndex}.png`}
