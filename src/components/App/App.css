@@ -34,6 +34,7 @@
   align-items: center;
   transition: transform 500ms ease-in-out;
   transform: translateY(-120%);
+  pointer-events: all;
 }
 
 .interlude.playing {

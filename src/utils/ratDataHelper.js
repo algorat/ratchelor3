@@ -75,6 +75,8 @@ function randArrayItem(arr) {
 /** TODO */
 export function getResponsesByRound(ratId, roundNumber) {
   const ratResponsesData = responsesJson[ratId];
+  console.log(ratId, ratResponsesData);
+
   const allResponses = ratResponsesData[roundNumber];
 
   const positives = allResponses.filter((response) => response.score > 0);

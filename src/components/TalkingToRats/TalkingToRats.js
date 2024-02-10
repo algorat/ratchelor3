@@ -59,12 +59,14 @@ export function TalkingToRats(props) {
         (ratId) =>
           new Promise((resolve) => {
             const ratData = getRatById(ratId);
-            const filename =
-              ratData.talking_to_rats_filename?.[props.round] ?? ratId;
-            const fullFilepath = `${DATES_IMAGES_BASE_PATH}/${filename}.png`;
+            let filename = `${DATES_IMAGES_BASE_PATH}/${ratId}.png`;
+            const override = ratData.talking_to_rats_filename?.[props.round];
+            if (override) {
+              filename = `${DATES_IMAGES_BASE_PATH}/${override}`;
+            }
             const ratDateImage = (
               <img
-                src={fullFilepath}
+                src={filename}
                 alt={ratData.name}
                 onLoad={() => {
                   resolve();
