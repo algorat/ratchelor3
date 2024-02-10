@@ -77,7 +77,6 @@ export function TalkingToRats(props) {
           })
       )
     );
-    props.updateMusic(getTalkingMusic(0));
     // Wait for the animation duration before going onwards.
     // In the meantime, the images can preload.
     new Promise((resolve) => {

@@ -11,6 +11,8 @@ import { Proposal } from "../Proposal/Proposal";
 import { Credits } from "../Credits/Credits";
 import { SoundManager } from "../SoundManager/SoundManager";
 
+import { getTalkingMusic } from "../../utils/soundDataHelper";
+
 import frameImage from "../../assets/images/frame.png";
 
 import {
@@ -168,6 +170,7 @@ function RatchelorApp() {
     setCurrentlyLeavingRat(null);
     playInterlude("Time 2 date!", () => {
       setGameStage(GameStages.TALKING_TO_RATS);
+      updateMusic(getTalkingMusic(0));
     });
   }
 
