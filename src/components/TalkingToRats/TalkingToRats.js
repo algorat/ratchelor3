@@ -231,6 +231,7 @@ export function TalkingToRats(props) {
             src={`${BACKGROUNDS_IMAGES_BASE_PATH}/${backgroundData.file}`}
             alt=""
           />
+          <img src={`${BACKGROUNDS_IMAGES_BASE_PATH}/couch.png`} alt="" />
           <div className="player-rat">
             <img
               src={`${PLAYER_IMAGES_BASE_PATH}/${props.playerAvatarIndex}.png`}
