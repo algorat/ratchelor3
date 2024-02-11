@@ -10,8 +10,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 900px;
+  height: 675px;
+  transform-origin: top left;
 }
 
 .talking-to-rats-screen .all-images-container img {
@@ -19,8 +20,8 @@
   position: absolute;
 }
 
-.talking-to-rats-screen .all-images-container.bus .background {
-  transform: translate(-35%, -57%);
+/* .talking-to-rats-screen .all-images-container.bus .background {
+  transform: translate(-1050px, -788px);
 }
 
 .talking-to-rats-screen .all-images-container.bus .contestant {
@@ -28,101 +29,18 @@
   animation: fadeIn 10ms 5s forwards;
 }
 
-.talking-to-rats-screen .all-images-container.conservatory .contestant {
-  opacity: 0;
-  animation: fadeIn 10ms 7s forwards;
-}
-
-.talking-to-rats-screen .all-images-container.incline .contestant {
-  opacity: 0;
-  animation: fadeIn 10ms 6s forwards;
-}
-
-.talking-to-rats-screen .all-images-container.dobra .background {
-  left: -50%;
-  top: -50%;
-  transform: translate(154px, -18px);
-}
-
-.talking-to-rats-screen .all-images-container.incline .background {
-  left: -50%;
-  top: -50%;
-  transform: translate(-587px, -608px);
-}
-
-.talking-to-rats-screen .all-images-container.conservatory .background {
-  left: -50%;
-  top: -50%;
-  transform: translate(-45%, -44%);
-}
-
-.talking-to-rats-screen .all-images-container.cathy {
-  transform: translate(-150px, 1200px);
-  animation: cathy 5.5s forwards;
-}
-
-.talking-to-rats-screen .all-images-container.cathy .background {
-  bottom: 0px;
-}
-
 .talking-to-rats-screen .all-images-container.bus {
-  transform: translateY(22%) scale(0.3);
+  transform: translateY(425px) scale(calc(0.3 * var(--game-width, 900) / 900));
   animation: bus 3s ease-in 2.5s forwards;
-}
-
-.talking-to-rats-screen .all-images-container.dobra {
-  transform: translate(0, 84px) scale(0.61);
-  animation: dobra 3s ease-in 2.5s forwards;
-}
-
-.talking-to-rats-screen .all-images-container.incline {
-  transform: translate(0, 59px) scale(0.31);
-  animation: incline 4s ease-in 3s forwards;
-}
-
-.talking-to-rats-screen .all-images-container.conservatory {
-  transform: translate(320px, 156px) scale(0.36);
-  animation: conservatory 5s linear 1s forwards;
-}
-
-@keyframes conservatory {
-  60% {
-    transform: translate(240px, 156px) scale(0.36);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes dobra {
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes cathy {
-  100% {
-    transform: translate(0px, 0px);
-  }
-}
-
-@keyframes bus {
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes incline {
-  100% {
-    transform: scale(1);
-  }
-}
-
-/* .talking-to-rats-screen img {
-  width: 100%;
-  height: 100%;
 } */
+
+.talking-to-rats-screen .all-images-container .contestant {
+  opacity: 0;
+}
+
+.talking-to-rats-screen .all-images-container.show-contestants .contestant {
+  opacity: 1;
+}
 
 .player-rat,
 .contestant {
@@ -241,5 +159,9 @@
 
   .talking-to-rats-screen .rat-dialogue img {
     height: 40px;
+  }
+
+  .mobile-responses button.response {
+    font-size: 12px;
   }
 }

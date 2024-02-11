@@ -4,43 +4,32 @@ import ratsJson from "../data/rats.json";
 import responsesJson from "../data/responses.json";
 import epilogueJson from "../data/epilogue.json";
 
-/** TODO */
 export const PLAYER_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/player`;
 
-/** TODO */
 export const DRESSER_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/dresser`;
 
-/** TODO */
 export const FRAMES_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/frames`;
 
-/** TODO */
 export const DATES_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/dates`;
 
-/** TODO */
 export const REACTIONS_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/reactions`;
 
-/** TODO */
 export const CHARACTERS_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/characters`;
 
-/** TODO */
 export const BACKGROUNDS_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/backgrounds`;
 
-/** TODO */
 export const BOUQUET_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/bouquet`;
 
-/** TODO */
+export const PROPOSAL_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/proposal`;
+
 export const ENDINGS_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/endings`;
 
-/** TODO */
 export const EPILOGUE_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/epilogue`;
 
-/** TODO */
 export const SOUND_ICONS_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/sound_icons`;
 
-/** TODO */
 export const MOBILE_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/mobile`;
 
-/** TODO */
 export const SOUND_BASE_PATH = `${process.env.PUBLIC_URL}/sounds`;
 
 /**
@@ -75,7 +64,6 @@ function randArrayItem(arr) {
 /** TODO */
 export function getResponsesByRound(ratId, roundNumber) {
   const ratResponsesData = responsesJson[ratId];
-  console.log(ratId, ratResponsesData);
 
   const allResponses = ratResponsesData[roundNumber];
 
