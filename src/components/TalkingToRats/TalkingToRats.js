@@ -389,14 +389,14 @@ export function TalkingToRats(props) {
         <MobileControl show={false}>
           {showingLeavingPopup && (
             <div className="leaving-modal">
-              <p>This rat is leaving the show!</p>
+              <p>{ratName} has decided to pack their bags and leave</p>
               <button
                 onClick={() => {
                   setShowLeavingPopup(false);
                   moveOntoNextRat();
                 }}
               >
-                Okay
+                Okay :(
               </button>
             </div>
           )}

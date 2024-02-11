@@ -124,7 +124,7 @@ export function RoseCeremony(props) {
 
   if (leavingRat) {
     const leavingRatData = getRatById(leavingRat);
-    instructions = `Reminder: ${leavingRatData.name} has decided to leave the show. ${instructions}`;
+    instructions = `${leavingRatData.name} has left the show. ${instructions}`;
   }
 
   if (bouquetNum === 0) {
