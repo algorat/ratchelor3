@@ -36,22 +36,22 @@ const GameStages = {
 };
 
 // // Num rats the person should select at the very beginning.
-const RATS_IN_GAME = 2;
-
-// How many rounds there are.
-const NUM_ROUNDS = 1;
-
-// How many roses get given out each round.
-const ROSES_PER_ROUND = [1];
-
-// // Num rats the person should select at the very beginning.
-// const RATS_IN_GAME = 7;
+// const RATS_IN_GAME = 2;
 
 // // How many rounds there are.
-// const NUM_ROUNDS = 5;
+// const NUM_ROUNDS = 1;
 
 // // How many roses get given out each round.
-// const ROSES_PER_ROUND = [5, 4, 3, 2, 1];
+// const ROSES_PER_ROUND = [1];
+
+// Num rats the person should select at the very beginning.
+const RATS_IN_GAME = 7;
+
+// How many rounds there are.
+const NUM_ROUNDS = 5;
+
+// How many roses get given out each round.
+const ROSES_PER_ROUND = [5, 4, 3, 2, 1];
 
 function RatchelorApp() {
   // What phase of the game we're in, like rose ceremony, propsal, etc.

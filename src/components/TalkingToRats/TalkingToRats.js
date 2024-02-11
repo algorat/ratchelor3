@@ -25,16 +25,6 @@ const ANGRY_RESPONSE_TIMEOUT = 2000; // In ms.
 
 const backgrounds = [
   {
-    file: "conservatory.png",
-    animation: {
-      backgroundSize: [2748, 2195],
-      couchOffset: [-778, -550],
-      containerStart: [0.278, 0.25],
-      delay: 2500,
-      duration: 5500,
-    },
-  },
-  {
     file: "bus_date.png",
     animation: {
       backgroundSize: [3000, 2250],
@@ -74,6 +64,16 @@ const backgrounds = [
       containerStart: [0, 0.065],
       delay: 2500,
       duration: 3500,
+    },
+  },
+  {
+    file: "conservatory.png",
+    animation: {
+      backgroundSize: [2748, 2195],
+      couchOffset: [-778, -550],
+      containerStart: [0.278, 0.25],
+      delay: 2500,
+      duration: 5500,
     },
   },
 ];
