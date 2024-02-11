@@ -4,6 +4,7 @@
   width: 900px;
   height: 675px;
   flex-shrink: 0;
+  z-index: 1;
 }
 
 .frame {
