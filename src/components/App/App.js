@@ -245,7 +245,7 @@ function RatchelorApp() {
   }
 
   function resetGame() {
-    playInterlude("Resetting game...", () => {
+    playInterlude("Let's begin anew...", () => {
       setGameStage(GameStages.INTRO);
       setRound(0);
       setPlayerAvatarIndex(null);
