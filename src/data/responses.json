@@ -22,13 +22,23 @@
                 "score": 1
             },
             {
+                "response": "me too!",
+                "reaction": "wow",
+                "score": 0
+            },
+            {
                 "response": "Why?",
                 "reaction": "angry",
                 "score": -1
             },
             {
                 "response": "ahhh !",
-                "reaction": "three_frown",
+                "reaction": "frown",
+                "score": -1
+            },
+            {
+                "response": "I don't understand",
+                "reaction": "angry",
                 "score": -1
             }
         ],
@@ -39,9 +49,24 @@
                 "score": 1
             },
             {
+                "response": "I totally know what you mean",
+                "reaction": "wow",
+                "score": 0
+            },
+            {
                 "response": "Care for some juice?",
                 "reaction": "confused2",
                 "score": 0
+            },
+            {
+                "response": "I would love to hear more",
+                "reaction": "wow",
+                "score": 0
+            },
+            {
+                "response": "You're making me blush",
+                "reaction": "blush",
+                "score": 1
             },
             {
                 "response": "I understand",
@@ -59,9 +84,19 @@
                 "score": 0
             },
             {
+                "response": "That makes me think...",
+                "reaction": "wow",
+                "score": 0
+            },
+            {
                 "response": "Don't worry.",
                 "reaction": "mild_frown",
                 "score": -1
+            },
+            {
+                "response": "neiiigh!",
+                "reaction": "wow",
+                "score": 0
             }
         ],
         [
@@ -123,6 +158,11 @@
                 "score": 1
             },
             {
+                "response": "don't say things like that",
+                "reaction": "angry",
+                "score": -1
+            },
+            {
                 "response": "I'm not sure about that...",
                 "reaction": "mild_frown",
                 "score": -1
@@ -132,6 +172,11 @@
             {
                 "response": "Thank you for opening up to me",
                 "reaction": "smile",
+                "score": 1
+            },
+            {
+                "response": "I totally know what you mean",
+                "reaction": "blush",
                 "score": 1
             },
             {
@@ -155,6 +200,11 @@
                 "score": -1
             },
             {
+                "response": "no",
+                "reaction": "angry",
+                "score": -1
+            },
+            {
                 "response": "neiiigh!",
                 "reaction": "blush",
                 "score": 1
@@ -163,11 +213,21 @@
                 "response": "Let's talk about something else",
                 "reaction": "mild_frown",
                 "score": -1
+            },
+            {
+                "response": "ew",
+                "reaction": "angry",
+                "score": -1
             }
         ]
     ],
     "poodles": [
         [
+            {
+                "response": "Thank you for opening up to me",
+                "reaction": "smile",
+                "score": 1
+            },
             {
                 "response": "Tell me more...",
                 "reaction": "neutral",
@@ -179,8 +239,23 @@
                 "score": 1
             },
             {
+                "response": "*Nod*",
+                "reaction": "smile",
+                "score": 1
+            },
+            {
+                "response": ":3",
+                "reaction": "big_smile",
+                "score": 1
+            },
+            {
                 "response": "I value you",
                 "reaction": "heart",
+                "score": 1
+            },
+            {
+                "response": "wow! you are so smart",
+                "reaction": "blush",
                 "score": 1
             },
             {
@@ -189,9 +264,29 @@
                 "score": 0
             },
             {
+                "response": "Should I tip you?",
+                "reaction": "confused",
+                "score": 0
+            },
+            {
+                "response": "ew",
+                "reaction": "tear",
+                "score": -1
+            },
+            {
                 "response": "I dunno if thats something you should share...",
                 "reaction": "tear",
                 "score": -1
+            },
+            {
+                "response": "boo!",
+                "reaction": "cry",
+                "score": -1
+            },
+            {
+                "response": "I love milk!!!!",
+                "reaction": "heyes",
+                "score": 1
             }
         ],
         [
@@ -216,13 +311,48 @@
                 "score": 1
             },
             {
+                "response": "me too!",
+                "reaction": "wow",
+                "score": 0
+            },
+            {
+                "response": "Why?",
+                "reaction": "confused",
+                "score": 0
+            },
+            {
+                "response": "ahhh !",
+                "reaction": "neutral",
+                "score": 0
+            },
+            {
+                "response": "That makes me think...",
+                "reaction": "smile",
+                "score": 1
+            },
+            {
                 "response": "I don't understand",
                 "reaction": "cry",
                 "score": -1
             },
             {
+                "response": "Let's talk about something else",
+                "reaction": "mild_frown",
+                "score": -1
+            },
+            {
                 "response": "ew",
                 "reaction": "broken_heart",
+                "score": -1
+            },
+            {
+                "response": "That sounds like a personal problem",
+                "reaction": "tear",
+                "score": -1
+            },
+            {
+                "response": "I dunno if thats something you should share...",
+                "reaction": "cry",
                 "score": -1
             }
         ],
@@ -235,6 +365,11 @@
             {
                 "response": "You're a keeper",
                 "reaction": "big_smile",
+                "score": 1
+            },
+            {
+                "response": "*Nod*",
+                "reaction": "smile",
                 "score": 1
             },
             {
@@ -253,26 +388,46 @@
                 "score": 0
             },
             {
+                "response": "ew",
+                "reaction": "big_frown",
+                "score": -1
+            },
+            {
                 "response": "That sounds like a personal problem",
                 "reaction": "cry",
+                "score": -1
+            },
+            {
+                "response": "I dunno if thats something you should share...",
+                "reaction": "broken_heart",
                 "score": -1
             }
         ],
         [
-            {
-                "response": "Proud of you",
-                "reaction": "blush",
-                "score": 1
-            },
             {
                 "response": "Thanks for being here",
                 "reaction": "great",
                 "score": 1
             },
             {
-                "response": "Don't worry.",
-                "reaction": "neutral",
+                "response": "Why?",
+                "reaction": "confused",
                 "score": 0
+            },
+            {
+                "response": "no",
+                "reaction": "good",
+                "score": 1
+            },
+            {
+                "response": "Yes",
+                "reaction": "sad",
+                "score": -1
+            },
+            {
+                "response": "Don't worry.",
+                "reaction": "smile",
+                "score": 1
             },
             {
                 "response": "Let's talk about something else",
@@ -288,6 +443,11 @@
                 "response": "sorry, what were you saying again?",
                 "reaction": "sad",
                 "score": -1
+            },
+            {
+                "response": "What are taxes...",
+                "reaction": "confused",
+                "score": 0
             }
         ],
         [
@@ -297,13 +457,33 @@
                 "score": 1
             },
             {
+                "response": "You're a keeper",
+                "reaction": "heyes2",
+                "score": 1
+            },
+            {
+                "response": ":3",
+                "reaction": "heyes2",
+                "score": 1
+            },
+            {
                 "response": "You have a way with words",
                 "reaction": "blush",
                 "score": 1
             },
             {
+                "response": "That sounds like fun",
+                "reaction": "heyes2",
+                "score": 1
+            },
+            {
                 "response": "High five!",
                 "reaction": "highfive",
+                "score": 0
+            },
+            {
+                "response": "Why?",
+                "reaction": "confused",
                 "score": 0
             },
             {
@@ -322,7 +502,22 @@
                 "score": -1
             },
             {
+                "response": "Yes",
+                "reaction": "smile",
+                "score": 1
+            },
+            {
                 "response": "Let's talk about something else",
+                "reaction": "cry",
+                "score": -1
+            },
+            {
+                "response": "ew",
+                "reaction": "heyes_cry",
+                "score": -1
+            },
+            {
+                "response": "I'm not sure about that...",
                 "reaction": "cry",
                 "score": -1
             }
@@ -333,6 +528,11 @@
             {
                 "response": "I totally know what you mean",
                 "reaction": "smile",
+                "score": 1
+            },
+            {
+                "response": "*Nod*",
+                "reaction": "good",
                 "score": 1
             },
             {
@@ -351,9 +551,24 @@
                 "score": 0
             },
             {
+                "response": "no",
+                "reaction": "neutral",
+                "score": 0
+            },
+            {
+                "response": "Yes",
+                "reaction": "smile",
+                "score": 1
+            },
+            {
                 "response": "ew",
                 "reaction": "big_frown",
                 "score": -1
+            },
+            {
+                "response": "That sounds like a personal problem",
+                "reaction": "bemused",
+                "score": 0
             },
             {
                 "response": "I dunno if thats something you should share...",
@@ -378,9 +593,9 @@
                 "score": 0
             },
             {
-                "response": "High five!",
-                "reaction": "highfive",
-                "score": 0
+                "response": "Love that for you",
+                "reaction": "blush",
+                "score": 1
             },
             {
                 "response": "I don't appreciate that",
@@ -388,21 +603,21 @@
                 "score": -1
             },
             {
-                "response": "I don't date poets",
-                "reaction": "broken_heart",
+                "response": "I dislike",
+                "reaction": "sad",
                 "score": -1
             }
         ],
         [
             {
                 "response": "Tell me more...",
-                "reaction": "sunglass_neutral",
-                "score": 0
+                "reaction": "heyes2",
+                "score": 1
             },
             {
                 "response": "*Nod*",
-                "reaction": "neutral",
-                "score": 0
+                "reaction": "mild_smile",
+                "score": 1
             },
             {
                 "response": "wow! you are so smart",
@@ -415,6 +630,16 @@
                 "score": 1
             },
             {
+                "response": "I don't understand",
+                "reaction": "mild_frown",
+                "score": -1
+            },
+            {
+                "response": "no",
+                "reaction": "stars_confuse",
+                "score": 0
+            },
+            {
                 "response": "That sounds like a personal problem",
                 "reaction": "sad",
                 "score": -1
@@ -423,6 +648,11 @@
                 "response": "I don't date poets",
                 "reaction": "broken_heart",
                 "score": -1
+            },
+            {
+                "response": "boo!",
+                "reaction": "wow",
+                "score": 0
             }
         ],
         [
@@ -442,9 +672,14 @@
                 "score": 1
             },
             {
-                "response": "That makes me think...",
-                "reaction": "highfive",
+                "response": "ahhh !",
+                "reaction": "bemused",
                 "score": 0
+            },
+            {
+                "response": "That makes me think...",
+                "reaction": "great",
+                "score": 1
             },
             {
                 "response": "I don't understand",
@@ -455,6 +690,16 @@
                 "response": "sorry, what were you saying again?",
                 "reaction": "cry",
                 "score": -1
+            },
+            {
+                "response": "I like",
+                "reaction": "wink",
+                "score": 1
+            },
+            {
+                "response": "I think this is moving too fast..",
+                "reaction": "wow",
+                "score": 0
             }
         ],
         [
@@ -479,6 +724,11 @@
                 "score": -1
             },
             {
+                "response": "That makes me think...",
+                "reaction": "confused",
+                "score": 0
+            },
+            {
                 "response": "That is a lot to consider",
                 "reaction": "side_eye",
                 "score": 0
@@ -494,12 +744,12 @@
         [
             {
                 "response": "Thank you for opening up to me",
-                "reaction": "wink",
+                "reaction": "smile",
                 "score": 1
             },
             {
                 "response": "I'm so happy for you",
-                "reaction": "great",
+                "reaction": "smile",
                 "score": 1
             },
             {
@@ -509,7 +759,7 @@
             },
             {
                 "response": "I can't imagine what that's like",
-                "reaction": "wow",
+                "reaction": "neutral",
                 "score": 0
             },
             {
@@ -519,57 +769,57 @@
             },
             {
                 "response": "sorry, what were you saying again?",
-                "reaction": "angry",
+                "reaction": "sad",
                 "score": -1
             },
             {
                 "response": "I dunno if thats something you should share...",
-                "reaction": "angry",
+                "reaction": "sad",
                 "score": -1
             }
         ],
         [
             {
                 "response": "wow! you are so smart",
-                "reaction": "sunglass_smile",
+                "reaction": "smile",
                 "score": 1
             },
             {
                 "response": "Love that for you",
-                "reaction": "wink",
+                "reaction": "smile",
                 "score": 1
             },
             {
                 "response": "I don't understand",
-                "reaction": "wow",
+                "reaction": "neutral",
                 "score": 0
             },
             {
                 "response": "Let's talk about something else",
-                "reaction": "big_frown",
+                "reaction": "sad",
                 "score": -1
             },
             {
                 "response": "ew",
-                "reaction": "big_frown",
+                "reaction": "sad",
                 "score": -1
             }
         ],
         [
             {
                 "response": "Tell me more...",
-                "reaction": "wink",
+                "reaction": "smile",
+                "score": 1
+            },
+            {
+                "response": "You have a way with words",
+                "reaction": "blush",
                 "score": 1
             },
             {
                 "response": "I understand",
-                "reaction": "wink",
+                "reaction": "blush",
                 "score": 1
-            },
-            {
-                "response": "High five!",
-                "reaction": "highfive",
-                "score": 0
             },
             {
                 "response": "That makes me think...",
@@ -583,7 +833,7 @@
             },
             {
                 "response": "don't say things like that",
-                "reaction": "angry",
+                "reaction": "mild_frown",
                 "score": -1
             },
             {
@@ -595,12 +845,17 @@
         [
             {
                 "response": "Tell me more...",
-                "reaction": "neutral",
+                "reaction": "side_eye",
                 "score": 0
             },
             {
                 "response": "*Nod*",
-                "reaction": "neutral",
+                "reaction": "good",
+                "score": 1
+            },
+            {
+                "response": ":3",
+                "reaction": "wow",
                 "score": 0
             },
             {
@@ -617,6 +872,16 @@
                 "response": "I'm not sure about that...",
                 "reaction": "broken_heart",
                 "score": -1
+            },
+            {
+                "response": "I think this is moving too fast..",
+                "reaction": "big_frown",
+                "score": -1
+            },
+            {
+                "response": "I actually have so much I'd like to tell you!",
+                "reaction": "great",
+                "score": 1
             }
         ],
         [
@@ -646,6 +911,11 @@
                 "score": 0
             },
             {
+                "response": "I don't understand",
+                "reaction": "sad",
+                "score": -1
+            },
+            {
                 "response": "Let's talk about something else",
                 "reaction": "broken_heart",
                 "score": -1
@@ -656,12 +926,12 @@
         [
             {
                 "response": "Tell me more...",
-                "reaction": "confused",
-                "score": 0
+                "reaction": "good",
+                "score": 1
             },
             {
                 "response": "I'm so happy for you",
-                "reaction": "smile",
+                "reaction": "heart",
                 "score": 1
             },
             {
@@ -675,9 +945,19 @@
                 "score": 0
             },
             {
+                "response": "me too!",
+                "reaction": "neutral",
+                "score": 0
+            },
+            {
                 "response": "no",
                 "reaction": "cry",
                 "score": -1
+            },
+            {
+                "response": "Don't worry.",
+                "reaction": "confused",
+                "score": 0
             },
             {
                 "response": "ew",
@@ -686,6 +966,21 @@
             }
         ],
         [
+            {
+                "response": "Tell me more...",
+                "reaction": "great",
+                "score": 1
+            },
+            {
+                "response": "*Nod*",
+                "reaction": "mild_smile",
+                "score": 1
+            },
+            {
+                "response": "I'm so happy for you",
+                "reaction": "great",
+                "score": 1
+            },
             {
                 "response": "Proud of you",
                 "reaction": "big_smile",
@@ -698,13 +993,18 @@
             },
             {
                 "response": "I understand",
-                "reaction": "neutral",
-                "score": 0
+                "reaction": "mild_smile",
+                "score": 1
             },
             {
                 "response": "Love that for you",
                 "reaction": "blush",
                 "score": 1
+            },
+            {
+                "response": "I don't understand",
+                "reaction": "side_eye",
+                "score": 0
             },
             {
                 "response": "That sounds like a personal problem",
@@ -715,11 +1015,21 @@
                 "response": "I dunno if thats something you should share...",
                 "reaction": "broken_heart",
                 "score": -1
+            },
+            {
+                "response": "I don't appreciate that",
+                "reaction": "broken_heart",
+                "score": -1
             }
         ],
         [
             {
                 "response": "Thank you for opening up to me",
+                "reaction": "heart",
+                "score": 1
+            },
+            {
+                "response": "I totally know what you mean",
                 "reaction": "heart",
                 "score": 1
             },
@@ -734,6 +1044,11 @@
                 "score": 0
             },
             {
+                "response": "Why?",
+                "reaction": "side_eye",
+                "score": 0
+            },
+            {
                 "response": "That is a lot to consider",
                 "reaction": "side_eye",
                 "score": 0
@@ -741,6 +1056,16 @@
             {
                 "response": "I don't understand",
                 "reaction": "cry",
+                "score": -1
+            },
+            {
+                "response": "Don't worry.",
+                "reaction": "mild_smile",
+                "score": 1
+            },
+            {
+                "response": "ew",
+                "reaction": "broken_heart",
                 "score": -1
             },
             {
@@ -752,8 +1077,23 @@
         [
             {
                 "response": "Tell me more...",
-                "reaction": "neutral",
-                "score": 0
+                "reaction": "smile",
+                "score": 1
+            },
+            {
+                "response": "Thank You",
+                "reaction": "great",
+                "score": 1
+            },
+            {
+                "response": "You have a way with words",
+                "reaction": "great",
+                "score": 1
+            },
+            {
+                "response": "Care for some juice?",
+                "reaction": "great",
+                "score": 1
             },
             {
                 "response": "wow! you are so smart",
@@ -766,6 +1106,11 @@
                 "score": 1
             },
             {
+                "response": "I can't imagine what that's like",
+                "reaction": "wow",
+                "score": 0
+            },
+            {
                 "response": "That makes me think...",
                 "reaction": "neutral",
                 "score": 0
@@ -776,6 +1121,11 @@
                 "score": -1
             },
             {
+                "response": "sorry, what were you saying again?",
+                "reaction": "neutral",
+                "score": 0
+            },
+            {
                 "response": "I don't appreciate that",
                 "reaction": "cry",
                 "score": -1
@@ -783,8 +1133,13 @@
         ],
         [
             {
+                "response": "Thank you for opening up to me",
+                "reaction": "heyes2",
+                "score": 1
+            },
+            {
                 "response": "*Nod*",
-                "reaction": "neutral",
+                "reaction": "wow",
                 "score": 0
             },
             {
@@ -793,9 +1148,19 @@
                 "score": 1
             },
             {
+                "response": "I would love to hear more",
+                "reaction": "smile",
+                "score": 1
+            },
+            {
                 "response": "You're making me blush",
                 "reaction": "blush",
                 "score": 1
+            },
+            {
+                "response": "ahhh !",
+                "reaction": "wow",
+                "score": 0
             },
             {
                 "response": "I don't understand",
@@ -808,8 +1173,18 @@
                 "score": -1
             },
             {
+                "response": "don't say things like that",
+                "reaction": "cry",
+                "score": -1
+            },
+            {
                 "response": "I'm not sure about that...",
                 "reaction": "cry",
+                "score": -1
+            },
+            {
+                "response": "Actually... I hate ants so I wont be doing that :/",
+                "reaction": "angry",
                 "score": -1
             }
         ]
@@ -822,19 +1197,24 @@
                 "score": 1
             },
             {
+                "response": "Thank You",
+                "reaction": "wink",
+                "score": 1
+            },
+            {
                 "response": "I would love to hear more",
                 "reaction": "wink",
                 "score": 1
             },
             {
-                "response": "High five!",
-                "reaction": "highfive",
-                "score": 0
-            },
-            {
                 "response": "Why?",
                 "reaction": "angry",
                 "score": -1
+            },
+            {
+                "response": "ahhh !",
+                "reaction": "wow",
+                "score": 0
             },
             {
                 "response": "I don't understand",
@@ -859,8 +1239,18 @@
                 "score": 1
             },
             {
+                "response": "You're making me blush",
+                "reaction": "wink",
+                "score": 1
+            },
+            {
+                "response": "That sounds like fun",
+                "reaction": "wink",
+                "score": 1
+            },
+            {
                 "response": "ahhh !",
-                "reaction": "confused2",
+                "reaction": "wow",
                 "score": 0
             },
             {
@@ -886,18 +1276,43 @@
                 "score": 1
             },
             {
+                "response": "*Nod*",
+                "reaction": "big_money",
+                "score": 1
+            },
+            {
+                "response": ":3",
+                "reaction": "wink",
+                "score": 1
+            },
+            {
                 "response": "I value you",
+                "reaction": "big_money",
+                "score": 1
+            },
+            {
+                "response": "wow! you are so smart",
+                "reaction": "big_money",
+                "score": 1
+            },
+            {
+                "response": "I understand",
                 "reaction": "big_smile",
                 "score": 1
             },
             {
-                "response": "Thanks for being here",
-                "reaction": "bemused",
+                "response": "High five!",
+                "reaction": "highfive",
                 "score": 0
             },
             {
                 "response": "I can't imagine what that's like",
                 "reaction": "sunglass_neutral",
+                "score": 0
+            },
+            {
+                "response": "Why?",
+                "reaction": "wow",
                 "score": 0
             },
             {
@@ -918,6 +1333,11 @@
                 "score": 1
             },
             {
+                "response": "You have a way with words",
+                "reaction": "wink",
+                "score": 1
+            },
+            {
                 "response": "You're making me blush",
                 "reaction": "blush",
                 "score": 1
@@ -925,6 +1345,11 @@
             {
                 "response": "High five!",
                 "reaction": "highfive",
+                "score": 0
+            },
+            {
+                "response": "That makes me think...",
+                "reaction": "wow",
                 "score": 0
             },
             {
@@ -938,6 +1363,11 @@
                 "score": -1
             },
             {
+                "response": "ew",
+                "reaction": "cry",
+                "score": -1
+            },
+            {
                 "response": "That sounds like a personal problem",
                 "reaction": "angry",
                 "score": -1
@@ -945,8 +1375,18 @@
         ],
         [
             {
+                "response": "Thank You",
+                "reaction": "heyes2",
+                "score": 1
+            },
+            {
+                "response": "You're making me blush",
+                "reaction": "heyes2",
+                "score": 1
+            },
+            {
                 "response": "That sounds like fun",
-                "reaction": "heyes",
+                "reaction": "heyes2",
                 "score": 1
             },
             {
@@ -961,7 +1401,7 @@
             },
             {
                 "response": "Yes",
-                "reaction": "smile",
+                "reaction": "heyes2",
                 "score": 1
             },
             {
@@ -973,6 +1413,11 @@
                 "response": "Let's talk about something else",
                 "reaction": "confused",
                 "score": 0
+            },
+            {
+                "response": "ew",
+                "reaction": "cry",
+                "score": -1
             },
             {
                 "response": "I'm not sure about that...",
@@ -999,6 +1444,11 @@
                 "score": 1
             },
             {
+                "response": "ew",
+                "reaction": "big_frown",
+                "score": -1
+            },
+            {
                 "response": "don't say things like that",
                 "reaction": "mild_frown",
                 "score": -1
@@ -1021,13 +1471,13 @@
                 "score": 1
             },
             {
-                "response": "You're a keeper",
+                "response": "*Nod*",
                 "reaction": "big_smile",
                 "score": 1
             },
             {
-                "response": "*Nod*",
-                "reaction": "neutral",
+                "response": ":3",
+                "reaction": "side_eye",
                 "score": 0
             },
             {
@@ -1037,19 +1487,24 @@
             },
             {
                 "response": "I don't understand",
-                "reaction": "wow",
+                "reaction": "confused",
                 "score": 0
             },
             {
                 "response": "ew",
                 "reaction": "mild_frown",
                 "score": -1
+            },
+            {
+                "response": "don't say things like that",
+                "reaction": "neutral",
+                "score": 0
             }
         ],
         [
             {
                 "response": "High five!",
-                "reaction": "highfive",
+                "reaction": "confused",
                 "score": 0
             },
             {
@@ -1065,19 +1520,24 @@
         ],
         [
             {
+                "response": "*Nod*",
+                "reaction": "mild_smile",
+                "score": 1
+            },
+            {
                 "response": "I value you",
                 "reaction": "heyes",
                 "score": 1
             },
             {
-                "response": "no",
-                "reaction": "smile",
+                "response": "me too!",
+                "reaction": "great",
                 "score": 1
             },
             {
-                "response": "Yes",
-                "reaction": "cry",
-                "score": -1
+                "response": "I don't understand",
+                "reaction": "neutral",
+                "score": 0
             },
             {
                 "response": "Don't worry.",
@@ -1090,9 +1550,19 @@
                 "score": -1
             },
             {
-                "response": "what angel and devil?",
-                "reaction": "confused2",
+                "response": "That sounds like a personal problem",
+                "reaction": "big_frown",
+                "score": -1
+            },
+            {
+                "response": "I think this is moving too fast..",
+                "reaction": "confused",
                 "score": 0
+            },
+            {
+                "response": "That's kinda rude, no?",
+                "reaction": "smile",
+                "score": 1
             }
         ],
         [
@@ -1105,6 +1575,11 @@
                 "response": "You're a keeper",
                 "reaction": "heart",
                 "score": 1
+            },
+            {
+                "response": "Why?",
+                "reaction": "confused",
+                "score": 0
             },
             {
                 "response": "ahhh !",
@@ -1132,7 +1607,7 @@
         [
             {
                 "response": "Tell me more...",
-                "reaction": "wink",
+                "reaction": "smile",
                 "score": 1
             },
             {
@@ -1141,8 +1616,13 @@
                 "score": 0
             },
             {
+                "response": ":3",
+                "reaction": "blush",
+                "score": 1
+            },
+            {
                 "response": "You have a way with words",
-                "reaction": "pink",
+                "reaction": "blush",
                 "score": 1
             },
             {
@@ -1170,6 +1650,11 @@
             {
                 "response": "Proud of you",
                 "reaction": "smile",
+                "score": 1
+            },
+            {
+                "response": "That sounds like fun",
+                "reaction": "big_smile",
                 "score": 1
             },
             {
@@ -1213,6 +1698,11 @@
                 "response": "That is a lot to consider",
                 "reaction": "confused2",
                 "score": 0
+            },
+            {
+                "response": "I don't understand",
+                "reaction": "frown",
+                "score": -1
             },
             {
                 "response": "don't say things like that",
@@ -1265,6 +1755,11 @@
                 "response": "I dislike",
                 "reaction": "broken_heart",
                 "score": -1
+            },
+            {
+                "response": "I like",
+                "reaction": "blush",
+                "score": 1
             }
         ],
         [
@@ -1284,6 +1779,11 @@
                 "score": 0
             },
             {
+                "response": "no",
+                "reaction": "cry",
+                "score": -1
+            },
+            {
                 "response": "Yes",
                 "reaction": "heart",
                 "score": 1
@@ -1297,6 +1797,11 @@
                 "response": "I dunno if thats something you should share...",
                 "reaction": "broken_heart",
                 "score": -1
+            },
+            {
+                "response": "I think this is moving too fast..",
+                "reaction": "cry",
+                "score": -1
             }
         ]
     ],
@@ -1304,12 +1809,12 @@
         [
             {
                 "response": ":3",
-                "reaction": "heart",
+                "reaction": "great",
                 "score": 1
             },
             {
                 "response": "You have a way with words",
-                "reaction": "heart",
+                "reaction": "great",
                 "score": 1
             },
             {
@@ -1318,9 +1823,24 @@
                 "score": 0
             },
             {
+                "response": "Why?",
+                "reaction": "frown",
+                "score": -1
+            },
+            {
                 "response": "That makes me think...",
                 "reaction": "neutral",
                 "score": 0
+            },
+            {
+                "response": "I don't understand",
+                "reaction": "frown",
+                "score": -1
+            },
+            {
+                "response": "Should I tip you?",
+                "reaction": "mild_smile",
+                "score": 1
             },
             {
                 "response": "ew",
@@ -1331,9 +1851,64 @@
                 "response": "don't say things like that",
                 "reaction": "heyes_cry",
                 "score": -1
+            },
+            {
+                "response": "sorry, what were you saying again?",
+                "reaction": "neutral",
+                "score": 0
+            },
+            {
+                "response": "That sounds like a personal problem",
+                "reaction": "frown",
+                "score": -1
+            },
+            {
+                "response": "I'm not sure about that...",
+                "reaction": "frown",
+                "score": -1
+            },
+            {
+                "response": "I dunno if thats something you should share...",
+                "reaction": "frown",
+                "score": -1
+            },
+            {
+                "response": "I dislike",
+                "reaction": "frown",
+                "score": -1
+            },
+            {
+                "response": "That's kinda rude, no?",
+                "reaction": "cry",
+                "score": -1
             }
         ],
         [
+            {
+                "response": "You're a keeper",
+                "reaction": "heyes2",
+                "score": 1
+            },
+            {
+                "response": "*Nod*",
+                "reaction": "good",
+                "score": 1
+            },
+            {
+                "response": ":3",
+                "reaction": "great",
+                "score": 1
+            },
+            {
+                "response": "Proud of you",
+                "reaction": "great",
+                "score": 1
+            },
+            {
+                "response": "You have a way with words",
+                "reaction": "great",
+                "score": 1
+            },
             {
                 "response": "Care for some juice?",
                 "reaction": "juice",
@@ -1341,8 +1916,23 @@
             },
             {
                 "response": "You're making me blush",
-                "reaction": "blush",
+                "reaction": "great",
                 "score": 1
+            },
+            {
+                "response": "wow! you are so smart",
+                "reaction": "sunglass_smile",
+                "score": 1
+            },
+            {
+                "response": "That sounds like fun",
+                "reaction": "big_smile",
+                "score": 1
+            },
+            {
+                "response": "I can't imagine what that's like",
+                "reaction": "wow",
+                "score": 0
             },
             {
                 "response": "Why?",
@@ -1350,9 +1940,24 @@
                 "score": 0
             },
             {
+                "response": "no",
+                "reaction": "confused",
+                "score": 0
+            },
+            {
                 "response": "Should I tip you?",
                 "reaction": "confused2",
                 "score": 0
+            },
+            {
+                "response": "I'm not sure about that...",
+                "reaction": "sad",
+                "score": -1
+            },
+            {
+                "response": "I dunno if thats something you should share...",
+                "reaction": "sad",
+                "score": -1
             },
             {
                 "response": "I don't appreciate that",
@@ -1367,8 +1972,13 @@
         ],
         [
             {
+                "response": "Tell me more...",
+                "reaction": "great",
+                "score": 1
+            },
+            {
                 "response": "Thank You",
-                "reaction": "good",
+                "reaction": "great",
                 "score": 1
             },
             {
@@ -1377,9 +1987,34 @@
                 "score": 0
             },
             {
+                "response": ":3",
+                "reaction": "great",
+                "score": 1
+            },
+            {
+                "response": "I'm so happy for you",
+                "reaction": "neutral",
+                "score": 0
+            },
+            {
                 "response": "Proud of you",
                 "reaction": "heart",
                 "score": 1
+            },
+            {
+                "response": "Care for some juice?",
+                "reaction": "juice",
+                "score": 1
+            },
+            {
+                "response": "me too!",
+                "reaction": "great",
+                "score": 1
+            },
+            {
+                "response": "ahhh !",
+                "reaction": "wow",
+                "score": 0
             },
             {
                 "response": "That is a lot to consider",
@@ -1395,6 +2030,11 @@
                 "response": "I dunno if thats something you should share...",
                 "reaction": "broken_heart",
                 "score": -1
+            },
+            {
+                "response": "I don't appreciate that",
+                "reaction": "mild_frown",
+                "score": -1
             }
         ],
         [
@@ -1409,6 +2049,16 @@
                 "score": 1
             },
             {
+                "response": "*Nod*",
+                "reaction": "mild_smile",
+                "score": 1
+            },
+            {
+                "response": "Care for some juice?",
+                "reaction": "juice",
+                "score": 1
+            },
+            {
                 "response": "I understand",
                 "reaction": "heyes2",
                 "score": 1
@@ -1420,8 +2070,8 @@
             },
             {
                 "response": "I can't imagine what that's like",
-                "reaction": "wow",
-                "score": 0
+                "reaction": "smile",
+                "score": 1
             },
             {
                 "response": "ew",
@@ -1432,13 +2082,18 @@
                 "response": "sorry, what were you saying again?",
                 "reaction": "broken_heart",
                 "score": -1
+            },
+            {
+                "response": "I'm not sure about that...",
+                "reaction": "neutral",
+                "score": 0
             }
         ],
         [
             {
                 "response": "*Nod*",
-                "reaction": "neutral",
-                "score": 0
+                "reaction": "mild_smile",
+                "score": 1
             },
             {
                 "response": ":3",
@@ -1446,8 +2101,23 @@
                 "score": 1
             },
             {
+                "response": "I'm so happy for you",
+                "reaction": "pink",
+                "score": 1
+            },
+            {
                 "response": "You have a way with words",
                 "reaction": "heart",
+                "score": 1
+            },
+            {
+                "response": "High five!",
+                "reaction": "highfive",
+                "score": 0
+            },
+            {
+                "response": "That is a lot to consider",
+                "reaction": "smile",
                 "score": 1
             },
             {
@@ -1463,6 +2133,11 @@
             {
                 "response": "don't say things like that",
                 "reaction": "broken_heart",
+                "score": -1
+            },
+            {
+                "response": "I think this is moving too fast..",
+                "reaction": "big_frown",
                 "score": -1
             }
         ]
@@ -1480,6 +2155,11 @@
                 "score": 1
             },
             {
+                "response": "Why?",
+                "reaction": "wow",
+                "score": 0
+            },
+            {
                 "response": "ahhh !",
                 "reaction": "wow",
                 "score": 0
@@ -1491,7 +2171,12 @@
             },
             {
                 "response": "no",
-                "reaction": "angry",
+                "reaction": "mild_frown",
+                "score": -1
+            },
+            {
+                "response": "ew",
+                "reaction": "sad",
                 "score": -1
             },
             {
@@ -1504,6 +2189,11 @@
             {
                 "response": "That is a lot to consider",
                 "reaction": "wow",
+                "score": 0
+            },
+            {
+                "response": "no",
+                "reaction": "side_eye",
                 "score": 0
             },
             {
@@ -1546,7 +2236,7 @@
         ],
         [
             {
-                "response": "ew",
+                "response": "Let's talk about something else",
                 "reaction": "broken_heart",
                 "score": -1
             },
@@ -1569,7 +2259,7 @@
             },
             {
                 "response": "You're making me blush",
-                "reaction": "wink",
+                "reaction": "blush",
                 "score": 1
             },
             {
@@ -1579,8 +2269,18 @@
             },
             {
                 "response": "That makes me think...",
-                "reaction": "highfive",
+                "reaction": "wow",
                 "score": 0
+            },
+            {
+                "response": "no",
+                "reaction": "big_frown",
+                "score": -1
+            },
+            {
+                "response": "Yes",
+                "reaction": "blush",
+                "score": 1
             },
             {
                 "response": "Let's talk about something else",
@@ -1735,9 +2435,24 @@
                 "score": 1
             },
             {
+                "response": ":3",
+                "reaction": "wink",
+                "score": 1
+            },
+            {
+                "response": "You have a way with words",
+                "reaction": "blush",
+                "score": 1
+            },
+            {
                 "response": "Care for some juice?",
                 "reaction": "confused2",
                 "score": 0
+            },
+            {
+                "response": "I would love to hear more",
+                "reaction": "blush",
+                "score": 1
             },
             {
                 "response": "I can't imagine what that's like",
@@ -1759,9 +2474,24 @@
     "oedimb": [
         [
             {
+                "response": "*Nod*",
+                "reaction": "smile",
+                "score": 1
+            },
+            {
                 "response": ":3",
                 "reaction": "wink",
                 "score": 1
+            },
+            {
+                "response": "You're making me blush",
+                "reaction": "wink",
+                "score": 1
+            },
+            {
+                "response": "wow! you are so smart",
+                "reaction": "wow",
+                "score": 0
             },
             {
                 "response": "I understand",
@@ -1779,7 +2509,17 @@
                 "score": -1
             },
             {
+                "response": "Don't worry.",
+                "reaction": "neutral",
+                "score": 0
+            },
+            {
                 "response": "I dunno if thats something you should share...",
+                "reaction": "big_frown",
+                "score": -1
+            },
+            {
+                "response": "I don't appreciate that",
                 "reaction": "big_frown",
                 "score": -1
             },
@@ -1796,8 +2536,18 @@
                 "score": 1
             },
             {
+                "response": "I would love to hear more",
+                "reaction": "smile",
+                "score": 1
+            },
+            {
                 "response": "You're making me blush",
                 "reaction": "blush",
+                "score": 1
+            },
+            {
+                "response": "wow! you are so smart",
+                "reaction": "wink",
                 "score": 1
             },
             {
@@ -1817,7 +2567,7 @@
             },
             {
                 "response": "ew",
-                "reaction": "three_cry",
+                "reaction": "sad",
                 "score": -1
             }
         ],
@@ -1853,6 +2603,11 @@
                 "score": -1
             },
             {
+                "response": "ew",
+                "reaction": "three_frown",
+                "score": -1
+            },
+            {
                 "response": "don't say things like that",
                 "reaction": "broken_money",
                 "score": -1
@@ -1865,9 +2620,19 @@
                 "score": 1
             },
             {
+                "response": "Thank You",
+                "reaction": "blush",
+                "score": 1
+            },
+            {
                 "response": "me too!",
                 "reaction": "wow",
                 "score": 0
+            },
+            {
+                "response": "wow! you are so smart",
+                "reaction": "wink",
+                "score": 1
             },
             {
                 "response": "That sounds like fun",
@@ -1878,6 +2643,21 @@
                 "response": "Why?",
                 "reaction": "side_eye",
                 "score": 0
+            },
+            {
+                "response": "ahhh !",
+                "reaction": "wow",
+                "score": 0
+            },
+            {
+                "response": "Don't worry.",
+                "reaction": "side_eye",
+                "score": 0
+            },
+            {
+                "response": "don't say things like that",
+                "reaction": "tear",
+                "score": -1
             },
             {
                 "response": "sorry, what were you saying again?",
@@ -1894,6 +2674,11 @@
             {
                 "response": "*Nod*",
                 "reaction": "heart",
+                "score": 1
+            },
+            {
+                "response": ":3",
+                "reaction": "wink",
                 "score": 1
             },
             {
@@ -1951,14 +2736,29 @@
                 "score": 0
             },
             {
+                "response": "Why?",
+                "reaction": "wow",
+                "score": 0
+            },
+            {
                 "response": "I don't understand",
                 "reaction": "sunglass_neutral",
                 "score": 0
             },
             {
+                "response": "no",
+                "reaction": "confused",
+                "score": 0
+            },
+            {
                 "response": "Let's talk about something else",
-                "reaction": "angry",
+                "reaction": "mild_frown",
                 "score": -1
+            },
+            {
+                "response": "ew",
+                "reaction": "confused",
+                "score": 0
             },
             {
                 "response": "I don't appreciate that",
@@ -1983,8 +2783,28 @@
                 "score": 0
             },
             {
+                "response": "ahhh !",
+                "reaction": "great",
+                "score": 1
+            },
+            {
                 "response": "That makes me think...",
                 "reaction": "sunglass_neutral",
+                "score": 0
+            },
+            {
+                "response": "Should I tip you?",
+                "reaction": "great",
+                "score": 1
+            },
+            {
+                "response": "Don't worry.",
+                "reaction": "great",
+                "score": 1
+            },
+            {
+                "response": "ew",
+                "reaction": "wow",
                 "score": 0
             },
             {
@@ -1996,6 +2816,11 @@
                 "response": "I dunno if thats something you should share...",
                 "reaction": "sunglass_mad",
                 "score": -1
+            },
+            {
+                "response": "wow you are so intersting!",
+                "reaction": "great",
+                "score": 1
             }
         ],
         [
@@ -2007,6 +2832,11 @@
             {
                 "response": "Proud of you",
                 "reaction": "blush",
+                "score": 1
+            },
+            {
+                "response": "Why?",
+                "reaction": "wink",
                 "score": 1
             },
             {
@@ -2037,8 +2867,8 @@
                 "score": 1
             },
             {
-                "response": "You're making me blush",
-                "reaction": "blush",
+                "response": "wow! you are so smart",
+                "reaction": "great",
                 "score": 1
             },
             {
@@ -2047,8 +2877,18 @@
                 "score": 0
             },
             {
+                "response": "That makes me think...",
+                "reaction": "wink",
+                "score": 1
+            },
+            {
                 "response": "That is a lot to consider",
-                "reaction": "sunglass_neutral",
+                "reaction": "confused",
+                "score": 0
+            },
+            {
+                "response": "I don't understand",
+                "reaction": "wow",
                 "score": 0
             },
             {
@@ -2060,18 +2900,38 @@
                 "response": "That sounds like a personal problem",
                 "reaction": "broken_heart",
                 "score": -1
+            },
+            {
+                "response": "I dunno if thats something you should share...",
+                "reaction": "cry",
+                "score": -1
             }
         ],
         [
+            {
+                "response": "I would love to hear more",
+                "reaction": "great",
+                "score": 1
+            },
             {
                 "response": "I value you",
                 "reaction": "heart",
                 "score": 1
             },
             {
+                "response": "I understand",
+                "reaction": "great",
+                "score": 1
+            },
+            {
                 "response": "That sounds like fun",
                 "reaction": "heart",
                 "score": 1
+            },
+            {
+                "response": "I can't imagine what that's like",
+                "reaction": "wow",
+                "score": 0
             },
             {
                 "response": "Why?",
@@ -2089,6 +2949,11 @@
                 "score": -1
             },
             {
+                "response": "ew",
+                "reaction": "angry",
+                "score": -1
+            },
+            {
                 "response": "I don't appreciate that",
                 "reaction": "big_frown",
                 "score": -1
@@ -2098,19 +2963,39 @@
     "hammerton": [
         [
             {
-                "response": "You're making me blush",
-                "reaction": "wow",
+                "response": "You have a way with words",
+                "reaction": "side_eye",
                 "score": 0
             },
             {
-                "response": "no",
+                "response": "I would love to hear more",
+                "reaction": "side_eye",
+                "score": 0
+            },
+            {
+                "response": "I value you",
                 "reaction": "smile",
+                "score": 1
+            },
+            {
+                "response": "You're making me blush",
+                "reaction": "mild_smile",
+                "score": 1
+            },
+            {
+                "response": "no",
+                "reaction": "mild_smile",
                 "score": 1
             },
             {
                 "response": "Yes",
                 "reaction": "frown",
                 "score": -1
+            },
+            {
+                "response": "Don't worry.",
+                "reaction": "mild_smile",
+                "score": 1
             },
             {
                 "response": "neiiigh!",
@@ -2126,12 +3011,42 @@
                 "response": "don't say things like that",
                 "reaction": "frown",
                 "score": -1
+            },
+            {
+                "response": "sorry, what were you saying again?",
+                "reaction": "big_smile",
+                "score": 1
+            },
+            {
+                "response": "I'm not sure about that...",
+                "reaction": "mild_smile",
+                "score": 1
+            },
+            {
+                "response": "I think this is moving too fast..",
+                "reaction": "side_eye",
+                "score": 0
+            },
+            {
+                "response": "I actually have so much I'd like to tell you!",
+                "reaction": "mild_frown",
+                "score": -1
             }
         ],
         [
             {
+                "response": "Thank you for opening up to me",
+                "reaction": "mild_smile",
+                "score": 1
+            },
+            {
                 "response": "I totally know what you mean",
                 "reaction": "wink",
+                "score": 1
+            },
+            {
+                "response": "*Nod*",
+                "reaction": "mild_smile",
                 "score": 1
             },
             {
@@ -2145,25 +3060,147 @@
                 "score": -1
             },
             {
+                "response": "I understand",
+                "reaction": "mild_smile",
+                "score": 1
+            },
+            {
+                "response": "Thanks for being here",
+                "reaction": "mild_smile",
+                "score": 1
+            },
+            {
                 "response": "High five!",
-                "reaction": "wow",
+                "reaction": "side_eye",
+                "score": 0
+            },
+            {
+                "response": "I can't imagine what that's like",
+                "reaction": "mild_smile",
+                "score": 1
+            },
+            {
+                "response": "ahhh !",
+                "reaction": "side_eye",
                 "score": 0
             },
             {
                 "response": "Don't worry.",
+                "reaction": "side_eye",
+                "score": 0
+            },
+            {
+                "response": "*kazoo!!!*",
+                "reaction": "angry",
+                "score": -1
+            },
+            {
+                "response": "Now is no time to take a nap!",
+                "reaction": "angry",
+                "score": -1
+            }
+        ],
+        [
+            {
+                "response": "Thank you for opening up to me",
+                "reaction": "smile",
+                "score": 1
+            },
+            {
+                "response": "I totally know what you mean",
+                "reaction": "smile",
+                "score": 1
+            },
+            {
+                "response": "Thank You",
+                "reaction": "smile",
+                "score": 1
+            },
+            {
+                "response": "You're a keeper",
+                "reaction": "blush",
+                "score": 1
+            },
+            {
+                "response": "*Nod*",
+                "reaction": "blush",
+                "score": 1
+            },
+            {
+                "response": ":3",
+                "reaction": "great",
+                "score": 1
+            },
+            {
+                "response": "me too!",
+                "reaction": "smile",
+                "score": 1
+            },
+            {
+                "response": "I understand",
+                "reaction": "smile",
+                "score": 1
+            },
+            {
+                "response": "Thanks for being here",
+                "reaction": "smile",
+                "score": 1
+            },
+            {
+                "response": "Why?",
+                "reaction": "side_eye",
+                "score": 0
+            },
+            {
+                "response": "I don't understand",
                 "reaction": "mild_frown",
                 "score": -1
             },
             {
-                "response": "*kazoo!!!*",
-                "reaction": "wow",
+                "response": "Let's talk about something else",
+                "reaction": "mild_frown",
+                "score": -1
+            },
+            {
+                "response": "sorry, what were you saying again?",
+                "reaction": "mild_smile",
+                "score": 1
+            },
+            {
+                "response": "I dunno if thats something you should share...",
+                "reaction": "side_eye",
                 "score": 0
             }
         ],
         [
             {
+                "response": "Thank you for opening up to me",
+                "reaction": "confused2",
+                "score": 0
+            },
+            {
+                "response": "Tell me more...",
+                "reaction": "mild_smile",
+                "score": 1
+            },
+            {
                 "response": "Thank You",
                 "reaction": "big_money",
+                "score": 1
+            },
+            {
+                "response": "*Nod*",
+                "reaction": "neutral",
+                "score": 0
+            },
+            {
+                "response": "You have a way with words",
+                "reaction": "good",
+                "score": 1
+            },
+            {
+                "response": "Care for some juice?",
+                "reaction": "juice",
                 "score": 1
             },
             {
@@ -2172,14 +3209,39 @@
                 "score": 1
             },
             {
+                "response": "Thanks for being here",
+                "reaction": "smile",
+                "score": 1
+            },
+            {
                 "response": "Why?",
-                "reaction": "wow",
+                "reaction": "neutral",
+                "score": 0
+            },
+            {
+                "response": "I don't understand",
+                "reaction": "side_eye",
+                "score": 0
+            },
+            {
+                "response": "no",
+                "reaction": "neutral",
+                "score": 0
+            },
+            {
+                "response": "Yes",
+                "reaction": "neutral",
                 "score": 0
             },
             {
                 "response": "Should I tip you?",
                 "reaction": "wow",
                 "score": 0
+            },
+            {
+                "response": "sorry, what were you saying again?",
+                "reaction": "angry",
+                "score": -1
             },
             {
                 "response": "I'm not sure about that...",
@@ -2190,38 +3252,6 @@
                 "response": "I don't appreciate that",
                 "reaction": "angry",
                 "score": -1
-            }
-        ],
-        [
-            {
-                "response": "You're a keeper",
-                "reaction": "blush",
-                "score": 1
-            },
-            {
-                "response": ":3",
-                "reaction": "great",
-                "score": 1
-            },
-            {
-                "response": "I understand",
-                "reaction": "smile",
-                "score": 1
-            },
-            {
-                "response": "Let's talk about something else",
-                "reaction": "mild_frown",
-                "score": -1
-            },
-            {
-                "response": "sorry, what were you saying again?",
-                "reaction": "wow",
-                "score": 0
-            },
-            {
-                "response": "I dunno if thats something you should share...",
-                "reaction": "wow",
-                "score": 0
             }
         ],
         [
@@ -2246,9 +3276,39 @@
                 "score": 0
             },
             {
+                "response": "I don't understand",
+                "reaction": "mild_frown",
+                "score": -1
+            },
+            {
+                "response": "no",
+                "reaction": "mild_frown",
+                "score": -1
+            },
+            {
+                "response": "Yes",
+                "reaction": "good",
+                "score": 1
+            },
+            {
                 "response": "That sounds like a personal problem",
                 "reaction": "mild_frown",
                 "score": -1
+            },
+            {
+                "response": "I'm not sure about that...",
+                "reaction": "side_eye",
+                "score": 0
+            },
+            {
+                "response": "I dislike",
+                "reaction": "mild_frown",
+                "score": -1
+            },
+            {
+                "response": "I like",
+                "reaction": "mild_smile",
+                "score": 1
             }
         ]
     ],
@@ -2283,6 +3343,11 @@
                 "response": "don't say things like that",
                 "reaction": "cry",
                 "score": -1
+            },
+            {
+                "response": "In my opinion all clouds are bad and evil",
+                "reaction": "cry",
+                "score": -1
             }
         ],
         [
@@ -2312,6 +3377,11 @@
                 "score": -1
             },
             {
+                "response": "don't say things like that",
+                "reaction": "confused",
+                "score": 0
+            },
+            {
                 "response": "I dunno if thats something you should share...",
                 "reaction": "tear",
                 "score": -1
@@ -2335,11 +3405,16 @@
             },
             {
                 "response": "Why?",
-                "reaction": "confused2",
+                "reaction": "wow",
                 "score": 0
             },
             {
                 "response": "sorry, what were you saying again?",
+                "reaction": "tear",
+                "score": -1
+            },
+            {
+                "response": "That sounds like a personal problem",
                 "reaction": "tear",
                 "score": -1
             },
@@ -2351,6 +3426,11 @@
         ],
         [
             {
+                "response": "You have a way with words",
+                "reaction": "pink",
+                "score": 1
+            },
+            {
                 "response": "I would love to hear more",
                 "reaction": "big_smile",
                 "score": 1
@@ -2361,8 +3441,13 @@
                 "score": 1
             },
             {
+                "response": "That sounds like fun",
+                "reaction": "wink",
+                "score": 1
+            },
+            {
                 "response": "That makes me think...",
-                "reaction": "neutral",
+                "reaction": "side_eye",
                 "score": 0
             },
             {
@@ -2376,8 +3461,18 @@
                 "score": -1
             },
             {
+                "response": "I don't appreciate that",
+                "reaction": "big_frown",
+                "score": -1
+            },
+            {
                 "response": "I dislike",
                 "reaction": "cry",
+                "score": -1
+            },
+            {
+                "response": "That's kinda rude, no?",
+                "reaction": "frown",
                 "score": -1
             }
         ],
@@ -2388,8 +3483,18 @@
                 "score": 1
             },
             {
+                "response": "Proud of you",
+                "reaction": "pink",
+                "score": 1
+            },
+            {
                 "response": "I value you",
                 "reaction": "heart",
+                "score": 1
+            },
+            {
+                "response": "wow! you are so smart",
+                "reaction": "pink",
                 "score": 1
             },
             {
@@ -2432,6 +3537,11 @@
                 "score": 1
             },
             {
+                "response": "I would love to hear more",
+                "reaction": "big_smile",
+                "score": 1
+            },
+            {
                 "response": "High five!",
                 "reaction": "highfive",
                 "score": 0
@@ -2450,6 +3560,16 @@
                 "response": "That sounds like a personal problem",
                 "reaction": "sad",
                 "score": -1
+            },
+            {
+                "response": "I dunno if thats something you should share...",
+                "reaction": "big_frown",
+                "score": -1
+            },
+            {
+                "response": "wow you are so intersting!",
+                "reaction": "big_smile",
+                "score": 1
             }
         ],
         [
@@ -2467,6 +3587,11 @@
                 "response": "Why?",
                 "reaction": "confused2",
                 "score": 0
+            },
+            {
+                "response": "That makes me think...",
+                "reaction": "mild_smile",
+                "score": 1
             },
             {
                 "response": "That is a lot to consider",
@@ -2487,7 +3612,7 @@
         [
             {
                 "response": "You're a keeper",
-                "reaction": "big_smile",
+                "reaction": "blush",
                 "score": 1
             },
             {
@@ -2522,6 +3647,11 @@
             }
         ],
         [
+            {
+                "response": "I totally know what you mean",
+                "reaction": "big_smile",
+                "score": 1
+            },
             {
                 "response": "*Nod*",
                 "reaction": "big_smile",
@@ -2556,12 +3686,22 @@
                 "response": "I'm not sure about that...",
                 "reaction": "tear",
                 "score": -1
+            },
+            {
+                "response": "I dislike",
+                "reaction": "cry",
+                "score": -1
             }
         ],
         [
             {
                 "response": "Thank you for opening up to me",
                 "reaction": "heart",
+                "score": 1
+            },
+            {
+                "response": "I totally know what you mean",
+                "reaction": "heyes2",
                 "score": 1
             },
             {
@@ -2577,6 +3717,11 @@
             {
                 "response": "High five!",
                 "reaction": "highfive",
+                "score": 0
+            },
+            {
+                "response": "Why?",
+                "reaction": "wow",
                 "score": 0
             },
             {
@@ -2599,12 +3744,37 @@
     "yodine": [
         [
             {
+                "response": "Tell me more...",
+                "reaction": "smile",
+                "score": 1
+            },
+            {
+                "response": "I totally know what you mean",
+                "reaction": "smile",
+                "score": 1
+            },
+            {
                 "response": "I'm so happy for you",
                 "reaction": "blush",
                 "score": 1
             },
             {
+                "response": "Proud of you",
+                "reaction": "blush",
+                "score": 1
+            },
+            {
+                "response": "I would love to hear more",
+                "reaction": "smile",
+                "score": 1
+            },
+            {
                 "response": "wow! you are so smart",
+                "reaction": "blush",
+                "score": 1
+            },
+            {
+                "response": "Thanks for being here",
                 "reaction": "blush",
                 "score": 1
             },
@@ -2615,12 +3785,12 @@
             },
             {
                 "response": "Why?",
-                "reaction": "side_eye",
+                "reaction": "neutral",
                 "score": 0
             },
             {
-                "response": "That makes me think...",
-                "reaction": "side_eye",
+                "response": "I don't understand",
+                "reaction": "neutral",
                 "score": 0
             },
             {
@@ -2629,19 +3799,34 @@
                 "score": 0
             },
             {
-                "response": "Let's talk about something else",
+                "response": "ew",
                 "reaction": "tear",
                 "score": -1
             },
             {
-                "response": "sorry, what were you saying again?",
+                "response": "I'm not sure about that...",
                 "reaction": "tear",
                 "score": -1
             }
         ],
         [
             {
+                "response": "Thank you for opening up to me",
+                "reaction": "big_smile",
+                "score": 1
+            },
+            {
                 "response": "I totally know what you mean",
+                "reaction": "big_smile",
+                "score": 1
+            },
+            {
+                "response": "I would love to hear more",
+                "reaction": "big_smile",
+                "score": 1
+            },
+            {
+                "response": "me too!",
                 "reaction": "big_smile",
                 "score": 1
             },
@@ -2656,9 +3841,19 @@
                 "score": 0
             },
             {
+                "response": "Why?",
+                "reaction": "neutral",
+                "score": 0
+            },
+            {
                 "response": "I don't understand",
                 "reaction": "neutral",
                 "score": 0
+            },
+            {
+                "response": "Let's talk about something else",
+                "reaction": "tear",
+                "score": -1
             },
             {
                 "response": "don't say things like that",
@@ -2683,13 +3878,18 @@
                 "score": 1
             },
             {
-                "response": "High five!",
-                "reaction": "highfive",
-                "score": 0
+                "response": "You have a way with words",
+                "reaction": "big_smile",
+                "score": 1
             },
             {
                 "response": "ahhh !",
-                "reaction": "side_eye",
+                "reaction": "neutral",
+                "score": 0
+            },
+            {
+                "response": "I don't understand",
+                "reaction": "neutral",
                 "score": 0
             },
             {
@@ -2698,21 +3898,46 @@
                 "score": -1
             },
             {
+                "response": "sorry, what were you saying again?",
+                "reaction": "cry",
+                "score": -1
+            },
+            {
                 "response": "I'm not sure about that...",
                 "reaction": "tear",
+                "score": -1
+            },
+            {
+                "response": "I don't appreciate that",
+                "reaction": "cry",
                 "score": -1
             }
         ],
         [
+            {
+                "response": "Thank you for opening up to me",
+                "reaction": "big_smile",
+                "score": 1
+            },
             {
                 "response": "I would love to hear more",
                 "reaction": "big_smile",
                 "score": 1
             },
             {
-                "response": "You're making me blush",
+                "response": "me too!",
                 "reaction": "big_smile",
                 "score": 1
+            },
+            {
+                "response": "wow! you are so smart",
+                "reaction": "big_smile",
+                "score": 1
+            },
+            {
+                "response": "Why?",
+                "reaction": "sad",
+                "score": -1
             },
             {
                 "response": "That is a lot to consider",
@@ -2742,6 +3967,11 @@
                 "score": 0
             },
             {
+                "response": "I value you",
+                "reaction": "blush",
+                "score": 1
+            },
+            {
                 "response": "That sounds like fun",
                 "reaction": "heart",
                 "score": 1
@@ -2763,12 +3993,17 @@
             },
             {
                 "response": "Yes",
-                "reaction": "heart",
+                "reaction": "heyes2",
                 "score": 1
             },
             {
                 "response": "sorry, what were you saying again?",
                 "reaction": "broken_heart",
+                "score": -1
+            },
+            {
+                "response": "I'm not sure about that...",
+                "reaction": "heyes_cry",
                 "score": -1
             }
         ]
@@ -2796,8 +4031,18 @@
                 "score": 0
             },
             {
+                "response": "ew",
+                "reaction": "big_frown",
+                "score": -1
+            },
+            {
                 "response": "don't say things like that",
                 "reaction": "broken_heart",
+                "score": -1
+            },
+            {
+                "response": "I'm not sure about that...",
+                "reaction": "big_frown",
                 "score": -1
             },
             {
@@ -2828,8 +4073,8 @@
                 "score": 1
             },
             {
-                "response": "Let's talk about something else",
-                "reaction": "tear",
+                "response": "Love that for you",
+                "reaction": "cry",
                 "score": -1
             },
             {
@@ -2845,9 +4090,14 @@
                 "score": 1
             },
             {
-                "response": "I can't imagine what that's like",
+                "response": "I value you",
                 "reaction": "blush",
                 "score": 1
+            },
+            {
+                "response": "ahhh !",
+                "reaction": "wow",
+                "score": 0
             },
             {
                 "response": "That is a lot to consider",
@@ -2909,18 +4159,33 @@
                 "score": 1
             },
             {
+                "response": "You have a way with words",
+                "reaction": "blush",
+                "score": 1
+            },
+            {
+                "response": "Care for some juice?",
+                "reaction": "heyes2",
+                "score": 1
+            },
+            {
                 "response": "You're making me blush",
                 "reaction": "blush",
                 "score": 1
             },
             {
-                "response": "High five!",
-                "reaction": "highfive",
-                "score": 0
+                "response": "Thanks for being here",
+                "reaction": "blush",
+                "score": 1
             },
             {
                 "response": "ahhh !",
                 "reaction": "confused2",
+                "score": 0
+            },
+            {
+                "response": "I don't understand",
+                "reaction": "neutral",
                 "score": 0
             },
             {
@@ -2932,18 +4197,38 @@
                 "response": "sorry, what were you saying again?",
                 "reaction": "broken_heart",
                 "score": -1
+            },
+            {
+                "response": "I don't appreciate that",
+                "reaction": "heyes_frown",
+                "score": -1
             }
         ]
     ],
     "boogaloo": [
         [
             {
+                "response": "Thank you for opening up to me",
+                "reaction": "big_smile",
+                "score": 1
+            },
+            {
                 "response": "Tell me more...",
                 "reaction": "big_smile",
                 "score": 1
             },
             {
+                "response": "*Nod*",
+                "reaction": "big_smile",
+                "score": 1
+            },
+            {
                 "response": ":3",
+                "reaction": "big_smile",
+                "score": 1
+            },
+            {
+                "response": "Proud of you",
                 "reaction": "big_smile",
                 "score": 1
             },
@@ -2958,7 +4243,17 @@
                 "score": 0
             },
             {
+                "response": "That makes me think...",
+                "reaction": "wow",
+                "score": 0
+            },
+            {
                 "response": "That is a lot to consider",
+                "reaction": "wow",
+                "score": 0
+            },
+            {
+                "response": "I don't understand",
                 "reaction": "wow",
                 "score": 0
             },
@@ -2971,16 +4266,46 @@
                 "response": "I'm not sure about that...",
                 "reaction": "angry",
                 "score": -1
+            },
+            {
+                "response": "I dunno if thats something you should share...",
+                "reaction": "big_frown",
+                "score": -1
+            },
+            {
+                "response": "I don't appreciate that",
+                "reaction": "big_frown",
+                "score": -1
+            },
+            {
+                "response": "I dislike",
+                "reaction": "big_frown",
+                "score": -1
+            },
+            {
+                "response": "I like",
+                "reaction": "big_smile",
+                "score": 1
+            },
+            {
+                "response": "HONK",
+                "reaction": "heyes2",
+                "score": 1
             }
         ],
         [
             {
                 "response": "You have a way with words",
-                "reaction": "heart",
+                "reaction": "big_smile",
                 "score": 1
             },
             {
                 "response": "That makes me think...",
+                "reaction": "wow",
+                "score": 0
+            },
+            {
+                "response": "That is a lot to consider",
                 "reaction": "wow",
                 "score": 0
             },
@@ -2991,18 +4316,23 @@
             },
             {
                 "response": "I dunno if thats something you should share...",
-                "reaction": "angry",
+                "reaction": "big_frown",
                 "score": -1
             },
             {
                 "response": "I don't appreciate that",
-                "reaction": "angry",
+                "reaction": "big_frown",
                 "score": -1
             },
             {
                 "response": "HONK",
                 "reaction": "heart",
                 "score": 1
+            },
+            {
+                "response": "I think this is moving too fast..",
+                "reaction": "cry",
+                "score": -1
             }
         ],
         [
@@ -3017,6 +4347,26 @@
                 "score": 1
             },
             {
+                "response": "Care for some juice?",
+                "reaction": "juice",
+                "score": 1
+            },
+            {
+                "response": "You're making me blush",
+                "reaction": "blush",
+                "score": 1
+            },
+            {
+                "response": "me too!",
+                "reaction": "great",
+                "score": 1
+            },
+            {
+                "response": "wow! you are so smart",
+                "reaction": "big_smile",
+                "score": 1
+            },
+            {
                 "response": "High five!",
                 "reaction": "highfive",
                 "score": 0
@@ -3028,16 +4378,31 @@
             },
             {
                 "response": "ew",
-                "reaction": "angry",
+                "reaction": "big_frown",
                 "score": -1
             },
             {
                 "response": "That sounds like a personal problem",
-                "reaction": "angry",
+                "reaction": "big_frown",
+                "score": -1
+            },
+            {
+                "response": "I dunno if thats something you should share...",
+                "reaction": "tear",
                 "score": -1
             }
         ],
         [
+            {
+                "response": "You're a keeper",
+                "reaction": "big_smile",
+                "score": 1
+            },
+            {
+                "response": ":3",
+                "reaction": "big_smile",
+                "score": 1
+            },
             {
                 "response": "I'm so happy for you",
                 "reaction": "big_smile",
@@ -3045,7 +4410,7 @@
             },
             {
                 "response": "wow! you are so smart",
-                "reaction": "heart",
+                "reaction": "heyes",
                 "score": 1
             },
             {
@@ -3060,19 +4425,29 @@
             },
             {
                 "response": "Let's talk about something else",
-                "reaction": "angry",
+                "reaction": "big_frown",
                 "score": -1
             },
             {
                 "response": "sorry, what were you saying again?",
-                "reaction": "angry",
+                "reaction": "big_frown",
+                "score": -1
+            },
+            {
+                "response": "I dunno if thats something you should share...",
+                "reaction": "big_frown",
                 "score": -1
             }
         ],
         [
             {
                 "response": "You're a keeper",
-                "reaction": "heart",
+                "reaction": "heyes2",
+                "score": 1
+            },
+            {
+                "response": ":3",
+                "reaction": "heyes2",
                 "score": 1
             },
             {
@@ -3081,8 +4456,18 @@
                 "score": 1
             },
             {
+                "response": "You're making me blush",
+                "reaction": "heyes2",
+                "score": 1
+            },
+            {
                 "response": "Why?",
-                "reaction": "bemused",
+                "reaction": "heyes_frown",
+                "score": -1
+            },
+            {
+                "response": "That makes me think...",
+                "reaction": "side_eye",
                 "score": 0
             },
             {
@@ -3111,12 +4496,12 @@
         [
             {
                 "response": "Tell me more...",
-                "reaction": "wink",
+                "reaction": "big_smile",
                 "score": 1
             },
             {
                 "response": "That sounds like fun",
-                "reaction": "wink",
+                "reaction": "big_smile",
                 "score": 1
             },
             {
@@ -3125,36 +4510,56 @@
                 "score": 0
             },
             {
+                "response": "ahhh !",
+                "reaction": "smile",
+                "score": 1
+            },
+            {
                 "response": "That makes me think...",
                 "reaction": "side_eye",
                 "score": 0
             },
             {
+                "response": "I don't understand",
+                "reaction": "neutral",
+                "score": 0
+            },
+            {
                 "response": "That sounds like a personal problem",
-                "reaction": "mild_frown",
+                "reaction": "frown",
                 "score": -1
             },
             {
                 "response": "I dunno if thats something you should share...",
-                "reaction": "mild_frown",
+                "reaction": "frown",
                 "score": -1
             }
         ],
         [
             {
                 "response": "I would love to hear more",
-                "reaction": "wink",
+                "reaction": "big_smile",
                 "score": 1
             },
             {
                 "response": "Love that for you",
-                "reaction": "wink",
+                "reaction": "big_smile",
                 "score": 1
             },
             {
-                "response": "ahhh !",
-                "reaction": "confused2",
+                "response": "Why?",
+                "reaction": "wow",
                 "score": 0
+            },
+            {
+                "response": "ahhh !",
+                "reaction": "blush",
+                "score": 1
+            },
+            {
+                "response": "That makes me think...",
+                "reaction": "great",
+                "score": 1
             },
             {
                 "response": "That is a lot to consider",
@@ -3168,19 +4573,19 @@
             },
             {
                 "response": "I dislike",
-                "reaction": "mild_frown",
+                "reaction": "tear",
                 "score": -1
             }
         ],
         [
             {
                 "response": "I totally know what you mean",
-                "reaction": "wink",
+                "reaction": "big_smile",
                 "score": 1
             },
             {
                 "response": "me too!",
-                "reaction": "wink",
+                "reaction": "big_smile",
                 "score": 1
             },
             {
@@ -3195,12 +4600,12 @@
             },
             {
                 "response": "Let's talk about something else",
-                "reaction": "sad",
+                "reaction": "tear",
                 "score": -1
             },
             {
                 "response": "I don't appreciate that",
-                "reaction": "sad",
+                "reaction": "cry",
                 "score": -1
             }
         ],
@@ -3212,17 +4617,17 @@
             },
             {
                 "response": "I understand",
-                "reaction": "heart",
+                "reaction": "heyes2",
                 "score": 1
             },
             {
                 "response": "Why?",
-                "reaction": "confused2",
+                "reaction": "confused",
                 "score": 0
             },
             {
                 "response": "That makes me think...",
-                "reaction": "confused2",
+                "reaction": "confused",
                 "score": 0
             },
             {
@@ -3239,12 +4644,12 @@
         [
             {
                 "response": "Thank You",
-                "reaction": "heyes2",
+                "reaction": "heyes",
                 "score": 1
             },
             {
                 "response": "You have a way with words",
-                "reaction": "heart",
+                "reaction": "heyes",
                 "score": 1
             },
             {
@@ -3254,7 +4659,7 @@
             },
             {
                 "response": "That is a lot to consider",
-                "reaction": "neutral",
+                "reaction": "confused",
                 "score": 0
             },
             {
@@ -3266,6 +4671,11 @@
                 "response": "I dunno if thats something you should share...",
                 "reaction": "broken_heart",
                 "score": -1
+            },
+            {
+                "response": "I think this is moving too fast..",
+                "reaction": "broken_heart",
+                "score": -1
             }
         ]
     ],
@@ -3273,17 +4683,22 @@
         [
             {
                 "response": "You're a keeper",
-                "reaction": "big_smile",
+                "reaction": "mild_smile",
+                "score": 1
+            },
+            {
+                "response": "*Nod*",
+                "reaction": "mild_smile",
                 "score": 1
             },
             {
                 "response": "wow! you are so smart",
-                "reaction": "big_smile",
+                "reaction": "smile",
                 "score": 1
             },
             {
                 "response": "ahhh !",
-                "reaction": "bemused",
+                "reaction": "side_eye",
                 "score": 0
             },
             {
@@ -3293,7 +4708,22 @@
             },
             {
                 "response": "ew",
-                "reaction": "angry",
+                "reaction": "frown",
+                "score": -1
+            },
+            {
+                "response": "sorry, what were you saying again?",
+                "reaction": "frown",
+                "score": -1
+            },
+            {
+                "response": "That sounds like a personal problem",
+                "reaction": "mild_frown",
+                "score": -1
+            },
+            {
+                "response": "I dunno if thats something you should share...",
+                "reaction": "mild_frown",
                 "score": -1
             },
             {
@@ -3305,6 +4735,16 @@
         [
             {
                 "response": "Thank you for opening up to me",
+                "reaction": "smile",
+                "score": 1
+            },
+            {
+                "response": "I would love to hear more",
+                "reaction": "mild_smile",
+                "score": 1
+            },
+            {
+                "response": "wow! you are so smart",
                 "reaction": "smile",
                 "score": 1
             },
@@ -3325,8 +4765,18 @@
             },
             {
                 "response": "Let's talk about something else",
-                "reaction": "angry",
+                "reaction": "mild_frown",
                 "score": -1
+            },
+            {
+                "response": "don't say things like that",
+                "reaction": "mild_frown",
+                "score": -1
+            },
+            {
+                "response": "sorry, what were you saying again?",
+                "reaction": "side_eye",
+                "score": 0
             },
             {
                 "response": "I don't appreciate that",
@@ -3346,6 +4796,21 @@
                 "score": 1
             },
             {
+                "response": "I would love to hear more",
+                "reaction": "smile",
+                "score": 1
+            },
+            {
+                "response": "me too!",
+                "reaction": "big_smile",
+                "score": 1
+            },
+            {
+                "response": "wow! you are so smart",
+                "reaction": "stars_smile",
+                "score": 1
+            },
+            {
                 "response": "High five!",
                 "reaction": "confused2",
                 "score": 0
@@ -3356,9 +4821,24 @@
                 "score": 0
             },
             {
+                "response": "ew",
+                "reaction": "angry",
+                "score": -1
+            },
+            {
+                "response": "sorry, what were you saying again?",
+                "reaction": "side_eye",
+                "score": 0
+            },
+            {
                 "response": "That sounds like a personal problem",
                 "reaction": "angry",
                 "score": -1
+            },
+            {
+                "response": "I dunno if thats something you should share...",
+                "reaction": "bemused",
+                "score": 0
             },
             {
                 "response": "I dislike",
@@ -3401,18 +4881,28 @@
         [
             {
                 "response": "You're making me blush",
-                "reaction": "heart",
+                "reaction": "blush",
+                "score": 1
+            },
+            {
+                "response": "wow! you are so smart",
+                "reaction": "blush",
                 "score": 1
             },
             {
                 "response": "Thanks for being here",
-                "reaction": "heart",
+                "reaction": "blush",
                 "score": 1
             },
             {
                 "response": "Why?",
                 "reaction": "side_eye",
                 "score": 0
+            },
+            {
+                "response": "ahhh !",
+                "reaction": "blush",
+                "score": 1
             },
             {
                 "response": "I don't understand",
@@ -3425,8 +4915,18 @@
                 "score": -1
             },
             {
+                "response": "That sounds like a personal problem",
+                "reaction": "broken_heart",
+                "score": -1
+            },
+            {
                 "response": "I dunno if thats something you should share...",
                 "reaction": "broken_heart",
+                "score": -1
+            },
+            {
+                "response": "I don't appreciate that",
+                "reaction": "cry",
                 "score": -1
             }
         ]

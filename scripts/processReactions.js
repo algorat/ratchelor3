@@ -31,7 +31,7 @@ function writeReactions() {
         const rounds = [];
         const ratName = entry["Rat"];
         for (const [key, value] of Object.entries(entry)) {
-          if (key === "Rat" || key === "Round") continue;
+          if (key === "Rat" || key === "Round" || key == "Dialogue") continue;
           if (value && value.length > 0) {
             let score = 0;
             if (reactionScores[value.trim()] !== null) {
