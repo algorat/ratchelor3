@@ -94,6 +94,7 @@ function RatchelorApp() {
   const [playingInterludeText, setPlayingInterludeText] = useState("");
 
   const [mobileMode, setMobileMode] = useState(false);
+  const [mobileWidth, setMobileWidth] = useState(900);
   const [mobileLandscapeMode, setMobileLandscapeMode] = useState(false);
 
   function onMobileChange(watchMobile, watchLandscapeMobile) {
@@ -104,6 +105,7 @@ function RatchelorApp() {
     const screenWidth = document.body.clientWidth;
 
     const targetMobileWidth = (screenHeight * 900) / 675;
+    setMobileWidth(targetMobileWidth);
 
     // A small timeout to avoid race condition.
     setTimeout(() => {
@@ -176,7 +178,6 @@ function RatchelorApp() {
 
   function goToRoseCeremony() {
     updateMusic("rose_ceremony.mp3");
-    console.log(ratFeelings);
     playInterlude("Who gets a rose?", () => {
       setGameStage(GameStages.ROSE_CEREMONY);
     });
@@ -312,6 +313,8 @@ function RatchelorApp() {
       gameScreenContents = (
         <TalkingToRats
           activeRats={randomizedActiveRats}
+          mobileMode={mobileMode}
+          mobileWidth={mobileWidth}
           randomLeavingResponse={randomLeavingResponse}
           playerAvatarIndex={playerAvatarIndex}
           round={round}
@@ -338,6 +341,7 @@ function RatchelorApp() {
     case GameStages.PROPOSAL:
       gameScreenContents = (
         <Proposal
+          playerAvatarDecorations={playerAvatarDecorations}
           finalRat={activeRats[0]}
           playerAvatarIndex={playerAvatarIndex}
           goToAnimeEnding={goToAnimeEnding}

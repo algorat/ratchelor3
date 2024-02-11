@@ -1,7 +1,6 @@
 import "./TalkingToRats.css";
 import { useInterval } from "../../utils/reactUseInterval";
 import { MobileControl } from "../MobileControl/MobileControl";
-
 import { Reaction } from "../Reaction/Reaction";
 
 import leavingMessages from "../../data/leavingResponses.json";
@@ -17,30 +16,71 @@ import {
 
 import { getMatchingSound, getTalkingMusic } from "../../utils/soundDataHelper";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-const PRE_ANIMATION_DURATION = 6000; // In ms.
 const DIALOGUE_INTERVAL = 30; // In ms;
 const REACTION_TIMEOUT = 2000; // In ms.
 const DIALOGUE_ANIMATION = 500; // In ms.
 const ANGRY_RESPONSE_TIMEOUT = 2000; // In ms.
 
 const backgrounds = [
-  { file: "bus_date.png", animation: "bus" },
-  { file: "cathy_date.png", animation: "cathy" },
-  { file: "dobra_back.png", animation: "dobra", front: "dobra_front.png" },
+  {
+    file: "bus_date.png",
+    animation: {
+      backgroundSize: [3000, 2250],
+      couchOffset: [0, -500],
+      containerStart: [0, 0.22],
+      delay: 2500,
+      duration: 3000,
+    },
+  },
+  {
+    file: "cathy_date.png",
+    animation: {
+      backgroundSize: [1057, 1948],
+      couchOffset: [50, -637],
+      containerStart: [-0.06, 1.45],
+      delay: 100,
+      duration: 5500,
+    },
+  },
+  {
+    file: "dobra_back.png",
+    front: "dobra_front.png",
+    animation: {
+      backgroundSize: [1493, 1120],
+      couchOffset: [0, -130],
+      containerStart: [0, 0.115],
+      delay: 2500,
+      duration: 2500,
+    },
+  },
   {
     file: "incline_back.png",
-    animation: "incline",
     front: "incline_front.png",
+    animation: {
+      backgroundSize: [3000, 2250],
+      couchOffset: [13, -140],
+      containerStart: [0, 0.065],
+      delay: 2500,
+      duration: 3500,
+    },
   },
-  { file: "conservatory.png", animation: "conservatory" },
+  {
+    file: "conservatory.png",
+    animation: {
+      backgroundSize: [2748, 2195],
+      couchOffset: [-778, -550],
+      containerStart: [0.278, 0.25],
+      delay: 2500,
+      duration: 5500,
+    },
+  },
 ];
 
 export function TalkingToRats(props) {
   const [ratIndex, setRatIndex] = useState(0);
   const [ratDateImages, setRatDateImages] = useState([]);
-  const [ratImagesLoaded, setRatImagesLoaded] = useState(false);
   const [dialogueProgress, setDialogueProgress] = useState(0);
   const [animatingDialogue, setAnimatingDialogue] = useState(true);
   const [ratResponses, setRatResponses] = useState([]);
@@ -48,6 +88,11 @@ export function TalkingToRats(props) {
   const [isAngry, setIsAngry] = useState(false);
   const [showAngryResponse, setShowAngryResponse] = useState(false);
   const [showingLeavingPopup, setShowLeavingPopup] = useState(false);
+  const [backgroundTransform, setBackgroundTransform] = useState("");
+  const [containerTransform, setContainerTransform] = useState("");
+  const [showContestants, setShowContestants] = useState(false);
+  const [containerTransformDuration, setContainerTransformDuration] =
+    useState("0");
 
   function preloadRatImages() {
     const tempRatDateImages = [];
@@ -77,17 +122,48 @@ export function TalkingToRats(props) {
           })
       )
     );
-    // Wait for the animation duration before going onwards.
-    // In the meantime, the images can preload.
-    new Promise((resolve) => {
-      setTimeout(resolve, PRE_ANIMATION_DURATION);
-    }).then(() => {
-      setRatImagesLoaded(true);
-      setupNextRat(ratIndex, true);
-    });
 
     // Finally, set the rat date images.
     setRatDateImages(tempRatDateImages);
+  }
+
+  function getBackgroundAnimation() {
+    const { backgroundSize, duration, delay, couchOffset, containerStart } =
+      backgrounds[props.round].animation;
+    const backgroundWidth = backgroundSize[0];
+    const backgroundHeight = backgroundSize[1];
+    let gameWidth = 900;
+    let gameHeight = 675;
+
+    let offsetX = (-1 * (backgroundWidth - gameWidth)) / 2;
+    let offsetY = (-1 * (backgroundHeight - gameHeight)) / 2;
+    const backgroundTransform = `translate(${offsetX + couchOffset[0]}px, ${
+      offsetY + couchOffset[1]
+    }px)`;
+
+    if (props.mobileMode && props.mobileWidth) {
+      gameWidth = props.mobileWidth;
+      gameHeight = (props.mobileWidth * 675) / 900;
+    }
+    let startingScaleX = gameWidth / backgroundWidth;
+    let startingScaleY = gameHeight / backgroundHeight;
+    let containerStartingScale = Math.max(startingScaleX, startingScaleY);
+    const gameStartingWidth = containerStartingScale * 900;
+    const gameStartingHeight = containerStartingScale * 675;
+    let containerFinalScale = gameWidth / 900;
+    const startingTransform = `translate(${
+      (gameWidth - gameStartingWidth) / 2 + gameWidth * containerStart[0]
+    }px, ${
+      (gameHeight - gameStartingHeight) / 2 + gameHeight * containerStart[1]
+    }px) scale(${containerStartingScale})`;
+    const endingTransform = `scale(${containerFinalScale})`;
+    return {
+      startingTransform,
+      endingTransform,
+      backgroundTransform,
+      duration,
+      delay,
+    };
   }
 
   function onResponseSelect(response) {
@@ -142,6 +218,28 @@ export function TalkingToRats(props) {
       skipWait ? 0 : DIALOGUE_ANIMATION
     );
   }
+
+  useEffect(() => {
+    const {
+      backgroundTransform,
+      startingTransform,
+      endingTransform,
+      duration,
+      delay,
+    } = getBackgroundAnimation();
+    setBackgroundTransform(backgroundTransform);
+    setContainerTransform(startingTransform);
+
+    setTimeout(() => {
+      setContainerTransform(endingTransform);
+      setContainerTransformDuration(duration);
+
+      setTimeout(() => {
+        setShowContestants(true);
+        setupNextRat(ratIndex, true);
+      }, duration + 1000);
+    }, delay);
+  }, []);
 
   // Preload if we haven't already.
   !ratDateImages.length && preloadRatImages();
@@ -218,15 +316,23 @@ export function TalkingToRats(props) {
       </div>
     );
   }
-
   const backgroundData = backgrounds[props.round];
 
   return (
     <>
       <div className="talking-to-rats-screen screen">
-        <div className={`all-images-container ${backgroundData.animation}`}>
+        <div
+          style={{
+            transform: containerTransform,
+            transitionDuration: `${containerTransformDuration}ms`,
+          }}
+          className={`all-images-container ${
+            showContestants ? "show-contestants" : ""
+          }`}
+        >
           <img
             className="background"
+            style={{ transform: backgroundTransform }}
             src={`${BACKGROUNDS_IMAGES_BASE_PATH}/${backgroundData.file}`}
             alt=""
           />
@@ -248,7 +354,7 @@ export function TalkingToRats(props) {
             <div
               key={`rat-date-${idx}`}
               className={
-                ratImagesLoaded && idx === ratIndex && !animatingDialogue
+                idx === ratIndex && !animatingDialogue
                   ? "current-rat contestant"
                   : "contestant"
               }
@@ -259,6 +365,7 @@ export function TalkingToRats(props) {
           {backgroundData.front && (
             <img
               className="background"
+              style={{ transform: backgroundTransform }}
               src={`${BACKGROUNDS_IMAGES_BASE_PATH}/${backgroundData.front}`}
               alt=""
             />

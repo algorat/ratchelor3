@@ -3,15 +3,14 @@ import "./Proposal.css";
 import React from "react";
 import {
   getRatById,
-  CHARACTERS_IMAGES_BASE_PATH,
   BACKGROUNDS_IMAGES_BASE_PATH,
-  PLAYER_IMAGES_BASE_PATH,
+  PROPOSAL_IMAGES_BASE_PATH,
 } from "../../utils/ratDataHelper";
 import { MobileControl } from "../MobileControl/MobileControl";
 
 export function Proposal(props) {
   const finalRat = getRatById(props.finalRat);
-  const playerFile = `${props.playerAvatarIndex}_proposal.png`;
+  const playerFile = `${props.playerAvatarIndex}.png`;
 
   return (
     <>
@@ -25,13 +24,20 @@ export function Proposal(props) {
           <img
             alt="the rat that you're proposing to"
             className={`final-rat proposal-${finalRat.size}`}
-            src={`${CHARACTERS_IMAGES_BASE_PATH}/${props.finalRat}.png`}
+            src={`${PROPOSAL_IMAGES_BASE_PATH}/${props.finalRat}.png`}
           />
           <img
             className="proposing-rat"
             alt="you are on one knee proposing"
-            src={`${PLAYER_IMAGES_BASE_PATH}/${playerFile}`}
+            src={`${PROPOSAL_IMAGES_BASE_PATH}/${playerFile}`}
           />
+          {props.playerAvatarDecorations.map((decoration) => (
+            <img
+              key={`decoration${decoration}`}
+              src={`${PROPOSAL_IMAGES_BASE_PATH}/${props.playerAvatarIndex}_${decoration}.png`}
+              alt=""
+            />
+          ))}
         </div>
         <MobileControl show={false}>
           <header>

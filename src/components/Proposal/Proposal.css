@@ -10,49 +10,11 @@
   z-index: 0;
 }
 
-.final-rat,
-.proposing-rat {
-  position: relative;
-  z-index: 1;
-  max-height: min(300px, 50vh);
-  max-width: min(300px, 50vh);
-}
-
-.proposing-rat-container {
-  display: flex;
-  column-gap: 20px;
-  height: 100%;
+.proposing-rat-container,
+.proposing-rat-container img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
   width: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.proposal-xlarge {
-  max-height: min(600px, 80vh);
-  max-width: min(600px, 80vh);
-}
-
-.proposal-large {
-  max-height: min(450px, 70vh);
-  max-width: min(450px, 70vh);
-}
-
-.proposal-med-large {
-  max-height: min(370px, 60vh);
-  max-width: min(370px, 60vh);
-}
-
-.proposal-medium {
-  max-height: min(300px, 50vh);
-  max-width: min(300px, 50vh);
-}
-
-.proposal-med-small {
-  max-height: min(250px, 40vh);
-  max-width: min(250px, 40vh);
-}
-
-.proposal-small {
-  max-width: min(175px, 30vh);
-  max-height: min(175px, 30vh);
+  height: 100%;
 }
