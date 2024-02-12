@@ -40,9 +40,9 @@ export function Proposal(props) {
           ))}
         </div>
         <MobileControl show={false}>
-          <header>
-            <button onClick={props.goToAnimeEnding}>Continue</button>
-          </header>
+          <button className="proposal-continue" onClick={props.goToAnimeEnding}>
+            Continue
+          </button>
         </MobileControl>
       </div>
       <MobileControl

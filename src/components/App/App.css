@@ -4,7 +4,6 @@
   width: 900px;
   height: 675px;
   flex-shrink: 0;
-  z-index: 1;
 }
 
 .frame {
@@ -36,6 +35,7 @@
   transition: transform 500ms ease-in-out;
   transform: translateY(-120%);
   pointer-events: all;
+  user-select: none;
 }
 
 .interlude.playing {
