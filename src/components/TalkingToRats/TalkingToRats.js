@@ -37,9 +37,9 @@ const backgrounds = [
   {
     file: "cathy_date.png",
     animation: {
-      backgroundSize: [1057, 1948],
-      couchOffset: [50, -637],
-      containerStart: [-0.06, 1.45],
+      backgroundSize: [1222, 2100],
+      couchOffset: [80, -640],
+      containerStart: [-0.066, 1.3],
       delay: 100,
       duration: 5500,
     },
