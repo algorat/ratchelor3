@@ -21,7 +21,7 @@ function IntermediateMobileRat(props) {
   );
 }
 
-/** TODO */
+/** A rat frame that is selectable. */
 function SelectableRat(props) {
   const {
     index,
@@ -74,7 +74,6 @@ function SelectableRat(props) {
   );
 }
 
-/** TODO */
 export function RatSelect(props) {
   const {
     activeRats,

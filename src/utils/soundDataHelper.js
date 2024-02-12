@@ -7,7 +7,6 @@ const allTalkingMusic = [
   "talking_to_rat_4.mp3",
 ];
 
-/** TODO */
 const reactionsToSounds = {};
 for (const [sound, reactions] of Object.entries(soundMapping)) {
   for (const reaction of reactions) {
@@ -15,15 +14,10 @@ for (const [sound, reactions] of Object.entries(soundMapping)) {
   }
 }
 
-/**
- * TODO comment
- * Also maybe return fallback sound if failed to find sound?
- */
 export function getMatchingSound(reaction) {
   return reactionsToSounds[reaction];
 }
 
-/** TODO */
 export function getTalkingMusic(index) {
   return allTalkingMusic[index % allTalkingMusic.length];
 }

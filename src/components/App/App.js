@@ -404,7 +404,6 @@ function RatchelorApp() {
       break;
   }
 
-  // TODO
   if (mobileLandscapeMode) {
     return (
       <div className="landscape-mode-warning">

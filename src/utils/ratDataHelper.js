@@ -40,7 +40,6 @@ export function getRatById(id) {
   return null;
 }
 
-/** TODO */
 export function getAllRatData() {
   return ratsJson;
 }
@@ -49,7 +48,6 @@ function randArrayItem(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
-/** TODO */
 export function getResponsesByRound(ratId, roundNumber) {
   const ratResponsesData = responsesJson[ratId];
 
@@ -69,7 +67,6 @@ export function getResponsesByRound(ratId, roundNumber) {
   return shuffled;
 }
 
-/** TODO */
 export function getRandomEpiloguePhoto(ratId) {
   const matches = [];
   Object.entries(epilogueJson).filter(([key, value]) => {
