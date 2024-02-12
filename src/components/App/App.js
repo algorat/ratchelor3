@@ -13,11 +13,10 @@ import { SoundManager } from "../SoundManager/SoundManager";
 
 import { getTalkingMusic } from "../../utils/soundDataHelper";
 
-import frameImage from "../../assets/images/frame.png";
-
 import {
   getRatById,
   BACKGROUNDS_IMAGES_BASE_PATH,
+  INTRO_IMAGES_BASE_PATH,
 } from "../../utils/ratDataHelper";
 
 import { PlayerCustomization } from "../PlayerCustom/PlayerCustomization";
@@ -385,7 +384,11 @@ function RatchelorApp() {
 
   return (
     <div className="game">
-      <img className="frame" src={frameImage} alt=""></img>
+      <img
+        className="frame"
+        src={`${INTRO_IMAGES_BASE_PATH}/frame.png`}
+        alt=""
+      ></img>
       <div className="screen interlude-container">
         <div className={`${playingInterlude ? "playing" : ""} interlude`}>
           <img alt="" src={`${BACKGROUNDS_IMAGES_BASE_PATH}/curtains.png`} />

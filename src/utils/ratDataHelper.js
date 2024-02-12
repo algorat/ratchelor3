@@ -5,31 +5,19 @@ import responsesJson from "../data/responses.json";
 import epilogueJson from "../data/epilogue.json";
 
 export const PLAYER_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/player`;
-
 export const DRESSER_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/dresser`;
-
 export const FRAMES_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/frames`;
-
 export const DATES_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/dates`;
-
 export const REACTIONS_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/reactions`;
-
 export const CHARACTERS_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/characters`;
-
 export const BACKGROUNDS_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/backgrounds`;
-
 export const BOUQUET_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/bouquet`;
-
 export const PROPOSAL_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/proposal`;
-
 export const ENDINGS_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/endings`;
-
 export const EPILOGUE_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/epilogue`;
-
+export const INTRO_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/intro`;
 export const SOUND_ICONS_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/sound_icons`;
-
 export const MOBILE_IMAGES_BASE_PATH = `${process.env.PUBLIC_URL}/images/mobile`;
-
 export const SOUND_BASE_PATH = `${process.env.PUBLIC_URL}/sounds`;
 
 /**

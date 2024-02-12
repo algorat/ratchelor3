@@ -5,7 +5,7 @@
   flex-direction: column;
   position: relative;
 
-  background-image: url('../../assets/images/intro.png');
+  background-image: url('../../../public/images/intro/intro.png');
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -14,8 +14,33 @@
   margin-top: 500px;
 }
 
+.intro-screen .intro-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.embark-button {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  line-height: 100%;
+  justify-content: center;
+}
+
+.embark-button img {
+  height: 36px;
+}
+
 @media only screen and (hover: none) {
   .intro-screen button {
     display: none;
+  }
+
+  .embark-button {
+    padding: 12px;
+  }
+
+  .embark-button img {
+    height: 20px;
   }
 }

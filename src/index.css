@@ -24,7 +24,7 @@ html {
   min-width: 100%;
   min-height: calc(var(--vh, 1vh) * 100);
   position: relative;
-  background-image: url(./assets/images/wallpaper.png);
+  background-image: url(../public/images/intro/wallpaper.png);
   background-size: 442px 250px;
 }
 

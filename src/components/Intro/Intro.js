@@ -4,6 +4,8 @@ import React from "react";
 import { MobileControl } from "../MobileControl/MobileControl";
 import { Preloader } from "../Preloader/Preloader";
 
+import { INTRO_IMAGES_BASE_PATH } from "../../utils/ratDataHelper";
+
 export function Intro(props) {
   const onClick = () => {
     props.advanceToNextStage();
@@ -15,7 +17,13 @@ export function Intro(props) {
         <MobileControl show={false}>
           <div className="cta">
             <Preloader>
-              <button onClick={onClick}>Embark</button>
+              <button className="embark-button" onClick={onClick}>
+                Embark
+                <img
+                  src={`${INTRO_IMAGES_BASE_PATH}/sound.png`}
+                  alt=" with sound"
+                />
+              </button>
             </Preloader>
           </div>
         </MobileControl>
@@ -24,7 +32,13 @@ export function Intro(props) {
         show={true}
         ctaButton={
           <Preloader>
-            <button onClick={onClick}>Embark</button>
+            <button className="embark-button" onClick={onClick}>
+              Embark
+              <img
+                src={`${INTRO_IMAGES_BASE_PATH}/sound.png`}
+                alt=" with sound"
+              />
+            </button>
           </Preloader>
         }
       >
