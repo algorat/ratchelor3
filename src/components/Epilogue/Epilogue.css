@@ -25,11 +25,14 @@
   position: absolute;
   bottom: 0px;
   left: 50%;
-  transform: translate(-50%, 100%);
-  width: 120%;
+  transform: translate(-50%, 70%);
+  width: 160%;
   z-index: 2000;
+  text-align: center;
   background-color: var(--secondary-background-color);
-  padding: 12px;
+  padding: 8px;
+  border: 1px solid var(--text-color);
+  border-radius: 4px;
 }
 
 .epilogue-screen .epilogue-background {

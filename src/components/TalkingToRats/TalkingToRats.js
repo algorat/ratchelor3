@@ -30,8 +30,8 @@ const backgrounds = [
       backgroundSize: [3000, 2250],
       couchOffset: [0, -500],
       containerStart: [0, 0.22],
-      delay: 2500,
-      duration: 3000,
+      delay: 1500,
+      duration: 3500,
     },
   },
   {
@@ -51,8 +51,8 @@ const backgrounds = [
       backgroundSize: [1493, 1120],
       couchOffset: [0, -130],
       containerStart: [0, 0.115],
-      delay: 2500,
-      duration: 2500,
+      delay: 1000,
+      duration: 4000,
     },
   },
   {
@@ -62,8 +62,8 @@ const backgrounds = [
       backgroundSize: [3000, 2250],
       couchOffset: [13, -140],
       containerStart: [0, 0.065],
-      delay: 2500,
-      duration: 3500,
+      delay: 1400,
+      duration: 4000,
     },
   },
   {
@@ -71,9 +71,9 @@ const backgrounds = [
     animation: {
       backgroundSize: [2748, 2195],
       couchOffset: [-778, -550],
-      containerStart: [0.278, 0.25],
-      delay: 2500,
-      duration: 5500,
+      containerStart: [0.281, 0.25],
+      delay: 2000,
+      duration: 6000,
     },
   },
 ];
@@ -237,7 +237,7 @@ export function TalkingToRats(props) {
       setTimeout(() => {
         setShowContestants(true);
         setupNextRat(ratIndex, true);
-      }, duration + 1000);
+      }, duration + 600);
     }, delay);
   }, []);
 
@@ -324,6 +324,7 @@ export function TalkingToRats(props) {
         <div
           style={{
             transform: containerTransform,
+            transitionTimingFunction: "ease-in",
             transitionDuration: `${containerTransformDuration}ms`,
           }}
           className={`all-images-container ${

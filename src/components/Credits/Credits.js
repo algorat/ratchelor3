@@ -108,7 +108,7 @@ export function Credits(props) {
                 target="_blank"
                 rel="noreferrer"
               >
-                Jeremy: @wombleman
+                Jeremy @wombleman
               </a>
             </li>
             <li>
@@ -118,7 +118,7 @@ export function Credits(props) {
                 target="_blank"
                 rel="noreferrer"
               >
-                Kate Chaudoin: kmchaudoin.com
+                Kate Chaudoin kmchaudoin.com
               </a>
             </li>
             <li>
@@ -129,7 +129,7 @@ export function Credits(props) {
                 rel="noreferrer"
               >
                 {" "}
-                Alyssa: @lassylaa
+                Alyssa @lassylaa
               </a>
             </li>
           </ul>

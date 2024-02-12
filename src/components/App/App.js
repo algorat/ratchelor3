@@ -11,13 +11,32 @@ import { Proposal } from "../Proposal/Proposal";
 import { Credits } from "../Credits/Credits";
 import { SoundManager } from "../SoundManager/SoundManager";
 
-import { getTalkingMusic } from "../../utils/soundDataHelper";
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { getDatabase, increment, ref, set } from "firebase/database";
 
-import frameImage from "../../assets/images/frame.png";
+const firebaseConfig = {
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_URL,
+  databaseURL: process.env.REACT_APP_DB_URL,
+  projectId: process.env.REACT_APP_PROJECTID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APPID,
+  measurementId: process.env.REACT_APP_MEASUREID,
+};
+
+// Init firebase analytics and database.
+const app = initializeApp(firebaseConfig);
+getAnalytics(app);
+const database = getDatabase(app);
+
+import { getTalkingMusic } from "../../utils/soundDataHelper";
 
 import {
   getRatById,
   BACKGROUNDS_IMAGES_BASE_PATH,
+  INTRO_IMAGES_BASE_PATH,
 } from "../../utils/ratDataHelper";
 
 import { PlayerCustomization } from "../PlayerCustom/PlayerCustomization";
@@ -35,7 +54,7 @@ const GameStages = {
   CREDITS: 9,
 };
 
-// // Num rats the person should select at the very beginning.
+// Num rats the person should select at the very beginning.
 // const RATS_IN_GAME = 2;
 
 // // How many rounds there are.
@@ -52,6 +71,17 @@ const NUM_ROUNDS = 5;
 
 // How many roses get given out each round.
 const ROSES_PER_ROUND = [5, 4, 3, 2, 1];
+
+// Increments the rat count for ratchelor3 in Firebase realtime database.
+function incrementRatCountInDatabase(ratName, leaving) {
+  if (!leaving) {
+    // They were proposed to.
+    set(ref(database, "ratchelor3/proposals/" + ratName), increment(1));
+  } else {
+    // This time we also want to track rats leaving :)
+    set(ref(database, "ratchelor3/leavings/" + ratName), increment(1));
+  }
+}
 
 function RatchelorApp() {
   // What phase of the game we're in, like rose ceremony, propsal, etc.
@@ -198,6 +228,7 @@ function RatchelorApp() {
       setCurrentlyLeavingRat(null);
       setGameStage(GameStages.TALKING_TO_RATS);
       setActiveRats(chosenRats);
+      updateMusic(getTalkingMusic(0));
       setRandomizedActiveRats(chosenRats.sort(() => 0.5 - Math.random()));
       setRandomLeavingResponse(Math.random());
     });
@@ -219,6 +250,7 @@ function RatchelorApp() {
   function goToAnimeEnding() {
     const chosenRat = activeRats[0];
     updateMusic(getRatById(chosenRat)?.ending);
+    incrementRatCountInDatabase(chosenRat, false);
     playInterlude("Ending!", () => {
       setGameStage(GameStages.ANIME_ENDING);
     });
@@ -236,9 +268,9 @@ function RatchelorApp() {
     const randomNumber = Math.random();
     setRatFeelings(newFeelings);
     const threshold = ((Math.abs(updatedRatScore) * round) / NUM_ROUNDS) * 0.2;
-    console.log(threshold);
     if (!currentlyLeavingRat && randomNumber < threshold) {
       setCurrentlyLeavingRat(ratId);
+      incrementRatCountInDatabase(ratId, true);
       return true;
     }
     return false;
@@ -372,7 +404,6 @@ function RatchelorApp() {
       break;
   }
 
-  // TODO
   if (mobileLandscapeMode) {
     return (
       <div className="landscape-mode-warning">
@@ -385,7 +416,11 @@ function RatchelorApp() {
 
   return (
     <div className="game">
-      <img className="frame" src={frameImage} alt=""></img>
+      <img
+        className="frame"
+        src={`${INTRO_IMAGES_BASE_PATH}/frame.png`}
+        alt=""
+      ></img>
       <div className="screen interlude-container">
         <div className={`${playingInterlude ? "playing" : ""} interlude`}>
           <img alt="" src={`${BACKGROUNDS_IMAGES_BASE_PATH}/curtains.png`} />
