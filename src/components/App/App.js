@@ -198,6 +198,7 @@ function RatchelorApp() {
       setCurrentlyLeavingRat(null);
       setGameStage(GameStages.TALKING_TO_RATS);
       setActiveRats(chosenRats);
+      updateMusic(getTalkingMusic(0));
       setRandomizedActiveRats(chosenRats.sort(() => 0.5 - Math.random()));
       setRandomLeavingResponse(Math.random());
     });
@@ -236,7 +237,6 @@ function RatchelorApp() {
     const randomNumber = Math.random();
     setRatFeelings(newFeelings);
     const threshold = ((Math.abs(updatedRatScore) * round) / NUM_ROUNDS) * 0.2;
-    console.log(threshold);
     if (!currentlyLeavingRat && randomNumber < threshold) {
       setCurrentlyLeavingRat(ratId);
       return true;

@@ -152,8 +152,15 @@
         "tagline": "My craft is my world",
         "size": "small",
         "ending": "romantic_happy.mp3",
+        "talking_to_rats_filename" : [
+            "frozine-1.png", 
+            "frozine-2.png",
+            "frozine-3.png",
+            "frozine-4.png",
+            "frozine-5.png"
+        ],
         "reaction_pos": [
-            "0.251",
+            "0.32",
             "0.16"
         ],
         "zodiac": "Virgo",
@@ -279,7 +286,7 @@
         "size": "medium",
         "ending": "romantic_happy.mp3",
         "reaction_pos": [
-            "0.266",
+            "0.34",
             "0.119"
         ],
         "zodiac": "Aquarius",
@@ -297,7 +304,7 @@
         "name": "Oedimb",
         "filename": "oedimb",
         "tagline": "Oh! Every day is my birthday!",
-        "size": "small",
+        "size": "medium",
         "ending": "romantic_happy.mp3",
         "reaction_pos": [
             "0.337",
@@ -398,7 +405,7 @@
         "size": "medium",
         "ending": "paris.mp3",
         "reaction_pos": [
-            "0.305",
+            "0.29",
             "0.12"
         ],
         "zodiac": "Leo",
