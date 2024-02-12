@@ -71,7 +71,7 @@ const backgrounds = [
     animation: {
       backgroundSize: [2748, 2195],
       couchOffset: [-778, -550],
-      containerStart: [0.28, 0.25],
+      containerStart: [0.281, 0.25],
       delay: 2000,
       duration: 6000,
     },
