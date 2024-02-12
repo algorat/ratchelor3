@@ -73,8 +73,14 @@ const NUM_ROUNDS = 5;
 const ROSES_PER_ROUND = [5, 4, 3, 2, 1];
 
 // Increments the rat count for ratchelor3 in Firebase realtime database.
-function incrementRatCountInDatabase(ratName) {
-  set(ref(database, "ratchelor3/" + ratName), increment(1));
+function incrementRatCountInDatabase(ratName, leaving) {
+  if (!leaving) {
+    // They were proposed to.
+    set(ref(database, "ratchelor3/proposals/" + ratName), increment(1));
+  } else {
+    // This time we also want to track rats leaving :)
+    set(ref(database, "ratchelor3/leavings/" + ratName), increment(1));
+  }
 }
 
 function RatchelorApp() {
@@ -244,7 +250,7 @@ function RatchelorApp() {
   function goToAnimeEnding() {
     const chosenRat = activeRats[0];
     updateMusic(getRatById(chosenRat)?.ending);
-    incrementRatCountInDatabase(chosenRat);
+    incrementRatCountInDatabase(chosenRat, false);
     playInterlude("Ending!", () => {
       setGameStage(GameStages.ANIME_ENDING);
     });
@@ -264,6 +270,7 @@ function RatchelorApp() {
     const threshold = ((Math.abs(updatedRatScore) * round) / NUM_ROUNDS) * 0.2;
     if (!currentlyLeavingRat && randomNumber < threshold) {
       setCurrentlyLeavingRat(ratId);
+      incrementRatCountInDatabase(ratId, true);
       return true;
     }
     return false;
