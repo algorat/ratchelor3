@@ -11,6 +11,26 @@ import { Proposal } from "../Proposal/Proposal";
 import { Credits } from "../Credits/Credits";
 import { SoundManager } from "../SoundManager/SoundManager";
 
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { getDatabase, increment, ref, set } from "firebase/database";
+
+const firebaseConfig = {
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_URL,
+  databaseURL: process.env.REACT_APP_DB_URL,
+  projectId: process.env.REACT_APP_PROJECTID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APPID,
+  measurementId: process.env.REACT_APP_MEASUREID,
+};
+
+// Init firebase analytics and database.
+const app = initializeApp(firebaseConfig);
+getAnalytics(app);
+const database = getDatabase(app);
+
 import { getTalkingMusic } from "../../utils/soundDataHelper";
 
 import {
@@ -34,7 +54,7 @@ const GameStages = {
   CREDITS: 9,
 };
 
-// // Num rats the person should select at the very beginning.
+// Num rats the person should select at the very beginning.
 // const RATS_IN_GAME = 2;
 
 // // How many rounds there are.
@@ -51,6 +71,11 @@ const NUM_ROUNDS = 5;
 
 // How many roses get given out each round.
 const ROSES_PER_ROUND = [5, 4, 3, 2, 1];
+
+// Increments the rat count for ratchelor3 in Firebase realtime database.
+function incrementRatCountInDatabase(ratName) {
+  set(ref(database, "ratchelor3/" + ratName), increment(1));
+}
 
 function RatchelorApp() {
   // What phase of the game we're in, like rose ceremony, propsal, etc.
@@ -219,6 +244,7 @@ function RatchelorApp() {
   function goToAnimeEnding() {
     const chosenRat = activeRats[0];
     updateMusic(getRatById(chosenRat)?.ending);
+    incrementRatCountInDatabase(chosenRat);
     playInterlude("Ending!", () => {
       setGameStage(GameStages.ANIME_ENDING);
     });
