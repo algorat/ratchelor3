@@ -32,6 +32,7 @@ const backgrounds = [
       containerStart: [-0.066, 1.3],
       delay: 100,
       duration: 5500,
+      mobile: false,
     },
   },
   {
@@ -42,6 +43,7 @@ const backgrounds = [
       containerStart: [0, 0.22],
       delay: 1500,
       duration: 3500,
+      mobile: true,
     },
   },
   {
@@ -53,6 +55,7 @@ const backgrounds = [
       containerStart: [0, 0.115],
       delay: 1000,
       duration: 4000,
+      mobile: true,
     },
   },
   {
@@ -64,6 +67,7 @@ const backgrounds = [
       containerStart: [0, 0.065],
       delay: 1400,
       duration: 4000,
+      mobile: true,
     },
   },
   {
@@ -74,6 +78,7 @@ const backgrounds = [
       containerStart: [0.281, 0.25],
       delay: 2000,
       duration: 6000,
+      mobile: true,
     },
   },
 ];
@@ -99,7 +104,7 @@ export function TalkingToRats(props) {
     // This is an array of promises that will resolve once their image has been
     // loaded. Promise.all means it will resolve once ALL of the images are
     // loaded.
-    const ratLoadingPromises = Promise.all(
+    Promise.all(
       props.activeRats.map(
         (ratId) =>
           new Promise((resolve) => {
@@ -128,8 +133,14 @@ export function TalkingToRats(props) {
   }
 
   function getBackgroundAnimation() {
-    const { backgroundSize, duration, delay, couchOffset, containerStart } =
-      backgrounds[props.round].animation;
+    const {
+      backgroundSize,
+      duration,
+      delay,
+      couchOffset,
+      containerStart,
+      mobile,
+    } = backgrounds[props.round].animation;
     const backgroundWidth = backgroundSize[0];
     const backgroundHeight = backgroundSize[1];
     let gameWidth = 900;
@@ -157,6 +168,18 @@ export function TalkingToRats(props) {
       (gameHeight - gameStartingHeight) / 2 + gameHeight * containerStart[1]
     }px) scale(${containerStartingScale})`;
     const endingTransform = `scale(${containerFinalScale})`;
+
+    if (props.mobileMode && !mobile) {
+      // shouldn't animate on mobile.
+      return {
+        startingTransform: endingTransform,
+        endingTransform,
+        backgroundTransform,
+        duration: 0,
+        delay: 0,
+      };
+    }
+
     return {
       startingTransform,
       endingTransform,

@@ -106,4 +106,8 @@
     left: 0;
     top: 0;
   }
+
+  .player-select-screen {
+    row-gap: 24px;
+  }
 }
