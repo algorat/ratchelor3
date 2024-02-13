@@ -65,7 +65,7 @@ export function Epilogue(props) {
         </MobileControl>
         <img
           className="epilogue-background"
-          src={`${BACKGROUNDS_IMAGES_BASE_PATH}/desk.png`}
+          src={`${BACKGROUNDS_IMAGES_BASE_PATH}/night_sky.png`}
         />
         <div className="photos">
           {randomPhotos.map((photo) => (
