@@ -2,7 +2,7 @@
   position: relative;
   display: grid;
   padding: 130px 100px 0 100px;
-  gap: 24px;
+  gap: 8px;
   grid-template-columns: 1fr 1fr 1fr;
   z-index: 10;
 }

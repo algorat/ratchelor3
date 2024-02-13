@@ -25,16 +25,6 @@ const ANGRY_RESPONSE_TIMEOUT = 2000; // In ms.
 
 const backgrounds = [
   {
-    file: "bus_date.png",
-    animation: {
-      backgroundSize: [3000, 2250],
-      couchOffset: [0, -500],
-      containerStart: [0, 0.22],
-      delay: 1500,
-      duration: 3500,
-    },
-  },
-  {
     file: "cathy_date.png",
     animation: {
       backgroundSize: [1222, 2100],
@@ -42,6 +32,16 @@ const backgrounds = [
       containerStart: [-0.066, 1.3],
       delay: 100,
       duration: 5500,
+    },
+  },
+  {
+    file: "bus_date.png",
+    animation: {
+      backgroundSize: [3000, 2250],
+      couchOffset: [0, -500],
+      containerStart: [0, 0.22],
+      delay: 1500,
+      duration: 3500,
     },
   },
   {
@@ -420,7 +420,7 @@ export function TalkingToRats(props) {
         }
       >
         {showingLeavingPopup
-          ? "This rat is leaving the show!"
+          ? `${ratName} has decided to pack their bags and leave`
           : !animatingDialogue && (
               <div className="mobile-responses">{responses}</div>
             )}
