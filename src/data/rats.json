@@ -4,7 +4,7 @@
         "filename": "badabing",
         "tagline": "WOWwwie!",
         "size": "medium",
-        "ending": "romantic_happy.mp3",
+        "ending": "intense.mp3",
         "reaction_pos": [
             "0.287",
             "0.147"
@@ -25,7 +25,7 @@
         "filename": "boingo",
         "tagline": "I’m awake, let’s do something fun!",
         "size": "medium-small",
-        "ending": "romantic_happy.mp3",
+        "ending": "intense.mp3",
         "reaction_pos": [
             "0.249",
             "0.167"
@@ -37,7 +37,7 @@
             "I’m a huuuge fan of cows. The way they just relax and eat grass and go about their lives... Whoowee! I could dream about them alllll day! Before I take a nap I try to find a nearby cow to sleep next so they can enter into my dreams. You know the movie Inception? It’s kinda like that, but reversed",
             "Okay, are you ready? I’m about to tell you the secret to my passion for life: the UberRatte sleep schedule! I sleep in 3.5 hour increments and wake up and do my tasks in 30 minute increments and then I go back to sleep! That means I’m only awake for 3 hours a day but WOW am I ever well-rested and thrilled to be here",
             "If I ever fell asleep near you and you entered my dreams, there would be two of you in there. What I’m trying to say is that you’re ALREADY the rat of my dreams. What I’m trying to say is I love you!!!",
-            "I love you so much!!! You’re the coolest, and I know you’ll help me achieve my goals. I can’t wait to help you achieve your goals too. My 30 minute timer just went off so I’ll have to go to sleep in a minute, but as soon as I’m awake again let’s go swimming!!!"
+            "I love you so much!!! You’re the coolest, and I know you’ll help me achieve my goals. I can’t wait to help you achieve your goals too. My timer just went off so I’ll have to go to sleep in a minute, but as soon as I’m awake again let’s go swimming!!!"
         ],
         "angry": "booooooo! I'm leaving! bye!"
     },
@@ -46,7 +46,7 @@
         "filename": "boogaloo",
         "tagline": "HONK",
         "size": "small",
-        "ending": "funky.mp3",
+        "ending": "intense.mp3",
         "reaction_pos": [
             "0.267",
             "0.173"
@@ -151,7 +151,7 @@
         "filename": "frozine",
         "tagline": "My craft is my world",
         "size": "small",
-        "ending": "romantic_happy.mp3",
+        "ending": "paris.mp3",
         "talking_to_rats_filename" : [
             "frozine-1.png", 
             "frozine-2.png",
@@ -162,6 +162,13 @@
         "reaction_pos": [
             "0.32",
             "0.16"
+        ],
+        "reaction_pos_override" : [
+            ["0.28","0.16"],
+            ["0.32","0.16"],  
+            ["0.35","0.16"], 
+            ["0.38","0.16"], 
+            ["0.42","0.16"]
         ],
         "zodiac": "Virgo",
         "dialogue": [
@@ -179,7 +186,7 @@
         "filename": "hammerton",
         "tagline": "Yawwwwwn",
         "size": "small",
-        "ending": "romantic_happy.mp3",
+        "ending": "intense.mp3",
         "reaction_pos": [
             "0.383",
             "0.074"
@@ -200,6 +207,13 @@
             "hammerton.png",
             "hammerton-cheese.png",
             "hammerton-blush.png"
+        ],
+        "reaction_pos_override" : [
+            null, 
+            ["0.2","0.3"], 
+            null, 
+            null, 
+            null
         ]
     },
     {
@@ -305,7 +319,7 @@
         "filename": "oedimb",
         "tagline": "Oh! Every day is my birthday!",
         "size": "medium",
-        "ending": "romantic_happy.mp3",
+        "ending": "intense.mp3",
         "reaction_pos": [
             "0.337",
             "0.148"
@@ -335,7 +349,7 @@
         "dialogue": [
             "Hello… I am Pamplemouse. As nobility, and also as a rat of astounding honor, I do hold the title of “The Honorable”, meaning I’m actually called “The Honorable Pamplemouse”, but I think we are all honorable unless proven otherwise. Please just call me by my first name, or any term of endearment",
             "You never know when danger might strike, and that is why I am an avid collector of horses. If other nobles see that I have many horses, they would not dare conspire against me because they will know that I am the most noble of all... due to the fullness of my stables and the freshness of my hay. I am constantly keeping track of how many horses my cousins have so that I can make sure I have at least one more at all times.",
-            "My favorite book is an 1836 copy of “Le Grande Extraordinaire”, a book and treatise written by my much beloved and atoned great-great-grand-rat, ‘The Previously Dishonorable but now in Good Graces Von Toutenmouse”. I keep it in my inner coat pocket, along with volumes 1 - 33 of the Mirriam Webster Dictionary. Volume 33 has been especially helpful to stay in touch with my subjects, as it covers modern slang such as “Cheetos” and “Doritos.”",
+            "My favorite book is an 1836 copy of “Le Grande Extraordinaire”, a book and treatise written by my much beloved and atoned great-great-grand-rat, ‘The Previously Dishonorable but now in Good Graces Von Toutenmouse”. I keep it in my inner coat pocket, along with volumes 1 - 33 of the Merriam-Webster Dictionary. Volume 33 has been especially helpful to stay in touch with my subjects, as it covers modern slang such as “Cheetos” and “Doritos.”",
             "I am so small and honorable, but, as a royal, there are threats that I just cannot ignore. For example, the other day our court jester rode in on the most magnificent horse I had ever laid eyes on. I must know, who is their equine provider? Once I find out, I shall buy the finest pair of twin horses for you and I to ride together. I’m growing quite fond of you, afterall.",
             "You are the most honorable rat that I have ever met, besides myself and my second cousin of course. With the two of us together, our reputation will be so impeccable, and we will be able to do such much good for our subjects together! Let’s get married and invite the whole town — I’ll order 10000 more celebratory horses so that each of our guests may have one as a party favor. Any left unclaimed shall live their gentle lives out in my pastures!",
             "Oh, I cannot wait to spend the rest of my life riding horses with you, my most honorable love!"
@@ -405,7 +419,7 @@
         "size": "medium",
         "ending": "paris.mp3",
         "reaction_pos": [
-            "0.29",
+            "0.27",
             "0.12"
         ],
         "zodiac": "Leo",
@@ -459,7 +473,7 @@
         "filename": "thundercroft",
         "tagline": "Oh! I’m blushing",
         "size": "medium-large",
-        "ending": "cheerful.mp3",
+        "ending": "romantic_sad.mp3",
         "reaction_pos": [
             "0.333",
             "0.126"

@@ -131,14 +131,14 @@ function RatchelorApp() {
     setMobileMode(watchMobile.matches);
     setMobileLandscapeMode(watchLandscapeMobile.matches);
 
-    const screenHeight = document.body.clientHeight;
-    const screenWidth = document.body.clientWidth;
-
-    const targetMobileWidth = (screenHeight * 900) / 675;
-    setMobileWidth(targetMobileWidth);
-
     // A small timeout to avoid race condition.
     setTimeout(() => {
+      const screenHeight = document.body.clientHeight;
+      const screenWidth = document.body.clientWidth;
+
+      const targetMobileWidth = (screenHeight * 900) / 675;
+      setMobileWidth(targetMobileWidth);
+
       document.documentElement.style.setProperty(
         "--game-width",
         `${targetMobileWidth}px`
@@ -151,7 +151,7 @@ function RatchelorApp() {
         "--mobile-width",
         `${screenWidth}px`
       );
-    }, 50);
+    }, 300);
   }
 
   useEffect(() => {
@@ -409,7 +409,7 @@ function RatchelorApp() {
       <div className="landscape-mode-warning">
         <h2>Ratchelor 3</h2>
         It looks like you are in portrait mode on your phone! Please rotate your
-        phone to continue.
+        phone to continue or visit on desktop instead!
       </div>
     );
   }
@@ -429,6 +429,7 @@ function RatchelorApp() {
       </div>
       {gameScreenContents}
       <SoundManager
+        setSfx={setSfx}
         soundFile={sfx}
         soundTimestamp={sfxTimestamp}
         musicFile={music}

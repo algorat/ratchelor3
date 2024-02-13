@@ -15,10 +15,11 @@ export function PlayerCustomization(props) {
         props.playerAvatarDecorations.filter((d) => d !== decoration)
       );
     } else {
-      props.setPlayerAvatarDecorations([
-        ...props.playerAvatarDecorations,
-        decoration,
-      ]);
+      const unsorted = [...props.playerAvatarDecorations, decoration];
+      const sorted = unsorted.sort(
+        (a, b) => images.indexOf(a) - images.indexOf(b)
+      );
+      props.setPlayerAvatarDecorations(sorted);
     }
   }
 
@@ -31,6 +32,7 @@ export function PlayerCustomization(props) {
               props.playerAvatarDecorations.includes(image) ? "selected" : ""
             }`}
             onClick={() => {
+              props.updateSfx("tap.mp3");
               toggleDecoration(image);
             }}
           >

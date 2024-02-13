@@ -109,4 +109,8 @@
   .rat-select-mobile-panel > * {
     margin-bottom: 12px;
   }
+
+  .rat-select-mobile-panel p {
+    margin-bottom: 8px;
+  }
 }

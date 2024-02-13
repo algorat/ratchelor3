@@ -90,6 +90,8 @@
 .talking-to-rats-screen .rat-dialogue img {
   height: 80px;
   width: auto;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
 }
 
 .talking-to-rats-screen .dialogue-container {

@@ -1,6 +1,6 @@
 import "./SoundManager.css";
 
-import ReactAudioPlayer from "react-audio-player";
+import ReactHowler from "react-howler";
 
 import React, { useState } from "react";
 import {
@@ -29,7 +29,6 @@ function volumeToIndex(vol) {
 export function SoundManager(props) {
   const [volume, setVolume] = useState(DEFAULT_VOLUME);
   const [lastTimestamp, setLastTimestamp] = useState(null);
-  const [lastMusicTimestamp, setLastMusicTimestamp] = useState(null);
 
   let volumeIconFullPath = `${SOUND_ICONS_IMAGES_BASE_PATH}/${VOLUME_MUTE}`;
 
@@ -40,7 +39,13 @@ export function SoundManager(props) {
   }
 
   function toggleSound() {
-    setVolume(volume === 0 ? DEFAULT_VOLUME : 0);
+    if (volume === 0) {
+      setVolume(DEFAULT_VOLUME);
+      window.Howler.mute(false);
+    } else {
+      setVolume(0);
+      window.Howler.mute(true);
+    }
   }
 
   return (
@@ -74,28 +79,27 @@ export function SoundManager(props) {
         </div>
       </div>
       {props.soundFile && (
-        <ReactAudioPlayer
+        <ReactHowler
           id={String(props.soundTimestamp)}
           src={`${SOUND_BASE_PATH}/${props.soundFile}`}
           volume={volume}
           ref={(element) => {
             if (!element || lastTimestamp === props.soundTimestamp) return;
             setLastTimestamp(props.soundTimestamp);
-            element.audioEl.current.currentTime = 0;
-            element.audioEl.current.play();
+            element.howler.seek(0);
+            element.howler.play();
+          }}
+          onEnd={() => {
+            props.setSfx(null);
           }}
         />
       )}
       {props.musicFile && (
-        <ReactAudioPlayer
+        <ReactHowler
           src={`${SOUND_BASE_PATH}/${props.musicFile}`}
-          volume={volume * 0.5}
+          volume={volume * 0.4}
+          html5={true}
           loop={true}
-          ref={(element) => {
-            if (!element || lastMusicTimestamp === props.musicTimestamp) return;
-            setLastMusicTimestamp(props.musicTimestamp);
-            element.audioEl.current.play();
-          }}
         />
       )}
     </>

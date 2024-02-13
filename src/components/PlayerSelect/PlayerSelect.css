@@ -63,6 +63,7 @@
 
 .player-img.selected-img {
   filter: grayscale(0);
+  position: relative;
 }
 
 .player-img.selected-img .selected-bg {
@@ -104,5 +105,9 @@
     width: 100%;
     left: 0;
     top: 0;
+  }
+
+  .player-select-screen {
+    row-gap: 24px;
   }
 }
