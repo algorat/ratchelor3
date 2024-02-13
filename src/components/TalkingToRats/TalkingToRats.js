@@ -256,13 +256,12 @@ export function TalkingToRats(props) {
     setTimeout(() => {
       setContainerTransform(endingTransform);
       setContainerTransformDuration(duration);
-
       setTimeout(() => {
         setShowContestants(true);
         setupNextRat(ratIndex, true);
       }, duration + 600);
     }, delay);
-  }, []);
+  }, [props.mobileMode]);
 
   // Preload if we haven't already.
   !ratDateImages.length && preloadRatImages();
@@ -270,7 +269,11 @@ export function TalkingToRats(props) {
   const currentRatId = props.activeRats[ratIndex];
   const ratData = getRatById(currentRatId);
   const ratName = ratData.name;
-  const ratReactionPos = ratData.reaction_pos;
+  let ratReactionPos = ratData.reaction_pos;
+  const reactionPosOverrides = ratData.reaction_pos_override;
+  if (reactionPosOverrides && reactionPosOverrides[props.round]) {
+    ratReactionPos = reactionPosOverrides[props.round];
+  }
   const ratDialogue = ratData.dialogue[props.round];
   const currentRatDialogue = ratDialogue.slice(0, dialogueProgress);
 

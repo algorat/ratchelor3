@@ -163,6 +163,13 @@
             "0.32",
             "0.16"
         ],
+        "reaction_pos_override" : [
+            ["0.28","0.16"],
+            ["0.32","0.16"],  
+            ["0.35","0.16"], 
+            ["0.38","0.16"], 
+            ["0.42","0.16"]
+        ],
         "zodiac": "Virgo",
         "dialogue": [
             "I’m a critically acclaimed ice-cream toppings coordinator. I studied abroad on full scholarship in my ratdolesence. I studied amongst the finest in my field and truly got in touch with my personal, professional, and artistic motivations",
@@ -200,6 +207,13 @@
             "hammerton.png",
             "hammerton-cheese.png",
             "hammerton-blush.png"
+        ],
+        "reaction_pos_override" : [
+            null, 
+            ["0.2","0.3"], 
+            null, 
+            null, 
+            null
         ]
     },
     {
@@ -405,7 +419,7 @@
         "size": "medium",
         "ending": "paris.mp3",
         "reaction_pos": [
-            "0.29",
+            "0.27",
             "0.12"
         ],
         "zodiac": "Leo",

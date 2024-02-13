@@ -65,6 +65,7 @@ function SelectableRat(props) {
         <div className="rat-name-container">
           <div className="rat-name">{ratName}</div>
           <div className="rat-tagline">
+            <p className="rat-name">{ratName}</p>
             <i>Zodiac sign: {ratZodiac}</i>
             <p>{`"${ratTagline}"`}</p>
           </div>
