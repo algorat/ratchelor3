@@ -409,7 +409,7 @@ function RatchelorApp() {
       <div className="landscape-mode-warning">
         <h2>Ratchelor 3</h2>
         It looks like you are in portrait mode on your phone! Please rotate your
-        phone to continue.
+        phone to continue or visit on desktop instead!
       </div>
     );
   }
