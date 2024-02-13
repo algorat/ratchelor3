@@ -39,7 +39,13 @@ export function SoundManager(props) {
   }
 
   function toggleSound() {
-    setVolume(volume === 0 ? DEFAULT_VOLUME : 0);
+    if (volume === 0) {
+      setVolume(DEFAULT_VOLUME);
+      window.Howler.mute(false);
+    } else {
+      setVolume(0);
+      window.Howler.mute(true);
+    }
   }
 
   return (
@@ -91,7 +97,7 @@ export function SoundManager(props) {
       {props.musicFile && (
         <ReactHowler
           src={`${SOUND_BASE_PATH}/${props.musicFile}`}
-          volume={volume * 0.5}
+          volume={volume * 0.4}
           html5={true}
           loop={true}
         />
