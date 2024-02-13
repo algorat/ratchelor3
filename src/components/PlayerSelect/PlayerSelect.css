@@ -63,6 +63,7 @@
 
 .player-img.selected-img {
   filter: grayscale(0);
+  position: relative;
 }
 
 .player-img.selected-img .selected-bg {
