@@ -31,7 +31,7 @@ const backgrounds = [
       couchOffset: [80, -640],
       containerStart: [-0.066, 1.3],
       delay: 100,
-      duration: 5500,
+      duration: 4500,
       mobile: false,
     },
   },

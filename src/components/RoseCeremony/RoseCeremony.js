@@ -145,6 +145,8 @@ export function RoseCeremony(props) {
               ratState = ratStates.CHOSEN;
             } else if (previousRats.includes(rat)) {
               ratState = ratStates.UNCHOSEN;
+            } else if (selectedRats.length === props.maxRats) {
+              ratState = ratStates.UNCHOSEN;
             }
             return (
               <SelectableRat

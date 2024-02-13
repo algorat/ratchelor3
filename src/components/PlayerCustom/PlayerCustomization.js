@@ -32,6 +32,7 @@ export function PlayerCustomization(props) {
               props.playerAvatarDecorations.includes(image) ? "selected" : ""
             }`}
             onClick={() => {
+              props.updateSfx("tap.mp3");
               toggleDecoration(image);
             }}
           >

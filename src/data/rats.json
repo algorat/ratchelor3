@@ -4,7 +4,7 @@
         "filename": "badabing",
         "tagline": "WOWwwie!",
         "size": "medium",
-        "ending": "romantic_happy.mp3",
+        "ending": "intense.mp3",
         "reaction_pos": [
             "0.287",
             "0.147"
@@ -25,7 +25,7 @@
         "filename": "boingo",
         "tagline": "I’m awake, let’s do something fun!",
         "size": "medium-small",
-        "ending": "romantic_happy.mp3",
+        "ending": "intense.mp3",
         "reaction_pos": [
             "0.249",
             "0.167"
@@ -37,7 +37,7 @@
             "I’m a huuuge fan of cows. The way they just relax and eat grass and go about their lives... Whoowee! I could dream about them alllll day! Before I take a nap I try to find a nearby cow to sleep next so they can enter into my dreams. You know the movie Inception? It’s kinda like that, but reversed",
             "Okay, are you ready? I’m about to tell you the secret to my passion for life: the UberRatte sleep schedule! I sleep in 3.5 hour increments and wake up and do my tasks in 30 minute increments and then I go back to sleep! That means I’m only awake for 3 hours a day but WOW am I ever well-rested and thrilled to be here",
             "If I ever fell asleep near you and you entered my dreams, there would be two of you in there. What I’m trying to say is that you’re ALREADY the rat of my dreams. What I’m trying to say is I love you!!!",
-            "I love you so much!!! You’re the coolest, and I know you’ll help me achieve my goals. I can’t wait to help you achieve your goals too. My 30 minute timer just went off so I’ll have to go to sleep in a minute, but as soon as I’m awake again let’s go swimming!!!"
+            "I love you so much!!! You’re the coolest, and I know you’ll help me achieve my goals. I can’t wait to help you achieve your goals too. My timer just went off so I’ll have to go to sleep in a minute, but as soon as I’m awake again let’s go swimming!!!"
         ],
         "angry": "booooooo! I'm leaving! bye!"
     },
@@ -46,7 +46,7 @@
         "filename": "boogaloo",
         "tagline": "HONK",
         "size": "small",
-        "ending": "funky.mp3",
+        "ending": "intense.mp3",
         "reaction_pos": [
             "0.267",
             "0.173"
@@ -151,7 +151,7 @@
         "filename": "frozine",
         "tagline": "My craft is my world",
         "size": "small",
-        "ending": "romantic_happy.mp3",
+        "ending": "paris.mp3",
         "talking_to_rats_filename" : [
             "frozine-1.png", 
             "frozine-2.png",
@@ -186,7 +186,7 @@
         "filename": "hammerton",
         "tagline": "Yawwwwwn",
         "size": "small",
-        "ending": "romantic_happy.mp3",
+        "ending": "intense.mp3",
         "reaction_pos": [
             "0.383",
             "0.074"
@@ -319,7 +319,7 @@
         "filename": "oedimb",
         "tagline": "Oh! Every day is my birthday!",
         "size": "medium",
-        "ending": "romantic_happy.mp3",
+        "ending": "intense.mp3",
         "reaction_pos": [
             "0.337",
             "0.148"
@@ -473,7 +473,7 @@
         "filename": "thundercroft",
         "tagline": "Oh! I’m blushing",
         "size": "medium-large",
-        "ending": "cheerful.mp3",
+        "ending": "romantic_sad.mp3",
         "reaction_pos": [
             "0.333",
             "0.126"
