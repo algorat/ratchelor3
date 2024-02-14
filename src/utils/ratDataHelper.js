@@ -57,6 +57,15 @@ export function getResponsesByRound(ratId, roundNumber) {
   const neutrals = allResponses.filter((response) => response.score === 0);
   const negatives = allResponses.filter((response) => response.score < 0);
 
+  // If we don't have one of reach type, let's just return the first 3.
+  if (
+    positives.length === 0 ||
+    neutrals.length === 0 ||
+    negatives.length === 0
+  ) {
+    return allResponses.slice(0, 3);
+  }
+
   const threeResponses = [
     randArrayItem(positives),
     randArrayItem(neutrals),
