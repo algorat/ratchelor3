@@ -2220,8 +2220,8 @@
         [
             {
                 "response": "Boise",
-                "reaction": "big_smile",
-                "score": 1
+                "reaction": "wow",
+                "score": 0
             },
             {
                 "response": "Bonsy",
@@ -2230,8 +2230,8 @@
             },
             {
                 "response": "Joise",
-                "reaction": "tear",
-                "score": -1
+                "reaction": "wow",
+                "score": 0
             }
         ],
         [

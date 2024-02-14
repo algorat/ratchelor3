@@ -25,7 +25,7 @@ const ANGRY_RESPONSE_TIMEOUT = 2000; // In ms.
 
 const backgrounds = [
   {
-    file: "cathy_date.png",
+    file: "cathy.gif",
     animation: {
       backgroundSize: [1222, 2100],
       couchOffset: [80, -640],
@@ -36,7 +36,7 @@ const backgrounds = [
     },
   },
   {
-    file: "bus_date.png",
+    file: "bus.gif",
     animation: {
       backgroundSize: [3000, 2250],
       couchOffset: [0, -500],
@@ -47,7 +47,7 @@ const backgrounds = [
     },
   },
   {
-    file: "dobra_back.png",
+    file: "dobra.gif",
     front: "dobra_front.png",
     animation: {
       backgroundSize: [1493, 1120],
