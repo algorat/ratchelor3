@@ -2,6 +2,7 @@
   "name": "ratchelor3-clean",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/ratchelor3",
   "dependencies": {
     "firebase": "^9.23.0",
     "react": "^18.2.0",
