@@ -261,7 +261,7 @@ export function TalkingToRats(props) {
         setupNextRat(ratIndex, true);
       }, duration + 600);
     }, delay);
-  }, [props.mobileMode]);
+  }, [props.mobileMode, props.mobileWidth]);
 
   // Preload if we haven't already.
   !ratDateImages.length && preloadRatImages();

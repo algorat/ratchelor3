@@ -5,7 +5,7 @@
   flex-direction: column;
   position: relative;
 
-  background-image: url('../../../public/images/intro/intro.png');
+  background-image: url('../../../public/images/intro/intro.gif');
   background-repeat: no-repeat;
   background-size: 100%;
 }

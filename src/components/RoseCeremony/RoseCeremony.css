@@ -87,23 +87,23 @@
 }
 
 .rose-ceremony-screen .large img {
-  height: min(240px, 42vh);
+  height: min(240px, 38vh);
 }
 
 .rose-ceremony-screen .medium-large img {
-  height: min(210px, 37vh);
+  height: min(210px, 35vh);
 }
 
 .rose-ceremony-screen .medium img {
-  height: min(180px, 32vh);
+  height: min(180px, 33vh);
 }
 
 .rose-ceremony-screen .medium-small img {
-  height: min(165px, 25vh);
+  height: min(165px, 30vh);
 }
 
 .rose-ceremony-screen .small img {
-  height: min(120px, 20vh);
+  height: min(120px, 24vh);
 }
 
 @keyframes fadeOut {
@@ -118,8 +118,10 @@
 
 @media only screen and (hover: none) {
   .rose-ceremony-rats {
-    padding: 20px;
-    max-width: calc(var(--game-width) * 0.8);
+    padding: 28px 0 12px;
+    max-width: calc(var(--game-width) * 0.83);
     margin: auto;
+    column-gap: 0;
+    row-gap: 4px;
   }
 }

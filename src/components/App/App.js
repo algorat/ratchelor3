@@ -37,6 +37,7 @@ import {
   getRatById,
   BACKGROUNDS_IMAGES_BASE_PATH,
   INTRO_IMAGES_BASE_PATH,
+  CHARACTERS_IMAGES_BASE_PATH,
 } from "../../utils/ratDataHelper";
 
 import { PlayerCustomization } from "../PlayerCustom/PlayerCustomization";
@@ -164,7 +165,7 @@ function RatchelorApp() {
       onMobileChange(watchMobile, watchLandscapeMobile)
     );
     onMobileChange(watchMobile, watchLandscapeMobile);
-  }, [mobileLandscapeMode]);
+  }, []);
 
   function playInterlude(interludeText, callback) {
     updateSfx("curtain.mp3");
@@ -410,6 +411,7 @@ function RatchelorApp() {
         <h2>Ratchelor 3</h2>
         It looks like you are in portrait mode on your phone! Please rotate your
         phone to continue or visit on desktop instead!
+        <img src={`${CHARACTERS_IMAGES_BASE_PATH}/yodine-rose.png`} alt="" />
       </div>
     );
   }
