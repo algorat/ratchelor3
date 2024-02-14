@@ -13,6 +13,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "node scripts/listPreloadAssets.js && react-scripts build",
+    "prod": "node scripts/listPreloadAssets.js && react-scripts build && rm -rf docs && mv build docs",
     "stage": "node scripts/listPreloadAssets.js && PUBLIC_URL=/ react-scripts build && rm -rf staging && mv build staging && cp dev_files/robots.txt staging/robots.txt && firebase deploy",
     "files": "node scripts/listPreloadAssets.js",
     "eject": "react-scripts eject",
