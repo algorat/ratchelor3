@@ -123,7 +123,7 @@ export function TalkingToRats(props) {
                 }}
               />
             );
-            tempRatDateImages.push(ratDateImage);
+            tempRatDateImages.push({ img: ratDateImage, id: ratId });
           })
       )
     );
@@ -377,16 +377,16 @@ export function TalkingToRats(props) {
               />
             ))}
           </div>
-          {ratDateImages.map((ratDateImage, idx) => (
+          {ratDateImages.map(({ img, id }) => (
             <div
-              key={`rat-date-${idx}`}
+              key={`rat-date-${id}`}
               className={
-                idx === ratIndex && !animatingDialogue
+                id === currentRatId && !animatingDialogue
                   ? "current-rat contestant"
                   : "contestant"
               }
             >
-              {ratDateImage}
+              {img}
             </div>
           ))}
           {backgroundData.front && (
