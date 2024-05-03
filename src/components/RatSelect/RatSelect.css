@@ -12,7 +12,7 @@
   grid-template-columns: repeat(7, minmax(0, 1fr));
 
   row-gap: 8px;
-  padding: 80px 12px 12px 12px;
+  padding: 88px 12px 12px 12px;
   z-index: 100;
 }
 
@@ -69,6 +69,10 @@
   font-size: 14px;
 }
 
+.rat-name-container > .rat-name {
+  margin-top: -6px;
+}
+
 .rat-select-screen .rat-tagline {
   display: none;
 }
@@ -81,7 +85,7 @@
   width: calc(100% + 40px);
   z-index: 1001;
   background-color: var(--secondary-background-color);
-  padding: 8px;
+  padding: 6px;
   border-radius: 4px;
   border: 2px solid var(--text-color);
 }

@@ -110,7 +110,7 @@ export function TalkingToRats(props) {
           new Promise((resolve) => {
             const ratData = getRatById(ratId);
             let filename = `${DATES_IMAGES_BASE_PATH}/${ratId}.png`;
-            const override = ratData.talking_to_rats_filename?.[props.round];
+            const override = ratData.talkingToRatsFilename?.[props.round];
             if (override) {
               filename = `${DATES_IMAGES_BASE_PATH}/${override}`;
             }
@@ -269,8 +269,8 @@ export function TalkingToRats(props) {
   const currentRatId = props.activeRats[ratIndex];
   const ratData = getRatById(currentRatId);
   const ratName = ratData.name;
-  let ratReactionPos = ratData.reaction_pos;
-  const reactionPosOverrides = ratData.reaction_pos_override;
+  let ratReactionPos = ratData.reactionPos;
+  const reactionPosOverrides = ratData.reactionPosOverride;
   if (reactionPosOverrides && reactionPosOverrides[props.round]) {
     ratReactionPos = reactionPosOverrides[props.round];
   }
@@ -294,9 +294,13 @@ export function TalkingToRats(props) {
     </button>
   ));
 
+  const fontOverride = ratData.fontOverride
+    ? { fontFamily: `"${ratData.fontOverride}", serif` }
+    : {};
+
   let ratDialogueHtml = (
     <>
-      <div className="rat-dialogue" aria-hidden="true">
+      <div className="rat-dialogue" aria-hidden="true" style={fontOverride}>
         {currentRatDialogue}
         <MobileControl show={false}>
           <div className="responses">{responses}</div>
@@ -323,7 +327,7 @@ export function TalkingToRats(props) {
     );
     ratDialogueHtml = (
       <>
-        <div className="rat-dialogue angry">
+        <div className="rat-dialogue angry" style={fontOverride}>
           {ratData.angry}
           <MobileControl show={false}>
             <div className="responses">{responses}</div>

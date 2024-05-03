@@ -1,14 +1,32 @@
 import "./Ending.css";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   ENDINGS_IMAGES_BASE_PATH,
   getRatById,
 } from "../../utils/ratDataHelper";
 import { MobileControl } from "../MobileControl/MobileControl";
 
+const animationDuration = 2000;
 export function Ending(props) {
+  const [fadingIn, setFadingIn] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setFadingIn(false);
+    }, animationDuration);
+  });
+
+  const style = {
+    transition: `background ${animationDuration}ms`,
+    background: fadingIn ? "black" : "transparent",
+  };
+
   const finalRatData = getRatById(props.finalRat);
+
+  const fontOverride = finalRatData.fontOverride
+    ? { fontFamily: `"${finalRatData.fontOverride}", serif` }
+    : {};
+
   return (
     <>
       <div className="ending-screen screen">
@@ -18,7 +36,7 @@ export function Ending(props) {
           alt="your chosen rat looking adoringly at you"
         ></img>
         <MobileControl show={false}>
-          <div className="ending-dialogue">
+          <div className="ending-dialogue" style={fontOverride}>
             {finalRatData.dialogue[finalRatData.dialogue.length - 1]}
           </div>
           <button
@@ -28,12 +46,15 @@ export function Ending(props) {
             Epilogue
           </button>
         </MobileControl>
+        <div style={style} className="black-screen"></div>
       </div>
       <MobileControl
         show={true}
         ctaButton={<button onClick={props.advanceToNextStage}>Epilogue</button>}
       >
-        {finalRatData.dialogue[finalRatData.dialogue.length - 1]}
+        <span style={fontOverride}>
+          {finalRatData.dialogue[finalRatData.dialogue.length - 1]}
+        </span>
       </MobileControl>
     </>
   );

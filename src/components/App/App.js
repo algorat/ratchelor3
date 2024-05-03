@@ -55,7 +55,7 @@ const GameStages = {
   CREDITS: 9,
 };
 
-// Num rats the person should select at the very beginning.
+// // Num rats the person should select at the very beginning.
 // const RATS_IN_GAME = 2;
 
 // // How many rounds there are.
@@ -127,6 +127,9 @@ function RatchelorApp() {
   const [mobileMode, setMobileMode] = useState(false);
   const [mobileWidth, setMobileWidth] = useState(900);
   const [mobileLandscapeMode, setMobileLandscapeMode] = useState(false);
+  const [showMobileWarning, setShowMobileWarning] = useState(false);
+
+  const [marriedRats, setMarriedRats] = useState(["manddy", "michael"]);
 
   function onMobileChange(watchMobile, watchLandscapeMobile) {
     setMobileMode(watchMobile.matches);
@@ -136,6 +139,10 @@ function RatchelorApp() {
     setTimeout(() => {
       const screenHeight = document.body.clientHeight;
       const screenWidth = document.body.clientWidth;
+
+      if (screenHeight * screenWidth < 70000) {
+        setShowMobileWarning(true);
+      }
 
       const targetMobileWidth = (screenHeight * 900) / 675;
       setMobileWidth(targetMobileWidth);
@@ -251,10 +258,9 @@ function RatchelorApp() {
   function goToAnimeEnding() {
     const chosenRat = activeRats[0];
     updateMusic(getRatById(chosenRat)?.ending);
+    setMarriedRats([...marriedRats, chosenRat]);
     incrementRatCountInDatabase(chosenRat, false);
-    playInterlude("Ending!", () => {
-      setGameStage(GameStages.ANIME_ENDING);
-    });
+    setGameStage(GameStages.ANIME_ENDING);
   }
 
   // Updates rat feelings based on user response scores.
@@ -302,6 +308,18 @@ function RatchelorApp() {
     setMusicTimestamp(Date.now());
   }
 
+  function makeMobileWarning() {
+    const accept = () => {
+
+    }
+    const decline = () => {
+
+    }
+    return <div>
+      <button onClick={}></button>
+    </div>
+  }
+
   let gameScreenContents = "";
   switch (gameStage) {
     case GameStages.INTRO:
@@ -339,6 +357,7 @@ function RatchelorApp() {
           activeRats={activeRats}
           updateSfx={updateSfx}
           mobileMode={mobileMode}
+          marriedRats={marriedRats}
         />
       );
       break;

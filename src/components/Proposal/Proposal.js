@@ -1,6 +1,6 @@
 import "./Proposal.css";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   getRatById,
   BACKGROUNDS_IMAGES_BASE_PATH,
@@ -8,9 +8,23 @@ import {
 } from "../../utils/ratDataHelper";
 import { MobileControl } from "../MobileControl/MobileControl";
 
+const animationDuration = 2000;
+
 export function Proposal(props) {
+  const [fadingOut, setFadingOut] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setFadingOut(true);
+      setTimeout(props.goToAnimeEnding, animationDuration);
+    }, 3000);
+  });
   const finalRat = getRatById(props.finalRat);
   const playerFile = `${props.playerAvatarIndex}.png`;
+
+  const style = {
+    transition: `background ${animationDuration}ms`,
+    background: fadingOut ? "black" : "transparent",
+  };
 
   return (
     <>
@@ -39,18 +53,9 @@ export function Proposal(props) {
             />
           ))}
         </div>
-        <MobileControl show={false}>
-          <button className="proposal-continue" onClick={props.goToAnimeEnding}>
-            Continue
-          </button>
-        </MobileControl>
+        <div style={style} className="black-screen"></div>
       </div>
-      <MobileControl
-        show={true}
-        ctaButton={<button onClick={props.goToAnimeEnding}>Continue</button>}
-      >
-        Proposes :3
-      </MobileControl>
+      <MobileControl show={true}>Proposes :3</MobileControl>
     </>
   );
 }
