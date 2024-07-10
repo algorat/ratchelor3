@@ -161,7 +161,7 @@ export function RatSelect(props) {
   return (
     <>
       <div className="screen rat-select-screen">
-        <MobileControl show={false}>
+        <MobileControl show={false} mobileMode={props.mobileMode}>
           <header>
             {numRatsLeft > 0 ? (
               <h2>Choose {numRatsLeft} contestants</h2>
@@ -193,6 +193,7 @@ export function RatSelect(props) {
         </div>
       </div>
       <MobileControl
+        mobileMode={props.mobileMode}
         show={true}
         header={mobileHeader}
         ctaButton={mobileCtaButton}

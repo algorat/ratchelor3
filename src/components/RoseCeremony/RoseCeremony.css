@@ -116,12 +116,10 @@
   }
 }
 
-@media only screen and (hover: none) {
-  .rose-ceremony-rats {
-    padding: 28px 0 12px;
-    max-width: calc(var(--game-width) * 0.83);
-    margin: auto;
-    column-gap: 0;
-    row-gap: 4px;
-  }
+.mobile-mode .rose-ceremony-rats {
+  padding: 28px 0 12px;
+  max-width: calc(var(--game-width) * 0.83);
+  margin: auto;
+  column-gap: 0;
+  row-gap: 4px;
 }

@@ -55,7 +55,9 @@ export function Proposal(props) {
         </div>
         <div style={style} className="black-screen"></div>
       </div>
-      <MobileControl show={true}>Proposes :3</MobileControl>
+      <MobileControl mobileMode={props.mobileMode} show={true}>
+        Proposes :3
+      </MobileControl>
     </>
   );
 }

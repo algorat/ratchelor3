@@ -63,7 +63,7 @@ export function PlayerCustomization(props) {
   return (
     <>
       <div className="player-customization-screen screen">
-        <MobileControl show={false}>
+        <MobileControl show={false} mobileMode={props.mobileMode}>
           <header>
             {previousButton}
             <h2>Dress up your character? </h2>
@@ -100,6 +100,7 @@ export function PlayerCustomization(props) {
       </div>
       <MobileControl
         show={true}
+        mobileMode={props.mobileMode}
         header="Choose accessories"
         ctaButton={
           <>

@@ -68,9 +68,12 @@ export function PlayerSelect(props) {
             />
           ))}
         </div>
-        <MobileControl show={false}>{ctaArea}</MobileControl>
+        <MobileControl mobileMode={props.mobileMode} show={false}>
+          {ctaArea}
+        </MobileControl>
       </div>
       <MobileControl
+        mobileMode={props.mobileMode}
         show={true}
         header="Choose your avatar"
         ctaButton={props.playerAvatarIndex && ctaArea}

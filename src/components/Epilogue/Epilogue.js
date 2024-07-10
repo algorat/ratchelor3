@@ -73,6 +73,7 @@ export function Epilogue(props) {
         </div>
       </div>
       <MobileControl
+        mobileMode={props.mobileMode}
         show={true}
         header="What happened to the rats after?"
         ctaButton={cta}

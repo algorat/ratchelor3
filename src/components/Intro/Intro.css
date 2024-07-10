@@ -31,16 +31,14 @@
   height: 36px;
 }
 
-@media only screen and (hover: none) {
-  .intro-screen button {
-    display: none;
-  }
+.mobile-mode .intro-screen button {
+  display: none;
+}
 
-  .embark-button {
-    padding: 12px;
-  }
+.mobile-mode .embark-button {
+  padding: 12px;
+}
 
-  .embark-button img {
-    height: 20px;
-  }
+.mobile-mode .embark-button img {
+  height: 20px;
 }

@@ -131,6 +131,26 @@ function RatchelorApp() {
 
   const [marriedRats, setMarriedRats] = useState(["manddy", "michael"]);
 
+  function updateMobileAttributes() {
+    const screenHeight = document.body.clientHeight;
+    const screenWidth = document.body.clientWidth;
+    const targetMobileWidth = (screenHeight * 900) / 675;
+    setMobileWidth(targetMobileWidth);
+
+    document.documentElement.style.setProperty(
+      "--game-width",
+      `${targetMobileWidth}px`
+    );
+    document.documentElement.style.setProperty(
+      "--mobile-height",
+      `${screenHeight}px`
+    );
+    document.documentElement.style.setProperty(
+      "--mobile-width",
+      `${screenWidth}px`
+    );
+  }
+
   function onMobileChange(watchMobile, watchLandscapeMobile) {
     setMobileMode(watchMobile.matches);
     setMobileLandscapeMode(watchLandscapeMobile.matches);
@@ -140,25 +160,15 @@ function RatchelorApp() {
       const screenHeight = document.body.clientHeight;
       const screenWidth = document.body.clientWidth;
 
-      if (screenHeight * screenWidth < 70000) {
+      if (
+        !watchMobile.matches &&
+        !watchLandscapeMobile.matches &&
+        screenHeight * screenWidth < 700 * 900
+      ) {
         setShowMobileWarning(true);
       }
 
-      const targetMobileWidth = (screenHeight * 900) / 675;
-      setMobileWidth(targetMobileWidth);
-
-      document.documentElement.style.setProperty(
-        "--game-width",
-        `${targetMobileWidth}px`
-      );
-      document.documentElement.style.setProperty(
-        "--mobile-height",
-        `${screenHeight}px`
-      );
-      document.documentElement.style.setProperty(
-        "--mobile-width",
-        `${screenWidth}px`
-      );
+      updateMobileAttributes();
     }, 300);
   }
 
@@ -310,20 +320,38 @@ function RatchelorApp() {
 
   function makeMobileWarning() {
     const accept = () => {
-
-    }
+      setMobileMode(true);
+      updateMobileAttributes();
+      setShowMobileWarning(false);
+    };
     const decline = () => {
+      setShowMobileWarning(false);
+    };
+    return (
+      <div className="mobile-warning">
+        Your screen may be a little small for our default desktop mode... Would
+        you like to use our mobile-optimized mode?
+        <br />
+        <i>
+          Note: This works best if you switch to a landscape aspect ratio before
+          manually activating mobile mode.
+        </i>
+        <button onClick={accept}>Yes, take me to mobile mode</button>
+        <button onClick={decline}>Stay in desktop mode</button>
+      </div>
+    );
+  }
 
-    }
-    return <div>
-      <button onClick={}></button>
-    </div>
+  if (showMobileWarning) {
+    return makeMobileWarning();
   }
 
   let gameScreenContents = "";
   switch (gameStage) {
     case GameStages.INTRO:
-      gameScreenContents = <Intro advanceToNextStage={goToPlayerSelect} />;
+      gameScreenContents = (
+        <Intro advanceToNextStage={goToPlayerSelect} mobileMode={mobileMode} />
+      );
       break;
     case GameStages.PLAYER_SELECT:
       gameScreenContents = (
@@ -332,6 +360,7 @@ function RatchelorApp() {
           setPlayerAvatarIndex={setPlayerAvatarIndex}
           playerAvatarIndex={playerAvatarIndex}
           updateSfx={updateSfx}
+          mobileMode={mobileMode}
         />
       );
       break;
@@ -344,6 +373,7 @@ function RatchelorApp() {
           playerAvatarDecorations={playerAvatarDecorations}
           setPlayerAvatarDecorations={setPlayerAvatarDecorations}
           updateSfx={updateSfx}
+          mobileMode={mobileMode}
         />
       );
       break;
@@ -387,6 +417,7 @@ function RatchelorApp() {
           goToNextRound={goToNextRound}
           updateSfx={updateSfx}
           currentlyLeavingRat={currentlyLeavingRat}
+          mobileMode={mobileMode}
         />
       );
       break;
@@ -397,12 +428,17 @@ function RatchelorApp() {
           finalRat={activeRats[0]}
           playerAvatarIndex={playerAvatarIndex}
           goToAnimeEnding={goToAnimeEnding}
+          mobileMode={mobileMode}
         />
       );
       break;
     case GameStages.ANIME_ENDING:
       gameScreenContents = (
-        <Ending finalRat={activeRats[0]} advanceToNextStage={goToEpilogue} />
+        <Ending
+          finalRat={activeRats[0]}
+          advanceToNextStage={goToEpilogue}
+          mobileMode={mobileMode}
+        />
       );
       break;
     case GameStages.EPILOGUE:
@@ -411,12 +447,17 @@ function RatchelorApp() {
           finalRat={activeRats[0]}
           originalRats={originalRats}
           advanceToNextStage={goToCredits}
+          mobileMode={mobileMode}
         />
       );
       break;
     case GameStages.CREDITS:
       gameScreenContents = (
-        <Credits finalRat={activeRats[0]} reset={resetGame} />
+        <Credits
+          finalRat={activeRats[0]}
+          reset={resetGame}
+          mobileMode={mobileMode}
+        />
       );
       break;
     default:
@@ -436,7 +477,7 @@ function RatchelorApp() {
   }
 
   return (
-    <div className="game">
+    <div className={`game ${mobileMode ? "mobile-mode" : ""}`}>
       <img
         className="frame"
         src={`${INTRO_IMAGES_BASE_PATH}/frame.png`}

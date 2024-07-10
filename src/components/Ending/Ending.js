@@ -35,7 +35,7 @@ export function Ending(props) {
           src={`${ENDINGS_IMAGES_BASE_PATH}/${props.finalRat}.jpg`}
           alt="your chosen rat looking adoringly at you"
         ></img>
-        <MobileControl show={false}>
+        <MobileControl show={false} mobileMode={props.mobileMode}>
           <div className="ending-dialogue" style={fontOverride}>
             {finalRatData.dialogue[finalRatData.dialogue.length - 1]}
           </div>
@@ -50,6 +50,7 @@ export function Ending(props) {
       </div>
       <MobileControl
         show={true}
+        mobileMode={props.mobileMode}
         ctaButton={<button onClick={props.advanceToNextStage}>Epilogue</button>}
       >
         <span style={fontOverride}>

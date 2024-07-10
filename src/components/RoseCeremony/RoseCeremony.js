@@ -174,11 +174,15 @@ export function RoseCeremony(props) {
           }`}
           alt=""
         />
-        <MobileControl show={false}>
+        <MobileControl mobileMode={props.mobileMode} show={false}>
           <header>{instructions}</header>
         </MobileControl>
       </div>
-      <MobileControl show={true} header="Who will you choose?">
+      <MobileControl
+        mobileMode={props.mobileMode}
+        show={true}
+        header="Who will you choose?"
+      >
         {instructions}
       </MobileControl>
     </>
