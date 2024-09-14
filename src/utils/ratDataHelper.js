@@ -40,8 +40,35 @@ export function getRatById(id) {
   return null;
 }
 
-export function getAllRatData() {
-  return ratsJson;
+export function getAllRatData(marriedRats) {
+  // Let's separate the original rats from second round rats.
+  const originalRats = ratsJson.filter((rat) => !rat.secondRound);
+  const secondRoundRats = ratsJson.filter((rat) => !!rat.secondRound);
+
+  const findSecondRoundMatch = (rat) => (matchingRat) => {
+    return (
+      matchingRat.filename !== rat.filename &&
+      matchingRat.secondRound === rat.filename
+    );
+  };
+
+  // Now see if we want to sub out any of the married rats with
+  // their second round counterparts.
+  const finalRats = [];
+  for (const rat of originalRats) {
+    const ratName = rat.filename;
+    if (marriedRats.includes(ratName)) {
+      const matchingRats = secondRoundRats.filter(findSecondRoundMatch(rat));
+      if (matchingRats.length !== 0) {
+        finalRats.push(matchingRats);
+      } else {
+        finalRats.push([rat]);
+      }
+    } else {
+      finalRats.push([rat]);
+    }
+  }
+  return finalRats;
 }
 
 function randArrayItem(arr) {
@@ -76,13 +103,76 @@ export function getResponsesByRound(ratId, roundNumber) {
   return shuffled;
 }
 
-export function getRandomEpiloguePhoto(ratId) {
+function noDupes(photoData, finalRat) {
+  const seenRats = new Set();
+  const finalPhotos = [];
+
+  for (const photo of photoData) {
+    if (!photo) continue;
+    const { rats } = photo;
+    const dupeRats = rats.filter((r) => seenRats.has(r));
+
+    if (dupeRats.length === 0 && !rats.includes(finalRat)) {
+      rats.forEach((rat) => seenRats.add(rat));
+      finalPhotos.push(photo);
+    }
+  }
+  return finalPhotos;
+}
+
+export function getRandomEpiloguePhoto(ratId, ineligableRats) {
   const matches = [];
   Object.entries(epilogueJson).filter(([key, value]) => {
+    // Return early if this photo has an ineligable rat.
+    for (const rat of value.rats) {
+      if (ineligableRats.has(rat)) {
+        return;
+      }
+    }
     if (value.rats.includes(ratId)) {
       matches.push({ src: key, rats: value.rats, description: value.text });
     }
   });
   const randomIdx = Math.floor(Math.random() * matches.length);
   return matches[randomIdx];
+}
+
+const maxTries = 30;
+export function getEpiloguePhotos(originalRats, finalRat) {
+  const ineligableRats = new Set([finalRat]);
+  const photos = [];
+  let tries = 0;
+  // start by adding original rats
+  for (const rat of originalRats) {
+    if (rat === finalRat) {
+      continue;
+    }
+    const photo = getRandomEpiloguePhoto(rat, ineligableRats);
+    if (photo) {
+      photos.push(photo);
+      photo.rats.forEach((rat) => ineligableRats.add(rat));
+    }
+  }
+  const leftoverRats = ratsJson
+    .filter(
+      (ratData) =>
+        !originalRats.includes(ratData.filename) &&
+        ratData.fileName !== finalRat &&
+        !ineligableRats.has(ratData.filename)
+    )
+    .map((ratData) => ratData.filename);
+  while (photos.length < 6) {
+    const randomRat = randArrayItem(leftoverRats);
+    const photo = getRandomEpiloguePhoto(randomRat, ineligableRats);
+    if (photo) {
+      photos.push(photo);
+      photo.rats.forEach((rat) => ineligableRats.add(rat));
+    }
+    tries++;
+    if (tries > maxTries) {
+      console.warn("max tries exceeded");
+      break;
+    }
+  }
+  return photos;
 }

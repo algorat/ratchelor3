@@ -64,20 +64,18 @@ ul.player-custom-options button.small.selected {
   border: 2px solid var(--button-color);
 }
 
-@media only screen and (hover: none) {
-  .player-customization-screen {
-    padding-top: 90px;
-  }
+.mobile-mode .player-customization-screen {
+  padding-top: 90px;
+}
 
-  .custom-game {
-    height: calc(100vh - 90px);
-    justify-content: center;
-  }
+.mobile-mode .custom-game {
+  height: calc(100vh - 90px);
+  justify-content: center;
+}
 
-  ul.player-custom-options {
-    flex-direction: row;
-    flex-wrap: wrap;
-    top: 8px;
-    bottom: auto;
-  }
+.mobile-mode ul.player-custom-options {
+  flex-direction: row;
+  flex-wrap: wrap;
+  top: 8px;
+  bottom: auto;
 }

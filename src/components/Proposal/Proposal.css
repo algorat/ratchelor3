@@ -2,6 +2,12 @@
   position: relative;
 }
 
+.proposal-screen .black-screen {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
 .proposal-background {
   position: absolute;
   top: 0px;

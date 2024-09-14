@@ -1,11 +1,34 @@
 [
     {
+        "name": "Ael",
+        "filename": "ael",
+        "tagline": "heeheehee",
+        "size": "small",
+        "ending": "intense.mp3",
+        "reactionPos": [
+            "0.18",
+            "0.24"
+        ],
+        "zodiac": "Ophiuchus",
+        "dialogue": [
+            "🌍🯅🡢🯆🡢🯇🡢🕧",
+            "⭬🮲🮳⭪  🙶🏂🢱🙷  ⭬⬗⭪",
+            "👪⛇🡢🃴👂🡢💳🡢👌🎕🪂🗣",
+            "8🗃⇨🮕🫁🫀🮕⇨🯁🯂🯃🯆␟🖧⇨⇨⇨␦🗚🗚🗱",
+            "🗝🙺👎¿👍__🁩▩🪂🗞🫐🫒✰",
+            "🗦🪧👁🎔✩✔♡✓✌🖳✰✮🖅✭♥✩🖒♡𐇵➹➸➷🫀✌✔🖒🕸♥🗢✩✔🕯🪦🌣🗧"
+        ],
+        "angry": "☠",
+        "fontOverride": "Noto Sans Symbols 2",
+        "secondRound": "michael"
+    },
+    {
         "name": "Badabing",
         "filename": "badabing",
         "tagline": "WOWwwie!",
         "size": "medium",
         "ending": "intense.mp3",
-        "reaction_pos": [
+        "reactionPos": [
             "0.287",
             "0.147"
         ],
@@ -26,7 +49,7 @@
         "tagline": "I’m awake, let’s do something fun!",
         "size": "medium-small",
         "ending": "intense.mp3",
-        "reaction_pos": [
+        "reactionPos": [
             "0.249",
             "0.167"
         ],
@@ -47,7 +70,7 @@
         "tagline": "HONK",
         "size": "medium-small",
         "ending": "intense.mp3",
-        "reaction_pos": [
+        "reactionPos": [
             "0.267",
             "0.173"
         ],
@@ -61,7 +84,7 @@
             "Honk! H-honk! Oh sorry I’m crying from joy a little and it’s making my nose honk! But I’m so happy! I can’t believe it! I’m going to make you the happiest rat alive!"
         ],
         "angry": "That wasn't funny at all! This show is a circus, and not the good kind. I'm leaving!",
-        "talking_to_rats_filename": [
+        "talkingToRatsFilename": [
             "boogaloo-honk.png",
             "boogaloo.png",
             "boogaloo.png",
@@ -75,7 +98,7 @@
         "tagline": "Why hello there, care to get to know eachother better?",
         "size": "small",
         "ending": "intense.mp3",
-        "reaction_pos": [
+        "reactionPos": [
             "0.273",
             "0.378"
         ],
@@ -89,7 +112,7 @@
             "My dearest dearest dear. Our love will be of the happy steadfast unwavering sort. I’m incredibly charmed and delighted, excited! I am simply over the moon! Just like the cow in ‘Hey Diddle Diddle'! I am so happy to embark on this journey of love with you"
         ],
         "angry": "those are the words of a stander... you're not a sitter like me. I don't like you, and I am going to leave this show.",
-        "talking_to_rats_filename": [
+        "talkingToRatsFilename": [
             "corge.png",
             "corge.png",
             "corge.png",
@@ -103,7 +126,7 @@
         "tagline": "Let me play you a tune!",
         "size": "medium",
         "ending": "romantic_happy.mp3",
-        "reaction_pos": [
+        "reactionPos": [
             "0.284",
             "0.17"
         ],
@@ -117,7 +140,7 @@
             "Oh my love, you chose me, you really did! My heart is fluttering like the delicate melody of the piano keys in a glorious concerto. Let’s build each other up, and never stop dreaming! I can’t wait to live my life with you!"
         ],
         "angry": "Oh my, that's a bit mean. I don't think this is going to work out, so I'm going to take an early exit from the show! Hope that's okay!",
-        "talking_to_rats_filename": [
+        "talkingToRatsFilename": [
             "emmory.png",
             "emmory.png",
             "emmory.png",
@@ -131,7 +154,7 @@
         "tagline": "My spirits are soaring!",
         "size": "medium-large",
         "ending": "romantic_happy.mp3",
-        "reaction_pos": [
+        "reactionPos": [
             "0.244",
             "0.106"
         ],
@@ -152,23 +175,9 @@
         "tagline": "My craft is my world",
         "size": "small",
         "ending": "paris.mp3",
-        "talking_to_rats_filename" : [
-            "frozine-1.png", 
-            "frozine-2.png",
-            "frozine-3.png",
-            "frozine-4.png",
-            "frozine-5.png"
-        ],
-        "reaction_pos": [
+        "reactionPos": [
             "0.32",
             "0.16"
-        ],
-        "reaction_pos_override" : [
-            ["0.28","0.16"],
-            ["0.32","0.16"],  
-            ["0.35","0.16"], 
-            ["0.38","0.16"], 
-            ["0.42","0.16"]
         ],
         "zodiac": "Virgo",
         "dialogue": [
@@ -179,7 +188,36 @@
             "As a savant in my field, and a former child prodigy, I have had the comfort of a deeply felt connection to my practice. My identity is enriched by it, and in return my craft is only deepened and nourished by my sense of self. I think that when we dedicate our time and our earnesty towards something that we care about, we are made better by and because of it. I am dedicated to you, and I love you so much",
             "Let me bake us a wedding cake - I’m the only one I trust to make a cake to the required perfection. And you are the only one I trust to eat it. With your good taste and my expert craftsmanship I think we can do anything we want, and I want to spend the rest of my long and promising life by your side."
         ],
-        "angry": "No ice cream for mean rats! Ever! I'm LEAVING."
+        "angry": "No ice cream for mean rats! Ever! I'm LEAVING.",
+        "talkingToRatsFilename": [
+            "frozine-1.png",
+            "frozine-2.png",
+            "frozine-3.png",
+            "frozine-4.png",
+            "frozine-5.png"
+        ],
+        "reactionPosOverride": [
+            [
+                "0.28",
+                "0.16"
+            ],
+            [
+                "0.32",
+                "0.16"
+            ],
+            [
+                "0.35",
+                "0.16"
+            ],
+            [
+                "0.38",
+                "0.16"
+            ],
+            [
+                "0.42",
+                "0.16"
+            ]
+        ]
     },
     {
         "name": "Hammerton",
@@ -187,7 +225,7 @@
         "tagline": "Yawwwwwn",
         "size": "small",
         "ending": "intense.mp3",
-        "reaction_pos": [
+        "reactionPos": [
             "0.383",
             "0.074"
         ],
@@ -201,18 +239,21 @@
             "Let’s get out of this dump - I know a much nicer botanical garden over by an nicer and silenter waterfall, after all you know I love the quiet. It also doesn’t have any of that potting mixture stuff, so we won’t have to worry about brushing dirt out of our fur. But I can brush your fur anyways if you want - I brought my boar-bristle hairbrush, imported from Italy."
         ],
         "angry": "Ew.... yawn.... people like you bore me. I'm going home.",
-        "talking_to_rats_filename": [
+        "talkingToRatsFilename": [
             "hammerton-yawn.png",
             "hammerton-nap.png",
             "hammerton.png",
             "hammerton-cheese.png",
             "hammerton-blush.png"
         ],
-        "reaction_pos_override" : [
-            null, 
-            ["0.2","0.3"], 
-            null, 
-            null, 
+        "reactionPosOverride": [
+            null,
+            [
+                "0.2",
+                "0.3"
+            ],
+            null,
+            null,
             null
         ]
     },
@@ -222,7 +263,7 @@
         "tagline": "Antz?",
         "size": "medium",
         "ending": "romantic_sad.mp3",
-        "reaction_pos": [
+        "reactionPos": [
             "0.31",
             "0.093"
         ],
@@ -236,7 +277,7 @@
             "…….. I’m in love"
         ],
         "angry": ".... you make me sad. bye forever..",
-        "talking_to_rats_filename": [
+        "talkingToRatsFilename": [
             "manddy.gif",
             "manddy.gif",
             "manddy-muffybig.png",
@@ -250,7 +291,7 @@
         "tagline": "Hey Marshins!",
         "size": "medium",
         "ending": "romantic_happy.mp3",
-        "reaction_pos": [
+        "reactionPos": [
             "0.232",
             "0.088"
         ],
@@ -271,7 +312,7 @@
         "tagline": "Hello",
         "size": "large",
         "ending": "romantic_sad.mp3",
-        "reaction_pos": [
+        "reactionPos": [
             "0.293",
             "0.006"
         ],
@@ -285,7 +326,7 @@
             "Oh, I can’t wait to spend the rest of my life with you! Mich Mich and Ael are so happy for us, they said they are fulfilled and can retire now! Let’s life a comfortable and joyous life together, my love!"
         ],
         "angry": "Oh my... what is this feeling... is this sadness? Mich Mich is telling me I should lash out. I think instead of lashing out I'm just going to leave the show.",
-        "talking_to_rats_filename": [
+        "talkingToRatsFilename": [
             "michael-michmichael.png",
             "michael.png",
             "michael-michmichael.png",
@@ -294,12 +335,57 @@
         ]
     },
     {
+        "name": "Mich Mich",
+        "filename": "michmich",
+        "tagline": "hahaha",
+        "size": "small",
+        "ending": "intense.mp3",
+        "reactionPos": [
+            "0.18",
+            "0.24"
+        ],
+        "zodiac": "Cetus",
+        "dialogue": [
+            "Now that its just you and me alone... I think we need to get some things straight. Am I evil? No. But... am I a force for evil? Yes. What does that mean for you and I? (✿◕‿◕) hahaha! I'll let you decide",
+            "Think about it this way. If I accidently bring value to shareholders, then that means no one else will be able to experience the joy that that would have brought them (o´▽`o✿). But.. what if I did it on purpose? It's still net negative. Sort like... trickle down ethics... haha",
+            "Sometimes when I'm at the front row of the football games, I like to blow air gently in the players' direction. (✿˘ ³˘)‎°｡⋆♡‧₊˚ I like to imagine (◕ᱛ ◕✿) that it makes the blades of grass rustle and that small action can cause a domino effect that changes the course of the entire game (◕ .̫ ◕✿). Is that fair? ha ha he he! I'll let you decide",
+            "Sometimes I give free haircuts but I purposefully leave two individual strands a half-centimeter longer. There must be a balance. hahaha! I like to drink oolong tea on the porch sometimes and tally up some scores. (o˘◡˘o✿) Would you like to join me (❦ ᴗ ❦ ✿) sometime? he he",
+            "hahahaha! he he he!!!!! (◕ᱛ ◕✿)  hahah! Why am I laughing so much, you ask? Well, I simply never imagined I'd find love (✿¬‿¬)",
+            "hehehe! ha ha ha! (◕ᥧ ◕✿) hahahahahaha. !  !  !!!!! hehe! heeeeheeeeeeheeeeeee hahaha !!!!!!! hhreeheeha"
+        ],
+        "angry": "I can't believe you would be mean to me",
+        "fontOverride": "Jacquarda Bastarda 9",
+        "secondRound": "michael"
+    },
+    {
+        "name": "Muffy",
+        "filename": "muffy",
+        "tagline": "I'm looking forward to getting to know eachother.",
+        "size": "medium-small",
+        "ending": "intense.mp3",
+        "reactionPos": [
+            "0.267",
+            "0.1"
+        ],
+        "zodiac": "Aquarius",
+        "dialogue": [
+            "Hi! I'm Muffy. Though my looks are enthralling and ginormous, I am really just a regular ant! I used to be petit and microscopic but I've been consuming some miracle-gro on a regular basis, and, well, I grew!",
+            "My favorite food used to be fish flakes and nerds clusters, but now that my taste-buds have developed and I find them rather.. frivolous. My taste-buds formed around the same time that my vocal chords did - it's true! Had you seen me but a week ago we would be unable to partake in the joys of conversation.",
+            "Actually my closest friend and confidant,  Manndy - who is a rat much like yourself, believed me to be a youth before I was able to talk, and was shocked to find that we are the same age! While sharing a meal - my favorite, Miracle-gro: (drought-tolerant) garden soil roses - we where comparing our star charts and found out that they are exactly the same! Functionally, we are twins, Manndy and I, but we have lived such different lives.",
+            "I was an architect back in my old anthill, the famous West Montana East-Village Unit E Anthill. It was quite the stressful lifestyle, digging and digging, building and building. But it is also easy as we are so strong. I'm considering writing a book about my time spent with single-segment thorax-free mannals like rats, as I think the ants at home will be fascinated. What is it like not being able to lift 5000 times your weight? You make it look effortless and chic",
+            "Just this last week I had the honor of winning the award for biggest ant. It was a blast. Maybe in my top 10 events I have experienced in my many years alive. I won at the Best Ants Annual Award Show. The other competitions at the show where extremely exciting. Next year I'm keen to see who wins Most Aerodynamic, Most Polished Thorax, Hunkiest Ant... dreamiest eyes (I think actually you may have the dreamiest eyes now that I'm looking).",
+            "I didn't know love was something someone could find untill my best friend found it, and now I have too.You have dreamiest eyes, the most beguiling maxillary palps, and the most organic phermones. When I look at you my mind expands more than it ever could when I look away. And my heart? why I think it has grow at least three sizes just today."
+        ],
+        "angry": "I feel disrespected, so I wont be staying...",
+        "secondRound": "manddy"
+    },
+    {
         "name": "Mystique",
         "filename": "mystique",
         "tagline": "Riddle me this...",
         "size": "medium",
         "ending": "romantic_happy.mp3",
-        "reaction_pos": [
+        "reactionPos": [
             "0.34",
             "0.119"
         ],
@@ -320,7 +406,7 @@
         "tagline": "Oh! Every day is my birthday!",
         "size": "medium",
         "ending": "intense.mp3",
-        "reaction_pos": [
+        "reactionPos": [
             "0.337",
             "0.148"
         ],
@@ -341,7 +427,7 @@
         "tagline": "I like to be pampered :)",
         "size": "small",
         "ending": "romantic_happy.mp3",
-        "reaction_pos": [
+        "reactionPos": [
             "0.351",
             "0.135"
         ],
@@ -355,7 +441,7 @@
             "Oh, I cannot wait to spend the rest of my life riding horses with you, my most honorable love!"
         ],
         "angry": "Alas! I thought you were better than this... my horses won't stand for this!!! I'm leaving this show and am never coming back.",
-        "talking_to_rats_filename": [
+        "talkingToRatsFilename": [
             "pamplemouse.png",
             "pamplemouse.png",
             "pamplemouse-book.png",
@@ -369,7 +455,7 @@
         "tagline": "Your eyes remind me of the flower gardens at home, I can’t wait to be friends!",
         "size": "medium-large",
         "ending": "romantic_sad.mp3",
-        "reaction_pos": [
+        "reactionPos": [
             "0.3",
             "0.142"
         ],
@@ -383,7 +469,7 @@
             "I can’t wait to live the rest of my life with you, I’m happier than a sunflower in sun and my spirits are rosier than a fresh pink carnation! I’m so glad that I left my castle, because it led me to you! I love you!"
         ],
         "angry": "Ah... the flower of our love is wilting... I think it would be best if I returned to my castle for a while.",
-        "talking_to_rats_filename": [
+        "talkingToRatsFilename": [
             "philoxena-flowers.png",
             "philoxena.png",
             "philoxena.png",
@@ -397,7 +483,7 @@
         "tagline": "I love to help others!",
         "size": "medium-small",
         "ending": "romantic_happy.mp3",
-        "reaction_pos": [
+        "reactionPos": [
             "0.315",
             "0.158"
         ],
@@ -418,7 +504,7 @@
         "tagline": "What’s cookin’ good lookin’ vroooom vroooom",
         "size": "medium",
         "ending": "paris.mp3",
-        "reaction_pos": [
+        "reactionPos": [
             "0.27",
             "0.12"
         ],
@@ -432,7 +518,7 @@
             "Wow. You are so good at picking a rat to spend the rest of your life with. Let’s run away. Let’s elope. Let’s break the world record for most in love tandem motorcyclists. Whoops! We already did ;)"
         ],
         "angry": "ugh! cars wouldn't talk to me like this. I have more important things to do than stay on this show and date someone rude like you. See ya never!",
-        "talking_to_rats_filename": [
+        "talkingToRatsFilename": [
             "swalorn.png",
             "swalorn-plate.png",
             "swalorn-oilmoney.png",
@@ -446,7 +532,7 @@
         "tagline": "You and me, could it be?",
         "size": "small",
         "ending": "intense.mp3",
-        "reaction_pos": [
+        "reactionPos": [
             "0.244",
             "0.222"
         ],
@@ -460,7 +546,7 @@
             "Your soul and my soul are threads in the fabric of a treasured garment, a favorite t-shirt from a memorable concert where a young love was formed. I’ve never met anyone like you before. You are home to me my dear, and I love you."
         ],
         "angry": "Betrayal cuts deep,\nThe pain is like a knife,\nI feel so alone.\nGoodbye, traitor.\nI am leaving this show.",
-        "talking_to_rats_filename": [
+        "talkingToRatsFilename": [
             "tambone.png",
             "tambone.png",
             "tambone-poem.png",
@@ -474,7 +560,7 @@
         "tagline": "Oh! I’m blushing",
         "size": "medium-large",
         "ending": "romantic_sad.mp3",
-        "reaction_pos": [
+        "reactionPos": [
             "0.333",
             "0.126"
         ],
@@ -495,7 +581,7 @@
         "tagline": "Oh hello there! I’m Yodine",
         "size": "medium-small",
         "ending": "romantic_happy.mp3",
-        "reaction_pos": [
+        "reactionPos": [
             "0.322",
             "0.144"
         ],
@@ -516,7 +602,7 @@
         "tagline": "What is your sign?",
         "size": "medium-small",
         "ending": "romantic_happy.mp3",
-        "reaction_pos": [
+        "reactionPos": [
             "0.444",
             "0.104"
         ],

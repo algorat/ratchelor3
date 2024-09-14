@@ -51,16 +51,14 @@
   margin-right: 8px;
 }
 
-@media only screen and (hover: none) {
-  .epilogue-screen .photos {
-    padding: 40px;
-  }
+.mobile-mode .epilogue-screen .photos {
+  padding: 40px;
+}
 
-  .epilogue-screen .mobile-control-content {
-    min-height: 30vh;
-  }
+.mobile-mode .epilogue-screen .mobile-control-content {
+  min-height: 30vh;
+}
 
-  .epilogue-screen .epilogue-photo-description {
-    display: none;
-  }
+.mobile-mode .epilogue-screen .epilogue-photo-description {
+  display: none;
 }

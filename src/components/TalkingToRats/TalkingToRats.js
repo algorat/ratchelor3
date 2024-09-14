@@ -110,7 +110,7 @@ export function TalkingToRats(props) {
           new Promise((resolve) => {
             const ratData = getRatById(ratId);
             let filename = `${DATES_IMAGES_BASE_PATH}/${ratId}.png`;
-            const override = ratData.talking_to_rats_filename?.[props.round];
+            const override = ratData.talkingToRatsFilename?.[props.round];
             if (override) {
               filename = `${DATES_IMAGES_BASE_PATH}/${override}`;
             }
@@ -269,8 +269,8 @@ export function TalkingToRats(props) {
   const currentRatId = props.activeRats[ratIndex];
   const ratData = getRatById(currentRatId);
   const ratName = ratData.name;
-  let ratReactionPos = ratData.reaction_pos;
-  const reactionPosOverrides = ratData.reaction_pos_override;
+  let ratReactionPos = ratData.reactionPos;
+  const reactionPosOverrides = ratData.reactionPosOverride;
   if (reactionPosOverrides && reactionPosOverrides[props.round]) {
     ratReactionPos = reactionPosOverrides[props.round];
   }
@@ -294,11 +294,18 @@ export function TalkingToRats(props) {
     </button>
   ));
 
+  const fontOverride = ratData.fontOverride
+    ? {
+        fontFamily: `"${ratData.fontOverride}", serif`,
+        fontSize: props.mobileMode ? "16px" : "24px",
+      }
+    : {};
+
   let ratDialogueHtml = (
     <>
-      <div className="rat-dialogue" aria-hidden="true">
+      <div className="rat-dialogue" aria-hidden="true" style={fontOverride}>
         {currentRatDialogue}
-        <MobileControl show={false}>
+        <MobileControl mobileMode={props.mobileMode} show={false}>
           <div className="responses">{responses}</div>
         </MobileControl>
       </div>
@@ -323,9 +330,9 @@ export function TalkingToRats(props) {
     );
     ratDialogueHtml = (
       <>
-        <div className="rat-dialogue angry">
+        <div className="rat-dialogue angry" style={fontOverride}>
           {ratData.angry}
-          <MobileControl show={false}>
+          <MobileControl mobileMode={props.mobileMode} show={false}>
             <div className="responses">{responses}</div>
           </MobileControl>
         </div>
@@ -413,7 +420,7 @@ export function TalkingToRats(props) {
           <h3 className="rat-name">{ratName}</h3>
           <div className="text-dialogue-container">{ratDialogueHtml}</div>
         </div>
-        <MobileControl show={false}>
+        <MobileControl mobileMode={props.mobileMode} show={false}>
           {showingLeavingPopup && (
             <div className="leaving-modal">
               <p>{ratName} has decided to pack their bags and leave</p>
@@ -430,6 +437,7 @@ export function TalkingToRats(props) {
         </MobileControl>
       </div>
       <MobileControl
+        mobileMode={props.mobileMode}
         show={true}
         header="Select a response!"
         ctaButton={

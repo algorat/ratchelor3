@@ -29,12 +29,10 @@
   margin: 0;
 }
 
-@media only screen and (hover: none) {
-  .credits-screen .content {
-    padding: 20px;
-  }
+.mobile-mode .credits-screen .content {
+  padding: 20px;
+}
 
-  .credits-screen h3 {
-    margin: 8px 0 4px;
-  }
+.mobile-mode .credits-screen h3 {
+  margin: 8px 0 4px;
 }

@@ -110,7 +110,7 @@ export function RatSelect(props) {
     setActiveRats([...activeRats, selectedRatId]);
   };
 
-  const ratsData = getAllRatData();
+  const ratsData = getAllRatData(props.marriedRats);
   const numRatsLeft = props.maxRats - activeRats.length;
 
   const ctaButton = (
@@ -161,7 +161,7 @@ export function RatSelect(props) {
   return (
     <>
       <div className="screen rat-select-screen">
-        <MobileControl show={false}>
+        <MobileControl show={false} mobileMode={props.mobileMode}>
           <header>
             {numRatsLeft > 0 ? (
               <h2>Choose {numRatsLeft} contestants</h2>
@@ -171,24 +171,29 @@ export function RatSelect(props) {
           </header>
         </MobileControl>
         <div className="rat-grid">
-          {ratsData.map((ratData, index) => (
-            <SelectableRat
-              key={`rats${index}`}
-              index={index}
-              ratId={ratData.filename}
-              ratName={ratData.name}
-              ratZodiac={ratData.zodiac}
-              ratTagline={ratData.tagline}
-              isSelected={activeRats.includes(ratData.filename)}
-              isMobileSelected={intermediateMobileRat === ratData.filename}
-              onClick={() => onRatSelect(ratData.filename)}
-              filename={`${ratData.filename}-frame.png`}
-              filenameHearts={`hearts${(index % 9) + 1}.png`}
-            />
+          {ratsData.map((rats, index) => (
+            <div key={`ratgroup${index}`}>
+              {rats.map((ratData, k) => (
+                <SelectableRat
+                  key={`rats${k},${index}`}
+                  index={index}
+                  ratId={ratData.filename}
+                  ratName={ratData.name}
+                  ratZodiac={ratData.zodiac}
+                  ratTagline={ratData.tagline}
+                  isSelected={activeRats.includes(ratData.filename)}
+                  isMobileSelected={intermediateMobileRat === ratData.filename}
+                  onClick={() => onRatSelect(ratData.filename)}
+                  filename={`${ratData.filename}-frame.png`}
+                  filenameHearts={`hearts${(index % 9) + 1}.png`}
+                />
+              ))}
+            </div>
           ))}
         </div>
       </div>
       <MobileControl
+        mobileMode={props.mobileMode}
         show={true}
         header={mobileHeader}
         ctaButton={mobileCtaButton}

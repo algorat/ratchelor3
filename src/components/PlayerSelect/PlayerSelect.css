@@ -100,14 +100,12 @@
   }
 }
 
-@media only screen and (hover: none) {
-  .player-select-hearts-header {
-    width: 100%;
-    left: 0;
-    top: 0;
-  }
+.mobile-mode .player-select-hearts-header {
+  width: 100%;
+  left: 0;
+  top: 0;
+}
 
-  .player-select-screen {
-    row-gap: 24px;
-  }
+.mobile-mode .player-select-screen {
+  row-gap: 24px;
 }

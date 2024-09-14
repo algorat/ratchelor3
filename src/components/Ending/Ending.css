@@ -3,6 +3,12 @@
   overflow: hidden;
 }
 
+.ending-screen .black-screen {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
 .ending-art {
   position: absolute;
   top: 0px;

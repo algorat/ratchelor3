@@ -98,16 +98,14 @@ input[type='range']::-ms-thumb {
   border: 2px solid #977c40;
 }
 
-@media only screen and (hover: none) {
-  .game-options {
-    position: fixed;
-    top: auto;
-    left: auto;
-    bottom: 8px;
-    right: 8px;
-  }
+.mobile-mode .game-options {
+  position: fixed;
+  top: auto;
+  left: auto;
+  bottom: 8px;
+  right: 8px;
+}
 
-  .sound-slider {
-    display: none;
-  }
+.mobile-mode .sound-slider {
+  display: none;
 }

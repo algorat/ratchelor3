@@ -23,7 +23,7 @@ export function Credits(props) {
   return (
     <>
       <div className="credits-screen screen">
-        <MobileControl show={false}>
+        <MobileControl show={false} mobileMode={props.mobileMode}>
           <header>{cta}</header>
         </MobileControl>
         <div className="content">

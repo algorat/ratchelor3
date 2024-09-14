@@ -14,7 +14,7 @@ export function Intro(props) {
   return (
     <>
       <div className="intro-screen screen">
-        <MobileControl show={false}>
+        <MobileControl show={false} mobileMode={props.mobileMode}>
           <div className="cta">
             <Preloader>
               <button className="embark-button" onClick={onClick}>
@@ -30,6 +30,7 @@ export function Intro(props) {
       </div>
       <MobileControl
         show={true}
+        mobileMode={props.mobileMode}
         ctaButton={
           <Preloader>
             <button className="embark-button" onClick={onClick}>

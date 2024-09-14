@@ -1,28 +1,11 @@
 import "./Epilogue.css";
 import {
-  getRandomEpiloguePhoto,
+  getEpiloguePhotos,
   EPILOGUE_IMAGES_BASE_PATH,
   BACKGROUNDS_IMAGES_BASE_PATH,
 } from "../../utils/ratDataHelper";
 import React, { useEffect, useState } from "react";
 import { MobileControl } from "../MobileControl/MobileControl";
-
-function noDupes(photoData, finalRat) {
-  const seenRats = new Set();
-  const finalPhotos = [];
-
-  for (const photo of photoData) {
-    if (!photo) continue;
-    const { rats } = photo;
-    const dupeRats = rats.filter((r) => seenRats.has(r));
-
-    if (dupeRats.length === 0 && !rats.includes(finalRat)) {
-      rats.forEach((rat) => seenRats.add(rat));
-      finalPhotos.push(photo);
-    }
-  }
-  return finalPhotos;
-}
 
 export function Epilogue(props) {
   const [hoveredPhoto, setHoveredPhoto] = useState(null);
@@ -34,11 +17,8 @@ export function Epilogue(props) {
     selectedPhotoDescription || "Select a rat photo to see more info!";
 
   useEffect(() => {
-    const randomPhotoData = props.originalRats.map((rat) =>
-      getRandomEpiloguePhoto(rat)
-    );
-    const photosWithoutDupes = noDupes(randomPhotoData, props.finalRat);
-    setRandomPhotos(photosWithoutDupes.slice(0, 6));
+    const photos = getEpiloguePhotos(props.originalRats, props.finalRat);
+    setRandomPhotos(photos);
   }, []);
 
   const cta = (
@@ -93,6 +73,7 @@ export function Epilogue(props) {
         </div>
       </div>
       <MobileControl
+        mobileMode={props.mobileMode}
         show={true}
         header="What happened to the rats after?"
         ctaButton={cta}

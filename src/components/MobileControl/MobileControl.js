@@ -1,21 +1,11 @@
 import "./MobileControl.css";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 export function MobileControl(props) {
-  const [mobileMode, setMobileMode] = useState(false);
-
-  useEffect(() => {
-    const watchMobile = window.matchMedia("only screen and (hover: none)");
-    setMobileMode(watchMobile.matches);
-    watchMobile.addEventListener("change", () => {
-      setMobileMode(watchMobile.matches);
-    });
-  }, [mobileMode]);
-
-  if (!mobileMode && !props.show) {
+  if (!props.mobileMode && !props.show) {
     return <>{props.children}</>;
-  } else if (mobileMode && props.show) {
+  } else if (props.mobileMode && props.show) {
     return (
       <div className="mobile-container">
         {(props.header || props.children) && (
