@@ -129,7 +129,7 @@ function RatchelorApp() {
   const [mobileLandscapeMode, setMobileLandscapeMode] = useState(false);
   const [showMobileWarning, setShowMobileWarning] = useState(false);
 
-  const [marriedRats, setMarriedRats] = useState(["michael"]);
+  const [marriedRats, setMarriedRats] = useState(["michael", "manddy"]);
 
   function updateMobileAttributes() {
     const screenHeight = document.body.clientHeight;
