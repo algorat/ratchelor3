@@ -157,7 +157,11 @@ export function Credits(props) {
           </ul>
         </div>
       </div>
-      <MobileControl show={true} ctaButton={cta}></MobileControl>
+      <MobileControl
+        show={true}
+        ctaButton={cta}
+        mobileMode={props.mobileMode}
+      ></MobileControl>
     </>
   );
 }

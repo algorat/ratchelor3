@@ -40,7 +40,7 @@ export function Epilogue(props) {
   return (
     <>
       <div className="epilogue-screen screen">
-        <MobileControl show={false}>
+        <MobileControl show={false} mobileMode={props.mobileMode}>
           <header>{cta}</header>
         </MobileControl>
         <img
