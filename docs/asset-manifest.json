@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/ratchelor3/static/css/main.15de07fb.css",
-    "main.js": "/ratchelor3/static/js/main.0c7cc334.js",
+    "main.js": "/ratchelor3/static/js/main.e214808a.js",
     "static/media/Nunito-VariableFont_wght.ttf": "/ratchelor3/static/media/Nunito-VariableFont_wght.4a3eef3e0a61b7eb3eda.ttf",
     "static/media/intro.gif": "/ratchelor3/static/media/intro.09bbf9bff93414c9c3b2.gif",
     "static/media/Beta54.ttf": "/ratchelor3/static/media/Beta54.84e7d62b094dec26bd86.ttf",
     "static/media/wallpaper.png": "/ratchelor3/static/media/wallpaper.d030c424f0b9b1630136.png",
     "index.html": "/ratchelor3/index.html",
     "main.15de07fb.css.map": "/ratchelor3/static/css/main.15de07fb.css.map",
-    "main.0c7cc334.js.map": "/ratchelor3/static/js/main.0c7cc334.js.map"
+    "main.e214808a.js.map": "/ratchelor3/static/js/main.e214808a.js.map"
   },
   "entrypoints": [
     "static/css/main.15de07fb.css",
-    "static/js/main.0c7cc334.js"
+    "static/js/main.e214808a.js"
   ]
 }
