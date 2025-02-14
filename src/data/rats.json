@@ -7,7 +7,7 @@
         "ending": "intense.mp3",
         "reactionPos": [
             "0.33",
-            "0.08"
+            "0.09"
         ],
         "zodiac": "Ophiuchus",
         "dialogue": [
@@ -20,7 +20,14 @@
         ],
         "angry": "☠",
         "fontOverride": "Noto Sans Symbols 2",
-        "secondRound": "michael"
+        "secondRound": "michael",
+        "talkingToRatsFilename": [
+            "ael.gif",
+            "ael.gif",
+            "ael.gif",
+            "ael.gif",
+            "ael.gif"
+        ]
     },
     {
         "name": "Badabing",
@@ -355,7 +362,14 @@
         ],
         "angry": "I can't believe you would be mean to me",
         "fontOverride": "Jacquarda Bastarda 9",
-        "secondRound": "michael"
+        "secondRound": "michael",
+        "talkingToRatsFilename": [
+            "michmich.gif",
+            "michmich.gif",
+            "michmich.gif",
+            "michmich.gif",
+            "michmich.gif"
+        ]
     },
     {
         "name": "Muffy",
