@@ -138,8 +138,19 @@ export function getRandomEpiloguePhoto(ratId, ineligableRats) {
 }
 
 const maxTries = 30;
-export function getEpiloguePhotos(originalRats, finalRat) {
+export function getEpiloguePhotos(originalRats, finalRat, marriedRats) {
   const ineligableRats = new Set([finalRat]);
+
+  for (const rat of ratsJson) {
+    const { secondRound, filename } = rat;
+    if (
+      (secondRound !== undefined && !marriedRats.includes(secondRound)) ||
+      finalRat === secondRound
+    ) {
+      ineligableRats.add(filename);
+    }
+  }
+
   const photos = [];
   let tries = 0;
   // start by adding original rats

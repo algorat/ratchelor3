@@ -446,6 +446,7 @@ function RatchelorApp() {
         <Epilogue
           finalRat={activeRats[0]}
           originalRats={originalRats}
+          marriedRats={marriedRats}
           advanceToNextStage={goToCredits}
           mobileMode={mobileMode}
         />

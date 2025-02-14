@@ -17,7 +17,11 @@ export function Epilogue(props) {
     selectedPhotoDescription || "Select a rat photo to see more info!";
 
   useEffect(() => {
-    const photos = getEpiloguePhotos(props.originalRats, props.finalRat);
+    const photos = getEpiloguePhotos(
+      props.originalRats,
+      props.finalRat,
+      props.marriedRats
+    );
     setRandomPhotos(photos);
   }, []);
 

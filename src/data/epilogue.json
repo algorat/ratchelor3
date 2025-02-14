@@ -28,8 +28,8 @@
     "rats": ["michael"]
   },
   "hamme.png": {
-    "text": "Hammerton enjoys a delightful meall with their favorite cheese",
-    "rats": ["hamme"]
+    "text": "Hammerton enjoys a delightful meal with their favorite cheese",
+    "rats": ["hammerton"]
   },
   "poodl.png": {
     "text": "Poodles is ready to grant some wishes",
@@ -41,7 +41,7 @@
   },
   "mandd.png": {
     "text": "Manddy and Muffy's friendship reaches new heights as Muffy reaches new heights",
-    "rats": ["mandd"]
+    "rats": ["manddy"]
   },
   "badab.png": {
     "text": "Badabing hangs out with some special bugs",
@@ -102,6 +102,46 @@
   "oedim.png": {
     "text": "Oedimb celebrates a special day!",
     "rats": ["oedimb"]
+  },
+  "muffy_pample.png": {
+    "text": "Pamplemouse and Muffy confess their love in the castle courtyard",
+    "rats": ["pamplemouse", "muffy"]
+  },
+  "muffy_esche.png": {
+    "text": "Muffy and Esche commit to a lifetime of love",
+    "rats": ["muffy"]
+  },
+  "michm_pampl.png": {
+    "text": "Mich Mich and Pamplemouse spend their time concocting machiavellian schemes",
+    "rats": ["michmich", "pamplemouse"]
+  },
+  "hamme_muffy.png": {
+    "text": "Muffy and Hammerton share a warm embrace",
+    "rats": ["muffy", "hammerton"]
+  },
+  "corge_frozi.png": {
+    "text": "Corge shows Frozine the joys of sitting in the park",
+    "rats": ["corge", "frozine"]
+  },
+  "booga_marsh.png": {
+    "text": "Marsh and Boogaloo start a clown troupe",
+    "rats": ["marsh", "boogaloo"]
+  },
+  "ael_philo.png": {
+    "text": "Philoxena is blushing //much// more than normal",
+    "rats": ["philoxena", "ael"]
+  },
+  "muffy.png": {
+    "text": "muffy unites the world by digging the first high speed intercontinental anthill",
+    "rats": ["muffy"]
+  },
+  "michm.png": {
+    "text": "Mich Mich enjoys an iced oolong afternoon",
+    "rats": ["michmich"]
+  },
+  "ael.png": {
+    "text": "Ael discovers an object of indescribable beauty",
+    "rats": ["ael"]
   }
 }
 	
